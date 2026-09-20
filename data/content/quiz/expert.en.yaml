@@ -1,0 +1,331 @@
+id: quiz-expert
+game: quiz
+lang: en
+title: Expert — university level
+version: 1
+# Requires having studied the subject, not merely recalling it.
+items:
+  - id: xq001
+    category: física
+    difficulty: 5
+    question: "What is the Cp/Cv ratio for a monatomic ideal gas?"
+    options: ["7/5", "5/3", "4/3", "3/2"]
+    answer: 1
+  - id: xq002
+    category: física
+    difficulty: 5
+    question: "What are the physical dimensions of Planck's constant?"
+    options: ["Energy × time", "Energy / time", "Force × distance", "Mass × velocity"]
+    answer: 0
+  - id: xq003
+    category: física
+    difficulty: 5
+    question: "Noether's theorem relates conservation laws to what?"
+    options: ["Continuous symmetries", "Quantum states", "Inertial frames", "Degrees of freedom"]
+    answer: 0
+  - id: xq004
+    category: física
+    difficulty: 5
+    question: "What is the spin of the photon?"
+    options: ["0", "1/2", "1", "2"]
+    answer: 2
+  - id: xq005
+    category: física
+    difficulty: 5
+    question: "In a reversible adiabatic expansion of an ideal gas, which quantity stays constant?"
+    options: ["PV", "PVᵞ", "P/V", "PV/T"]
+    answer: 1
+  - id: xq006
+    category: física
+    difficulty: 5
+    question: "The Reynolds number compares which two forces?"
+    options: ["Inertial and viscous", "Gravitational and elastic", "Electric and magnetic", "Centripetal and centrifugal"]
+    answer: 0
+  - id: xq007
+    category: física
+    difficulty: 5
+    question: "What is the approximate value of the fine-structure constant?"
+    options: ["1/37", "1/137", "1/1370", "1/13"]
+    answer: 1
+  - id: xq008
+    category: física
+    difficulty: 5
+    question: "The Zeeman effect is the splitting of spectral lines by which field?"
+    options: ["Electric", "Magnetic", "Gravitational", "Acoustic"]
+    answer: 1
+  - id: xq009
+    category: física
+    difficulty: 5
+    question: "In a series RLC circuit, the resonant frequency depends on which components?"
+    options: ["R and L only", "L and C only", "R and C only", "R, L and C"]
+    answer: 1
+  - id: xq010
+    category: química
+    difficulty: 5
+    question: "What is the hybridisation of carbon in the carbonate ion (CO₃²⁻)?"
+    options: ["sp", "sp²", "sp³", "sp³d"]
+    answer: 1
+  - id: xq011
+    category: química
+    difficulty: 5
+    question: "How many stereoisomers are possible for a molecule with 3 distinct chiral centres?"
+    options: ["3", "6", "8", "9"]
+    answer: 2
+  - id: xq012
+    category: química
+    difficulty: 5
+    question: "The Nernst equation relates electrode potential to what?"
+    options: ["Temperature only", "Concentration of the species", "Electrode mass", "Applied current"]
+    answer: 1
+  - id: xq013
+    category: química
+    difficulty: 5
+    question: "What is the molecular geometry of SF₆?"
+    options: ["Tetrahedral", "Trigonal bipyramidal", "Octahedral", "Square planar"]
+    answer: 2
+  - id: xq014
+    category: química
+    difficulty: 5
+    question: "What is the oxidation state of manganese in potassium permanganate (KMnO₄)?"
+    options: ["+2", "+4", "+6", "+7"]
+    answer: 3
+  - id: xq015
+    category: química
+    difficulty: 5
+    question: "What characterises an SN2 reaction?"
+    options: ["Backside attack with inversion", "Formation of a carbocation intermediate", "Elimination of a proton", "Addition across a double bond"]
+    answer: 0
+  - id: xq016
+    category: química
+    difficulty: 5
+    question: "Raising the pressure shifts a gaseous equilibrium in which direction?"
+    options: ["Towards the side with fewer moles of gas", "Towards the side with more moles of gas", "Always towards the products", "It does not shift"]
+    answer: 0
+  - id: xq017
+    category: biologia
+    difficulty: 5
+    question: "Which enzyme unwinds the double helix during DNA replication?"
+    options: ["Polymerase", "Helicase", "Ligase", "Primase"]
+    answer: 1
+  - id: xq018
+    category: biologia
+    difficulty: 5
+    question: "Where does the Krebs cycle take place in a eukaryotic cell?"
+    options: ["Cytoplasm", "Mitochondrial matrix", "Thylakoid membrane", "Endoplasmic reticulum"]
+    answer: 1
+  - id: xq019
+    category: biologia
+    difficulty: 5
+    question: "What is the net ATP yield of glycolysis per glucose molecule?"
+    options: ["0", "2", "4", "36"]
+    answer: 1
+  - id: xq020
+    category: biologia
+    difficulty: 5
+    question: "What does the Hardy-Weinberg principle describe?"
+    options: ["The mutation rate of a gene", "Allele frequencies staying constant without evolution", "Sex-linked inheritance", "A species' chromosome count"]
+    answer: 1
+  - id: xq021
+    category: biologia
+    difficulty: 5
+    question: "Which bacterial structure does penicillin target?"
+    options: ["Plasma membrane", "Cell wall", "Ribosome", "Plasmid DNA"]
+    answer: 1
+  - id: xq022
+    category: biologia
+    difficulty: 5
+    question: "The lac operon in E. coli is induced by which molecule?"
+    options: ["Glucose", "Allolactose", "Tryptophan", "cAMP"]
+    answer: 1
+  - id: xq023
+    category: matemática
+    difficulty: 5
+    question: "How many groups of order 4 exist, up to isomorphism?"
+    options: ["1", "2", "3", "4"]
+    answer: 1
+  - id: xq024
+    category: matemática
+    difficulty: 5
+    question: "What is e raised to the power iπ?"
+    options: ["0", "1", "-1", "i"]
+    answer: 2
+  - id: xq025
+    category: matemática
+    difficulty: 5
+    question: "Gödel's incompleteness theorem states that consistent, sufficiently rich formal systems are:"
+    options: ["Complete", "Incomplete", "Contradictory", "Decidable"]
+    answer: 1
+  - id: xq026
+    category: matemática
+    difficulty: 5
+    question: "In spherical geometry, the interior angles of a triangle sum to:"
+    options: ["Always 180°", "Less than 180°", "More than 180°", "Always 360°"]
+    answer: 2
+  - id: xq027
+    category: matemática
+    difficulty: 5
+    question: "How many subsets does a set with n elements have?"
+    options: ["n²", "2ⁿ", "n!", "2n"]
+    answer: 1
+  - id: xq028
+    category: matemática
+    difficulty: 5
+    question: "What is the radius of convergence of the Taylor series of 1/(1−x) about 0?"
+    options: ["0", "1", "2", "Infinite"]
+    answer: 1
+  - id: xq029
+    category: história
+    difficulty: 5
+    question: "Which treaty ended the Thirty Years' War?"
+    options: ["Peace of Westphalia", "Treaty of Utrecht", "Treaty of Tordesillas", "Congress of Vienna"]
+    answer: 0
+  - id: xq030
+    category: história
+    difficulty: 5
+    question: "Who was the last Byzantine emperor?"
+    options: ["Justinian I", "Basil II", "Constantine XI", "Alexios I"]
+    answer: 2
+  - id: xq031
+    category: história
+    difficulty: 5
+    question: "In which year was the First Council of Nicaea held?"
+    options: ["325", "431", "476", "1054"]
+    answer: 0
+  - id: xq032
+    category: história
+    difficulty: 5
+    question: "Which dynasty ruled China during the First Opium War?"
+    options: ["Ming", "Qing", "Song", "Yuan"]
+    answer: 1
+  - id: xq033
+    category: história
+    difficulty: 5
+    question: "Who wrote 'Leviathan'?"
+    options: ["John Locke", "Thomas Hobbes", "Jean-Jacques Rousseau", "Montesquieu"]
+    answer: 1
+  - id: xq034
+    category: história
+    difficulty: 5
+    question: "Which empire was defeated at the Battle of Lepanto in 1571?"
+    options: ["Ottoman", "Austro-Hungarian", "Persian", "Russian"]
+    answer: 0
+  - id: xq035
+    category: história
+    difficulty: 4
+    question: "Which event is taken as the start of the Protestant Reformation?"
+    options: ["The Peace of Augsburg", "Luther's 95 theses", "The Council of Trent", "Calvin's death"]
+    answer: 1
+  - id: xq036
+    category: geografia
+    difficulty: 5
+    question: "What is the constitutional capital of Bolivia?"
+    options: ["La Paz", "Sucre", "Santa Cruz", "Cochabamba"]
+    answer: 1
+  - id: xq037
+    category: geografia
+    difficulty: 5
+    question: "Which strait links the Black Sea to the Sea of Marmara?"
+    options: ["Dardanelles", "Bosphorus", "Gibraltar", "Hormuz"]
+    answer: 1
+  - id: xq038
+    category: geografia
+    difficulty: 5
+    question: "What is the lowest exposed point of land on Earth?"
+    options: ["Death Valley", "Dead Sea", "Danakil Depression", "Caspian Sea"]
+    answer: 1
+  - id: xq039
+    category: geografia
+    difficulty: 5
+    question: "Which ocean current moderates the climate of north-west Europe?"
+    options: ["Humboldt Current", "Gulf Stream", "Canary Current", "Labrador Current"]
+    answer: 1
+  - id: xq040
+    category: geografia
+    difficulty: 4
+    question: "Which is the largest archipelago in the world?"
+    options: ["Philippines", "Indonesia", "Japan", "Maldives"]
+    answer: 1
+  - id: xq041
+    category: literatura
+    difficulty: 5
+    question: "Who wrote 'Ulysses' (1922)?"
+    options: ["Virginia Woolf", "James Joyce", "T.S. Eliot", "Samuel Beckett"]
+    answer: 1
+  - id: xq042
+    category: literatura
+    difficulty: 5
+    question: "Who wrote 'In Search of Lost Time'?"
+    options: ["André Gide", "Marcel Proust", "Albert Camus", "Gustave Flaubert"]
+    answer: 1
+  - id: xq043
+    category: literatura
+    difficulty: 5
+    question: "What is the name of the narrator of 'Moby-Dick'?"
+    options: ["Queequeg", "Ishmael", "Starbuck", "Ahab"]
+    answer: 1
+  - id: xq044
+    category: literatura
+    difficulty: 5
+    question: "Which literary movement did Baudelaire help inaugurate?"
+    options: ["Naturalism", "Symbolism", "Parnassianism", "Futurism"]
+    answer: 1
+  - id: xq045
+    category: astronomia
+    difficulty: 5
+    question: "The Chandrasekhar limit is the approximate value of what?"
+    options: ["Maximum mass of a white dwarf", "Minimum radius of a black hole", "Maximum age of a star", "Solar core temperature"]
+    answer: 0
+  - id: xq046
+    category: astronomia
+    difficulty: 5
+    question: "Hubble's law relates a galaxy's distance to what?"
+    options: ["Its mass", "Its recession velocity", "Its absolute luminosity", "Its age"]
+    answer: 1
+  - id: xq047
+    category: astronomia
+    difficulty: 5
+    question: "Which process produces the Sun's energy?"
+    options: ["Uranium fission", "Fusion of hydrogen into helium", "Chemical combustion", "Gravitational contraction"]
+    answer: 1
+  - id: xq048
+    category: astronomia
+    difficulty: 5
+    question: "Cosmological redshift is caused by what?"
+    options: ["Galaxies moving through space", "The expansion of space itself", "Interstellar dust", "Galactic magnetic fields"]
+    answer: 1
+  - id: xq049
+    category: computação
+    difficulty: 5
+    question: "What is the average time complexity of quicksort?"
+    options: ["O(n)", "O(n log n)", "O(n²)", "O(log n)"]
+    answer: 1
+  - id: xq050
+    category: computação
+    difficulty: 5
+    question: "Who proved the halting problem undecidable?"
+    options: ["Alonzo Church", "Alan Turing", "John von Neumann", "Claude Shannon"]
+    answer: 1
+  - id: xq051
+    category: computação
+    difficulty: 5
+    question: "What does the complexity class NP denote?"
+    options: ["Problems with no solution", "Problems verifiable in polynomial time", "Problems solvable in linear time", "Non-computable problems"]
+    answer: 1
+  - id: xq052
+    category: computação
+    difficulty: 4
+    question: "How many bits are in an IPv6 address?"
+    options: ["32", "64", "128", "256"]
+    answer: 2
+  - id: xq053
+    category: economia
+    difficulty: 5
+    question: "What does the Gini coefficient measure?"
+    options: ["Cumulative inflation", "Income inequality", "GDP growth", "Unemployment rate"]
+    answer: 1
+  - id: xq054
+    category: economia
+    difficulty: 5
+    question: "Who formulated the concept of 'creative destruction'?"
+    options: ["Adam Smith", "Joseph Schumpeter", "John Maynard Keynes", "Milton Friedman"]
+    answer: 1

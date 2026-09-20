@@ -6,7 +6,7 @@ version: 1
 items:
   - id: ho001
     category: química
-    difficulty: 4
+    difficulty: 3
     prompt: "Lowest to highest atomic number"
     entries:
       - { label: "Hydrogen", detail: "Z=1" }
@@ -15,7 +15,7 @@ items:
       - { label: "Gold", detail: "Z=79" }
   - id: ho002
     category: geologia
-    difficulty: 4
+    difficulty: 3
     prompt: "Oldest geological era to most recent"
     entries:
       - { label: "Precambrian", detail: "4,6 bi–541 Ma" }
@@ -24,7 +24,7 @@ items:
       - { label: "Cenozoic", detail: "66 Ma–hoje" }
   - id: ho003
     category: geologia
-    difficulty: 5
+    difficulty: 4
     prompt: "Oldest Mesozoic period to most recent"
     entries:
       - { label: "Triassic", detail: "252–201 Ma" }
@@ -32,7 +32,7 @@ items:
       - { label: "Cretaceous", detail: "145–66 Ma" }
   - id: ho004
     category: física
-    difficulty: 4
+    difficulty: 3
     prompt: "Shortest to longest wavelength"
     entries:
       - { label: "Gamma ray", detail: "<10 pm" }
@@ -41,7 +41,7 @@ items:
       - { label: "Radio wave", detail: ">1 m" }
   - id: ho005
     category: geologia
-    difficulty: 4
+    difficulty: 3
     prompt: "Softest to hardest on the Mohs scale"
     entries:
       - { label: "Talc", detail: "1" }
@@ -50,7 +50,7 @@ items:
       - { label: "Diamond", detail: "10" }
   - id: ho006
     category: história
-    difficulty: 4
+    difficulty: 3
     prompt: "In chronological order"
     entries:
       - { label: "Sumer", detail: "~3000 a.C." }
@@ -59,7 +59,7 @@ items:
       - { label: "Industrial Revolution", detail: "séc. XVIII" }
   - id: ho007
     category: astronomia
-    difficulty: 5
+    difficulty: 4
     prompt: "Coolest to hottest by spectral class"
     entries:
       - { label: "Class M", detail: "~3.000 K" }
@@ -68,7 +68,7 @@ items:
       - { label: "Class B", detail: "~20.000 K" }
   - id: ho008
     category: física
-    difficulty: 4
+    difficulty: 3
     prompt: "Lowest to highest energy"
     entries:
       - { label: "Infrared", detail: "baixa" }
@@ -77,7 +77,7 @@ items:
       - { label: "X-ray", detail: "muito alta" }
   - id: ho009
     category: filosofia
-    difficulty: 4
+    difficulty: 3
     prompt: "Earliest philosopher to latest"
     entries:
       - { label: "Socrates", detail: "~470 a.C." }
@@ -86,7 +86,7 @@ items:
       - { label: "Descartes", detail: "1596" }
   - id: ho010
     category: história
-    difficulty: 5
+    difficulty: 4
     prompt: "Earliest war to most recent"
     entries:
       - { label: "Hundred Years' War", detail: "1337" }
@@ -95,7 +95,7 @@ items:
       - { label: "First World War", detail: "1914" }
   - id: ho011
     category: astronomia
-    difficulty: 5
+    difficulty: 4
     prompt: "Jupiter's moons, nearest to furthest"
     entries:
       - { label: "Io", detail: "422 mil km" }
@@ -104,7 +104,7 @@ items:
       - { label: "Callisto", detail: "1,88 mi km" }
   - id: ho012
     category: química
-    difficulty: 4
+    difficulty: 3
     prompt: "Most acidic to most alkaline"
     entries:
       - { label: "Lemon juice", detail: "pH ~2" }
@@ -113,7 +113,7 @@ items:
       - { label: "Soap", detail: "pH ~10" }
   - id: ho013
     category: ciência
-    difficulty: 4
+    difficulty: 3
     prompt: "Earliest discovery to most recent"
     entries:
       - { label: "Newton's gravitation", detail: "1687" }
@@ -122,7 +122,7 @@ items:
       - { label: "Structure of DNA", detail: "1953" }
   - id: ho014
     category: física
-    difficulty: 4
+    difficulty: 3
     prompt: "Slowest to fastest"
     entries:
       - { label: "Sound in air", detail: "343 m/s" }
@@ -131,7 +131,7 @@ items:
       - { label: "Light in vacuum", detail: "3×10⁸ m/s" }
   - id: ho015
     category: história
-    difficulty: 5
+    difficulty: 4
     prompt: "Earliest Chinese dynasty to latest"
     entries:
       - { label: "Qin", detail: "221 a.C." }
@@ -140,7 +140,7 @@ items:
       - { label: "Ming", detail: "1368" }
   - id: ho016
     category: física
-    difficulty: 5
+    difficulty: 4
     prompt: "Least to most massive"
     entries:
       - { label: "Electron", detail: "9,1×10⁻³¹ kg" }
@@ -149,7 +149,7 @@ items:
       - { label: "Haemoglobin", detail: "1,1×10⁻²² kg" }
   - id: ho017
     category: física
-    difficulty: 4
+    difficulty: 3
     prompt: "Smallest to largest"
     entries:
       - { label: "Quark", detail: "<10⁻¹⁸ m" }
@@ -158,7 +158,7 @@ items:
       - { label: "DNA molecule", detail: "~2×10⁻⁹ m" }
   - id: ho018
     category: história
-    difficulty: 4
+    difficulty: 3
     prompt: "Earliest empire to latest"
     entries:
       - { label: "Ancient Egypt", detail: "~3100 a.C." }
@@ -167,7 +167,7 @@ items:
       - { label: "Byzantine Empire", detail: "395" }
   - id: ho019
     category: biologia
-    difficulty: 5
+    difficulty: 4
     prompt: "Shallowest ocean zone to deepest"
     entries:
       - { label: "Epipelagic", detail: "0–200 m" }
@@ -176,7 +176,7 @@ items:
       - { label: "Abyssal", detail: "4.000–6.000 m" }
   - id: ho020
     category: química
-    difficulty: 4
+    difficulty: 3
     prompt: "Fewest to most protons"
     entries:
       - { label: "Lithium", detail: "3" }

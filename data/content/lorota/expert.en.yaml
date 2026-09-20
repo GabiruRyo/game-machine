@@ -1,0 +1,138 @@
+id: lorota-expert
+game: lorota
+lang: en
+title: Expert — misconceptions that survive school
+version: 1
+items:
+  - id: xl001
+    category: física
+    difficulty: 5
+    topic: "Entropy"
+    lie:
+      text: "The second law forbids any local decrease in entropy"
+      note: "Local decreases are routine — a fridge does it — as long as total entropy rises."
+    truths:
+      - { text: "The entropy of an isolated system never decreases" }
+      - { text: "It counts the compatible microstates" }
+      - { text: "Reversible processes keep entropy constant" }
+  - id: xl002
+    category: física
+    difficulty: 5
+    topic: "The uncertainty principle"
+    lie:
+      text: "It exists because any measurement physically disturbs the system"
+      note: "It is an intrinsic property of conjugate pairs, not an instrumental limitation."
+    truths:
+      - { text: "It relates position and momentum" }
+      - { text: "It follows from the wave nature of matter" }
+      - { text: "It also holds for energy and time" }
+  - id: xl003
+    category: biologia
+    difficulty: 5
+    topic: "Natural selection"
+    lie:
+      text: "An individual adapts to its environment and passes the acquired adaptation on"
+      note: "That is Lamarckism. Selection acts on heritable variation already present in the population."
+    truths:
+      - { text: "Mutations are random with respect to usefulness" }
+      - { text: "Selection acts on populations" }
+      - { text: "Genetic drift weighs more in small populations" }
+  - id: xl004
+    category: física
+    difficulty: 5
+    topic: "General relativity"
+    lie:
+      text: "It describes gravity as a force carried by gravitons that have been detected"
+      note: "It describes gravity as spacetime curvature; gravitons remain hypothetical."
+    truths:
+      - { text: "It predicts light bending through gravitational lensing" }
+      - { text: "It explained the precession of Mercury's perihelion" }
+      - { text: "It predicts gravitational time dilation" }
+  - id: xl005
+    category: biologia
+    difficulty: 5
+    topic: "Antibodies"
+    lie:
+      text: "Antibodies directly kill cells that are already infected"
+      note: "Cytotoxic T lymphocytes do that; antibodies neutralise and tag targets."
+    truths:
+      - { text: "They tag pathogens for destruction" }
+      - { text: "They are produced by B lymphocytes" }
+      - { text: "Immune memory speeds up the next response" }
+  - id: xl006
+    category: biologia
+    difficulty: 5
+    topic: "Gene expression"
+    lie:
+      text: "In eukaryotes messenger RNA is translated without any processing"
+      note: "The primary transcript is spliced, capped and polyadenylated before leaving the nucleus."
+    truths:
+      - { text: "Introns are removed by splicing" }
+      - { text: "The start codon is normally AUG" }
+      - { text: "The genetic code is degenerate" }
+  - id: xl007
+    category: estatística
+    difficulty: 5
+    topic: "The p-value"
+    lie:
+      text: "A p of 0.05 means a 5% chance that the null hypothesis is true"
+      note: "It is the probability of data this extreme GIVEN the null is true — not the reverse."
+    truths:
+      - { text: "It does not measure effect size" }
+      - { text: "It depends on sample size" }
+      - { text: "It does not prove the null is false" }
+  - id: xl008
+    category: astronomia
+    difficulty: 5
+    topic: "The Big Bang"
+    lie:
+      text: "It was an explosion from one specific point in space"
+      note: "It was the expansion of space itself, happening everywhere; there is no centre."
+    truths:
+      - { text: "The cosmic microwave background is its remnant" }
+      - { text: "The universe has no observable centre" }
+      - { text: "Primordial helium abundance supports the model" }
+  - id: xl009
+    category: química
+    difficulty: 5
+    topic: "Catalysts"
+    lie:
+      text: "A catalyst shifts the equilibrium towards the products"
+      note: "It speeds both directions equally: you reach the same equilibrium, just sooner."
+    truths:
+      - { text: "It lowers the activation energy" }
+      - { text: "It is not consumed by the reaction" }
+      - { text: "Enzymes are biological catalysts" }
+  - id: xl010
+    category: neurociência
+    difficulty: 5
+    topic: "The adult brain"
+    lie:
+      text: "No region of the adult brain produces new neurons"
+      note: "There is evidence of neurogenesis in the adult hippocampus, if on a modest scale."
+    truths:
+      - { text: "Myelin speeds up impulse conduction" }
+      - { text: "Synapses use neurotransmitters" }
+      - { text: "The action potential follows all-or-nothing" }
+  - id: xl011
+    category: física
+    difficulty: 5
+    topic: "Mass and velocity"
+    lie:
+      text: "Under relativity, a body's mass increases with its velocity"
+      note: "The modern formulation treats mass as invariant; what grows without bound is energy."
+    truths:
+      - { text: "Nothing with mass reaches the speed of light" }
+      - { text: "Energy grows without bound approaching c" }
+      - { text: "Rest mass is the same in every frame" }
+  - id: xl012
+    category: física
+    difficulty: 5
+    topic: "Absolute zero"
+    lie:
+      text: "With enough refrigeration, absolute zero can be reached"
+      note: "The third law of thermodynamics forbids it: it would take infinitely many steps."
+    truths:
+      - { text: "It corresponds to 0 K, or −273.15 °C" }
+      - { text: "Labs have reached the nanokelvin range" }
+      - { text: "There thermal motion is minimal, not absent" }

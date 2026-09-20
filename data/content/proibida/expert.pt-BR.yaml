@@ -1,0 +1,66 @@
+id: proibida-expert
+game: proibida
+lang: pt-BR
+title: Expert — abstrações
+version: 1
+items:
+  - id: xp001
+    category: filosofia
+    difficulty: 5
+    word: "Dialética"
+    forbidden: ["debate", "tese", "oposto", "ideia"]
+  - id: xp002
+    category: filosofia
+    difficulty: 5
+    word: "Epistemologia"
+    forbidden: ["conhecimento", "estudo", "saber", "filosofia"]
+  - id: xp003
+    category: linguagem
+    difficulty: 5
+    word: "Serendipidade"
+    forbidden: ["acaso", "descoberta", "sorte", "encontrar"]
+  - id: xp004
+    category: ciência
+    difficulty: 5
+    word: "Paradigma"
+    forbidden: ["modelo", "mudança", "ciência", "padrão"]
+  - id: xp005
+    category: sentimento
+    difficulty: 5
+    word: "Melancolia"
+    forbidden: ["tristeza", "saudade", "humor", "profunda"]
+  - id: xp006
+    category: física
+    difficulty: 5
+    word: "Inércia"
+    forbidden: ["parado", "movimento", "Newton", "resistir"]
+  - id: xp007
+    category: linguagem
+    difficulty: 5
+    word: "Ambiguidade"
+    forbidden: ["duplo", "sentido", "confuso", "interpretar"]
+  - id: xp008
+    category: linguagem
+    difficulty: 5
+    word: "Retórica"
+    forbidden: ["discurso", "convencer", "falar", "arte"]
+  - id: xp009
+    category: sociedade
+    difficulty: 5
+    word: "Utopia"
+    forbidden: ["perfeito", "lugar", "ideal", "sonho"]
+  - id: xp010
+    category: sociedade
+    difficulty: 5
+    word: "Idiossincrasia"
+    forbidden: ["peculiar", "pessoa", "jeito", "único"]
+  - id: xp011
+    category: filosofia
+    difficulty: 5
+    word: "Ceticismo"
+    forbidden: ["dúvida", "acreditar", "questionar", "prova"]
+  - id: xp012
+    category: geologia
+    difficulty: 5
+    word: "Antropoceno"
+    forbidden: ["humano", "era", "planeta", "impacto"]

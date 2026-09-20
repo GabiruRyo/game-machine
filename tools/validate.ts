@@ -85,6 +85,8 @@ interface Loaded {
   lang: string
   ids: string[]
   usable: number
+  /** Count of usable items at each difficulty tier 1-5. */
+  tiers: number[]
 }
 const loaded: Loaded[] = []
 
@@ -98,9 +100,9 @@ for (const entry of entries) {
   const { items, rejected, issues } = parsePack(raw, entry, ITEM_SCHEMAS)
   for (const issue of issues) fail(`${issue.path}: ${issue.message}`)
 
-  const usable = items.filter((item) =>
-    passesFilters(item, config, !DIFFICULTY_FREE_GAMES.has(entry.game)),
-  ).length
+  const usableItems = items.filter((item) => passesFilters(item, config))
+  const usable = usableItems.length
+  const tiers = [1, 2, 3, 4, 5].map((t) => usableItems.filter((i) => i.difficulty === t).length)
   const header = packHeaderSchema.safeParse(parseYaml(raw))
   loaded.push({
     headerId: header.success ? header.data.id : entry.id,
@@ -108,6 +110,7 @@ for (const entry of entries) {
     lang: entry.lang,
     ids: items.map((i) => i.id),
     usable,
+    tiers,
   })
 
   const filteredOut = items.length - usable
@@ -161,6 +164,33 @@ for (const gameId of Object.keys(ITEM_SCHEMAS)) {
     const total = loaded.filter((p) => p.game === gameId && p.lang === lang).reduce((s, p) => s + p.usable, 0)
     if (total === 0) fail(`${gameId} has no playable content in ${lang} (check content.filters in config.yaml)`)
   }
+}
+
+// ─── difficulty coverage ─────────────────────────────────────────────────────
+// Difficulty is chosen per game at play time, so what matters is whether each
+// preset has anything left to draw once a game narrows to it.
+console.log(c.bold('\ndifficulty coverage (pt-BR)'))
+const PRESETS: Array<[string, number[]]> = [
+  ['easy 1-2', [1, 2]],
+  ['medium 2-3', [2, 3]],
+  ['hard 3-4', [3, 4]],
+  ['expert 4-5', [4, 5]],
+]
+console.log(c.dim(`  ${'game'.padEnd(12)}${PRESETS.map(([n]) => n.padStart(12)).join('')}`))
+
+for (const gameId of Object.keys(ITEM_SCHEMAS)) {
+  const free = DIFFICULTY_FREE_GAMES.has(gameId)
+  const packs = loaded.filter((p) => p.game === gameId && p.lang === 'pt-BR')
+  const total = packs.reduce((sum, p) => sum + p.usable, 0)
+
+  const cells = PRESETS.map(([, tiers]) => {
+    if (free) return c.dim('n/a'.padStart(12))
+    const n = packs.reduce((sum, p) => sum + tiers.reduce((t, tier) => t + (p.tiers[tier - 1] ?? 0), 0), 0)
+    if (n === 0) { fail(`${gameId} has nothing at difficulty ${tiers.join('-')}`); return c.red(String(n).padStart(21)) }
+    if (n < 10) { warn(`${gameId} has only ${n} items at difficulty ${tiers.join('-')}`); return c.yellow(String(n).padStart(21)) }
+    return String(n).padStart(12)
+  })
+  console.log(`  ${gameId.padEnd(12)}${cells.join('')}${free ? c.dim('  (difficulty not used)') : ''} ${c.dim(`[${total} total]`)}`)
 }
 
 // ─── summary ─────────────────────────────────────────────────────────────────

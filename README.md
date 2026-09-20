@@ -75,31 +75,35 @@ Full English and Brazilian Portuguese, switchable from the menu or by setting
 
 ## Difficulty
 
-Every content item carries a difficulty from 1 to 5, and **Dificuldade / Difficulty**
-in the menu cycles the slice in play:
+Difficulty is set **per game**, in the game picker: `↑` `↓` moves between games,
+`←` `→` changes the difficulty of the highlighted one. Quiz Relâmpago can sit on
+Expert while Verdade ou Lorota stays on Easy.
 
-| Preset | Tiers |
-|---|---|
-| Everything | 1-5 |
-| Easy | 1-2 |
-| Medium | 2-3 |
-| Hard | 3-4 |
-| Expert | 4-5 |
+| Preset | Tiers | Should be answerable by |
+|---|---|---|
+| Everything | 1-5 | |
+| Easy | 1-2 | anyone in the room |
+| Medium | 2-3 | most adults, after a moment |
+| Hard | 3-4 | someone who paid attention at school |
+| Expert | 4-5 | someone who studied the subject |
 
-The hard tiers are school-curriculum and early-university material — physics, chemistry,
-biology, maths, history, geography, literature and astronomy — not pop culture.
+The Expert tier is university-level: Cp/Cv for a monatomic ideal gas, the
+hybridisation of carbon in carbonate, how many groups of order 4 exist up to
+isomorphism, which treaty ended the Thirty Years' War. Distractors are all
+plausible, so half-knowing the field does not get you there.
 
-Two things make difficulty more than a filter:
+Two further knobs, in `config.yaml`:
 
-- **`content.curve: ramp`** (the default) opens a game on the easiest allowed tier and
-  climbs to the hardest, so a round of Quiz Relâmpago warms up and then bites. Set it to
-  `flat` to draw anywhere in range.
-- **`difficulty_bonus`** pays more for harder items: at the default `0.25`, a level-5
-  question is worth double a level-1. A hard bank rewards you rather than punishing you.
+- **`content.curve: ramp`** (the default) opens a game on the easiest allowed tier
+  and climbs to the hardest. `flat` draws anywhere in range.
+- **`difficulty_bonus`** pays more for harder items: at the default `0.25` a
+  level-5 question is worth double a level-1, so a hard bank rewards you.
 
-Difficulty is skipped for the four social games (Quem Diria, Tribunal, Histórias Malucas,
-Legendas) — there is no hard version of "who would lose their phone" — so choosing Expert
-narrows the knowledge games without emptying half the pack.
+Each game may also pin its own default with `games.<id>.difficulty: [4, 5]`.
+
+Difficulty is skipped entirely for the four social games (Quem Diria, Tribunal,
+Histórias Malucas, Legendas) — there is no hard version of "who would lose their
+phone" — so putting the knowledge games on Expert never empties the pack.
 
 ## Keeping it fresh
 

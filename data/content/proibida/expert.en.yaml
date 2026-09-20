@@ -1,0 +1,66 @@
+id: proibida-expert
+game: proibida
+lang: en
+title: Expert — abstractions
+version: 1
+items:
+  - id: xp001
+    category: filosofia
+    difficulty: 5
+    word: "Dialectic"
+    forbidden: ["debate", "thesis", "opposite", "idea"]
+  - id: xp002
+    category: filosofia
+    difficulty: 5
+    word: "Epistemology"
+    forbidden: ["knowledge", "study", "knowing", "philosophy"]
+  - id: xp003
+    category: linguagem
+    difficulty: 5
+    word: "Serendipity"
+    forbidden: ["chance", "discovery", "luck", "find"]
+  - id: xp004
+    category: ciência
+    difficulty: 5
+    word: "Paradigm"
+    forbidden: ["model", "shift", "science", "pattern"]
+  - id: xp005
+    category: sentimento
+    difficulty: 5
+    word: "Melancholy"
+    forbidden: ["sadness", "longing", "mood", "deep"]
+  - id: xp006
+    category: física
+    difficulty: 5
+    word: "Inertia"
+    forbidden: ["still", "motion", "Newton", "resist"]
+  - id: xp007
+    category: linguagem
+    difficulty: 5
+    word: "Ambiguity"
+    forbidden: ["double", "meaning", "unclear", "interpret"]
+  - id: xp008
+    category: linguagem
+    difficulty: 5
+    word: "Rhetoric"
+    forbidden: ["speech", "persuade", "talk", "art"]
+  - id: xp009
+    category: sociedade
+    difficulty: 5
+    word: "Utopia"
+    forbidden: ["perfect", "place", "ideal", "dream"]
+  - id: xp010
+    category: sociedade
+    difficulty: 5
+    word: "Idiosyncrasy"
+    forbidden: ["peculiar", "person", "way", "unique"]
+  - id: xp011
+    category: filosofia
+    difficulty: 5
+    word: "Scepticism"
+    forbidden: ["doubt", "believe", "question", "proof"]
+  - id: xp012
+    category: geologia
+    difficulty: 5
+    word: "Anthropocene"
+    forbidden: ["human", "epoch", "planet", "impact"]

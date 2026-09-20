@@ -3,7 +3,13 @@ import { configureAudio, play, unlockAudio } from '../engine/audio'
 import { loadConfig, type ConfigIssue } from '../engine/config'
 import type { AppConfig, Lang } from '../engine/configSchema'
 import { loadContent, type ContentIndex } from '../engine/content'
-import { DIFFICULTY_PRESETS, PRESET_ORDER, presetFor, type DifficultyPreset } from '../engine/difficulty'
+import {
+  DIFFICULTY_PRESETS,
+  PRESET_ORDER,
+  itemsAtDifficulty,
+  presetFor,
+  type DifficultyPreset,
+} from '../engine/difficulty'
 import type { BaseItem } from '../engine/contentSchema'
 import { toggleFullscreen, useKeyboard } from '../engine/input'
 import { buildPartyQueue, type PartyLeg } from '../engine/party'
@@ -47,27 +53,10 @@ export function App() {
       document.documentElement.classList.toggle('big-text', loaded.display.big_text)
       setConfig(loaded)
       setPlayers(playersFromConfig(loaded))
-      setContent(await loadContent(loaded, itemSchemas(), '/content', DIFFICULTY_FREE_GAMES))
+      setContent(await loadContent(loaded, itemSchemas()))
       setRoute({ name: 'menu' })
     })()
   }, [])
-
-  const cycleDifficulty = useCallback(() => {
-    if (!config) return
-    const current = presetFor(config.content.filters.difficulty) ?? 'all'
-    const next = PRESET_ORDER[(PRESET_ORDER.indexOf(current) + 1) % PRESET_ORDER.length] ?? 'all'
-    const updated: AppConfig = {
-      ...config,
-      content: {
-        ...config.content,
-        filters: { ...config.content.filters, difficulty: [...DIFFICULTY_PRESETS[next]] },
-      },
-    }
-    setConfig(updated)
-    // The difficulty filter is applied at load time, so the bank must be rebuilt.
-    void loadContent(updated, itemSchemas(), '/content', DIFFICULTY_FREE_GAMES).then(setContent)
-    play('move')
-  }, [config])
 
   const switchLanguage = useCallback(() => {
     if (!config) return
@@ -76,7 +65,7 @@ export function App() {
     const updated = { ...config, language: next }
     setLanguage(next)
     setConfig(updated)
-    void loadContent(updated, itemSchemas(), '/content', DIFFICULTY_FREE_GAMES).then(setContent)
+    void loadContent(updated, itemSchemas()).then(setContent)
     play('move')
   }, [config, lang])
 
@@ -86,17 +75,51 @@ export function App() {
     }, []),
   )
 
+  /**
+   * Difficulty is chosen per game: the knowledge games can sit on Expert while
+   * the social games stay untouched. Falls back to the game's own config block,
+   * then to the global default.
+   */
+  const [chosen, setChosen] = useState<Record<string, number[]>>({})
+
+  const difficultyFor = useCallback(
+    (gameId: string): number[] => {
+      const override = (config?.games[gameId] as { difficulty?: number[] } | undefined)?.difficulty
+      return chosen[gameId] ?? override ?? config?.content.filters.difficulty ?? [1, 2, 3, 4, 5]
+    },
+    [chosen, config],
+  )
+
+  const cycleDifficulty = useCallback(
+    (gameId: string, delta: number) => {
+      const current = presetFor(difficultyFor(gameId)) ?? 'all'
+      const at = PRESET_ORDER.indexOf(current)
+      const next = PRESET_ORDER[(at + delta + PRESET_ORDER.length) % PRESET_ORDER.length] ?? 'all'
+      setChosen((prev) => ({ ...prev, [gameId]: [...DIFFICULTY_PRESETS[next]] }))
+      play('move')
+    },
+    [difficultyFor],
+  )
+
   /** Enabled in config, has content for this language, and has enough players. */
   const playability = useMemo(() => {
-    const map = new Map<string, { count: number; reason: 'ok' | 'disabled' | 'players' | 'empty' }>()
+    const map = new Map<
+      string,
+      { count: number; reason: 'ok' | 'disabled' | 'players' | 'empty'; preset: DifficultyPreset | null; usesDifficulty: boolean }
+    >()
     for (const game of GAMES) {
-      const count = content?.byGame.get(game.id)?.length ?? 0
+      const usesDifficulty = !DIFFICULTY_FREE_GAMES.has(game.id)
+      const count = itemsAtDifficulty(
+        content?.byGame.get(game.id) ?? [],
+        difficultyFor(game.id),
+        usesDifficulty,
+      ).length
       const enabled = (config?.games[game.id] as { enabled?: boolean } | undefined)?.enabled !== false
       const reason = !enabled ? 'disabled' : players.length < game.minPlayers ? 'players' : count === 0 ? 'empty' : 'ok'
-      map.set(game.id, { count, reason })
+      map.set(game.id, { count, reason, preset: presetFor(difficultyFor(game.id)), usesDifficulty })
     }
     return map
-  }, [content, config, players.length])
+  }, [content, config, players.length, difficultyFor])
 
   const playableIds = useMemo(
     () => GAMES.filter((g) => playability.get(g.id)?.reason === 'ok').map((g) => g.id),
@@ -130,10 +153,12 @@ export function App() {
       )
     }
 
-    const picker = createPicker<BaseItem>(`${gameId}:${lang}`, content.byGame.get(gameId) ?? [], {
-      policy: config.content.repeat,
-      store: browserStore(),
-    })
+    const allowed = difficultyFor(gameId)
+    const picker = createPicker<BaseItem>(
+      `${gameId}:${lang}`,
+      itemsAtDifficulty(content.byGame.get(gameId) ?? [], allowed, !DIFFICULTY_FREE_GAMES.has(gameId)),
+      { policy: config.content.repeat, store: browserStore() },
+    )
 
     return (
       <game.Component
@@ -142,7 +167,7 @@ export function App() {
         players={players}
         picker={picker}
         multiplier={multiplier}
-        difficulty={{ allowed: config.content.filters.difficulty, curve: config.content.curve }}
+        difficulty={{ allowed, curve: config.content.curve }}
         onFinish={onFinish}
         onExit={() => setRoute({ name: 'menu' })}
       />
@@ -156,8 +181,6 @@ export function App() {
           config={config}
           players={players}
           partyReady={playableIds.length > 0}
-          difficulty={presetFor(config.content.filters.difficulty)}
-          onDifficulty={cycleDifficulty}
           contentIssues={content.issues}
           onPick={() => setRoute({ name: 'pick' })}
           onParty={() => {
@@ -182,6 +205,7 @@ export function App() {
       return (
         <GamePicker
           playability={playability}
+          onAdjust={cycleDifficulty}
           onStart={(gameId) => {
             unlockAudio()
             play('reveal')
@@ -249,23 +273,19 @@ function MainMenu({
   config,
   players,
   partyReady,
-  difficulty,
   contentIssues,
   onPick,
   onParty,
   onPlayers,
   onLanguage,
-  onDifficulty,
   onResetContent,
 }: {
   config: AppConfig
   players: Player[]
   partyReady: boolean
-  difficulty: DifficultyPreset | null
   contentIssues: ConfigIssue[]
   onPick: () => void
   onParty: () => void
-  onDifficulty: () => void
   onPlayers: () => void
   onLanguage: () => void
   onResetContent: () => void
@@ -279,11 +299,6 @@ function MainMenu({
     { id: 'play', label: t('menu.play') },
     { id: 'party', label: t('menu.party'), meta: `${config.party_mode.games}`, disabled: !partyReady },
     { id: 'players', label: t('menu.players'), meta: `${players.length}` },
-    {
-      id: 'difficulty',
-      label: t('menu.difficulty'),
-      meta: difficulty ? t(`difficulty.${difficulty}`) : t('difficulty.custom'),
-    },
     { id: 'language', label: t('menu.language'), meta: LANGUAGE_NAMES[lang] },
     { id: 'reset', label: t('menu.resetContent') },
   ]
@@ -294,7 +309,6 @@ function MainMenu({
       case 'play': onPick(); break
       case 'party': onParty(); break
       case 'players': onPlayers(); break
-      case 'difficulty': onDifficulty(); break
       case 'language': onLanguage(); break
       case 'reset': onResetContent(); setResetDone(true); break
       default: break
@@ -312,7 +326,7 @@ function MainMenu({
   }
 
   return (
-    <Screen bottom={<KeyHints hints={[t('keys.adjust'), t('keys.advance'), t('keys.fullscreen')]} />}>
+    <Screen bottom={<KeyHints hints={[t('keys.navigate'), t('keys.advance'), t('keys.fullscreen')]} />}>
       <div className="center">
         <h1 className="title title--huge">{t('app.title')}</h1>
         <p className="subtitle">{greeting}</p>
@@ -331,26 +345,49 @@ function MainMenu({
   )
 }
 
+interface Playability {
+  count: number
+  reason: 'ok' | 'disabled' | 'players' | 'empty'
+  preset: DifficultyPreset | null
+  usesDifficulty: boolean
+}
+
 function GamePicker({
   playability,
   onStart,
+  onAdjust,
   onBack,
 }: {
-  playability: Map<string, { count: number; reason: 'ok' | 'disabled' | 'players' | 'empty' }>
+  playability: Map<string, Playability>
   onStart: (gameId: string) => void
+  onAdjust: (gameId: string, delta: number) => void
   onBack: () => void
 }) {
   const { t } = useI18n()
 
   const entries: MenuEntry[] = GAMES.map((game) => {
     const state = playability.get(game.id)
-    const meta =
+
+    // Difficulty sits in the meta column, so it is adjustable right where you
+    // pick the game rather than hidden behind a global setting.
+    const difficulty = !state?.usesDifficulty
+      ? null
+      : state.preset
+        ? t(`difficulty.${state.preset}`)
+        : t('difficulty.custom')
+
+    const status =
       state?.reason === 'disabled' ? t('menu.disabled')
       : state?.reason === 'players' ? t('errors.needPlayers', { count: game.minPlayers })
       : state?.reason === 'empty' ? t('menu.contentEmpty')
       : t('menu.itemsAvailable', { count: state?.count ?? 0 })
 
-    return { id: game.id, label: t(`games.${game.id}.name`), meta, disabled: state?.reason !== 'ok' }
+    return {
+      id: game.id,
+      label: t(`games.${game.id}.name`),
+      meta: difficulty ? `${difficulty}  ·  ${status}` : status,
+      disabled: state?.reason !== 'ok',
+    }
   })
 
   const { index } = useMenuNav(
@@ -359,13 +396,19 @@ function GamePicker({
       const entry = entries[i]
       if (entry && !entry.disabled) onStart(entry.id)
     },
-    { onBack },
+    {
+      onBack,
+      onAdjust: (i, delta) => {
+        const entry = entries[i]
+        if (entry && playability.get(entry.id)?.usesDifficulty) onAdjust(entry.id, delta)
+      },
+    },
   )
 
   const highlighted = entries[index]
 
   return (
-    <Screen bottom={<KeyHints hints={[t('keys.adjust'), t('keys.advance'), t('keys.pause')]} />}>
+    <Screen bottom={<KeyHints hints={[t('keys.navigate'), t('keys.adjust'), t('keys.advance'), t('keys.pause')]} />}>
       <h1 className="title">{t('menu.play')}</h1>
       <MenuList
         entries={entries}

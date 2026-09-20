@@ -101,9 +101,16 @@ guide: `data/content/README.md`.
 - **motion writes `transform` inline, which beats any CSS `transform`.** Hover and active
   movement on `.option` and `.menu__item` therefore live in `whileHover`/`animate`, not in
   the stylesheet. Colour, shadow and border stay in CSS.
-- **Difficulty is applied when content loads, not when it is drawn**, so changing the
-  preset reloads the bank (same path as the language switch). Games listed in
-  `DIFFICULTY_FREE_GAMES` skip the filter entirely.
+- **Difficulty is per game and applied when a game's picker is built**, not at load time
+  and not globally. `passesFilters` deliberately ignores difficulty; `itemsAtDifficulty`
+  does the slicing. Games in `DIFFICULTY_FREE_GAMES` ignore it entirely.
+- **`↑`/`↓` navigate a list, `←`/`→` adjust the highlighted row.** They used to be the
+  same `adjust` action; splitting them is what let the game picker carry a per-row
+  difficulty control. `useMenuNav` takes an `onAdjust` for that.
+- **Be honest about difficulty tiers.** The first "hard" pack was school-level recall
+  ("largest prime under 100") tagged 4-5, which made Expert meaningless. Tier 5 must
+  require having studied the subject; see the scale in `data/content/README.md`.
+  `npm run validate` prints per-preset coverage and fails a game with an empty tier.
 
 ## Verifying a change
 

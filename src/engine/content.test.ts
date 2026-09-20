@@ -20,21 +20,14 @@ const item = (over: Partial<BaseItem> = {}): BaseItem => ({
 })
 
 describe('passesFilters', () => {
-  const expertOnly = configWith('content: { filters: { difficulty: [4, 5] } }')
-
-  it('drops items outside the difficulty slice', () => {
-    expect(passesFilters(item({ difficulty: 2 }), expertOnly)).toBe(false)
-    expect(passesFilters(item({ difficulty: 5 }), expertOnly)).toBe(true)
+  it('leaves difficulty alone: it is chosen per game, after loading', () => {
+    const expertOnly = configWith('content: { filters: { difficulty: [4, 5] } }')
+    expect(passesFilters(item({ difficulty: 1 }), expertOnly)).toBe(true)
   })
 
-  it('ignores difficulty for games where it carries no meaning', () => {
-    // A social prompt has no hard variant; narrowing to Expert must not empty it.
-    expect(passesFilters(item({ difficulty: 1 }), expertOnly, false)).toBe(true)
-  })
-
-  it('still applies audience and tag filters when difficulty is exempt', () => {
+  it('still applies audience filters', () => {
     const family = configWith('content: { filters: { audience: [family] } }')
-    expect(passesFilters(item({ audience: 'adult' }), family, false)).toBe(false)
+    expect(passesFilters(item({ audience: 'adult' }), family)).toBe(false)
   })
 
   it('excludes tagged items and honours an include list', () => {

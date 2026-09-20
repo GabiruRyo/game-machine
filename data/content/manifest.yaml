@@ -47,3 +47,13 @@ packs:
   - { id: lorota-hard-en,   game: lorota,   lang: en,    file: lorota/hard.en.yaml,      title: "Hard — scientific misconceptions", auto: true }
   - { id: proibida-hard-pt, game: proibida, lang: pt-BR, file: proibida/hard.pt-BR.yaml, title: "Difícil — conceitos abstratos",    auto: true }
   - { id: proibida-hard-en, game: proibida, lang: en,    file: proibida/hard.en.yaml,    title: "Hard — abstract concepts",         auto: true }
+
+# ─── Expert packs (difficulty 5) ─────────────────────────────────────────────
+  - { id: quiz-expert-pt,   game: quiz,   lang: pt-BR, file: quiz/expert.pt-BR.yaml,   title: "Expert — nível universitário", auto: true }
+  - { id: quiz-expert-en,   game: quiz,   lang: en,    file: quiz/expert.en.yaml,      title: "Expert — university level",    auto: true }
+  - { id: ordem-expert-pt,  game: ordem,  lang: pt-BR, file: ordem/expert.pt-BR.yaml,  title: "Expert — nível universitário", auto: true }
+  - { id: ordem-expert-en,  game: ordem,  lang: en,    file: ordem/expert.en.yaml,     title: "Expert — university level",    auto: true }
+  - { id: lorota-expert-pt, game: lorota, lang: pt-BR, file: lorota/expert.pt-BR.yaml, title: "Expert — equívocos",           auto: true }
+  - { id: lorota-expert-en, game: lorota, lang: en,    file: lorota/expert.en.yaml,    title: "Expert — misconceptions",      auto: true }
+  - { id: proibida-expert-pt, game: proibida, lang: pt-BR, file: proibida/expert.pt-BR.yaml, title: "Expert — abstrações",  auto: true }
+  - { id: proibida-expert-en, game: proibida, lang: en,    file: proibida/expert.en.yaml,    title: "Expert — abstractions", auto: true }

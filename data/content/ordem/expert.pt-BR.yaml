@@ -1,0 +1,141 @@
+id: ordem-expert
+game: ordem
+lang: pt-BR
+title: Expert — nível universitário
+version: 1
+items:
+  - id: xo001
+    category: química
+    difficulty: 5
+    prompt: "Da menor à maior eletronegatividade (Pauling)"
+    entries:
+      - { label: "Césio", detail: "0,79" }
+      - { label: "Hidrogênio", detail: "2,20" }
+      - { label: "Nitrogênio", detail: "3,04" }
+      - { label: "Flúor", detail: "3,98" }
+  - id: xo002
+    category: geologia
+    difficulty: 5
+    prompt: "Do período mais antigo ao mais recente do Paleozoico"
+    entries:
+      - { label: "Cambriano", detail: "541 Ma" }
+      - { label: "Ordoviciano", detail: "485 Ma" }
+      - { label: "Siluriano", detail: "444 Ma" }
+      - { label: "Devoniano", detail: "419 Ma" }
+  - id: xo003
+    category: química
+    difficulty: 5
+    prompt: "Da menor à maior energia de ionização"
+    entries:
+      - { label: "Sódio", detail: "496 kJ/mol" }
+      - { label: "Magnésio", detail: "738 kJ/mol" }
+      - { label: "Nitrogênio", detail: "1.402 kJ/mol" }
+      - { label: "Hélio", detail: "2.372 kJ/mol" }
+  - id: xo004
+    category: ciência
+    difficulty: 5
+    prompt: "Da descoberta mais antiga à mais recente"
+    entries:
+      - { label: "Mecânica quântica de Heisenberg", detail: "1925" }
+      - { label: "Modelo do átomo primordial", detail: "1931" }
+      - { label: "Fissão nuclear", detail: "1938" }
+      - { label: "Transistor", detail: "1947" }
+  - id: xo005
+    category: química
+    difficulty: 5
+    prompt: "Do mais ácido ao mais básico"
+    entries:
+      - { label: "HCl 1 mol/L", detail: "pH 0" }
+      - { label: "Vinagre", detail: "pH 2,5" }
+      - { label: "Leite", detail: "pH 6,7" }
+      - { label: "Amônia doméstica", detail: "pH 11" }
+  - id: xo006
+    category: química
+    difficulty: 5
+    prompt: "Da menor à maior massa molar"
+    entries:
+      - { label: "Água", detail: "18 g/mol" }
+      - { label: "Dióxido de carbono", detail: "44 g/mol" }
+      - { label: "Glicose", detail: "180 g/mol" }
+      - { label: "Hemoglobina", detail: "~64.500 g/mol" }
+  - id: xo007
+    category: história
+    difficulty: 5
+    prompt: "Da civilização mesoamericana mais antiga à mais recente"
+    entries:
+      - { label: "Olmeca", detail: "~1200 a.C." }
+      - { label: "Maia clássico", detail: "~250" }
+      - { label: "Tolteca", detail: "~900" }
+      - { label: "Asteca", detail: "~1345" }
+  - id: xo008
+    category: astronomia
+    difficulty: 5
+    prompt: "Da menor à maior velocidade de escape"
+    entries:
+      - { label: "Lua", detail: "2,4 km/s" }
+      - { label: "Marte", detail: "5,0 km/s" }
+      - { label: "Terra", detail: "11,2 km/s" }
+      - { label: "Júpiter", detail: "59,5 km/s" }
+  - id: xo009
+    category: física
+    difficulty: 5
+    prompt: "Da menor à maior condutividade térmica"
+    entries:
+      - { label: "Madeira", detail: "~0,15 W/mK" }
+      - { label: "Água", detail: "0,6 W/mK" }
+      - { label: "Aço", detail: "~50 W/mK" }
+      - { label: "Cobre", detail: "400 W/mK" }
+  - id: xo010
+    category: geologia
+    difficulty: 5
+    prompt: "Do período mais antigo ao mais recente do Cenozoico"
+    entries:
+      - { label: "Paleoceno", detail: "66 Ma" }
+      - { label: "Eoceno", detail: "56 Ma" }
+      - { label: "Oligoceno", detail: "34 Ma" }
+      - { label: "Mioceno", detail: "23 Ma" }
+  - id: xo011
+    category: geologia
+    difficulty: 5
+    prompt: "Do mais macio ao mais duro na escala Mohs"
+    entries:
+      - { label: "Gesso", detail: "2" }
+      - { label: "Fluorita", detail: "4" }
+      - { label: "Ortoclásio", detail: "6" }
+      - { label: "Coríndon", detail: "9" }
+  - id: xo012
+    category: filosofia
+    difficulty: 5
+    prompt: "Do filósofo mais antigo ao mais recente"
+    entries:
+      - { label: "Descartes", detail: "1596" }
+      - { label: "Locke", detail: "1632" }
+      - { label: "Hume", detail: "1711" }
+      - { label: "Kant", detail: "1724" }
+  - id: xo013
+    category: física
+    difficulty: 5
+    prompt: "Da menor à maior meia-vida"
+    entries:
+      - { label: "Rádio-226", detail: "1.600 anos" }
+      - { label: "Carbono-14", detail: "5.730 anos" }
+      - { label: "Urânio-235", detail: "704 Ma" }
+      - { label: "Urânio-238", detail: "4,47 Ga" }
+  - id: xo014
+    category: biologia
+    difficulty: 5
+    prompt: "Do menor ao maior"
+    entries:
+      - { label: "Próton", detail: "~10⁻¹⁵ m" }
+      - { label: "Átomo de hidrogênio", detail: "~10⁻¹⁰ m" }
+      - { label: "Largura da dupla-hélice", detail: "~2 nm" }
+      - { label: "Vírus da gripe", detail: "~100 nm" }
+  - id: xo015
+    category: física
+    difficulty: 5
+    prompt: "Da menor à maior frequência"
+    entries:
+      - { label: "Onda longa (LF)", detail: "30–300 kHz" }
+      - { label: "Onda média (MF)", detail: "0,3–3 MHz" }
+      - { label: "Onda curta (HF)", detail: "3–30 MHz" }
+      - { label: "VHF", detail: "30–300 MHz" }

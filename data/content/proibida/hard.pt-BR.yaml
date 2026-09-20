@@ -6,151 +6,151 @@ version: 1
 items:
   - id: hp001
     category: ciência
-    difficulty: 4
+    difficulty: 3
     word: "Entropia"
     forbidden: ["desordem", "energia", "física", "caos"]
   - id: hp002
     category: ciência
-    difficulty: 4
+    difficulty: 3
     word: "Fotossíntese"
     forbidden: ["planta", "luz", "clorofila", "oxigênio"]
   - id: hp003
     category: sociedade
-    difficulty: 4
+    difficulty: 3
     word: "Democracia"
     forbidden: ["voto", "povo", "governo", "eleição"]
   - id: hp004
     category: ciência
-    difficulty: 4
+    difficulty: 3
     word: "Gravidade"
     forbidden: ["cair", "peso", "Newton", "maçã"]
   - id: hp005
     category: economia
-    difficulty: 5
+    difficulty: 4
     word: "Inflação"
     forbidden: ["preço", "dinheiro", "aumentar", "economia"]
   - id: hp006
     category: biologia
-    difficulty: 4
+    difficulty: 3
     word: "Metamorfose"
     forbidden: ["mudança", "borboleta", "lagarta", "transformar"]
   - id: hp007
     category: tecnologia
-    difficulty: 5
+    difficulty: 4
     word: "Algoritmo"
     forbidden: ["computador", "passo", "programa", "resolver"]
   - id: hp008
     category: matemática
-    difficulty: 4
+    difficulty: 3
     word: "Simetria"
     forbidden: ["igual", "espelho", "lado", "forma"]
   - id: hp009
     category: biologia
-    difficulty: 4
+    difficulty: 3
     word: "Evolução"
     forbidden: ["Darwin", "espécie", "adaptar", "natural"]
   - id: hp010
     category: biologia
-    difficulty: 5
+    difficulty: 4
     word: "Osmose"
     forbidden: ["água", "membrana", "célula", "passar"]
   - id: hp011
     category: linguagem
-    difficulty: 5
+    difficulty: 4
     word: "Ironia"
     forbidden: ["contrário", "dizer", "sarcasmo", "humor"]
   - id: hp012
     category: sentimento
-    difficulty: 4
+    difficulty: 3
     word: "Nostalgia"
     forbidden: ["passado", "saudade", "lembrar", "sentimento"]
   - id: hp013
     category: ciência
-    difficulty: 4
+    difficulty: 3
     word: "Hipótese"
     forbidden: ["teoria", "testar", "ciência", "suposição"]
   - id: hp014
     category: lógica
-    difficulty: 5
+    difficulty: 4
     word: "Paradoxo"
     forbidden: ["contradição", "lógica", "impossível", "verdade"]
   - id: hp015
     category: biologia
-    difficulty: 4
+    difficulty: 3
     word: "Ecossistema"
     forbidden: ["natureza", "animal", "ambiente", "equilíbrio"]
   - id: hp016
     category: medicina
-    difficulty: 4
+    difficulty: 3
     word: "Vacina"
     forbidden: ["imunidade", "doença", "injeção", "vírus"]
   - id: hp017
     category: ciência
-    difficulty: 4
+    difficulty: 3
     word: "Anatomia"
     forbidden: ["corpo", "órgão", "estudo", "humano"]
   - id: hp018
     category: matemática
-    difficulty: 4
+    difficulty: 3
     word: "Infinito"
     forbidden: ["fim", "número", "sempre", "grande"]
   - id: hp019
     category: sociedade
-    difficulty: 5
+    difficulty: 4
     word: "Diplomacia"
     forbidden: ["país", "acordo", "negociar", "embaixador"]
   - id: hp020
     category: sentimento
-    difficulty: 4
+    difficulty: 3
     word: "Empatia"
     forbidden: ["sentir", "outro", "lugar", "compreender"]
   - id: hp021
     category: química
-    difficulty: 5
+    difficulty: 4
     word: "Catalisador"
     forbidden: ["reação", "acelerar", "química", "substância"]
   - id: hp022
     category: arte
-    difficulty: 5
+    difficulty: 4
     word: "Perspectiva"
     forbidden: ["desenho", "ponto de vista", "profundidade", "ver"]
   - id: hp023
     category: sociedade
-    difficulty: 5
+    difficulty: 4
     word: "Burocracia"
     forbidden: ["papel", "governo", "lento", "processo"]
   - id: hp024
     category: biologia
-    difficulty: 5
+    difficulty: 4
     word: "Enzima"
     forbidden: ["proteína", "reação", "corpo", "acelerar"]
   - id: hp025
     category: astronomia
-    difficulty: 4
+    difficulty: 3
     word: "Órbita"
     forbidden: ["girar", "planeta", "volta", "satélite"]
   - id: hp026
     category: sociedade
-    difficulty: 4
+    difficulty: 3
     word: "Tradição"
     forbidden: ["costume", "antigo", "passar", "família"]
   - id: hp027
     category: biologia
-    difficulty: 4
+    difficulty: 3
     word: "Polinização"
     forbidden: ["abelha", "flor", "pólen", "planta"]
   - id: hp028
     category: física
-    difficulty: 4
+    difficulty: 3
     word: "Densidade"
     forbidden: ["massa", "volume", "pesado", "medida"]
   - id: hp029
     category: sociedade
-    difficulty: 4
+    difficulty: 3
     word: "Hierarquia"
     forbidden: ["ordem", "chefe", "nível", "acima"]
   - id: hp030
     category: ciência
-    difficulty: 5
+    difficulty: 4
     word: "Sustentabilidade"
     forbidden: ["ambiente", "futuro", "recurso", "verde"]

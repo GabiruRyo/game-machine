@@ -1,0 +1,331 @@
+id: quiz-expert
+game: quiz
+lang: pt-BR
+title: Expert — nível universitário
+version: 1
+# Exige ter estudado a matéria, não só lembrar dela.
+items:
+  - id: xq001
+    category: física
+    difficulty: 5
+    question: "Qual é a razão Cp/Cv para um gás ideal monoatômico?"
+    options: ["7/5", "5/3", "4/3", "3/2"]
+    answer: 1
+  - id: xq002
+    category: física
+    difficulty: 5
+    question: "Qual é a dimensão física da constante de Planck?"
+    options: ["Energia × tempo", "Energia / tempo", "Força × distância", "Massa × velocidade"]
+    answer: 0
+  - id: xq003
+    category: física
+    difficulty: 5
+    question: "O teorema de Noether relaciona leis de conservação a quê?"
+    options: ["Simetrias contínuas", "Estados quânticos", "Referenciais inerciais", "Graus de liberdade"]
+    answer: 0
+  - id: xq004
+    category: física
+    difficulty: 5
+    question: "Qual é o spin do fóton?"
+    options: ["0", "1/2", "1", "2"]
+    answer: 2
+  - id: xq005
+    category: física
+    difficulty: 5
+    question: "Numa expansão adiabática reversível de um gás ideal, qual quantidade permanece constante?"
+    options: ["PV", "PVᵞ", "P/V", "PV/T"]
+    answer: 1
+  - id: xq006
+    category: física
+    difficulty: 5
+    question: "O número de Reynolds compara quais duas forças?"
+    options: ["Inerciais e viscosas", "Gravitacionais e elásticas", "Elétricas e magnéticas", "Centrípetas e centrífugas"]
+    answer: 0
+  - id: xq007
+    category: física
+    difficulty: 5
+    question: "Qual é o valor aproximado da constante de estrutura fina?"
+    options: ["1/37", "1/137", "1/1370", "1/13"]
+    answer: 1
+  - id: xq008
+    category: física
+    difficulty: 5
+    question: "O efeito Zeeman é o desdobramento de linhas espectrais por qual campo?"
+    options: ["Elétrico", "Magnético", "Gravitacional", "Acústico"]
+    answer: 1
+  - id: xq009
+    category: física
+    difficulty: 5
+    question: "Num circuito RLC em série, a frequência de ressonância depende de quais componentes?"
+    options: ["Apenas R e L", "Apenas L e C", "Apenas R e C", "R, L e C"]
+    answer: 1
+  - id: xq010
+    category: química
+    difficulty: 5
+    question: "Qual é a hibridização do carbono no íon carbonato (CO₃²⁻)?"
+    options: ["sp", "sp²", "sp³", "sp³d"]
+    answer: 1
+  - id: xq011
+    category: química
+    difficulty: 5
+    question: "Quantos estereoisômeros são possíveis para uma molécula com 3 centros quirais distintos?"
+    options: ["3", "6", "8", "9"]
+    answer: 2
+  - id: xq012
+    category: química
+    difficulty: 5
+    question: "A equação de Nernst relaciona o potencial de eletrodo a quê?"
+    options: ["Temperatura apenas", "Concentração das espécies", "Massa do eletrodo", "Corrente aplicada"]
+    answer: 1
+  - id: xq013
+    category: química
+    difficulty: 5
+    question: "Qual é a geometria molecular do SF₆?"
+    options: ["Tetraédrica", "Bipirâmide trigonal", "Octaédrica", "Quadrada planar"]
+    answer: 2
+  - id: xq014
+    category: química
+    difficulty: 5
+    question: "Qual é o número de oxidação do manganês no permanganato de potássio (KMnO₄)?"
+    options: ["+2", "+4", "+6", "+7"]
+    answer: 3
+  - id: xq015
+    category: química
+    difficulty: 5
+    question: "O que caracteriza uma reação SN2?"
+    options: ["Ataque pelo lado oposto, com inversão", "Formação de carbocátion intermediário", "Eliminação de um próton", "Adição a uma dupla ligação"]
+    answer: 0
+  - id: xq016
+    category: química
+    difficulty: 5
+    question: "Aumentar a pressão desloca um equilíbrio gasoso em que direção?"
+    options: ["Para o lado com menos mols de gás", "Para o lado com mais mols de gás", "Sempre para os produtos", "Não altera o equilíbrio"]
+    answer: 0
+  - id: xq017
+    category: biologia
+    difficulty: 5
+    question: "Qual enzima desenrola a dupla-hélice durante a replicação do DNA?"
+    options: ["Polimerase", "Helicase", "Ligase", "Primase"]
+    answer: 1
+  - id: xq018
+    category: biologia
+    difficulty: 5
+    question: "Onde ocorre o ciclo de Krebs numa célula eucarionte?"
+    options: ["Citoplasma", "Matriz mitocondrial", "Membrana do tilacoide", "Retículo endoplasmático"]
+    answer: 1
+  - id: xq019
+    category: biologia
+    difficulty: 5
+    question: "Qual é o saldo líquido de ATP da glicólise por molécula de glicose?"
+    options: ["0", "2", "4", "36"]
+    answer: 1
+  - id: xq020
+    category: biologia
+    difficulty: 5
+    question: "A lei de Hardy-Weinberg descreve o quê?"
+    options: ["A taxa de mutação de um gene", "Frequências alélicas estáveis sem evolução", "A herança ligada ao sexo", "O número de cromossomos de uma espécie"]
+    answer: 1
+  - id: xq021
+    category: biologia
+    difficulty: 5
+    question: "Qual estrutura bacteriana é o alvo da penicilina?"
+    options: ["Membrana plasmática", "Parede celular", "Ribossomo", "DNA plasmidial"]
+    answer: 1
+  - id: xq022
+    category: biologia
+    difficulty: 5
+    question: "O operon lac de E. coli é induzido por qual molécula?"
+    options: ["Glicose", "Alolactose", "Triptofano", "cAMP"]
+    answer: 1
+  - id: xq023
+    category: matemática
+    difficulty: 5
+    question: "Quantos grupos de ordem 4 existem, a menos de isomorfismo?"
+    options: ["1", "2", "3", "4"]
+    answer: 1
+  - id: xq024
+    category: matemática
+    difficulty: 5
+    question: "Quanto vale e elevado a iπ?"
+    options: ["0", "1", "-1", "i"]
+    answer: 2
+  - id: xq025
+    category: matemática
+    difficulty: 5
+    question: "O teorema da incompletude de Gödel afirma que sistemas formais consistentes e suficientemente ricos são:"
+    options: ["Completos", "Incompletos", "Contraditórios", "Decidíveis"]
+    answer: 1
+  - id: xq026
+    category: matemática
+    difficulty: 5
+    question: "Em geometria esférica, a soma dos ângulos internos de um triângulo é:"
+    options: ["Sempre 180°", "Menor que 180°", "Maior que 180°", "Sempre 360°"]
+    answer: 2
+  - id: xq027
+    category: matemática
+    difficulty: 5
+    question: "Quantos subconjuntos tem um conjunto com n elementos?"
+    options: ["n²", "2ⁿ", "n!", "2n"]
+    answer: 1
+  - id: xq028
+    category: matemática
+    difficulty: 5
+    question: "Qual é o raio de convergência da série de Taylor de 1/(1−x) em torno de 0?"
+    options: ["0", "1", "2", "Infinito"]
+    answer: 1
+  - id: xq029
+    category: história
+    difficulty: 5
+    question: "Qual tratado encerrou a Guerra dos Trinta Anos?"
+    options: ["Paz de Vestfália", "Tratado de Utrecht", "Tratado de Tordesilhas", "Congresso de Viena"]
+    answer: 0
+  - id: xq030
+    category: história
+    difficulty: 5
+    question: "Quem foi o último imperador bizantino?"
+    options: ["Justiniano I", "Basílio II", "Constantino XI", "Aleixo I"]
+    answer: 2
+  - id: xq031
+    category: história
+    difficulty: 5
+    question: "Em que ano ocorreu o Primeiro Concílio de Niceia?"
+    options: ["325", "431", "476", "1054"]
+    answer: 0
+  - id: xq032
+    category: história
+    difficulty: 5
+    question: "Qual dinastia governava a China durante a Primeira Guerra do Ópio?"
+    options: ["Ming", "Qing", "Song", "Yuan"]
+    answer: 1
+  - id: xq033
+    category: história
+    difficulty: 5
+    question: "Quem escreveu 'O Leviatã'?"
+    options: ["John Locke", "Thomas Hobbes", "Jean-Jacques Rousseau", "Montesquieu"]
+    answer: 1
+  - id: xq034
+    category: história
+    difficulty: 5
+    question: "Qual império foi derrotado na Batalha de Lepanto, em 1571?"
+    options: ["Otomano", "Austro-Húngaro", "Persa", "Russo"]
+    answer: 0
+  - id: xq035
+    category: história
+    difficulty: 4
+    question: "Que evento é tomado como o início da Reforma Protestante?"
+    options: ["A Paz de Augsburgo", "As 95 teses de Lutero", "O Concílio de Trento", "A morte de Calvino"]
+    answer: 1
+  - id: xq036
+    category: geografia
+    difficulty: 5
+    question: "Qual é a capital constitucional da Bolívia?"
+    options: ["La Paz", "Sucre", "Santa Cruz", "Cochabamba"]
+    answer: 1
+  - id: xq037
+    category: geografia
+    difficulty: 5
+    question: "Qual estreito liga o Mar Negro ao Mar de Mármara?"
+    options: ["Dardanelos", "Bósforo", "Gibraltar", "Ormuz"]
+    answer: 1
+  - id: xq038
+    category: geografia
+    difficulty: 5
+    question: "Qual é o ponto mais baixo em terra firme exposta do planeta?"
+    options: ["Vale da Morte", "Mar Morto", "Depressão de Danakil", "Mar Cáspio"]
+    answer: 1
+  - id: xq039
+    category: geografia
+    difficulty: 5
+    question: "Qual corrente oceânica ameniza o clima do noroeste da Europa?"
+    options: ["Corrente de Humboldt", "Corrente do Golfo", "Corrente das Canárias", "Corrente do Labrador"]
+    answer: 1
+  - id: xq040
+    category: geografia
+    difficulty: 4
+    question: "Qual é o maior arquipélago do mundo?"
+    options: ["Filipinas", "Indonésia", "Japão", "Maldivas"]
+    answer: 1
+  - id: xq041
+    category: literatura
+    difficulty: 5
+    question: "Quem escreveu 'Ulisses' (1922)?"
+    options: ["Virginia Woolf", "James Joyce", "T.S. Eliot", "Samuel Beckett"]
+    answer: 1
+  - id: xq042
+    category: literatura
+    difficulty: 5
+    question: "Quem escreveu 'Em Busca do Tempo Perdido'?"
+    options: ["André Gide", "Marcel Proust", "Albert Camus", "Gustave Flaubert"]
+    answer: 1
+  - id: xq043
+    category: literatura
+    difficulty: 5
+    question: "Qual é o nome do narrador de 'Moby Dick'?"
+    options: ["Queequeg", "Ishmael", "Starbuck", "Ahab"]
+    answer: 1
+  - id: xq044
+    category: literatura
+    difficulty: 5
+    question: "Qual movimento literário Baudelaire ajudou a inaugurar?"
+    options: ["Naturalismo", "Simbolismo", "Parnasianismo", "Futurismo"]
+    answer: 1
+  - id: xq045
+    category: astronomia
+    difficulty: 5
+    question: "O limite de Chandrasekhar é o valor aproximado de quê?"
+    options: ["Massa máxima de uma anã branca", "Raio mínimo de um buraco negro", "Idade máxima de uma estrela", "Temperatura do núcleo solar"]
+    answer: 0
+  - id: xq046
+    category: astronomia
+    difficulty: 5
+    question: "A lei de Hubble relaciona a distância de uma galáxia a quê?"
+    options: ["Sua massa", "Sua velocidade de recessão", "Sua luminosidade absoluta", "Sua idade"]
+    answer: 1
+  - id: xq047
+    category: astronomia
+    difficulty: 5
+    question: "Qual processo produz a energia do Sol?"
+    options: ["Fissão de urânio", "Fusão de hidrogênio em hélio", "Combustão química", "Contração gravitacional"]
+    answer: 1
+  - id: xq048
+    category: astronomia
+    difficulty: 5
+    question: "O desvio para o vermelho cosmológico é causado por quê?"
+    options: ["Movimento das galáxias pelo espaço", "A expansão do próprio espaço", "Poeira interestelar", "Campos magnéticos galácticos"]
+    answer: 1
+  - id: xq049
+    category: computação
+    difficulty: 5
+    question: "Qual é a complexidade de tempo média do quicksort?"
+    options: ["O(n)", "O(n log n)", "O(n²)", "O(log n)"]
+    answer: 1
+  - id: xq050
+    category: computação
+    difficulty: 5
+    question: "O problema da parada foi provado indecidível por quem?"
+    options: ["Alonzo Church", "Alan Turing", "John von Neumann", "Claude Shannon"]
+    answer: 1
+  - id: xq051
+    category: computação
+    difficulty: 5
+    question: "O que a classe de complexidade NP designa?"
+    options: ["Problemas sem solução", "Problemas verificáveis em tempo polinomial", "Problemas resolvíveis em tempo linear", "Problemas não computáveis"]
+    answer: 1
+  - id: xq052
+    category: computação
+    difficulty: 4
+    question: "Quantos bits tem um endereço IPv6?"
+    options: ["32", "64", "128", "256"]
+    answer: 2
+  - id: xq053
+    category: economia
+    difficulty: 5
+    question: "O que o coeficiente de Gini mede?"
+    options: ["Inflação acumulada", "Desigualdade de renda", "Crescimento do PIB", "Taxa de desemprego"]
+    answer: 1
+  - id: xq054
+    category: economia
+    difficulty: 5
+    question: "Quem formulou o conceito de 'destruição criativa'?"
+    options: ["Adam Smith", "Joseph Schumpeter", "John Maynard Keynes", "Milton Friedman"]
+    answer: 1

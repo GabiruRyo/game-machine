@@ -12,6 +12,8 @@ export const proibidaItemSchema = baseItemSchema.extend({
 
 export const proibidaSettingsSchema = z.object({
   enabled: z.boolean().default(true),
+  /** Overrides content.filters.difficulty for this game alone. */
+  difficulty: z.array(z.number().int().min(1).max(5)).min(1).optional(),
   /** Extra fraction of the points per difficulty level above 1. 0 disables it. */
   difficulty_bonus: z.number().min(0).max(2).default(0.25),
   /** One round per guesser. */

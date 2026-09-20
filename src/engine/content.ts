@@ -44,15 +44,14 @@ const filesFor = (config: AppConfig, manifest: ManifestEntry[], lang: Lang): Man
   return forLang.filter((p) => ids.has(p.id))
 }
 
-export function passesFilters(
-  item: BaseItem,
-  config: AppConfig,
-  /** Off for games where difficulty carries no meaning. */
-  applyDifficulty = true,
-): boolean {
+/**
+ * Audience and tag filters only. Difficulty is deliberately NOT applied here:
+ * it is chosen per game and can change between games without reloading the
+ * bank, so it is applied when a game's picker is built instead.
+ */
+export function passesFilters(item: BaseItem, config: AppConfig): boolean {
   const f = config.content.filters
   if (!f.audience.includes(item.audience)) return false
-  if (applyDifficulty && !f.difficulty.includes(item.difficulty)) return false
   if (item.tags.some((tag) => f.exclude_tags.includes(tag))) return false
   if (f.include_tags.length > 0 && !item.tags.some((tag) => f.include_tags.includes(tag))) {
     return false
@@ -147,7 +146,6 @@ export async function loadContent(
   config: AppConfig,
   schemas: ItemSchemas,
   baseUrl = '/content',
-  difficultyFree: ReadonlySet<string> = new Set(),
 ): Promise<ContentIndex> {
   const issues: ConfigIssue[] = []
   const byGame = new Map<string, BaseItem[]>()
@@ -210,8 +208,7 @@ export async function loadContent(
     issues.push(...packIssues)
 
     rawCounts.set(entry.game, (rawCounts.get(entry.game) ?? 0) + items.length)
-    const applyDifficulty = !difficultyFree.has(entry.game)
-    const usable = items.filter((item) => passesFilters(item, config, applyDifficulty))
+    const usable = items.filter((item) => passesFilters(item, config))
     byGame.set(entry.game, [...(byGame.get(entry.game) ?? []), ...usable])
     packs.push({ entry, items: usable, rejected })
   }

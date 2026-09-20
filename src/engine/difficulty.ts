@@ -62,3 +62,16 @@ export function difficultyForRound(
 export function difficultyMultiplier(difficulty: number, bonusPerLevel: number): number {
   return 1 + Math.max(0, difficulty - 1) * bonusPerLevel
 }
+
+/**
+ * The items a game may draw from. Difficulty-free games ignore the slice
+ * entirely: there is no hard version of "who would lose their phone".
+ */
+export function itemsAtDifficulty<T extends { difficulty: number }>(
+  items: readonly T[],
+  allowed: readonly number[],
+  usesDifficulty: boolean,
+): T[] {
+  if (!usesDifficulty) return [...items]
+  return items.filter((item) => allowed.includes(item.difficulty))
+}

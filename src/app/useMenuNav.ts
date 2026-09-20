@@ -9,9 +9,14 @@ import { useKeyboard, type Action } from '../engine/input'
 export function useMenuNav<T extends { disabled?: boolean }>(
   entries: T[],
   onChoose: (index: number) => void,
-  options: { enabled?: boolean; onBack?: () => void } = {},
+  options: {
+    enabled?: boolean
+    onBack?: () => void
+    /** Left/right on the highlighted row, for per-row settings. */
+    onAdjust?: (index: number, delta: number) => void
+  } = {},
 ) {
-  const { enabled = true, onBack } = options
+  const { enabled = true, onBack, onAdjust } = options
   const [index, setIndex] = useState(0)
 
   // Keep the cursor in range when the list shrinks (e.g. removing a player).
@@ -39,8 +44,11 @@ export function useMenuNav<T extends { disabled?: boolean }>(
   const handle = useCallback(
     (action: Action) => {
       switch (action.type) {
-        case 'adjust':
+        case 'navigate':
           move(action.delta)
+          break
+        case 'adjust':
+          onAdjust?.(index, action.delta)
           break
         case 'advance':
           if (!entries[index]?.disabled) onChoose(index)
@@ -58,7 +66,7 @@ export function useMenuNav<T extends { disabled?: boolean }>(
           break
       }
     },
-    [entries, index, move, onChoose, onBack],
+    [entries, index, move, onChoose, onBack, onAdjust],
   )
 
   useKeyboard(handle, { enabled })

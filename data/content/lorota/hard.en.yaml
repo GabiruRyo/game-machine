@@ -6,7 +6,7 @@ version: 1
 items:
   - id: hl001
     category: biologia
-    difficulty: 5
+    difficulty: 4
     topic: "Evolution"
     lie:
       text: "Evolution has a goal: to make species steadily more complex"
@@ -17,7 +17,7 @@ items:
       - { text: "Relatedness is inferred from shared characters" }
   - id: hl002
     category: física
-    difficulty: 5
+    difficulty: 4
     topic: "Relativity"
     lie:
       text: "Since everything is relative, the speed of light depends on the observer too"
@@ -28,7 +28,7 @@ items:
       - { text: "Simultaneity depends on the reference frame" }
   - id: hl003
     category: química
-    difficulty: 4
+    difficulty: 3
     topic: "The atom"
     lie:
       text: "Electrons follow well-defined circular orbits, like planets"
@@ -39,7 +39,7 @@ items:
       - { text: "The atomic number is the proton count" }
   - id: hl004
     category: biologia
-    difficulty: 4
+    difficulty: 3
     topic: "Genetics"
     lie:
       text: "Every human trait is controlled by a single gene"
@@ -50,7 +50,7 @@ items:
       - { text: "Identical twins share the same genome" }
   - id: hl005
     category: astronomia
-    difficulty: 4
+    difficulty: 3
     topic: "The seasons"
     lie:
       text: "They happen because Earth moves nearer to or further from the Sun"
@@ -61,7 +61,7 @@ items:
       - { text: "Earth's axis is tilted about 23.5°" }
   - id: hl006
     category: medicina
-    difficulty: 4
+    difficulty: 3
     topic: "Antibiotics"
     lie:
       text: "Taking an antibiotic shortens a bout of flu"
@@ -72,7 +72,7 @@ items:
       - { text: "Some act on the bacterial cell wall" }
   - id: hl007
     category: neurociência
-    difficulty: 4
+    difficulty: 3
     topic: "The brain"
     lie:
       text: "Each person is dominated by either the left or the right side of the brain"
@@ -83,7 +83,7 @@ items:
       - { text: "The brain retains plasticity into adulthood" }
   - id: hl008
     category: química
-    difficulty: 5
+    difficulty: 4
     topic: "Conductors"
     lie:
       text: "Gold is the best electrical conductor among metals"
@@ -94,7 +94,7 @@ items:
       - { text: "Superconductors have zero resistance" }
   - id: hl009
     category: geologia
-    difficulty: 4
+    difficulty: 3
     topic: "Plate tectonics"
     lie:
       text: "The plates stopped moving at the end of the last ice age"
@@ -105,7 +105,7 @@ items:
       - { text: "The Atlantic widens every year" }
   - id: hl010
     category: física
-    difficulty: 4
+    difficulty: 3
     topic: "Water"
     lie:
       text: "Water boils at 100 °C at any altitude"
@@ -116,7 +116,7 @@ items:
       - { text: "It has a high specific heat capacity" }
   - id: hl011
     category: paleontologia
-    difficulty: 5
+    difficulty: 4
     topic: "Extinctions"
     lie:
       text: "T. rex and the mammoth were wiped out by the same event"
@@ -127,7 +127,7 @@ items:
       - { text: "There have been five major mass extinctions" }
   - id: hl012
     category: física
-    difficulty: 4
+    difficulty: 3
     topic: "Sound"
     lie:
       text: "Sound travels faster the thinner the medium"
@@ -138,7 +138,7 @@ items:
       - { text: "Intensity is measured in decibels" }
   - id: hl013
     category: estatística
-    difficulty: 5
+    difficulty: 4
     topic: "Statistics"
     lie:
       text: "A strong enough correlation demonstrates causation"
@@ -149,7 +149,7 @@ items:
       - { text: "The mean is sensitive to outliers" }
   - id: hl014
     category: nutrição
-    difficulty: 4
+    difficulty: 3
     topic: "Calories"
     lie:
       text: "A calorie is a measure of the weight of food"
@@ -160,7 +160,7 @@ items:
       - { text: "The body uses carbohydrates, fats and proteins" }
   - id: hl015
     category: biologia
-    difficulty: 5
+    difficulty: 4
     topic: "Osmosis and cells"
     lie:
       text: "In osmosis the solute crosses the membrane towards the water"
@@ -171,7 +171,7 @@ items:
       - { text: "The cell wall protects plant cells" }
   - id: hl016
     category: astronomia
-    difficulty: 5
+    difficulty: 4
     topic: "Black holes"
     lie:
       text: "A black hole sucks in everything around it, no matter the distance"
@@ -182,7 +182,7 @@ items:
       - { text: "They bend the path of light" }
   - id: hl017
     category: química
-    difficulty: 4
+    difficulty: 3
     topic: "Combustion"
     lie:
       text: "Fire is a substance released by materials as they burn"
@@ -193,7 +193,7 @@ items:
       - { text: "It typically produces CO₂ and water" }
   - id: hl018
     category: biologia
-    difficulty: 4
+    difficulty: 3
     topic: "Immunity"
     lie:
       text: "Vaccines work because they contain a low dose of antibiotics"

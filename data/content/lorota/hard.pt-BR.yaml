@@ -6,7 +6,7 @@ version: 1
 items:
   - id: hl001
     category: biologia
-    difficulty: 5
+    difficulty: 4
     topic: "Evolução"
     lie:
       text: "A evolução tem um objetivo: tornar as espécies cada vez mais complexas"
@@ -17,7 +17,7 @@ items:
       - { text: "Parentesco se infere por caracteres compartilhados" }
   - id: hl002
     category: física
-    difficulty: 5
+    difficulty: 4
     topic: "Relatividade"
     lie:
       text: "Como tudo é relativo, a velocidade da luz também depende do observador"
@@ -28,7 +28,7 @@ items:
       - { text: "A simultaneidade depende do referencial" }
   - id: hl003
     category: química
-    difficulty: 4
+    difficulty: 3
     topic: "O átomo"
     lie:
       text: "Os elétrons percorrem órbitas circulares bem definidas, como planetas"
@@ -39,7 +39,7 @@ items:
       - { text: "O número atômico é o número de prótons" }
   - id: hl004
     category: biologia
-    difficulty: 4
+    difficulty: 3
     topic: "Genética"
     lie:
       text: "Cada característica humana é controlada por um único gene"
@@ -50,7 +50,7 @@ items:
       - { text: "Gêmeos idênticos partilham o mesmo genoma" }
   - id: hl005
     category: astronomia
-    difficulty: 4
+    difficulty: 3
     topic: "As estações do ano"
     lie:
       text: "Acontecem porque a Terra fica mais perto ou mais longe do Sol"
@@ -61,7 +61,7 @@ items:
       - { text: "O eixo da Terra é inclinado cerca de 23,5°" }
   - id: hl006
     category: medicina
-    difficulty: 4
+    difficulty: 3
     topic: "Antibióticos"
     lie:
       text: "Tomar antibiótico encurta a duração de uma gripe"
@@ -72,7 +72,7 @@ items:
       - { text: "Alguns agem na parede celular bacteriana" }
   - id: hl007
     category: neurociência
-    difficulty: 4
+    difficulty: 3
     topic: "O cérebro"
     lie:
       text: "Cada pessoa é dominada pelo lado esquerdo ou pelo direito do cérebro"
@@ -83,7 +83,7 @@ items:
       - { text: "O cérebro mantém plasticidade na vida adulta" }
   - id: hl008
     category: química
-    difficulty: 5
+    difficulty: 4
     topic: "Condutores"
     lie:
       text: "O ouro é o metal que melhor conduz eletricidade"
@@ -94,7 +94,7 @@ items:
       - { text: "Supercondutores têm resistência nula" }
   - id: hl009
     category: geologia
-    difficulty: 4
+    difficulty: 3
     topic: "Tectônica de placas"
     lie:
       text: "As placas tectônicas pararam de se mover no fim da era glacial"
@@ -105,7 +105,7 @@ items:
       - { text: "O Atlântico se alarga a cada ano" }
   - id: hl010
     category: física
-    difficulty: 4
+    difficulty: 3
     topic: "A água"
     lie:
       text: "A água ferve a 100 °C em qualquer altitude"
@@ -116,7 +116,7 @@ items:
       - { text: "Tem calor específico alto" }
   - id: hl011
     category: paleontologia
-    difficulty: 5
+    difficulty: 4
     topic: "Extinções"
     lie:
       text: "O T. rex e o mamute foram extintos pelo mesmo evento"
@@ -127,7 +127,7 @@ items:
       - { text: "Houve cinco grandes extinções em massa" }
   - id: hl012
     category: física
-    difficulty: 4
+    difficulty: 3
     topic: "O som"
     lie:
       text: "O som viaja mais rápido quanto mais rarefeito for o meio"
@@ -138,7 +138,7 @@ items:
       - { text: "A intensidade é medida em decibéis" }
   - id: hl013
     category: estatística
-    difficulty: 5
+    difficulty: 4
     topic: "Estatística"
     lie:
       text: "Uma correlação forte o suficiente demonstra causalidade"
@@ -149,7 +149,7 @@ items:
       - { text: "A média é sensível a valores extremos" }
   - id: hl014
     category: nutrição
-    difficulty: 4
+    difficulty: 3
     topic: "Calorias"
     lie:
       text: "Caloria é uma medida do peso do alimento"
@@ -160,7 +160,7 @@ items:
       - { text: "O corpo usa carboidratos, gorduras e proteínas" }
   - id: hl015
     category: biologia
-    difficulty: 5
+    difficulty: 4
     topic: "Osmose e células"
     lie:
       text: "Na osmose o soluto atravessa a membrana em direção à água"
@@ -171,7 +171,7 @@ items:
       - { text: "A parede celular protege as vegetais" }
   - id: hl016
     category: astronomia
-    difficulty: 5
+    difficulty: 4
     topic: "Buracos negros"
     lie:
       text: "Um buraco negro suga tudo à sua volta, independentemente da distância"
@@ -182,7 +182,7 @@ items:
       - { text: "Distorcem a trajetória da luz" }
   - id: hl017
     category: química
-    difficulty: 4
+    difficulty: 3
     topic: "Combustão"
     lie:
       text: "O fogo é uma substância liberada pelos materiais ao queimar"
@@ -193,7 +193,7 @@ items:
       - { text: "Produz normalmente CO₂ e água" }
   - id: hl018
     category: biologia
-    difficulty: 4
+    difficulty: 3
     topic: "Imunidade"
     lie:
       text: "As vacinas funcionam porque contêm antibióticos em dose baixa"

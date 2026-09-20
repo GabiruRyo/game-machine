@@ -55,7 +55,8 @@ common:
 keys:
   advance: "Espaço — avançar"
   select: "1-6 — escolher"
-  adjust: "← → — mover"
+  navigate: "↑ ↓ — mover"
+  adjust: "← → — mudar"
   judge: "Y / N — acertou ou não"
   skip: "Backspace — pular"
   pause: "Esc — menu"

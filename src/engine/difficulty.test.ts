@@ -1,5 +1,11 @@
 import { describe, expect, it } from 'vitest'
-import { difficultyForRound, difficultyMultiplier, presetFor, DIFFICULTY_PRESETS } from './difficulty'
+import {
+  DIFFICULTY_PRESETS,
+  difficultyForRound,
+  difficultyMultiplier,
+  itemsAtDifficulty,
+  presetFor,
+} from './difficulty'
 
 describe('difficultyForRound', () => {
   it('returns no target on a flat curve, so the picker draws anywhere in range', () => {
@@ -54,5 +60,28 @@ describe('presetFor', () => {
 
   it('returns null for a custom slice', () => {
     expect(presetFor([1, 5])).toBeNull()
+  })
+})
+
+describe('itemsAtDifficulty', () => {
+  const bank = [1, 2, 3, 4, 5].map((difficulty) => ({ id: `d${difficulty}`, difficulty }))
+
+  it('keeps only the chosen tiers', () => {
+    expect(itemsAtDifficulty(bank, [4, 5], true).map((i) => i.difficulty)).toEqual([4, 5])
+  })
+
+  it('returns everything for a game where difficulty has no meaning', () => {
+    // Picking Expert must not empty "who is most likely to lose their phone".
+    expect(itemsAtDifficulty(bank, [4, 5], false)).toHaveLength(5)
+  })
+
+  it('does not hand back the caller’s array to mutate', () => {
+    const out = itemsAtDifficulty(bank, [1], false)
+    out.pop()
+    expect(bank).toHaveLength(5)
+  })
+
+  it('can come back empty, which the picker reports as no content', () => {
+    expect(itemsAtDifficulty([{ id: 'a', difficulty: 1 }], [5], true)).toEqual([])
   })
 })

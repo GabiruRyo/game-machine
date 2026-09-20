@@ -1,0 +1,141 @@
+id: ordem-expert
+game: ordem
+lang: en
+title: Expert — university level
+version: 1
+items:
+  - id: xo001
+    category: química
+    difficulty: 5
+    prompt: "Lowest to highest electronegativity (Pauling)"
+    entries:
+      - { label: "Caesium", detail: "0,79" }
+      - { label: "Hydrogen", detail: "2,20" }
+      - { label: "Nitrogen", detail: "3,04" }
+      - { label: "Fluorine", detail: "3,98" }
+  - id: xo002
+    category: geologia
+    difficulty: 5
+    prompt: "Oldest Palaeozoic period to most recent"
+    entries:
+      - { label: "Cambrian", detail: "541 Ma" }
+      - { label: "Ordovician", detail: "485 Ma" }
+      - { label: "Silurian", detail: "444 Ma" }
+      - { label: "Devonian", detail: "419 Ma" }
+  - id: xo003
+    category: química
+    difficulty: 5
+    prompt: "Lowest to highest ionisation energy"
+    entries:
+      - { label: "Sodium", detail: "496 kJ/mol" }
+      - { label: "Magnesium", detail: "738 kJ/mol" }
+      - { label: "Nitrogen", detail: "1.402 kJ/mol" }
+      - { label: "Helium", detail: "2.372 kJ/mol" }
+  - id: xo004
+    category: ciência
+    difficulty: 5
+    prompt: "Earliest discovery to most recent"
+    entries:
+      - { label: "Heisenberg's quantum mechanics", detail: "1925" }
+      - { label: "Primeval atom model", detail: "1931" }
+      - { label: "Nuclear fission", detail: "1938" }
+      - { label: "Transistor", detail: "1947" }
+  - id: xo005
+    category: química
+    difficulty: 5
+    prompt: "Most acidic to most alkaline"
+    entries:
+      - { label: "1 M HCl", detail: "pH 0" }
+      - { label: "Vinegar", detail: "pH 2,5" }
+      - { label: "Milk", detail: "pH 6,7" }
+      - { label: "Household ammonia", detail: "pH 11" }
+  - id: xo006
+    category: química
+    difficulty: 5
+    prompt: "Lowest to highest molar mass"
+    entries:
+      - { label: "Water", detail: "18 g/mol" }
+      - { label: "Carbon dioxide", detail: "44 g/mol" }
+      - { label: "Glucose", detail: "180 g/mol" }
+      - { label: "Haemoglobin", detail: "~64.500 g/mol" }
+  - id: xo007
+    category: história
+    difficulty: 5
+    prompt: "Earliest Mesoamerican civilisation to latest"
+    entries:
+      - { label: "Olmec", detail: "~1200 a.C." }
+      - { label: "Classic Maya", detail: "~250" }
+      - { label: "Toltec", detail: "~900" }
+      - { label: "Aztec", detail: "~1345" }
+  - id: xo008
+    category: astronomia
+    difficulty: 5
+    prompt: "Lowest to highest escape velocity"
+    entries:
+      - { label: "The Moon", detail: "2,4 km/s" }
+      - { label: "Mars", detail: "5,0 km/s" }
+      - { label: "Earth", detail: "11,2 km/s" }
+      - { label: "Jupiter", detail: "59,5 km/s" }
+  - id: xo009
+    category: física
+    difficulty: 5
+    prompt: "Lowest to highest thermal conductivity"
+    entries:
+      - { label: "Wood", detail: "~0,15 W/mK" }
+      - { label: "Water", detail: "0,6 W/mK" }
+      - { label: "Steel", detail: "~50 W/mK" }
+      - { label: "Copper", detail: "400 W/mK" }
+  - id: xo010
+    category: geologia
+    difficulty: 5
+    prompt: "Oldest Cenozoic epoch to most recent"
+    entries:
+      - { label: "Paleocene", detail: "66 Ma" }
+      - { label: "Eocene", detail: "56 Ma" }
+      - { label: "Oligocene", detail: "34 Ma" }
+      - { label: "Miocene", detail: "23 Ma" }
+  - id: xo011
+    category: geologia
+    difficulty: 5
+    prompt: "Softest to hardest on the Mohs scale"
+    entries:
+      - { label: "Gypsum", detail: "2" }
+      - { label: "Fluorite", detail: "4" }
+      - { label: "Orthoclase", detail: "6" }
+      - { label: "Corundum", detail: "9" }
+  - id: xo012
+    category: filosofia
+    difficulty: 5
+    prompt: "Earliest philosopher to latest"
+    entries:
+      - { label: "Descartes", detail: "1596" }
+      - { label: "Locke", detail: "1632" }
+      - { label: "Hume", detail: "1711" }
+      - { label: "Kant", detail: "1724" }
+  - id: xo013
+    category: física
+    difficulty: 5
+    prompt: "Shortest to longest half-life"
+    entries:
+      - { label: "Radium-226", detail: "1.600 anos" }
+      - { label: "Carbon-14", detail: "5.730 anos" }
+      - { label: "Uranium-235", detail: "704 Ma" }
+      - { label: "Uranium-238", detail: "4,47 Ga" }
+  - id: xo014
+    category: biologia
+    difficulty: 5
+    prompt: "Smallest to largest"
+    entries:
+      - { label: "Proton", detail: "~10⁻¹⁵ m" }
+      - { label: "Hydrogen atom", detail: "~10⁻¹⁰ m" }
+      - { label: "DNA helix width", detail: "~2 nm" }
+      - { label: "Influenza virus", detail: "~100 nm" }
+  - id: xo015
+    category: física
+    difficulty: 5
+    prompt: "Lowest to highest frequency"
+    entries:
+      - { label: "Low frequency (LF)", detail: "30–300 kHz" }
+      - { label: "Medium frequency (MF)", detail: "0,3–3 MHz" }
+      - { label: "High frequency (HF)", detail: "3–30 MHz" }
+      - { label: "VHF", detail: "30–300 MHz" }

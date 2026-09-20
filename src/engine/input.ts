@@ -10,6 +10,9 @@ export type Action =
   | { type: 'advance' }
   | { type: 'back' }
   | { type: 'select'; index: number }
+  /** Vertical: move through a list. */
+  | { type: 'navigate'; delta: number }
+  /** Horizontal: change the value of whatever is highlighted. */
   | { type: 'adjust'; delta: number }
   | { type: 'judge'; value: boolean }
   | { type: 'skip' }
@@ -33,11 +36,13 @@ export function keyToAction(event: KeyboardEvent): Action | null {
       return { type: 'skip' }
     case 'Escape':
       return { type: 'pause' }
-    case 'ArrowLeft':
     case 'ArrowUp':
+      return { type: 'navigate', delta: -1 }
+    case 'ArrowDown':
+      return { type: 'navigate', delta: 1 }
+    case 'ArrowLeft':
       return { type: 'adjust', delta: -1 }
     case 'ArrowRight':
-    case 'ArrowDown':
       return { type: 'adjust', delta: 1 }
     case 'KeyY':
       return { type: 'judge', value: true }

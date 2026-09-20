@@ -1,0 +1,138 @@
+id: lorota-expert
+game: lorota
+lang: pt-BR
+title: Expert — equívocos que sobrevivem à escola
+version: 1
+items:
+  - id: xl001
+    category: física
+    difficulty: 5
+    topic: "Entropia"
+    lie:
+      text: "A segunda lei proíbe qualquer diminuição local de entropia"
+      note: "Diminuições locais são rotineiras — uma geladeira faz isso — desde que a entropia total aumente."
+    truths:
+      - { text: "A entropia de um sistema isolado nunca diminui" }
+      - { text: "Mede o número de microestados compatíveis" }
+      - { text: "Processos reversíveis mantêm a entropia constante" }
+  - id: xl002
+    category: física
+    difficulty: 5
+    topic: "O princípio da incerteza"
+    lie:
+      text: "Existe porque qualquer medição perturba fisicamente o sistema"
+      note: "É uma propriedade intrínseca de pares conjugados, não uma limitação instrumental."
+    truths:
+      - { text: "Relaciona posição e momento" }
+      - { text: "Decorre da natureza ondulatória da matéria" }
+      - { text: "Vale também para energia e tempo" }
+  - id: xl003
+    category: biologia
+    difficulty: 5
+    topic: "Seleção natural"
+    lie:
+      text: "O indivíduo se adapta ao ambiente e transmite a adaptação adquirida"
+      note: "Isso é lamarckismo. A seleção atua sobre variação hereditária já presente na população."
+    truths:
+      - { text: "Mutações são aleatórias quanto à utilidade" }
+      - { text: "A seleção atua sobre populações" }
+      - { text: "A deriva genética pesa mais em populações pequenas" }
+  - id: xl004
+    category: física
+    difficulty: 5
+    topic: "Relatividade geral"
+    lie:
+      text: "Descreve a gravidade como uma força transmitida por grávitons já detectados"
+      note: "Descreve a gravidade como curvatura do espaço-tempo; grávitons continuam hipotéticos."
+    truths:
+      - { text: "Prevê o desvio da luz por lentes gravitacionais" }
+      - { text: "Explicou a precessão do periélio de Mercúrio" }
+      - { text: "Prevê a dilatação gravitacional do tempo" }
+  - id: xl005
+    category: biologia
+    difficulty: 5
+    topic: "Anticorpos"
+    lie:
+      text: "Anticorpos matam diretamente as células já infectadas"
+      note: "Quem faz isso são os linfócitos T citotóxicos; anticorpos neutralizam e marcam alvos."
+    truths:
+      - { text: "Marcam patógenos para destruição" }
+      - { text: "São produzidos por linfócitos B" }
+      - { text: "A memória imune acelera a resposta seguinte" }
+  - id: xl006
+    category: biologia
+    difficulty: 5
+    topic: "Expressão gênica"
+    lie:
+      text: "Em eucariontes o RNA mensageiro é traduzido sem qualquer processamento"
+      note: "O transcrito primário passa por splicing, capping e poliadenilação antes de sair do núcleo."
+    truths:
+      - { text: "Íntrons são removidos por splicing" }
+      - { text: "O códon de iniciação é normalmente AUG" }
+      - { text: "O código genético é degenerado" }
+  - id: xl007
+    category: estatística
+    difficulty: 5
+    topic: "Valor-p"
+    lie:
+      text: "Um p de 0,05 significa 5% de chance de a hipótese nula ser verdadeira"
+      note: "É a probabilidade de observar dados tão extremos SE a nula for verdadeira — não o contrário."
+    truths:
+      - { text: "Não mede o tamanho do efeito" }
+      - { text: "Depende do tamanho da amostra" }
+      - { text: "Não prova que a nula é falsa" }
+  - id: xl008
+    category: astronomia
+    difficulty: 5
+    topic: "O Big Bang"
+    lie:
+      text: "Foi uma explosão a partir de um ponto específico do espaço"
+      note: "Foi a expansão do próprio espaço, acontecendo em toda parte; não existe um centro."
+    truths:
+      - { text: "A radiação cósmica de fundo é seu resíduo" }
+      - { text: "O universo não tem um centro observável" }
+      - { text: "A abundância de hélio primordial corrobora o modelo" }
+  - id: xl009
+    category: química
+    difficulty: 5
+    topic: "Catalisadores"
+    lie:
+      text: "Um catalisador desloca o equilíbrio na direção dos produtos"
+      note: "Ele acelera os dois sentidos igualmente: chega-se ao mesmo equilíbrio, só que mais rápido."
+    truths:
+      - { text: "Reduz a energia de ativação" }
+      - { text: "Não é consumido na reação" }
+      - { text: "Enzimas são catalisadores biológicos" }
+  - id: xl010
+    category: neurociência
+    difficulty: 5
+    topic: "O cérebro adulto"
+    lie:
+      text: "Nenhuma região do cérebro adulto produz novos neurônios"
+      note: "Há evidência de neurogênese no hipocampo adulto, ainda que em escala modesta."
+    truths:
+      - { text: "A mielina acelera a condução do impulso" }
+      - { text: "A sinapse usa neurotransmissores" }
+      - { text: "O potencial de ação segue a lei do tudo-ou-nada" }
+  - id: xl011
+    category: física
+    difficulty: 5
+    topic: "Massa e velocidade"
+    lie:
+      text: "Segundo a relatividade, a massa de um corpo aumenta com a velocidade"
+      note: "A formulação moderna trata a massa como invariante; o que cresce sem limite é a energia."
+    truths:
+      - { text: "Nada com massa alcança a velocidade da luz" }
+      - { text: "A energia cresce sem limite ao se aproximar de c" }
+      - { text: "A massa de repouso é a mesma em todo referencial" }
+  - id: xl012
+    category: física
+    difficulty: 5
+    topic: "Zero absoluto"
+    lie:
+      text: "Com refrigeração suficiente é possível atingir o zero absoluto"
+      note: "A terceira lei da termodinâmica o proíbe: exigiria infinitos passos."
+    truths:
+      - { text: "Corresponde a 0 K, ou −273,15 °C" }
+      - { text: "Laboratórios já chegaram à faixa dos nanokelvins" }
+      - { text: "Nele o movimento térmico é mínimo, não nulo" }
