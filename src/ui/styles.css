@@ -559,6 +559,23 @@ button { font: inherit; color: inherit; }
 .slot__label { font-weight: 700; }
 .slot__detail { color: var(--ink-dim); font-variant-numeric: tabular-nums; font-weight: 700; }
 
+/* ─── Difficulty pips ─────────────────────────────────────────────────────── */
+
+.pips { display: inline-flex; gap: 3px; align-items: center; }
+
+.pips__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--edge);
+  transition: background 220ms ease, box-shadow 220ms ease;
+}
+
+.pips__dot[data-on="true"] {
+  background: var(--accent);
+  box-shadow: 0 0 8px rgb(255 209 102 / 0.6);
+}
+
 /* ─── Misc ────────────────────────────────────────────────────────────────── */
 
 .tag {

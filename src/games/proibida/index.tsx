@@ -116,6 +116,7 @@ function ProibidaGame({ settings, players, picker, multiplier, difficulty, onFin
       players={players}
       board={board}
       activeId={guesser.id}
+      difficulty={card?.difficulty ?? roundDifficulty}
       hints={hints}
     >
       {children}

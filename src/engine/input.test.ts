@@ -39,3 +39,18 @@ describe('keyToAction', () => {
     expect(keyToAction(key('KeyF', { shiftKey: true }))).toEqual({ type: 'fullscreen' })
   })
 })
+
+describe('tune action', () => {
+  it('maps minus and equals to a second adjustable value', () => {
+    expect(keyToAction(key('Minus'))).toEqual({ type: 'tune', delta: -1 })
+    expect(keyToAction(key('Equal'))).toEqual({ type: 'tune', delta: 1 })
+    expect(keyToAction(key('NumpadSubtract'))).toEqual({ type: 'tune', delta: -1 })
+    expect(keyToAction(key('NumpadAdd'))).toEqual({ type: 'tune', delta: 1 })
+  })
+
+  it('keeps the three axes distinct', () => {
+    expect(keyToAction(key('ArrowUp'))).toEqual({ type: 'navigate', delta: -1 })
+    expect(keyToAction(key('ArrowLeft'))).toEqual({ type: 'adjust', delta: -1 })
+    expect(keyToAction(key('Minus'))).toEqual({ type: 'tune', delta: -1 })
+  })
+})

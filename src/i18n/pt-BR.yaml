@@ -4,17 +4,18 @@ app:
 
 menu:
   play: Jogar um jogo
-  party: Modo Festa
+  party: Modo Festa (vários jogos)
   players: Jogadores
   language: Idioma
   settings: Ajustes
   howto: Como se joga
   back: Voltar
-  difficulty: Dificuldade
+  configHint: "Todos os ajustes ficam em data/config.yaml — edite e recarregue a página."
   resetContent: Zerar histórico de conteúdo
   resetContentDone: Histórico zerado — todo o conteúdo voltou a ficar disponível.
   contentEmpty: sem conteúdo
   itemsAvailable: "{count} itens disponíveis"
+  roundsShort: "{count} rodadas"
   disabled: desativado no config.yaml
 
 difficulty:
@@ -48,6 +49,7 @@ common:
   no: Não
   nobody: Ninguém
   turnOf: "Vez de {name}"
+  difficultyLevel: "Dificuldade {level} de 5"
   finalScores: Placar final
   playAgain: Jogar de novo
   backToMenu: Voltar ao menu
@@ -61,6 +63,7 @@ keys:
   skip: "Backspace — pular"
   pause: "Esc — menu"
   fullscreen: "Shift+F — tela cheia"
+  tune: "− + — rodadas"
   type: "Digite e aperte Enter"
 
 errors:

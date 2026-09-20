@@ -49,8 +49,20 @@ npm test                           # engine tests
 
 ## Tuning it
 
-Everything lives in **`data/`**, which is served as-is — edit, reload, done. No
-rebuild, no code.
+**The config file is [`data/config.yaml`](data/config.yaml).** Edit it, reload the
+page, done — no rebuild, no code. The main menu shows that path too, so nobody has
+to go looking.
+
+Rounds and difficulty can also be changed without touching the file, from the game
+picker:
+
+```
+↑ ↓   move between games
+← →   difficulty of the highlighted game
+− +   rounds of the highlighted game
+```
+
+Those override the file for the session; the file supplies the defaults.
 
 - **`data/config.yaml`** — language, players, teams, audio, content filters,
   repeat policy, and a block per game where every number in its rules is a key:
@@ -92,10 +104,25 @@ hybridisation of carbon in carbonate, how many groups of order 4 exist up to
 isomorphism, which treaty ended the Thirty Years' War. Distractors are all
 plausible, so half-knowing the field does not get you there.
 
+### The questions get harder as a game goes on
+
+With `content.curve: ramp` (the default), a game opens on the easiest tier you
+allow and climbs to the hardest, spread across however many rounds you chose. The
+five pips beside the round counter show the current question's tier, so the climb
+is visible rather than theoretical:
+
+```
+Rodada 1 de 3   ●○○○○   O acarajé é um prato típico de qual estado?
+Rodada 2 de 3   ●●●○○   Qual é o país mais populoso da África?
+Rodada 3 de 3   ●●●●●   O teorema da incompletude de Gödel afirma que...
+```
+
+Set `curve: flat` to draw anywhere in range instead.
+
 Two further knobs, in `config.yaml`:
 
-- **`content.curve: ramp`** (the default) opens a game on the easiest allowed tier
-  and climbs to the hardest. `flat` draws anywhere in range.
+- **`games.<id>.rounds`** sets each game's default round count (the picker's − +
+  overrides it for the session, from 1 to 20).
 - **`difficulty_bonus`** pays more for harder items: at the default `0.25` a
   level-5 question is worth double a level-1, so a hard bank rewards you.
 

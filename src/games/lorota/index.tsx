@@ -149,6 +149,7 @@ function LorotaGame({ settings, players, picker, multiplier, difficulty, onFinis
       players={players}
       board={board}
       activeId={activePlayer.id}
+      difficulty={item.difficulty}
       hints={phase.kind === 'reveal' ? [t('keys.advance'), t('keys.pause')] : [t('keys.select'), t('keys.pause')]}
     >
       <PromptCard eyebrow={t('common.turnOf', { name: activePlayer.name })}>{item.topic}</PromptCard>

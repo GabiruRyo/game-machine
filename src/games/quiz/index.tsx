@@ -196,6 +196,7 @@ function QuizGame({ settings, players, picker, multiplier, difficulty, onFinish,
       players={players}
       board={board}
       activeId={phase.kind === 'stealing' ? stealer?.id : activePlayer.id}
+      difficulty={item.difficulty}
       hints={hints}
     >
       <PromptCard eyebrow={whoseTurn}>{item.question}</PromptCard>

@@ -10,11 +10,12 @@ menu:
   settings: Settings
   howto: How to play
   back: Back
-  difficulty: Difficulty
+  configHint: "Every setting lives in data/config.yaml — edit it and reload the page."
   resetContent: Reset content history
   resetContentDone: History cleared — all content is available again.
   contentEmpty: no content
   itemsAvailable: "{count} items available"
+  roundsShort: "{count} rounds"
   disabled: disabled in config.yaml
 
 difficulty:
@@ -48,6 +49,7 @@ common:
   no: No
   nobody: Nobody
   turnOf: "{name}'s turn"
+  difficultyLevel: "Difficulty {level} of 5"
   finalScores: Final scores
   playAgain: Play again
   backToMenu: Back to menu
@@ -61,6 +63,7 @@ keys:
   skip: "Backspace — skip"
   pause: "Esc — menu"
   fullscreen: "Shift+F — fullscreen"
+  tune: "− + — rounds"
   type: "Type, then press Enter"
 
 errors:

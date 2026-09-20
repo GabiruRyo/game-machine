@@ -90,6 +90,30 @@ export function App() {
     [chosen, config],
   )
 
+  /** Rounds, overridable per game from the picker. Config supplies the default. */
+  const [rounds, setRounds] = useState<Record<string, number>>({})
+
+  const roundsFor = useCallback(
+    (gameId: string): number => {
+      const fromConfig = (config?.games[gameId] as { rounds?: number } | undefined)?.rounds
+      return rounds[gameId] ?? fromConfig ?? 6
+    },
+    [rounds, config],
+  )
+
+  const tuneRounds = useCallback(
+    (gameId: string, delta: number) => {
+      // 1-20 is inside every game's own schema range, so this can never produce
+      // a value the game would reject.
+      setRounds((prev) => ({
+        ...prev,
+        [gameId]: Math.max(1, Math.min(20, roundsFor(gameId) + delta)),
+      }))
+      play('move')
+    },
+    [roundsFor],
+  )
+
   const cycleDifficulty = useCallback(
     (gameId: string, delta: number) => {
       const current = presetFor(difficultyFor(gameId)) ?? 'all'
@@ -103,10 +127,7 @@ export function App() {
 
   /** Enabled in config, has content for this language, and has enough players. */
   const playability = useMemo(() => {
-    const map = new Map<
-      string,
-      { count: number; reason: 'ok' | 'disabled' | 'players' | 'empty'; preset: DifficultyPreset | null; usesDifficulty: boolean }
-    >()
+    const map = new Map<string, Playability>()
     for (const game of GAMES) {
       const usesDifficulty = !DIFFICULTY_FREE_GAMES.has(game.id)
       const count = itemsAtDifficulty(
@@ -116,10 +137,16 @@ export function App() {
       ).length
       const enabled = (config?.games[game.id] as { enabled?: boolean } | undefined)?.enabled !== false
       const reason = !enabled ? 'disabled' : players.length < game.minPlayers ? 'players' : count === 0 ? 'empty' : 'ok'
-      map.set(game.id, { count, reason, preset: presetFor(difficultyFor(game.id)), usesDifficulty })
+      map.set(game.id, {
+        count,
+        reason,
+        preset: presetFor(difficultyFor(game.id)),
+        usesDifficulty,
+        rounds: roundsFor(game.id),
+      })
     }
     return map
-  }, [content, config, players.length, difficultyFor])
+  }, [content, config, players.length, difficultyFor, roundsFor])
 
   const playableIds = useMemo(
     () => GAMES.filter((g) => playability.get(g.id)?.reason === 'ok').map((g) => g.id),
@@ -153,6 +180,8 @@ export function App() {
       )
     }
 
+    // The picker's round count wins over the config default.
+    const settingsWithRounds = { ...settings.data, rounds: roundsFor(gameId) }
     const allowed = difficultyFor(gameId)
     const picker = createPicker<BaseItem>(
       `${gameId}:${lang}`,
@@ -163,7 +192,7 @@ export function App() {
     return (
       <game.Component
         config={config}
-        settings={settings.data}
+        settings={settingsWithRounds}
         players={players}
         picker={picker}
         multiplier={multiplier}
@@ -206,6 +235,7 @@ export function App() {
         <GamePicker
           playability={playability}
           onAdjust={cycleDifficulty}
+          onTune={tuneRounds}
           onStart={(gameId) => {
             unlockAudio()
             play('reveal')
@@ -341,6 +371,8 @@ function MainMenu({
           ⚠ {contentIssues.length} — {t('errors.contentTitle')}
         </button>
       ) : null}
+
+      <p className="faint center" style={{ fontSize: '0.85em' }}>{t('menu.configHint')}</p>
     </Screen>
   )
 }
@@ -350,17 +382,20 @@ interface Playability {
   reason: 'ok' | 'disabled' | 'players' | 'empty'
   preset: DifficultyPreset | null
   usesDifficulty: boolean
+  rounds: number
 }
 
 function GamePicker({
   playability,
   onStart,
   onAdjust,
+  onTune,
   onBack,
 }: {
   playability: Map<string, Playability>
   onStart: (gameId: string) => void
   onAdjust: (gameId: string, delta: number) => void
+  onTune: (gameId: string, delta: number) => void
   onBack: () => void
 }) {
   const { t } = useI18n()
@@ -382,10 +417,14 @@ function GamePicker({
       : state?.reason === 'empty' ? t('menu.contentEmpty')
       : t('menu.itemsAvailable', { count: state?.count ?? 0 })
 
+    const parts = [t('menu.roundsShort', { count: state?.rounds ?? 0 })]
+    if (difficulty) parts.push(difficulty)
+    parts.push(status)
+
     return {
       id: game.id,
       label: t(`games.${game.id}.name`),
-      meta: difficulty ? `${difficulty}  ·  ${status}` : status,
+      meta: parts.join('  ·  '),
       disabled: state?.reason !== 'ok',
     }
   })
@@ -402,13 +441,17 @@ function GamePicker({
         const entry = entries[i]
         if (entry && playability.get(entry.id)?.usesDifficulty) onAdjust(entry.id, delta)
       },
+      onTune: (i, delta) => {
+        const entry = entries[i]
+        if (entry) onTune(entry.id, delta)
+      },
     },
   )
 
   const highlighted = entries[index]
 
   return (
-    <Screen bottom={<KeyHints hints={[t('keys.navigate'), t('keys.adjust'), t('keys.advance'), t('keys.pause')]} />}>
+    <Screen bottom={<KeyHints hints={[t('keys.navigate'), t('keys.adjust'), t('keys.tune'), t('keys.advance'), t('keys.pause')]} />}>
       <h1 className="title">{t('menu.play')}</h1>
       <MenuList
         entries={entries}

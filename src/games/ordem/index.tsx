@@ -158,6 +158,7 @@ function OrdemGame({ settings, players, picker, multiplier, difficulty, onFinish
       totalRounds={settings.rounds}
       players={players}
       board={board}
+      difficulty={item.difficulty}
       hints={phase === 'reveal' ? [t('keys.advance'), t('keys.pause')] : [t('keys.select'), t('keys.skip'), t('keys.pause')]}
     >
       <PromptCard>{item.prompt}</PromptCard>

@@ -104,9 +104,14 @@ guide: `data/content/README.md`.
 - **Difficulty is per game and applied when a game's picker is built**, not at load time
   and not globally. `passesFilters` deliberately ignores difficulty; `itemsAtDifficulty`
   does the slicing. Games in `DIFFICULTY_FREE_GAMES` ignore it entirely.
-- **`↑`/`↓` navigate a list, `←`/`→` adjust the highlighted row.** They used to be the
-  same `adjust` action; splitting them is what let the game picker carry a per-row
-  difficulty control. `useMenuNav` takes an `onAdjust` for that.
+- **Three input axes, not one.** `↑`/`↓` = `navigate` (move through a list), `←`/`→` =
+  `adjust` (first per-row setting, difficulty), `−`/`=` = `tune` (second per-row setting,
+  rounds). They began as a single `adjust`; splitting them is what lets one picker row
+  carry two settings. `useMenuNav` takes `onAdjust` and `onTune`.
+- **Rounds and difficulty are session overrides on top of config.** `data/config.yaml`
+  supplies defaults; the picker's state wins and is injected in `renderGame`
+  (`{ ...settings.data, rounds: roundsFor(gameId) }`). Party Mode goes through the same
+  path, so it honours them too.
 - **Be honest about difficulty tiers.** The first "hard" pack was school-level recall
   ("largest prime under 100") tagged 4-5, which made Expert meaningless. Tier 5 must
   require having studied the subject; see the scale in `data/content/README.md`.

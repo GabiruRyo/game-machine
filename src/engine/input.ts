@@ -14,6 +14,8 @@ export type Action =
   | { type: 'navigate'; delta: number }
   /** Horizontal: change the value of whatever is highlighted. */
   | { type: 'adjust'; delta: number }
+  /** Minus/plus: change a second value on the highlighted row. */
+  | { type: 'tune'; delta: number }
   | { type: 'judge'; value: boolean }
   | { type: 'skip' }
   | { type: 'pause' }
@@ -44,6 +46,12 @@ export function keyToAction(event: KeyboardEvent): Action | null {
       return { type: 'adjust', delta: -1 }
     case 'ArrowRight':
       return { type: 'adjust', delta: 1 }
+    case 'Minus':
+    case 'NumpadSubtract':
+      return { type: 'tune', delta: -1 }
+    case 'Equal':
+    case 'NumpadAdd':
+      return { type: 'tune', delta: 1 }
     case 'KeyY':
       return { type: 'judge', value: true }
     case 'KeyN':

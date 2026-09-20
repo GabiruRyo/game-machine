@@ -14,9 +14,11 @@ export function useMenuNav<T extends { disabled?: boolean }>(
     onBack?: () => void
     /** Left/right on the highlighted row, for per-row settings. */
     onAdjust?: (index: number, delta: number) => void
+    /** Minus/plus on the highlighted row, for a second setting. */
+    onTune?: (index: number, delta: number) => void
   } = {},
 ) {
-  const { enabled = true, onBack, onAdjust } = options
+  const { enabled = true, onBack, onAdjust, onTune } = options
   const [index, setIndex] = useState(0)
 
   // Keep the cursor in range when the list shrinks (e.g. removing a player).
@@ -50,6 +52,9 @@ export function useMenuNav<T extends { disabled?: boolean }>(
         case 'adjust':
           onAdjust?.(index, action.delta)
           break
+        case 'tune':
+          onTune?.(index, action.delta)
+          break
         case 'advance':
           if (!entries[index]?.disabled) onChoose(index)
           break
@@ -66,7 +71,7 @@ export function useMenuNav<T extends { disabled?: boolean }>(
           break
       }
     },
-    [entries, index, move, onChoose, onBack, onAdjust],
+    [entries, index, move, onChoose, onBack, onAdjust, onTune],
   )
 
   useKeyboard(handle, { enabled })
