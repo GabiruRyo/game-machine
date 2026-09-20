@@ -1,0 +1,126 @@
+id: tribunal-extra
+game: tribunal
+lang: en
+title: More motions
+version: 1
+items:
+  - id: tx001
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Flip-flops count as formal footwear"
+  - id: tx002
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Every home should have one room reserved for mess"
+  - id: tx003
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Ketchup on eggs is an abomination"
+  - id: tx004
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Video meetings should require the camera to be off"
+  - id: tx005
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "The soundtrack matters more than the script"
+  - id: tx006
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Whoever turns up late should pay the bill"
+  - id: tx007
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Sleeping in socks is acceptable"
+  - id: tx008
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Books should carry a summary on page one"
+  - id: tx009
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Pets are better company than people"
+  - id: tx010
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Nobody should be allowed to send a voice note over a minute"
+  - id: tx011
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Pudding before the main course makes more sense"
+  - id: tx012
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Every argument should have a five-minute limit"
+  - id: tx013
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Matching outfits for couples are embarrassing"
+  - id: tx014
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "A long weekend is worth more than a pay rise"
+  - id: tx015
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Anyone who talks in the cinema should be banned"
+  - id: tx016
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Aeroplane food is unfairly maligned"
+  - id: cx001
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Speak as though you're selling a product"
+  - id: cx002
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "You must include a made-up number"
+  - id: cx003
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "End every sentence with 'and that's final'"
+  - id: cx004
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Talk like a politician on the campaign trail"
+  - id: cx005
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Use at least three exaggerated gestures"
+  - id: cx006
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Quote a proverb you have just invented"
+  - id: cx007
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Speak as slowly as you possibly can"
+  - id: cx008
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Start by crying and finish by shouting"

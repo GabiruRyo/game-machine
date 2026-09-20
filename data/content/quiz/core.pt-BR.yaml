@@ -1,0 +1,248 @@
+id: quiz-core
+game: quiz
+lang: pt-BR
+title: Conhecimentos gerais
+version: 1
+items:
+  - id: q001
+    category: geografia
+    difficulty: 1
+    question: "Qual é o maior país da América do Sul?"
+    options: ["Brasil", "Argentina", "Peru", "Colômbia"]
+    answer: 0
+  - id: q002
+    category: espaço
+    difficulty: 1
+    question: "Qual planeta está mais próximo do Sol?"
+    options: ["Vênus", "Mercúrio", "Marte", "Terra"]
+    answer: 1
+  - id: q003
+    category: matemática
+    difficulty: 1
+    question: "Quantos lados tem um hexágono?"
+    options: ["5", "6", "7", "8"]
+    answer: 1
+  - id: q004
+    category: geografia
+    difficulty: 1
+    question: "Qual é o maior oceano do mundo?"
+    options: ["Atlântico", "Índico", "Pacífico", "Ártico"]
+    answer: 2
+  - id: q005
+    category: ciência
+    difficulty: 2
+    question: "Qual gás as plantas absorvem durante a fotossíntese?"
+    options: ["Oxigênio", "Nitrogênio", "Gás carbônico", "Hidrogênio"]
+    answer: 2
+  - id: q006
+    category: geografia
+    difficulty: 1
+    question: "Qual é a capital do Japão?"
+    options: ["Quioto", "Osaka", "Tóquio", "Nagoia"]
+    answer: 2
+  - id: q007
+    category: arte
+    difficulty: 1
+    question: "Quem pintou a Mona Lisa?"
+    options: ["Michelangelo", "Leonardo da Vinci", "Rafael", "Donatello"]
+    answer: 1
+  - id: q008
+    category: animais
+    difficulty: 1
+    question: "Qual é o maior mamífero do mundo?"
+    options: ["Elefante-africano", "Baleia-azul", "Girafa", "Urso-polar"]
+    answer: 1
+  - id: q009
+    category: corpo
+    difficulty: 3
+    question: "Quantos ossos tem o corpo humano adulto?"
+    options: ["186", "206", "226", "246"]
+    answer: 1
+    note: "Bebês nascem com cerca de 300 ossos; muitos se fundem durante o crescimento."
+  - id: q010
+    category: ciência
+    difficulty: 1
+    question: "O símbolo químico O representa qual elemento?"
+    options: ["Ouro", "Ósmio", "Oxigênio", "Ozônio"]
+    answer: 2
+  - id: q011
+    category: história
+    difficulty: 2
+    question: "Em que ano o ser humano pisou na Lua pela primeira vez?"
+    options: ["1961", "1965", "1969", "1972"]
+    answer: 2
+  - id: q012
+    category: geografia
+    difficulty: 1
+    question: "Qual país tem o formato parecido com o de uma bota?"
+    options: ["Grécia", "Portugal", "Itália", "Croácia"]
+    answer: 2
+  - id: q013
+    category: esportes
+    difficulty: 1
+    question: "Quantos minutos tem o tempo normal de uma partida de futebol?"
+    options: ["60", "80", "90", "100"]
+    answer: 2
+  - id: q014
+    category: ciência
+    difficulty: 2
+    question: "Qual metal é líquido à temperatura ambiente?"
+    options: ["Chumbo", "Mercúrio", "Alumínio", "Estanho"]
+    answer: 1
+  - id: q015
+    category: geografia
+    difficulty: 2
+    question: "Qual é o maior deserto quente do mundo?"
+    options: ["Saara", "Gobi", "Kalahari", "Atacama"]
+    answer: 0
+  - id: q016
+    category: literatura
+    difficulty: 2
+    question: "Quem escreveu Dom Quixote?"
+    options: ["Miguel de Cervantes", "Lope de Vega", "Dante Alighieri", "Camões"]
+    answer: 0
+  - id: q017
+    category: música
+    difficulty: 1
+    question: "Quantas cordas tem um violão comum?"
+    options: ["4", "5", "6", "7"]
+    answer: 2
+  - id: q018
+    category: geografia
+    difficulty: 1
+    question: "Qual é a moeda oficial do Reino Unido?"
+    options: ["Euro", "Libra esterlina", "Dólar", "Franco"]
+    answer: 1
+  - id: q019
+    category: animais
+    difficulty: 1
+    question: "Qual é o animal terrestre mais rápido?"
+    options: ["Leão", "Guepardo", "Antílope", "Cavalo"]
+    answer: 1
+  - id: q020
+    category: geografia
+    difficulty: 1
+    question: "Quantos continentes existem no modelo mais usado?"
+    options: ["5", "6", "7", "8"]
+    answer: 2
+  - id: q021
+    category: corpo
+    difficulty: 2
+    question: "Qual é o osso mais longo do corpo humano?"
+    options: ["Úmero", "Tíbia", "Fêmur", "Fíbula"]
+    answer: 2
+  - id: q022
+    category: espaço
+    difficulty: 1
+    question: "Qual planeta é conhecido como o planeta vermelho?"
+    options: ["Júpiter", "Marte", "Vênus", "Saturno"]
+    answer: 1
+  - id: q023
+    category: ciência
+    difficulty: 1
+    question: "Quem desenvolveu a teoria da relatividade?"
+    options: ["Isaac Newton", "Albert Einstein", "Niels Bohr", "Galileu Galilei"]
+    answer: 1
+  - id: q024
+    category: geografia
+    difficulty: 3
+    question: "Qual é a capital da Austrália?"
+    options: ["Sydney", "Melbourne", "Camberra", "Perth"]
+    answer: 2
+    note: "Camberra foi construída como capital justamente para encerrar a disputa entre Sydney e Melbourne."
+  - id: q025
+    category: esportes
+    difficulty: 2
+    question: "Quantos jogadores de vôlei ficam em quadra por time?"
+    options: ["5", "6", "7", "11"]
+    answer: 1
+  - id: q026
+    category: comida
+    difficulty: 1
+    question: "Qual fruta é famosa por ser rica em potássio?"
+    options: ["Maçã", "Banana", "Uva", "Pera"]
+    answer: 1
+  - id: q027
+    category: corpo
+    difficulty: 2
+    question: "Qual é o maior órgão do corpo humano?"
+    options: ["Fígado", "Pulmão", "Pele", "Intestino"]
+    answer: 2
+  - id: q028
+    category: história
+    difficulty: 2
+    question: "Em qual país aconteceram os primeiros Jogos Olímpicos modernos?"
+    options: ["França", "Grécia", "Itália", "Inglaterra"]
+    answer: 1
+  - id: q029
+    category: ciência
+    difficulty: 2
+    question: "Qual é o símbolo químico do ouro?"
+    options: ["Ag", "Au", "Go", "Or"]
+    answer: 1
+  - id: q030
+    category: matemática
+    difficulty: 3
+    question: "Quantos lados tem um dodecágono?"
+    options: ["10", "11", "12", "20"]
+    answer: 2
+  - id: q031
+    category: geografia
+    difficulty: 1
+    question: "Qual rio atravessa o Egito?"
+    options: ["Nilo", "Tigre", "Eufrates", "Congo"]
+    answer: 0
+  - id: q032
+    category: ciência
+    difficulty: 3
+    question: "Qual é a velocidade aproximada da luz no vácuo?"
+    options: ["30.000 km/s", "300.000 km/s", "3.000.000 km/s", "300 km/s"]
+    answer: 1
+  - id: q033
+    category: história
+    difficulty: 2
+    question: "Quem foi o primeiro ser humano a viajar ao espaço?"
+    options: ["Neil Armstrong", "Yuri Gagarin", "Alan Shepard", "Buzz Aldrin"]
+    answer: 1
+  - id: q034
+    category: música
+    difficulty: 1
+    question: "Qual instrumento tem teclas pretas e brancas?"
+    options: ["Harpa", "Piano", "Trompete", "Violino"]
+    answer: 1
+  - id: q035
+    category: ciência
+    difficulty: 2
+    question: "Qual é a menor unidade que mantém as propriedades de um elemento químico?"
+    options: ["Molécula", "Átomo", "Célula", "Elétron"]
+    answer: 1
+  - id: q036
+    category: ciência
+    difficulty: 1
+    question: "Quantas cores são tradicionalmente citadas no arco-íris?"
+    options: ["5", "6", "7", "8"]
+    answer: 2
+  - id: q037
+    category: história
+    difficulty: 2
+    question: "Em qual país o papel foi inventado?"
+    options: ["Egito", "China", "Índia", "Grécia"]
+    answer: 1
+  - id: q038
+    category: animais
+    difficulty: 2
+    question: "Qual é o maior felino do mundo?"
+    options: ["Leão", "Tigre", "Onça-pintada", "Leopardo"]
+    answer: 1
+  - id: q039
+    category: matemática
+    difficulty: 1
+    question: "Quantos graus somam os ângulos internos de um triângulo?"
+    options: ["90", "180", "270", "360"]
+    answer: 1
+  - id: q040
+    category: corpo
+    difficulty: 2
+    question: "A exposição ao sol ajuda o corpo a produzir qual vitamina?"
+    options: ["Vitamina A", "Vitamina C", "Vitamina D", "Vitamina K"]
+    answer: 2

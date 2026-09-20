@@ -1,0 +1,186 @@
+id: tribunal-core
+game: tribunal
+lang: pt-BR
+title: Teses e reviravoltas
+version: 1
+items:
+  - id: tb001
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Pizza de abacaxi deveria ser crime federal"
+  - id: tb002
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Segunda-feira deveria ser opcional"
+  - id: tb003
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Gatos são melhores que cachorros, objetivamente"
+  - id: tb004
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Toda reunião deveria durar no máximo cinco minutos"
+  - id: tb005
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Filmes deveriam ser proibidos de ter continuação"
+  - id: tb006
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Café é superestimado"
+  - id: tb007
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Emojis são uma língua legítima"
+  - id: tb008
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Acordar cedo é uma escolha moralmente duvidosa"
+  - id: tb009
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Legendas são melhores que dublagem, sempre"
+  - id: tb010
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Bolo de aniversário deveria ser servido antes do jantar"
+  - id: tb011
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Ninguém realmente gosta de academia"
+  - id: tb012
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Praia é pior que montanha"
+  - id: tb013
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Spoilers melhoram a experiência"
+  - id: tb014
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Deveria existir um limite legal de fotos por viagem"
+  - id: tb015
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Comer sozinho em restaurante é o auge da civilização"
+  - id: tb016
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Playlists compartilhadas destroem amizades"
+  - id: tb017
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Plantas de casa são um golpe"
+  - id: tb018
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Churrasco é melhor que qualquer restaurante"
+  - id: tb019
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Ler o livro depois do filme é a ordem correta"
+  - id: tb020
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Todo mundo deveria ter direito a uma soneca no trabalho"
+  - id: tb021
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Presentes de amigo secreto deveriam ser abolidos"
+  - id: tb022
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Sorvete é aceitável no café da manhã"
+  - id: tb023
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Viajar sem roteiro é a única forma de viajar"
+  - id: tb024
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Grupos de família no celular deveriam ter horário de funcionamento"
+  - id: cb001
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Agora você precisa citar sua avó"
+  - id: cb002
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Termine o argumento cantando"
+  - id: cb003
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Você só pode falar em perguntas"
+  - id: cb004
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Use uma metáfora de futebol"
+  - id: cb005
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Fale como se estivesse num documentário"
+  - id: cb006
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Você precisa chorar de mentira"
+  - id: cb007
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Cite uma estatística claramente inventada"
+  - id: cb008
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Fale sussurrando até o fim"
+  - id: cb009
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Elogie o adversário antes de destruí-lo"
+  - id: cb010
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Use a palavra 'batata' pelo menos duas vezes"
+  - id: cb011
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Termine com uma ameaça vazia"
+  - id: cb012
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Argumente como se fosse um advogado de filme"

@@ -1,0 +1,182 @@
+id: lorota-core
+game: lorota
+lang: en
+title: Facts and fabrications
+version: 1
+items:
+  - id: lo001
+    category: animais
+    difficulty: 2
+    topic: "Octopuses"
+    lie:
+      text: "They have flexible bones inside the mantle"
+      note: "Octopuses have no bones at all, which is how they squeeze through holes the size of their beak."
+    truths:
+      - { text: "They have three hearts" }
+      - { text: "Their blood is blue" }
+      - { text: "They change both the colour and texture of their skin" }
+  - id: lo002
+    category: comida
+    difficulty: 2
+    topic: "Bananas"
+    lie:
+      text: "They grow pointing down towards the ground"
+      note: "Bananas grow pointing upwards, against gravity."
+    truths:
+      - { text: "Botanically they are a berry" }
+      - { text: "The banana plant is a giant herb, not a tree" }
+      - { text: "Nearly every commercial banana is genetically identical" }
+  - id: lo003
+    category: corpo
+    difficulty: 2
+    topic: "The human body"
+    lie:
+      text: "Your heart stops beating when you sneeze"
+      note: "The heart does not stop; at most its rhythm shifts for an instant."
+    truths:
+      - { text: "Stomach acid is strong enough to corrode metal" }
+      - { text: "We produce around 1.5 litres of saliva a day" }
+      - { text: "Bone is stronger than concrete by weight" }
+  - id: lo004
+    category: espaço
+    difficulty: 2
+    topic: "Outer space"
+    lie:
+      text: "The Great Wall of China is visible to the naked eye from space"
+      note: "Astronauts confirm you cannot: it is long, but far too narrow."
+    truths:
+      - { text: "There is no sound in a vacuum" }
+      - { text: "A day on Venus lasts longer than a year on Venus" }
+      - { text: "The Moon drifts a few centimetres further from Earth each year" }
+  - id: lo005
+    category: animais
+    difficulty: 2
+    topic: "Penguins"
+    lie:
+      text: "They live at the North Pole alongside polar bears"
+      note: "There are no wild penguins in the northern hemisphere; polar bears and penguins never meet."
+    truths:
+      - { text: "Some present their mate with a pebble" }
+      - { text: "They can drink seawater" }
+      - { text: "Emperor penguins incubate the egg on top of their feet" }
+  - id: lo006
+    category: história
+    difficulty: 2
+    topic: "The Vikings"
+    lie:
+      text: "They wore horned helmets into battle"
+      note: "The horns came from a 19th-century opera, not from archaeology."
+    truths:
+      - { text: "They reached America before Columbus" }
+      - { text: "They were also long-distance traders" }
+      - { text: "They used shallow-draught ships to sail up rivers" }
+  - id: lo007
+    category: ciência
+    difficulty: 2
+    topic: "The brain"
+    lie:
+      text: "We only use 10% of our brain's capacity"
+      note: "Imaging shows virtually every region active over the course of a day."
+    truths:
+      - { text: "It consumes around 20% of the body's energy" }
+      - { text: "It has no pain receptors of its own" }
+      - { text: "It stays highly active during sleep" }
+  - id: lo008
+    category: animais
+    difficulty: 2
+    topic: "Camels"
+    lie:
+      text: "They cannot swim"
+      note: "Camels swim perfectly well, despite rarely getting the chance to practise."
+    truths:
+      - { text: "The hump stores fat, not water" }
+      - { text: "They can drink over 100 litres in one go" }
+      - { text: "They have three eyelids on each eye" }
+  - id: lo009
+    category: comida
+    difficulty: 3
+    topic: "Chocolate"
+    lie:
+      text: "White chocolate contains cocoa solids"
+      note: "White chocolate contains cocoa butter but none of the cocoa solids."
+    truths:
+      - { text: "It comes from the cacao seed" }
+      - { text: "It is toxic to dogs" }
+      - { text: "The Maya drank it as a bitter beverage" }
+  - id: lo010
+    category: geografia
+    difficulty: 3
+    topic: "Mount Everest"
+    lie:
+      text: "It is the tallest mountain on Earth measured from base to peak"
+      note: "Measured from its base, Mauna Kea is taller; its base just happens to sit on the ocean floor."
+    truths:
+      - { text: "It grows a few millimetres every year" }
+      - { text: "There are marine fossils near its summit" }
+      - { text: "Summit temperatures drop past -40 °C" }
+  - id: lo011
+    category: animais
+    difficulty: 1
+    topic: "Cats"
+    lie:
+      text: "They always land on their feet, from any height"
+      note: "The righting reflex needs a minimum height, and long falls injure them anyway."
+    truths:
+      - { text: "They cannot taste sweetness" }
+      - { text: "They purr between 25 and 150 Hz" }
+      - { text: "Their collarbone connects to no other bone" }
+  - id: lo012
+    category: ciência
+    difficulty: 2
+    topic: "Lightning"
+    lie:
+      text: "It only happens during rainfall"
+      note: "Dry lightning strikes far from any rain and regularly starts wildfires."
+    truths:
+      - { text: "It can strike the same place many times" }
+      - { text: "It is hotter than the surface of the Sun" }
+      - { text: "The light arrives well before the sound" }
+  - id: lo013
+    category: comida
+    difficulty: 2
+    topic: "Coffee"
+    lie:
+      text: "The darker the roast, the more caffeine in the bean"
+      note: "A darker roast burns off a little caffeine, so light roast has slightly more."
+    truths:
+      - { text: "The name comes from the Kaffa region of Ethiopia" }
+      - { text: "Decaf still contains a little caffeine" }
+      - { text: "Brazil is the world's largest producer" }
+  - id: lo014
+    category: ciência
+    difficulty: 1
+    topic: "Water"
+    lie:
+      text: "The sea is salty because fish release salt"
+      note: "The salt comes from rock: rain dissolves minerals and rivers carry them to the sea."
+    truths:
+      - { text: "It expands when it freezes" }
+      - { text: "It covers about 71% of Earth's surface" }
+      - { text: "Pure water is a poor conductor of electricity" }
+  - id: lo015
+    category: história
+    difficulty: 2
+    topic: "Dinosaurs"
+    lie:
+      text: "They lived alongside the first humans"
+      note: "Some 65 million years separate the dinosaur extinction from the first humans."
+    truths:
+      - { text: "Birds are descended from dinosaurs" }
+      - { text: "They existed for over 150 million years" }
+      - { text: "Many of them had feathers" }
+  - id: lo016
+    category: tecnologia
+    difficulty: 3
+    topic: "The internet"
+    lie:
+      text: "It was invented by the same person who created the World Wide Web"
+      note: "The internet is the network; the web is a service running on top of it, created decades later."
+    truths:
+      - { text: "It began as a military research project" }
+      - { text: "Most traffic travels through undersea cables" }
+      - { text: "The first email was sent in the 1970s" }

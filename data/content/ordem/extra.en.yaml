@@ -1,0 +1,204 @@
+id: ordem-extra
+game: ordem
+lang: en
+title: More sequences
+version: 1
+items:
+  - id: ox001
+    category: história
+    difficulty: 2
+    prompt: "Oldest to most recent"
+    entries:
+      - { label: "Ancient Egypt unified", detail: "~3100 a.C." }
+      - { label: "Roman Empire founded", detail: "27 a.C." }
+      - { label: "Columbus reaches America", detail: "1492" }
+      - { label: "Fall of the Berlin Wall", detail: "1989" }
+  - id: ox002
+    category: ciência
+    difficulty: 2
+    prompt: "Smallest to largest"
+    entries:
+      - { label: "Atom", detail: "~0,1 nm" }
+      - { label: "Virus", detail: "~100 nm" }
+      - { label: "Bacterium", detail: "~2 µm" }
+      - { label: "Human cell", detail: "~30 µm" }
+  - id: ox003
+    category: animais
+    difficulty: 2
+    prompt: "Shortest to longest lifespan"
+    entries:
+      - { label: "Mouse", detail: "~2 anos" }
+      - { label: "Dog", detail: "~12 anos" }
+      - { label: "Horse", detail: "~28 anos" }
+      - { label: "Giant tortoise", detail: "~150 anos" }
+  - id: ox004
+    category: geografia
+    difficulty: 3
+    prompt: "Furthest north to furthest south"
+    entries:
+      - { label: "Oslo", detail: "60°N" }
+      - { label: "Rome", detail: "42°N" }
+      - { label: "Cairo", detail: "30°N" }
+      - { label: "Nairobi", detail: "1°S" }
+  - id: ox005
+    category: tecnologia
+    difficulty: 2
+    prompt: "Oldest to most recent"
+    entries:
+      - { label: "Telegraph", detail: "1837" }
+      - { label: "Telephone", detail: "1876" }
+      - { label: "The internet", detail: "1969" }
+      - { label: "Smartphone", detail: "2007" }
+  - id: ox006
+    category: comida
+    difficulty: 1
+    prompt: "Mildest to hottest"
+    entries:
+      - { label: "Bell pepper", detail: "0 SHU" }
+      - { label: "Jalapeño", detail: "~5.000 SHU" }
+      - { label: "Bird's eye chilli", detail: "~100.000 SHU" }
+      - { label: "Ghost pepper", detail: "~1.000.000 SHU" }
+  - id: ox007
+    category: espaço
+    difficulty: 3
+    prompt: "Nearest to furthest from Earth"
+    entries:
+      - { label: "The Moon", detail: "384 mil km" }
+      - { label: "The Sun", detail: "150 mi km" }
+      - { label: "Neptune", detail: "4,5 bi km" }
+      - { label: "Alpha Centauri", detail: "4,2 anos-luz" }
+  - id: ox008
+    category: história
+    difficulty: 3
+    prompt: "Oldest to most recent"
+    entries:
+      - { label: "First World War", detail: "1914" }
+      - { label: "Second World War", detail: "1939" }
+      - { label: "First satellite in orbit", detail: "1957" }
+      - { label: "First crewed Moon landing", detail: "1969" }
+  - id: ox009
+    category: geografia
+    difficulty: 2
+    prompt: "Smallest to largest by population"
+    entries:
+      - { label: "Iceland", detail: "~0,4 mi" }
+      - { label: "Uruguay", detail: "~3,4 mi" }
+      - { label: "Portugal", detail: "~10 mi" }
+      - { label: "Japan", detail: "~124 mi" }
+  - id: ox010
+    category: ciência
+    difficulty: 2
+    prompt: "Least to most dense"
+    entries:
+      - { label: "Polystyrene", detail: "0,05 g/cm³" }
+      - { label: "Water", detail: "1 g/cm³" }
+      - { label: "Aluminium", detail: "2,7 g/cm³" }
+      - { label: "Gold", detail: "19,3 g/cm³" }
+  - id: ox011
+    category: música
+    difficulty: 2
+    prompt: "Lowest to highest pitch"
+    entries:
+      - { label: "Double bass", detail: "grave" }
+      - { label: "Cello", detail: "médio-grave" }
+      - { label: "Viola", detail: "médio" }
+      - { label: "Violin", detail: "agudo" }
+  - id: ox012
+    category: animais
+    difficulty: 2
+    prompt: "Smallest to largest"
+    entries:
+      - { label: "Hummingbird", detail: "~5 cm" }
+      - { label: "Pigeon", detail: "~33 cm" }
+      - { label: "Eagle", detail: "~90 cm" }
+      - { label: "Ostrich", detail: "~250 cm" }
+  - id: ox013
+    category: história
+    difficulty: 3
+    prompt: "In chronological order of invention"
+    entries:
+      - { label: "Paper", detail: "~100" }
+      - { label: "Gunpowder", detail: "~900" }
+      - { label: "Printing press", detail: "1440" }
+      - { label: "Steam engine", detail: "1712" }
+  - id: ox014
+    category: corpo
+    difficulty: 2
+    prompt: "Smallest to largest organ"
+    entries:
+      - { label: "Pineal gland", detail: "~0,1 g" }
+      - { label: "Heart", detail: "~300 g" }
+      - { label: "Liver", detail: "~1,5 kg" }
+      - { label: "Skin", detail: "~4 kg" }
+  - id: ox015
+    category: geografia
+    difficulty: 3
+    prompt: "Smallest to largest desert"
+    entries:
+      - { label: "Atacama", detail: "105 mil km²" }
+      - { label: "Kalahari", detail: "900 mil km²" }
+      - { label: "Sahara", detail: "9,2 mi km²" }
+      - { label: "Antarctica", detail: "14 mi km²" }
+  - id: ox016
+    category: esportes
+    difficulty: 2
+    prompt: "Fewest to most players on the field"
+    entries:
+      - { label: "Singles tennis", detail: "2" }
+      - { label: "Basketball", detail: "10" }
+      - { label: "Football", detail: "22" }
+      - { label: "Rugby union", detail: "30" }
+  - id: ox017
+    category: ciência
+    difficulty: 3
+    prompt: "Lowest to highest temperature"
+    entries:
+      - { label: "Absolute zero", detail: "-273 °C" }
+      - { label: "Liquid nitrogen", detail: "-196 °C" }
+      - { label: "Iron melts", detail: "1.538 °C" }
+      - { label: "Surface of the Sun", detail: "5.500 °C" }
+  - id: ox018
+    category: comida
+    difficulty: 1
+    prompt: "Quickest to slowest to prepare"
+    entries:
+      - { label: "Toast", detail: "~2 min" }
+      - { label: "Boiled egg", detail: "~8 min" }
+      - { label: "Rice", detail: "~20 min" }
+      - { label: "Feijoada", detail: "~4 h" }
+  - id: ox019
+    category: geografia
+    difficulty: 2
+    prompt: "Shortest to longest river"
+    entries:
+      - { label: "Thames", detail: "346 km" }
+      - { label: "Rhine", detail: "1.230 km" }
+      - { label: "Danube", detail: "2.850 km" }
+      - { label: "Amazon", detail: "6.400 km" }
+  - id: ox020
+    category: arte
+    difficulty: 3
+    prompt: "Earliest art movement to latest"
+    entries:
+      - { label: "Renaissance", detail: "séc. XV" }
+      - { label: "Baroque", detail: "séc. XVII" }
+      - { label: "Impressionism", detail: "séc. XIX" }
+      - { label: "Surrealism", detail: "séc. XX" }
+  - id: ox021
+    category: ciência
+    difficulty: 2
+    prompt: "Shortest to longest span"
+    entries:
+      - { label: "A heartbeat", detail: "~1 s" }
+      - { label: "Earth's rotation", detail: "24 h" }
+      - { label: "Earth's orbit", detail: "365 dias" }
+      - { label: "Jupiter's orbit", detail: "12 anos" }
+  - id: ox022
+    category: tecnologia
+    difficulty: 2
+    prompt: "Smallest to largest capacity"
+    entries:
+      - { label: "Floppy disk", detail: "1,4 MB" }
+      - { label: "CD", detail: "700 MB" }
+      - { label: "DVD", detail: "4,7 GB" }
+      - { label: "Blu-ray", detail: "25 GB" }

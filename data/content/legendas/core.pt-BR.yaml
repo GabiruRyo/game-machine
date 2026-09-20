@@ -1,0 +1,126 @@
+id: legendas-core
+game: legendas
+lang: pt-BR
+title: Situações absurdas
+version: 1
+items:
+  - id: le001
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "A legenda de uma foto em que todo mundo está olhando para lados diferentes"
+  - id: le002
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "O que o cachorro está pensando quando você sai de casa"
+  - id: le003
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "A placa de aviso mais inútil já instalada"
+  - id: le004
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "O slogan de um produto que ninguém pediu"
+  - id: le005
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "A mensagem que você manda depois de ver o extrato do banco"
+  - id: le006
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "O título de um documentário sobre a sua vida doméstica"
+  - id: le007
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "O que o gato diria se pudesse mandar um áudio"
+  - id: le008
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "A desculpa que você daria para sair de uma festa às nove da noite"
+  - id: le009
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "A legenda da última foto tirada antes de algo dar muito errado"
+  - id: le010
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "O nome de uma banda formada por pessoas desta sala"
+  - id: le011
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "A avaliação de uma estrela para o próprio sofá"
+  - id: le012
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "O que está escrito no bilhete que veio dentro do biscoito da sorte"
+  - id: le013
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "A manchete de jornal sobre a sua manhã de hoje"
+  - id: le014
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "O lema de um país fundado por você"
+  - id: le015
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "A legenda de uma foto de família tirada no pior momento possível"
+  - id: le016
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "O aviso que deveria vir junto com a segunda xícara de café"
+  - id: le017
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "O que o wi-fi diria se pudesse se defender"
+  - id: le018
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "O nome do seu plano de aposentadoria"
+  - id: le019
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "A frase de efeito do vilão mais fraco de todos os tempos"
+  - id: le020
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "A descrição do seu perfil escrita pelo seu pior inimigo"
+  - id: le021
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "O que a geladeira pensa às três da manhã"
+  - id: le022
+    category: legenda
+    difficulty: 2
+    audience: teen
+    prompt: "A resposta mais passivo-agressiva possível a 'tudo bem?'"
+  - id: le023
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "O título do quadro que ninguém quis comprar"
+  - id: le024
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "O conselho mais inútil que já te deram"

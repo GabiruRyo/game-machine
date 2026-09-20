@@ -1,0 +1,156 @@
+id: quemdiria-core
+game: quemdiria
+lang: pt-BR
+title: Perguntas sobre a turma
+version: 1
+items:
+  - id: qd001
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Quem é mais provável de perder o celular numa festa?"
+  - id: qd002
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Quem levaria mais tempo para se arrumar?"
+  - id: qd003
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Quem seria o primeiro a se perder numa cidade nova?"
+  - id: qd004
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Quem sobreviveria mais tempo numa ilha deserta?"
+  - id: qd005
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Quem é mais provável de chorar num filme da Pixar?"
+  - id: qd006
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Quem esqueceria o próprio aniversário?"
+  - id: qd007
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Quem viraria chefe de alguém aqui em cinco anos?"
+  - id: qd008
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Quem fala mais alto ao telefone?"
+  - id: qd009
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Quem é mais provável de virar influencer?"
+  - id: qd010
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Quem discutiria com o garçom sobre a conta?"
+  - id: qd011
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Quem tem o histórico de buscas mais estranho?"
+  - id: qd012
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Quem chegaria atrasado no próprio casamento?"
+  - id: qd013
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Quem daria o melhor conselho às três da manhã?"
+  - id: qd014
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Quem é mais provável de cantar no chuveiro por uma hora?"
+  - id: qd015
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Quem levaria a pior num filme de terror?"
+  - id: qd016
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Quem adotaria cinco gatos sem pensar duas vezes?"
+  - id: qd017
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Quem é mais provável de largar tudo e mudar de país?"
+  - id: qd018
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Quem come a última fatia de pizza sem perguntar?"
+  - id: qd019
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Quem seria o pior motorista numa estrada desconhecida?"
+  - id: qd020
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Quem manda mais áudios longos?"
+  - id: qd021
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Quem ganharia um concurso de dança sem treinar?"
+  - id: qd022
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Quem é mais provável de dormir no cinema?"
+  - id: qd023
+    category: social
+    difficulty: 2
+    audience: teen
+    prompt: "Quem inventaria a desculpa mais criativa para faltar?"
+  - id: qd024
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Quem gasta mais tempo escolhendo o que assistir?"
+  - id: qd025
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Quem seria o melhor detetive?"
+  - id: qd026
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Quem é mais provável de se queimar cozinhando?"
+  - id: qd027
+    category: social
+    difficulty: 2
+    audience: teen
+    prompt: "Quem contaria um segredo sem querer?"
+  - id: qd028
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Quem tira as piores fotos dos outros?"
+  - id: qd029
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Quem seria o primeiro a se voluntariar para algo perigoso?"
+  - id: qd030
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Quem fala com animais como se fossem gente?"

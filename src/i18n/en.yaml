@@ -1,0 +1,176 @@
+app:
+  title: Game Machine
+  subtitle: A game night built for one screen
+
+menu:
+  play: Play a game
+  party: Party Mode
+  players: Players
+  language: Language
+  settings: Settings
+  howto: How to play
+  back: Back
+  resetContent: Reset content history
+  resetContentDone: History cleared — all content is available again.
+  contentEmpty: no content
+  itemsAvailable: "{count} items available"
+  disabled: disabled in config.yaml
+
+common:
+  next: Next
+  confirm: Confirm
+  skip: Skip
+  cancel: Cancel
+  round: "Round {current} of {total}"
+  points: points
+  point: point
+  player: Player
+  players: Players
+  team: Team
+  scores: Scores
+  winner: Winner
+  winners: Winners
+  ready: Ready
+  go: Go!
+  timeUp: Time's up!
+  correct: Correct!
+  wrong: Wrong!
+  yes: Yes
+  no: No
+  nobody: Nobody
+  turnOf: "{name}'s turn"
+  finalScores: Final scores
+  playAgain: Play again
+  backToMenu: Back to menu
+
+keys:
+  advance: "Space — continue"
+  select: "1-6 — choose"
+  adjust: "← → — move"
+  judge: "Y / N — got it or not"
+  skip: "Backspace — skip"
+  pause: "Esc — menu"
+  fullscreen: "Shift+F — fullscreen"
+  type: "Type, then press Enter"
+
+errors:
+  configTitle: Something is wrong in config.yaml
+  configIntro: "data/config.yaml could not be read. Fix the items below and reload the page."
+  contentTitle: Content problems
+  contentIntro: "These content packs were skipped. The rest of the pack still works."
+  allowed: "allowed values"
+  received: "received"
+  reload: Reload
+  noPlayers: Add at least one player to start.
+  needPlayers: "This game needs at least {count} players."
+  noContent: "No content available for this game. Check the filters in config.yaml."
+
+setup:
+  title: Who's playing?
+  addPlayer: Add player
+  namePlaceholder: Player name
+  remove: Remove
+  start: Start
+  hint: "Players can also be set in data/config.yaml."
+
+games:
+  quiz:
+    name: Quiz Blitz
+    tagline: Answer fast, score big
+    rules: "Each player answers on their turn. The faster the answer, the more it's worth. Miss it and the next player can steal."
+    stealTurn: "Steal! {name}'s turn"
+  ordem:
+    name: Line 'Em Up
+    tagline: Put it all in order
+    rules: "The whole room argues it out and drops the items into the right order. Every correct slot scores."
+    correctOrder: "Correct order"
+  lorota:
+    name: Fact or Fake
+    tagline: One of these is invented
+    rules: "Three statements, one is a lie. The turn player picks — and the room is free to talk them into the wrong one."
+    findTheLie: "Which one is invented?"
+  quemdiria:
+    name: Who Would
+    tagline: How well do you know this lot?
+    rules: "The turn player guesses who the room would vote for. The room votes with a show of hands."
+    predictTurn: "{name} predicts"
+    predictHint: "Who will the room vote for?"
+    roomVotes: "Room vote"
+    enterResult: "Everyone points at once. Enter who the room picked."
+    predicted: "Predicted"
+    roomChose: "The room chose"
+  proibida:
+    name: Taboo Rush
+    tagline: Describe it without saying it
+    rules: "The word shows on screen for everyone except the guesser, who turns their back. The room describes it without using the forbidden words."
+    guesserIs: "Guesser"
+    turnAround: "{name}, turn your back and don't look at the screen!"
+    roomDescribes: "Everyone else describes the word without using any of the forbidden ones."
+    dontSay: "Don't say"
+    hits: Hits
+    skipsLeft: "Skips left"
+    keyHit: "Space — got it"
+  tribunal:
+    name: Kangaroo Court
+    tagline: Defend the indefensible
+    rules: "Two players are handed opposite sides of an absurd motion and a ticking clock. The room delivers the verdict."
+    theMotion: "The motion"
+    sideFor: "For"
+    sideAgainst: "Against"
+    for: "For ({name})"
+    against: "Against ({name})"
+    curveball: "Curveball!"
+    keyDone: "Space — I'm done"
+    roomVerdict: "The room decides: who argued it better?"
+    voterTurn: "{name} votes"
+  historias:
+    name: Mad Tales
+    tagline: You have no idea what you're writing
+    rules: "The app asks for stray words without showing the story. Then it reads the damage out loud."
+    wordCount: "Word {current} of {total}"
+    noPeeking: "Nobody has seen the story yet — not even the person typing."
+    theStory: "The story"
+    pickFavourite: "Which word wrecked the story?"
+    favouriteWas: "Best word"
+  legendas:
+    name: Caption This
+    tagline: Funniest line takes it
+    rules: "Everyone writes a caption for the same absurd setup. Then the room votes for the best one."
+    setup: "The setup"
+    yourCaption: "Write your caption"
+    placeholder: "Go on then..."
+    voteTurn: "{name} votes for the best (not your own)"
+
+party:
+  leg: "Game {current} of {total}"
+  finale: "GRAND FINALE — worth {multiplier}x"
+  standings: "Where things stand"
+
+host:
+  welcome:
+    - Let's get this mess started.
+    - The machine is warm. Who's first?
+    - Ready your arguments and your excuses.
+  roundStart:
+    - Here we go.
+    - Next one!
+    - Pay attention now.
+    - Oh, this one's good.
+  correct:
+    - That was an easy one, right?
+    - There it is!
+    - Spot on.
+    - Someone has been studying.
+  wrong:
+    - Not even close.
+    - Not this time.
+    - That hurt to watch.
+    - The whole room knew that one.
+  timeout:
+    - The clock shows no mercy.
+    - Overthought it.
+    - Zero points for indecision.
+  gameEnd:
+    - That's it. Count the damage.
+    - And the scoreboard never lies.
+    - Game over.

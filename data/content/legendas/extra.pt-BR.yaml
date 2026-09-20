@@ -1,0 +1,136 @@
+id: legendas-extra
+game: legendas
+lang: pt-BR
+title: Mais situações
+version: 1
+items:
+  - id: lx001
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "O pensamento do gato enquanto te encara às cinco da manhã"
+  - id: lx002
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "O nome do restaurante mais mal avaliado da cidade"
+  - id: lx003
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "A legenda da foto do churrasco que acabou mal"
+  - id: lx004
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "O que diz o papelzinho dentro do remédio que ninguém lê"
+  - id: lx005
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "O título do seu filme autobiográfico"
+  - id: lx006
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "A mensagem automática do seu celular quando você não quer atender"
+  - id: lx007
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "O que a planta da sala pensa de você"
+  - id: lx008
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "O nome de um feriado que deveria existir"
+  - id: lx009
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "A legenda de uma selfie tirada sem querer"
+  - id: lx010
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "O aviso na porta do seu quarto"
+  - id: lx011
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "O que o despertador diria se pudesse falar"
+  - id: lx012
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "O slogan de uma cidade pequena que ninguém visita"
+  - id: lx013
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "A desculpa mais usada por você este ano"
+  - id: lx014
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "O nome do seu barco, se você tivesse um"
+  - id: lx015
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "O que está escrito na sua caneca favorita"
+  - id: lx016
+    category: legenda
+    difficulty: 2
+    audience: teen
+    prompt: "A resposta a 'a gente precisa conversar'"
+  - id: lx017
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "O título do capítulo de hoje da sua vida"
+  - id: lx018
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "O comentário mais inútil abaixo de um vídeo"
+  - id: lx019
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "O que o espelho diria de manhã se fosse honesto"
+  - id: lx020
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "O nome de uma lei que você aprovaria hoje"
+  - id: lx021
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "A legenda de uma foto de você dormindo em público"
+  - id: lx022
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "O que diz a etiqueta da roupa que encolheu"
+  - id: lx023
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "O pior nome possível para um bebê"
+  - id: lx024
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "A frase gravada na sua estátua"
+  - id: lx025
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "O que o wi-fi do vizinho se chamaria"
+  - id: lx026
+    category: legenda
+    difficulty: 2
+    audience: teen
+    prompt: "A última coisa que você diria antes de apagar as luzes"

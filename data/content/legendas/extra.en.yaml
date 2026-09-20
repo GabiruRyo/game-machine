@@ -1,0 +1,136 @@
+id: legendas-extra
+game: legendas
+lang: en
+title: More setups
+version: 1
+items:
+  - id: lx001
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "What the cat is thinking as it stares at you at five in the morning"
+  - id: lx002
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "The name of the worst-reviewed restaurant in town"
+  - id: lx003
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "The caption for the photo of the barbecue that went wrong"
+  - id: lx004
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "What the leaflet inside the medicine box says that nobody reads"
+  - id: lx005
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "The title of your autobiographical film"
+  - id: lx006
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "Your phone's auto-reply when you don't want to answer"
+  - id: lx007
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "What the house plant thinks of you"
+  - id: lx008
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "The name of a public holiday that should exist"
+  - id: lx009
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "The caption for an accidental selfie"
+  - id: lx010
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "The sign on your bedroom door"
+  - id: lx011
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "What the alarm clock would say if it could speak"
+  - id: lx012
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "The slogan of a small town nobody visits"
+  - id: lx013
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "Your most-used excuse this year"
+  - id: lx014
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "The name of your boat, if you had one"
+  - id: lx015
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "What's written on your favourite mug"
+  - id: lx016
+    category: legenda
+    difficulty: 2
+    audience: teen
+    prompt: "The reply to 'we need to talk'"
+  - id: lx017
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "The title of today's chapter of your life"
+  - id: lx018
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "The most useless comment under a video"
+  - id: lx019
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "What the mirror would say in the morning if it were honest"
+  - id: lx020
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "The name of a law you'd pass today"
+  - id: lx021
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "The caption for a photo of you asleep in public"
+  - id: lx022
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "What the label on the shirt that shrank says"
+  - id: lx023
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "The worst possible name for a baby"
+  - id: lx024
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "The line carved on your statue"
+  - id: lx025
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "What the neighbour's wi-fi would be called"
+  - id: lx026
+    category: legenda
+    difficulty: 2
+    audience: teen
+    prompt: "The last thing you'd say before the lights go out"

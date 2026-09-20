@@ -1,0 +1,206 @@
+id: proibida-extra
+game: proibida
+lang: pt-BR
+title: Mais cartas
+version: 1
+items:
+  - id: px001
+    category: lugares
+    difficulty: 1
+    word: "Aeroporto"
+    forbidden: ["avião", "viagem", "mala", "voo"]
+  - id: px002
+    category: comida
+    difficulty: 1
+    word: "Chocolate"
+    forbidden: ["doce", "cacau", "barra", "marrom"]
+  - id: px003
+    category: objetos
+    difficulty: 2
+    word: "Tesoura"
+    forbidden: ["cortar", "papel", "lâmina", "mão"]
+  - id: px004
+    category: animais
+    difficulty: 1
+    word: "Elefante"
+    forbidden: ["tromba", "grande", "cinza", "orelha"]
+  - id: px005
+    category: casa
+    difficulty: 2
+    word: "Chuveiro"
+    forbidden: ["água", "banho", "banheiro", "molhar"]
+  - id: px006
+    category: esportes
+    difficulty: 2
+    word: "Natação"
+    forbidden: ["água", "piscina", "nadar", "braçada"]
+  - id: px007
+    category: profissões
+    difficulty: 2
+    word: "Professor"
+    forbidden: ["aula", "escola", "aluno", "ensinar"]
+  - id: px008
+    category: natureza
+    difficulty: 2
+    word: "Vulcão"
+    forbidden: ["lava", "erupção", "montanha", "fogo"]
+  - id: px009
+    category: objetos
+    difficulty: 2
+    word: "Guarda-roupa"
+    forbidden: ["roupa", "madeira", "porta", "quarto"]
+  - id: px010
+    category: comida
+    difficulty: 2
+    word: "Sopa"
+    forbidden: ["quente", "líquido", "colher", "prato"]
+  - id: px011
+    category: transporte
+    difficulty: 2
+    word: "Metrô"
+    forbidden: ["trem", "subterrâneo", "estação", "trilho"]
+  - id: px012
+    category: objetos
+    difficulty: 1
+    word: "Câmera"
+    forbidden: ["foto", "tirar", "lente", "imagem"]
+  - id: px013
+    category: natureza
+    difficulty: 2
+    word: "Deserto"
+    forbidden: ["areia", "seco", "quente", "camelo"]
+  - id: px014
+    category: casa
+    difficulty: 2
+    word: "Sofá"
+    forbidden: ["sentar", "sala", "almofada", "móvel"]
+  - id: px015
+    category: comida
+    difficulty: 1
+    word: "Queijo"
+    forbidden: ["leite", "amarelo", "ralado", "laticínio"]
+  - id: px016
+    category: animais
+    difficulty: 2
+    word: "Pinguim"
+    forbidden: ["gelo", "frio", "preto", "nadar"]
+  - id: px017
+    category: objetos
+    difficulty: 2
+    word: "Ventilador"
+    forbidden: ["vento", "ar", "girar", "calor"]
+  - id: px018
+    category: lugares
+    difficulty: 2
+    word: "Farmácia"
+    forbidden: ["remédio", "saúde", "comprar", "receita"]
+  - id: px019
+    category: esportes
+    difficulty: 1
+    word: "Corrida"
+    forbidden: ["correr", "perna", "rápido", "pista"]
+  - id: px020
+    category: objetos
+    difficulty: 2
+    word: "Escada"
+    forbidden: ["subir", "degrau", "alto", "descer"]
+  - id: px021
+    category: comida
+    difficulty: 2
+    word: "Salada"
+    forbidden: ["verde", "alface", "crua", "legume"]
+  - id: px022
+    category: profissões
+    difficulty: 2
+    word: "Piloto"
+    forbidden: ["avião", "voar", "cabine", "comandar"]
+  - id: px023
+    category: natureza
+    difficulty: 2
+    word: "Floresta"
+    forbidden: ["árvore", "verde", "mata", "folha"]
+  - id: px024
+    category: objetos
+    difficulty: 3
+    word: "Bússola"
+    forbidden: ["norte", "direção", "agulha", "perder"]
+  - id: px025
+    category: casa
+    difficulty: 1
+    word: "Janela"
+    forbidden: ["vidro", "abrir", "ver", "parede"]
+  - id: px026
+    category: animais
+    difficulty: 1
+    word: "Cavalo"
+    forbidden: ["montar", "correr", "crina", "fazenda"]
+  - id: px027
+    category: comida
+    difficulty: 2
+    word: "Bolo"
+    forbidden: ["doce", "aniversário", "forno", "fatia"]
+  - id: px028
+    category: lugares
+    difficulty: 3
+    word: "Museu"
+    forbidden: ["arte", "quadro", "visitar", "história"]
+  - id: px029
+    category: objetos
+    difficulty: 2
+    word: "Cadeado"
+    forbidden: ["chave", "trancar", "fechar", "segurança"]
+  - id: px030
+    category: natureza
+    difficulty: 2
+    word: "Terremoto"
+    forbidden: ["tremer", "chão", "abalo", "destruir"]
+  - id: px031
+    category: esportes
+    difficulty: 2
+    word: "Xadrez"
+    forbidden: ["tabuleiro", "peça", "rei", "jogar"]
+  - id: px032
+    category: comida
+    difficulty: 1
+    word: "Suco"
+    forbidden: ["fruta", "bebida", "líquido", "copo"]
+  - id: px033
+    category: objetos
+    difficulty: 2
+    word: "Martelo"
+    forbidden: ["prego", "bater", "ferramenta", "madeira"]
+  - id: px034
+    category: animais
+    difficulty: 2
+    word: "Aranha"
+    forbidden: ["teia", "oito", "perna", "inseto"]
+  - id: px035
+    category: lugares
+    difficulty: 2
+    word: "Praça"
+    forbidden: ["banco", "árvore", "centro", "passear"]
+  - id: px036
+    category: casa
+    difficulty: 2
+    word: "Tapete"
+    forbidden: ["chão", "pisar", "sala", "macio"]
+  - id: px037
+    category: profissões
+    difficulty: 3
+    word: "Jardineiro"
+    forbidden: ["planta", "jardim", "cortar", "flor"]
+  - id: px038
+    category: objetos
+    difficulty: 2
+    word: "Balança"
+    forbidden: ["peso", "pesar", "quilo", "medir"]
+  - id: px039
+    category: natureza
+    difficulty: 2
+    word: "Arco-íris"
+    forbidden: ["cor", "chuva", "céu", "sete"]
+  - id: px040
+    category: comida
+    difficulty: 3
+    word: "Pipoca"
+    forbidden: ["milho", "cinema", "estourar", "salgada"]

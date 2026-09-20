@@ -1,0 +1,126 @@
+id: tribunal-extra
+game: tribunal
+lang: pt-BR
+title: Mais teses
+version: 1
+items:
+  - id: tx001
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Chinelo é calçado formal"
+  - id: tx002
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Toda casa deveria ter um quarto só para bagunça"
+  - id: tx003
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Ovo com ketchup é uma abominação"
+  - id: tx004
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Reunião por vídeo deveria exigir câmera desligada"
+  - id: tx005
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Trilha sonora é mais importante que o roteiro"
+  - id: tx006
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Quem chega atrasado deveria pagar a conta"
+  - id: tx007
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Dormir de meia é aceitável"
+  - id: tx008
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Livros deveriam ter um resumo na primeira página"
+  - id: tx009
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Bicho de estimação é melhor companhia que gente"
+  - id: tx010
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Ninguém deveria poder mandar áudio acima de um minuto"
+  - id: tx011
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Sobremesa antes do prato principal faz mais sentido"
+  - id: tx012
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Toda discussão deveria ter tempo máximo de cinco minutos"
+  - id: tx013
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Roupa combinando em casal é constrangedor"
+  - id: tx014
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Feriado emendado vale mais que aumento de salário"
+  - id: tx015
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Quem fala no cinema deveria ser banido"
+  - id: tx016
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Comida de avião é injustamente criticada"
+  - id: cx001
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Fale como se estivesse vendendo um produto"
+  - id: cx002
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Você precisa incluir um número inventado"
+  - id: cx003
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Termine cada frase com 'e ponto final'"
+  - id: cx004
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Fale como se fosse um político em campanha"
+  - id: cx005
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Use pelo menos três gestos exagerados"
+  - id: cx006
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Cite um provérbio que você acabou de inventar"
+  - id: cx007
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Fale o mais devagar que conseguir"
+  - id: cx008
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Comece chorando e termine gritando"

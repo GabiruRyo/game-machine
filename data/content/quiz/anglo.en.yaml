@@ -1,0 +1,152 @@
+id: quiz-anglo
+game: quiz
+lang: en
+title: English-speaking pop culture
+version: 1
+# Language-native pack: deliberately not translated into Portuguese, because
+# culture-specific trivia rarely survives the trip. See content/README.md.
+items:
+  - id: an001
+    category: music
+    difficulty: 1
+    question: "Which band released the album Abbey Road?"
+    options: ["The Rolling Stones", "The Beatles", "The Who", "Pink Floyd"]
+    answer: 1
+  - id: an002
+    category: literature
+    difficulty: 1
+    question: "Who wrote Romeo and Juliet?"
+    options: ["Charles Dickens", "William Shakespeare", "Jane Austen", "John Milton"]
+    answer: 1
+  - id: an003
+    category: film
+    difficulty: 1
+    question: "In Star Wars, who turns out to be Luke Skywalker's father?"
+    options: ["Obi-Wan Kenobi", "Darth Vader", "Emperor Palpatine", "Han Solo"]
+    answer: 1
+  - id: an004
+    category: geography
+    difficulty: 2
+    question: "The Grand Canyon is mostly in which US state?"
+    options: ["Nevada", "Utah", "Arizona", "New Mexico"]
+    answer: 2
+  - id: an005
+    category: books
+    difficulty: 2
+    question: "What is the name of Harry Potter's owl?"
+    options: ["Errol", "Hedwig", "Crookshanks", "Fawkes"]
+    answer: 1
+  - id: an006
+    category: literature
+    difficulty: 2
+    question: "Who wrote the novel 1984?"
+    options: ["Aldous Huxley", "George Orwell", "Ray Bradbury", "H.G. Wells"]
+    answer: 1
+  - id: an007
+    category: tv
+    difficulty: 1
+    question: "Which sitcom features a coffee shop called Central Perk?"
+    options: ["Seinfeld", "Friends", "Cheers", "Frasier"]
+    answer: 1
+  - id: an008
+    category: geography
+    difficulty: 3
+    question: "What is the highest mountain in the United Kingdom?"
+    options: ["Snowdon", "Scafell Pike", "Ben Nevis", "Slieve Donard"]
+    answer: 2
+  - id: an009
+    category: history
+    difficulty: 1
+    question: "Who was the first President of the United States?"
+    options: ["Thomas Jefferson", "George Washington", "John Adams", "Benjamin Franklin"]
+    answer: 1
+  - id: an010
+    category: games
+    difficulty: 2
+    question: "In the classic US Monopoly board, which is the most expensive property?"
+    options: ["Park Place", "Boardwalk", "Pennsylvania Avenue", "Marvin Gardens"]
+    answer: 1
+  - id: an011
+    category: books
+    difficulty: 1
+    question: "Which fictional detective lives at 221B Baker Street?"
+    options: ["Hercule Poirot", "Sherlock Holmes", "Philip Marlowe", "Sam Spade"]
+    answer: 1
+  - id: an012
+    category: geography
+    difficulty: 2
+    question: "Which is the largest US state by area?"
+    options: ["Texas", "California", "Alaska", "Montana"]
+    answer: 2
+  - id: an013
+    category: music
+    difficulty: 3
+    question: "Who sang Like a Rolling Stone?"
+    options: ["Bruce Springsteen", "Bob Dylan", "Neil Young", "Leonard Cohen"]
+    answer: 1
+  - id: an014
+    category: sport
+    difficulty: 1
+    question: "Which sport is played at Wimbledon?"
+    options: ["Cricket", "Tennis", "Golf", "Rugby"]
+    answer: 1
+  - id: an015
+    category: comics
+    difficulty: 2
+    question: "Which planet is Superman originally from?"
+    options: ["Krypton", "Tamaran", "Oa", "Mars"]
+    answer: 0
+  - id: an016
+    category: film
+    difficulty: 2
+    question: "Who directed Jaws?"
+    options: ["George Lucas", "Steven Spielberg", "Martin Scorsese", "Francis Ford Coppola"]
+    answer: 1
+  - id: an017
+    category: geography
+    difficulty: 2
+    question: "What is the capital of Canada?"
+    options: ["Toronto", "Vancouver", "Ottawa", "Montreal"]
+    answer: 2
+  - id: an018
+    category: literature
+    difficulty: 3
+    question: "Which novel opens with the line 'Call me Ishmael'?"
+    options: ["Moby-Dick", "The Old Man and the Sea", "Treasure Island", "Robinson Crusoe"]
+    answer: 0
+  - id: an019
+    category: sport
+    difficulty: 2
+    question: "How many players from each team are on the field in American football?"
+    options: ["9", "10", "11", "12"]
+    answer: 2
+  - id: an020
+    category: literature
+    difficulty: 1
+    question: "Which Shakespeare play contains the line 'To be, or not to be'?"
+    options: ["Macbeth", "Hamlet", "Othello", "King Lear"]
+    answer: 1
+  - id: an021
+    category: technology
+    difficulty: 1
+    question: "What does 'www' stand for?"
+    options: ["World Wide Web", "Web Wide World", "Wide World Web", "World Web Wide"]
+    answer: 0
+  - id: an022
+    category: tv
+    difficulty: 2
+    question: "In The Simpsons, what is the name of Homer's workplace?"
+    options: ["Springfield Nuclear Power Plant", "Krusty Burger", "Kwik-E-Mart", "Moe's Tavern"]
+    answer: 0
+  - id: an023
+    category: music
+    difficulty: 2
+    question: "Which artist released the album Thriller?"
+    options: ["Prince", "Michael Jackson", "Stevie Wonder", "Lionel Richie"]
+    answer: 1
+  - id: an024
+    category: history
+    difficulty: 3
+    question: "In which year did the Titanic sink?"
+    options: ["1905", "1912", "1918", "1923"]
+    answer: 1

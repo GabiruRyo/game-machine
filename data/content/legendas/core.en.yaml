@@ -1,0 +1,126 @@
+id: legendas-core
+game: legendas
+lang: en
+title: Absurd setups
+version: 1
+items:
+  - id: le001
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "The caption for a photo where everyone is looking in a different direction"
+  - id: le002
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "What the dog is thinking as you leave the house"
+  - id: le003
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "The most useless warning sign ever installed"
+  - id: le004
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "The slogan for a product nobody asked for"
+  - id: le005
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "The message you send after checking your bank balance"
+  - id: le006
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "The title of a documentary about your home life"
+  - id: le007
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "What the cat would say if it could send a voice message"
+  - id: le008
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "The excuse you'd give for leaving a party at nine in the evening"
+  - id: le009
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "The caption on the last photo taken before it all went wrong"
+  - id: le010
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "The name of a band formed by the people in this room"
+  - id: le011
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "The one-star review of your own sofa"
+  - id: le012
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "What's written inside the fortune cookie"
+  - id: le013
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "The newspaper headline about your morning"
+  - id: le014
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "The motto of a country founded by you"
+  - id: le015
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "The caption for a family photo taken at the worst possible moment"
+  - id: le016
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "The warning that should come with the second cup of coffee"
+  - id: le017
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "What the wi-fi would say if it could defend itself"
+  - id: le018
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "The name of your retirement plan"
+  - id: le019
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "The catchphrase of the weakest villain of all time"
+  - id: le020
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "Your profile description, written by your worst enemy"
+  - id: le021
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "What the fridge thinks at three in the morning"
+  - id: le022
+    category: legenda
+    difficulty: 2
+    audience: teen
+    prompt: "The most passive-aggressive possible answer to 'you alright?'"
+  - id: le023
+    category: legenda
+    difficulty: 1
+    audience: family
+    prompt: "The title of the painting nobody wanted to buy"
+  - id: le024
+    category: legenda
+    difficulty: 2
+    audience: family
+    prompt: "The most useless advice you have ever been given"

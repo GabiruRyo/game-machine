@@ -1,0 +1,206 @@
+id: proibida-extra
+game: proibida
+lang: en
+title: More cards
+version: 1
+items:
+  - id: px001
+    category: lugares
+    difficulty: 1
+    word: "Airport"
+    forbidden: ["plane", "travel", "luggage", "flight"]
+  - id: px002
+    category: comida
+    difficulty: 1
+    word: "Chocolate"
+    forbidden: ["sweet", "cocoa", "bar", "brown"]
+  - id: px003
+    category: objetos
+    difficulty: 2
+    word: "Scissors"
+    forbidden: ["cut", "paper", "blade", "hand"]
+  - id: px004
+    category: animais
+    difficulty: 1
+    word: "Elephant"
+    forbidden: ["trunk", "big", "grey", "ear"]
+  - id: px005
+    category: casa
+    difficulty: 2
+    word: "Shower"
+    forbidden: ["water", "wash", "bathroom", "wet"]
+  - id: px006
+    category: esportes
+    difficulty: 2
+    word: "Swimming"
+    forbidden: ["water", "pool", "swim", "stroke"]
+  - id: px007
+    category: profissões
+    difficulty: 2
+    word: "Teacher"
+    forbidden: ["class", "school", "pupil", "teach"]
+  - id: px008
+    category: natureza
+    difficulty: 2
+    word: "Volcano"
+    forbidden: ["lava", "erupt", "mountain", "fire"]
+  - id: px009
+    category: objetos
+    difficulty: 2
+    word: "Wardrobe"
+    forbidden: ["clothes", "wood", "door", "bedroom"]
+  - id: px010
+    category: comida
+    difficulty: 2
+    word: "Soup"
+    forbidden: ["hot", "liquid", "spoon", "bowl"]
+  - id: px011
+    category: transporte
+    difficulty: 2
+    word: "Underground"
+    forbidden: ["train", "subway", "station", "track"]
+  - id: px012
+    category: objetos
+    difficulty: 1
+    word: "Camera"
+    forbidden: ["photo", "take", "lens", "picture"]
+  - id: px013
+    category: natureza
+    difficulty: 2
+    word: "Desert"
+    forbidden: ["sand", "dry", "hot", "camel"]
+  - id: px014
+    category: casa
+    difficulty: 2
+    word: "Sofa"
+    forbidden: ["sit", "living room", "cushion", "furniture"]
+  - id: px015
+    category: comida
+    difficulty: 1
+    word: "Cheese"
+    forbidden: ["milk", "yellow", "grated", "dairy"]
+  - id: px016
+    category: animais
+    difficulty: 2
+    word: "Penguin"
+    forbidden: ["ice", "cold", "black", "swim"]
+  - id: px017
+    category: objetos
+    difficulty: 2
+    word: "Fan"
+    forbidden: ["wind", "air", "spin", "heat"]
+  - id: px018
+    category: lugares
+    difficulty: 2
+    word: "Pharmacy"
+    forbidden: ["medicine", "health", "buy", "prescription"]
+  - id: px019
+    category: esportes
+    difficulty: 1
+    word: "Running"
+    forbidden: ["run", "leg", "fast", "track"]
+  - id: px020
+    category: objetos
+    difficulty: 2
+    word: "Stairs"
+    forbidden: ["climb", "step", "high", "down"]
+  - id: px021
+    category: comida
+    difficulty: 2
+    word: "Salad"
+    forbidden: ["green", "lettuce", "raw", "vegetable"]
+  - id: px022
+    category: profissões
+    difficulty: 2
+    word: "Pilot"
+    forbidden: ["plane", "fly", "cockpit", "command"]
+  - id: px023
+    category: natureza
+    difficulty: 2
+    word: "Forest"
+    forbidden: ["tree", "green", "wood", "leaf"]
+  - id: px024
+    category: objetos
+    difficulty: 3
+    word: "Compass"
+    forbidden: ["north", "direction", "needle", "lost"]
+  - id: px025
+    category: casa
+    difficulty: 1
+    word: "Window"
+    forbidden: ["glass", "open", "see", "wall"]
+  - id: px026
+    category: animais
+    difficulty: 1
+    word: "Horse"
+    forbidden: ["ride", "run", "mane", "farm"]
+  - id: px027
+    category: comida
+    difficulty: 2
+    word: "Cake"
+    forbidden: ["sweet", "birthday", "oven", "slice"]
+  - id: px028
+    category: lugares
+    difficulty: 3
+    word: "Museum"
+    forbidden: ["art", "painting", "visit", "history"]
+  - id: px029
+    category: objetos
+    difficulty: 2
+    word: "Padlock"
+    forbidden: ["key", "lock", "shut", "security"]
+  - id: px030
+    category: natureza
+    difficulty: 2
+    word: "Earthquake"
+    forbidden: ["shake", "ground", "tremor", "destroy"]
+  - id: px031
+    category: esportes
+    difficulty: 2
+    word: "Chess"
+    forbidden: ["board", "piece", "king", "play"]
+  - id: px032
+    category: comida
+    difficulty: 1
+    word: "Juice"
+    forbidden: ["fruit", "drink", "liquid", "glass"]
+  - id: px033
+    category: objetos
+    difficulty: 2
+    word: "Hammer"
+    forbidden: ["nail", "hit", "tool", "wood"]
+  - id: px034
+    category: animais
+    difficulty: 2
+    word: "Spider"
+    forbidden: ["web", "eight", "leg", "insect"]
+  - id: px035
+    category: lugares
+    difficulty: 2
+    word: "Square"
+    forbidden: ["bench", "tree", "centre", "stroll"]
+  - id: px036
+    category: casa
+    difficulty: 2
+    word: "Rug"
+    forbidden: ["floor", "step", "room", "soft"]
+  - id: px037
+    category: profissões
+    difficulty: 3
+    word: "Gardener"
+    forbidden: ["plant", "garden", "trim", "flower"]
+  - id: px038
+    category: objetos
+    difficulty: 2
+    word: "Scales"
+    forbidden: ["weight", "weigh", "kilo", "measure"]
+  - id: px039
+    category: natureza
+    difficulty: 2
+    word: "Rainbow"
+    forbidden: ["colour", "rain", "sky", "seven"]
+  - id: px040
+    category: comida
+    difficulty: 3
+    word: "Popcorn"
+    forbidden: ["corn", "cinema", "pop", "salty"]

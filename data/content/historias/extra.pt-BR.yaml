@@ -1,0 +1,106 @@
+id: historias-extra
+game: historias
+lang: pt-BR
+title: Mais histórias para estragar
+version: 1
+items:
+  - id: hx001
+    category: historia
+    difficulty: 2
+    title: "O bilhete na geladeira"
+    template: "Saí cedo. Tem {1} na geladeira, mas não come tudo. O {2} do vizinho fugiu de novo e eu deixei ele no {3} até você chegar. Se ele começar a {4}, dá {5} pra ele. Volto às {6}. Te amo."
+    slots:
+      - { prompt: "Uma comida" }
+      - { prompt: "Um animal" }
+      - { prompt: "Um cômodo da casa" }
+      - { prompt: "Um verbo" }
+      - { prompt: "Uma coisa" }
+      - { prompt: "Um horário" }
+  - id: hx002
+    category: historia
+    difficulty: 2
+    title: "O relatório do estágio"
+    template: "Durante meu estágio na área de {1}, aprendi muito sobre {2}. Minha principal atividade era {3} todos os dias às {4}. O momento mais marcante foi quando o gerente {5} na frente de toda a equipe. Recomendo a experiência a qualquer pessoa {6}."
+    slots:
+      - { prompt: "Uma área de trabalho" }
+      - { prompt: "Uma coisa" }
+      - { prompt: "Um verbo terminado em -ndo" }
+      - { prompt: "Um horário" }
+      - { prompt: "Um verbo no passado" }
+      - { prompt: "Um adjetivo" }
+  - id: hx003
+    category: historia
+    difficulty: 3
+    title: "A previsão do tempo"
+    template: "Bom dia! Hoje teremos {1} pela manhã, com chance de {2} à tarde. A temperatura máxima será de {3} graus. Recomendamos levar {4} ao sair de casa. Moradores da região de {5} devem evitar {6} até segunda ordem."
+    slots:
+      - { prompt: "Um fenômeno do tempo" }
+      - { prompt: "Uma coisa" }
+      - { prompt: "Um número" }
+      - { prompt: "Uma coisa" }
+      - { prompt: "Um lugar" }
+      - { prompt: "Um verbo" }
+  - id: hx004
+    category: historia
+    difficulty: 2
+    title: "O anúncio de emprego"
+    template: "VAGA URGENTE: procura-se {1} para trabalhar {2} horas por dia. Requisitos: saber {3} e não ter medo de {4}. Oferecemos salário de {5} e vale-{6}. Enviar currículo para o {7}."
+    slots:
+      - { prompt: "Uma profissão" }
+      - { prompt: "Um número" }
+      - { prompt: "Um verbo" }
+      - { prompt: "Uma coisa" }
+      - { prompt: "Um valor" }
+      - { prompt: "Uma coisa" }
+      - { prompt: "Um lugar" }
+  - id: hx005
+    category: historia
+    difficulty: 3
+    title: "O depoimento da testemunha"
+    template: "Eu estava tranquilamente {1} quando ouvi um barulho de {2}. Olhei pela janela e vi um homem de {3} carregando {4}. Ele parecia muito {5}. Quando percebeu que eu estava olhando, ele simplesmente {6} e desapareceu na direção de {7}."
+    slots:
+      - { prompt: "Um verbo terminado em -ndo" }
+      - { prompt: "Uma coisa" }
+      - { prompt: "Uma peça de roupa" }
+      - { prompt: "Uma coisa" }
+      - { prompt: "Um adjetivo" }
+      - { prompt: "Um verbo no passado" }
+      - { prompt: "Um lugar" }
+  - id: hx006
+    category: historia
+    difficulty: 2
+    title: "A avaliação do hotel"
+    template: "Fiquei {1} noites neste hotel e não recomendo. O quarto cheirava a {2} e a cama era visivelmente {3}. No café da manhã só tinha {4}. Reclamei na recepção e o atendente {5}. O único ponto positivo foi {6}. Nota: {7} de 10."
+    slots:
+      - { prompt: "Um número" }
+      - { prompt: "Uma coisa" }
+      - { prompt: "Um adjetivo" }
+      - { prompt: "Uma comida" }
+      - { prompt: "Um verbo no passado" }
+      - { prompt: "Uma coisa" }
+      - { prompt: "Um número" }
+  - id: hx007
+    category: historia
+    difficulty: 3
+    title: "O discurso do treinador"
+    template: "Rapaziada, escutem. Nós treinamos {1} meses para este momento. Lá fora tem {2} pessoas gritando o nosso nome. Eu não quero ver ninguém {3} em campo hoje. Quero ver garra, quero ver {4}. Se a gente perder, eu juro que {5}. Agora vão lá e {6}!"
+    slots:
+      - { prompt: "Um número" }
+      - { prompt: "Um número" }
+      - { prompt: "Um verbo terminado em -ndo" }
+      - { prompt: "Uma coisa" }
+      - { prompt: "Uma frase curta" }
+      - { prompt: "Um verbo" }
+  - id: hx008
+    category: historia
+    difficulty: 2
+    title: "O guia turístico"
+    template: "Bem-vindos à cidade de {1}! À sua esquerda vocês podem ver o famoso {2}, construído em {3} por um {4} muito {5}. Diz a lenda que quem {6} ali tem sete anos de sorte. Nosso próximo destino é {7}."
+    slots:
+      - { prompt: "Um nome de cidade" }
+      - { prompt: "Uma construção" }
+      - { prompt: "Um número" }
+      - { prompt: "Uma profissão" }
+      - { prompt: "Um adjetivo" }
+      - { prompt: "Um verbo" }
+      - { prompt: "Um lugar" }

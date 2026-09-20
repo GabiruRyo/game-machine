@@ -1,0 +1,226 @@
+id: lorota-extra
+game: lorota
+lang: pt-BR
+title: Mais verdades e invenções
+version: 1
+items:
+  - id: lx001
+    category: animais
+    difficulty: 2
+    topic: "Tubarões"
+    lie:
+      text: "Precisam nadar sem parar ou morrem, todos eles"
+      note: "Várias espécies descansam no fundo bombeando água pelas brânquias."
+    truths:
+      - { text: "Existem há mais tempo que as árvores" }
+      - { text: "Trocam de dente a vida inteira" }
+      - { text: "Detectam campos elétricos" }
+  - id: lx002
+    category: comida
+    difficulty: 2
+    topic: "Tomate"
+    lie:
+      text: "Foi classificado como legume por um tribunal por ser salgado"
+      note: "O tribunal dos EUA decidiu por questão de imposto, não de sabor nem de botânica."
+    truths:
+      - { text: "Botanicamente é uma fruta" }
+      - { text: "Veio das Américas para a Europa" }
+      - { text: "Já foi considerado venenoso na Europa" }
+  - id: lx003
+    category: ciência
+    difficulty: 3
+    topic: "O som"
+    lie:
+      text: "Viaja mais rápido no ar do que na água"
+      note: "O som é cerca de quatro vezes mais rápido na água do que no ar."
+    truths:
+      - { text: "Não se propaga no vácuo" }
+      - { text: "É uma onda de pressão" }
+      - { text: "Viaja ainda mais rápido no aço" }
+  - id: lx004
+    category: história
+    difficulty: 2
+    topic: "As pirâmides do Egito"
+    lie:
+      text: "Foram construídas por escravos hebreus"
+      note: "As evidências apontam para trabalhadores egípcios pagos e alimentados pelo Estado."
+    truths:
+      - { text: "Eram revestidas de calcário polido" }
+      - { text: "Cleópatra viveu mais perto de nós do que da construção delas" }
+      - { text: "Havia acampamentos de trabalhadores ao lado" }
+  - id: lx005
+    category: corpo
+    difficulty: 2
+    topic: "O sono"
+    lie:
+      text: "Recuperamos totalmente o sono perdido dormindo mais no fim de semana"
+      note: "Dormir mais no fim de semana ajuda um pouco, mas não zera a dívida."
+    truths:
+      - { text: "Sonhamos várias vezes por noite" }
+      - { text: "A temperatura do corpo cai durante o sono" }
+      - { text: "Golfinhos dormem com metade do cérebro" }
+  - id: lx006
+    category: geografia
+    difficulty: 3
+    topic: "A Austrália"
+    lie:
+      text: "É o menor continente e também o menor país do mundo"
+      note: "É o menor continente, mas está entre os seis maiores países do mundo."
+    truths:
+      - { text: "Tem mais cangurus que pessoas" }
+      - { text: "Grande parte do interior é desértica" }
+      - { text: "A Grande Barreira de Coral é visível do espaço" }
+  - id: lx007
+    category: ciência
+    difficulty: 2
+    topic: "O arco-íris"
+    lie:
+      text: "Tem exatamente sete cores separadas"
+      note: "É um espectro contínuo; as sete cores são uma convenção de Newton."
+    truths:
+      - { text: "É na verdade um círculo completo" }
+      - { text: "Duas pessoas nunca veem o mesmo arco-íris" }
+      - { text: "Existe arco-íris de luar" }
+  - id: lx008
+    category: animais
+    difficulty: 2
+    topic: "Abelhas"
+    lie:
+      text: "Morrem todas depois de picar alguém"
+      note: "Só a abelha-melífera perde o ferrão; vespas e mamangavas picam várias vezes."
+    truths:
+      - { text: "Dançam para indicar onde há flores" }
+      - { text: "Enxergam luz ultravioleta" }
+      - { text: "A rainha pode viver alguns anos" }
+  - id: lx009
+    category: tecnologia
+    difficulty: 3
+    topic: "As senhas"
+    lie:
+      text: "Trocar a senha todo mês é a melhor prática de segurança"
+      note: "Órgãos de segurança recomendam senhas longas e únicas, sem troca forçada."
+    truths:
+      - { text: "Senhas longas valem mais que símbolos" }
+      - { text: "Gerenciadores de senha são recomendados" }
+      - { text: "Reaproveitar senha é o risco maior" }
+  - id: lx010
+    category: corpo
+    difficulty: 2
+    topic: "Os resfriados"
+    lie:
+      text: "Pegamos resfriado por causa do frio"
+      note: "Resfriado é vírus; o frio só nos junta mais em ambientes fechados."
+    truths:
+      - { text: "São causados por vírus" }
+      - { text: "Antibiótico não funciona contra eles" }
+      - { text: "Existem centenas de vírus diferentes" }
+  - id: lx011
+    category: espaço
+    difficulty: 3
+    topic: "O Sol"
+    lie:
+      text: "É a maior estrela que conhecemos"
+      note: "É uma estrela mediana; há estrelas centenas de vezes maiores."
+    truths:
+      - { text: "É quase toda a massa do sistema solar" }
+      - { text: "A luz dele leva cerca de 8 minutos até nós" }
+      - { text: "É mais branco do que amarelo" }
+  - id: lx012
+    category: animais
+    difficulty: 1
+    topic: "Morcegos"
+    lie:
+      text: "São todos cegos"
+      note: "Todos enxergam; alguns também usam eco para se localizar."
+    truths:
+      - { text: "São os únicos mamíferos que voam" }
+      - { text: "Muitos comem insetos em quantidade" }
+      - { text: "Alguns polinizam plantas" }
+  - id: lx013
+    category: história
+    difficulty: 2
+    topic: "A Grande Muralha"
+    lie:
+      text: "Foi construída de uma vez só por um imperador"
+      note: "São muros de várias dinastias ao longo de séculos, depois emendados."
+    truths:
+      - { text: "Não é uma linha contínua" }
+      - { text: "Parte dela é de terra batida" }
+      - { text: "Serviu também para comunicação" }
+  - id: lx014
+    category: comida
+    difficulty: 2
+    topic: "O alho"
+    lie:
+      text: "Perde todo o sabor quando cozido"
+      note: "Cozinhar muda o sabor — fica mais doce e suave — mas não o elimina."
+    truths:
+      - { text: "É parente da cebola" }
+      - { text: "O cheiro forte vem de compostos de enxofre" }
+      - { text: "É usado como tempero há milênios" }
+  - id: lx015
+    category: ciência
+    difficulty: 3
+    topic: "O vidro"
+    lie:
+      text: "Escorre lentamente, por isso janelas antigas são mais grossas embaixo"
+      note: "O vidro é sólido; as janelas antigas já eram irregulares quando feitas."
+    truths:
+      - { text: "É feito principalmente de areia" }
+      - { text: "Pode ser reciclado indefinidamente" }
+      - { text: "Vidro temperado se quebra em grânulos" }
+  - id: lx016
+    category: animais
+    difficulty: 2
+    topic: "Elefantes"
+    lie:
+      text: "Têm medo de ratos"
+      note: "Não há evidência disso; enxergam mal e se assustam com movimento súbito."
+    truths:
+      - { text: "Se reconhecem no espelho" }
+      - { text: "Comunicam-se em frequências muito baixas" }
+      - { text: "A tromba tem milhares de músculos" }
+  - id: lx017
+    category: geografia
+    difficulty: 3
+    topic: "A Islândia e a Groenlândia"
+    lie:
+      text: "A Groenlândia é mais verde que a Islândia"
+      note: "A Groenlândia é quase toda gelo; a Islândia é bem mais verde."
+    truths:
+      - { text: "A Islândia tem muitos vulcões ativos" }
+      - { text: "A Groenlândia é a maior ilha do mundo" }
+      - { text: "A Islândia usa muita energia geotérmica" }
+  - id: lx018
+    category: corpo
+    difficulty: 2
+    topic: "As impressões digitais"
+    lie:
+      text: "Servem principalmente para melhorar a aderência"
+      note: "Estudos indicam que podem até reduzir o atrito; a função ainda é debatida."
+    truths:
+      - { text: "São únicas para cada pessoa" }
+      - { text: "Formam-se antes do nascimento" }
+      - { text: "Coalas também têm digitais parecidas" }
+  - id: lx019
+    category: tecnologia
+    difficulty: 2
+    topic: "A eletricidade"
+    lie:
+      text: "Os elétrons viajam pelo fio na velocidade da luz"
+      note: "Os elétrons andam devagar; o sinal é que se propaga muito rápido."
+    truths:
+      - { text: "A corrente alternada muda de sentido" }
+      - { text: "Aves não levam choque no fio por não fecharem circuito" }
+      - { text: "A água pura conduz mal" }
+  - id: lx020
+    category: história
+    difficulty: 3
+    topic: "Os gladiadores"
+    lie:
+      text: "Quase todos os combates terminavam em morte"
+      note: "Eram caros de treinar; a maioria das lutas acabava sem morte."
+    truths:
+      - { text: "Alguns viravam celebridades" }
+      - { text: "Havia gladiadores voluntários" }
+      - { text: "Existiam diferentes estilos e armas" }

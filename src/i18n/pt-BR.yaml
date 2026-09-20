@@ -1,0 +1,176 @@
+app:
+  title: Game Machine
+  subtitle: Uma noite de jogos para uma tela só
+
+menu:
+  play: Jogar um jogo
+  party: Modo Festa
+  players: Jogadores
+  language: Idioma
+  settings: Ajustes
+  howto: Como se joga
+  back: Voltar
+  resetContent: Zerar histórico de conteúdo
+  resetContentDone: Histórico zerado — todo o conteúdo voltou a ficar disponível.
+  contentEmpty: sem conteúdo
+  itemsAvailable: "{count} itens disponíveis"
+  disabled: desativado no config.yaml
+
+common:
+  next: Avançar
+  confirm: Confirmar
+  skip: Pular
+  cancel: Cancelar
+  round: "Rodada {current} de {total}"
+  points: pontos
+  point: ponto
+  player: Jogador
+  players: Jogadores
+  team: Time
+  scores: Placar
+  winner: Vencedor
+  winners: Vencedores
+  ready: Preparar
+  go: Já!
+  timeUp: Acabou o tempo!
+  correct: Acertou!
+  wrong: Errou!
+  yes: Sim
+  no: Não
+  nobody: Ninguém
+  turnOf: "Vez de {name}"
+  finalScores: Placar final
+  playAgain: Jogar de novo
+  backToMenu: Voltar ao menu
+
+keys:
+  advance: "Espaço — avançar"
+  select: "1-6 — escolher"
+  adjust: "← → — mover"
+  judge: "Y / N — acertou ou não"
+  skip: "Backspace — pular"
+  pause: "Esc — menu"
+  fullscreen: "Shift+F — tela cheia"
+  type: "Digite e aperte Enter"
+
+errors:
+  configTitle: Tem algo errado no config.yaml
+  configIntro: "O arquivo data/config.yaml não pôde ser lido. Corrija os itens abaixo e recarregue a página."
+  contentTitle: Problemas no conteúdo
+  contentIntro: "Estes pacotes de conteúdo foram ignorados. O resto do jogo continua funcionando."
+  allowed: "valores aceitos"
+  received: "recebido"
+  reload: Recarregar
+  noPlayers: Adicione pelo menos um jogador para começar.
+  needPlayers: "Este jogo precisa de pelo menos {count} jogadores."
+  noContent: "Nenhum conteúdo disponível para este jogo. Confira os filtros em config.yaml."
+
+setup:
+  title: Quem vai jogar?
+  addPlayer: Adicionar jogador
+  namePlaceholder: Nome do jogador
+  remove: Remover
+  start: Começar
+  hint: "Os jogadores também podem ser definidos em data/config.yaml."
+
+games:
+  quiz:
+    name: Quiz Relâmpago
+    tagline: Responda rápido, valha mais
+    rules: "Cada jogador responde na sua vez. Quanto mais rápido, mais pontos. Errou? O próximo pode roubar."
+    stealTurn: "Roubo! Vez de {name}"
+  ordem:
+    name: Ordem Certa
+    tagline: Coloque tudo na sequência
+    rules: "A sala inteira discute e coloca os itens na ordem certa. Cada posição correta vale pontos."
+    correctOrder: "Ordem certa"
+  lorota:
+    name: Verdade ou Lorota
+    tagline: Uma dessas é invenção
+    rules: "Três afirmações, uma é mentira. O jogador da vez escolhe — e a sala tem todo o direito de enganá-lo."
+    findTheLie: "Qual dessas é invenção?"
+  quemdiria:
+    name: Quem Diria
+    tagline: Você conhece essa turma?
+    rules: "O jogador da vez adivinha em quem a sala votaria. A sala vota de mão levantada."
+    predictTurn: "{name} adivinha"
+    predictHint: "Em quem a sala vai votar?"
+    roomVotes: "Votação da sala"
+    enterResult: "Todo mundo aponta ao mesmo tempo. Registre quem a sala escolheu."
+    predicted: "Palpite"
+    roomChose: "A sala escolheu"
+  proibida:
+    name: Palavra Proibida
+    tagline: Explique sem poder falar
+    rules: "A palavra aparece na tela para todo mundo — menos para quem adivinha, que vira de costas. A sala explica sem usar as palavras proibidas."
+    guesserIs: "Quem adivinha"
+    turnAround: "{name}, vira de costas e não olha a tela!"
+    roomDescribes: "O resto da sala explica a palavra sem usar nenhuma das proibidas."
+    dontSay: "Não pode falar"
+    hits: Acertos
+    skipsLeft: "Pulos restantes"
+    keyHit: "Espaço — acertou"
+  tribunal:
+    name: Tribunal
+    tagline: Defenda o indefensável
+    rules: "Dois jogadores recebem lados opostos de uma tese absurda e têm tempo cronometrado para convencer. A sala dá o veredito."
+    theMotion: "A tese"
+    sideFor: "A favor"
+    sideAgainst: "Contra"
+    for: "A favor ({name})"
+    against: "Contra ({name})"
+    curveball: "Reviravolta!"
+    keyDone: "Espaço — terminei"
+    roomVerdict: "A sala decide: quem convenceu mais?"
+    voterTurn: "Voto de {name}"
+  historias:
+    name: Histórias Malucas
+    tagline: Você não faz ideia do que está escrevendo
+    rules: "O app pede palavras soltas sem mostrar a história. No fim, ele lê o estrago em voz alta."
+    wordCount: "Palavra {current} de {total}"
+    noPeeking: "Ninguém viu a história ainda — nem quem está digitando."
+    theStory: "A história"
+    pickFavourite: "Qual palavra destruiu a história?"
+    favouriteWas: "Melhor palavra"
+  legendas:
+    name: Legendas
+    tagline: A melhor piada leva
+    rules: "Todo mundo escreve uma legenda para a mesma situação absurda. Depois a sala vota na melhor."
+    setup: "A situação"
+    yourCaption: "Escreva sua legenda"
+    placeholder: "Manda ver..."
+    voteTurn: "{name} vota na melhor (não pode ser a sua)"
+
+party:
+  leg: "Jogo {current} de {total}"
+  finale: "GRANDE FINAL — vale {multiplier}x"
+  standings: "Como está o placar"
+
+host:
+  welcome:
+    - Bora começar essa bagunça.
+    - A máquina está ligada. Quem vai primeiro?
+    - Preparem os argumentos e as desculpas.
+  roundStart:
+    - Lá vamos nós.
+    - Próxima!
+    - Presta atenção agora.
+    - Essa é boa.
+  correct:
+    - Essa foi fácil, né?
+    - Isso aí!
+    - Certíssimo.
+    - Alguém andou estudando.
+  wrong:
+    - Passou longe.
+    - Não foi dessa vez.
+    - Doeu só de ver.
+    - A sala inteira sabia.
+  timeout:
+    - O tempo não perdoa.
+    - Ficou pensando demais.
+    - Zero pontos por indecisão.
+  gameEnd:
+    - Acabou. Contem os estragos.
+    - E o placar não mente.
+    - Fim de jogo.

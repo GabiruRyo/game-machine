@@ -1,0 +1,226 @@
+id: lorota-extra
+game: lorota
+lang: en
+title: More facts and fabrications
+version: 1
+items:
+  - id: lx001
+    category: animais
+    difficulty: 2
+    topic: "Sharks"
+    lie:
+      text: "Every last one of them must swim non-stop or die"
+      note: "Several species rest on the seabed, pumping water over their gills."
+    truths:
+      - { text: "They predate trees" }
+      - { text: "They replace their teeth for life" }
+      - { text: "They detect electric fields" }
+  - id: lx002
+    category: comida
+    difficulty: 2
+    topic: "Tomatoes"
+    lie:
+      text: "A court classified it as a vegetable because it is savoury"
+      note: "The US court ruled on it for tax reasons, not taste or botany."
+    truths:
+      - { text: "Botanically it is a fruit" }
+      - { text: "It travelled from the Americas to Europe" }
+      - { text: "Europeans once believed it was poisonous" }
+  - id: lx003
+    category: ciência
+    difficulty: 3
+    topic: "Sound"
+    lie:
+      text: "It travels faster through air than through water"
+      note: "Sound moves roughly four times faster in water than in air."
+    truths:
+      - { text: "It does not travel through a vacuum" }
+      - { text: "It is a pressure wave" }
+      - { text: "It travels faster still through steel" }
+  - id: lx004
+    category: história
+    difficulty: 2
+    topic: "The Egyptian pyramids"
+    lie:
+      text: "They were built by Hebrew slaves"
+      note: "Evidence points to paid Egyptian labourers, fed and housed by the state."
+    truths:
+      - { text: "They were once clad in polished limestone" }
+      - { text: "Cleopatra lived closer to us than to their construction" }
+      - { text: "There were workers' villages beside them" }
+  - id: lx005
+    category: corpo
+    difficulty: 2
+    topic: "Sleep"
+    lie:
+      text: "Sleeping in at the weekend fully repays lost sleep"
+      note: "A weekend lie-in helps a little, but it does not clear the debt."
+    truths:
+      - { text: "We dream several times a night" }
+      - { text: "Body temperature drops while we sleep" }
+      - { text: "Dolphins sleep with half the brain awake" }
+  - id: lx006
+    category: geografia
+    difficulty: 3
+    topic: "Australia"
+    lie:
+      text: "It is the smallest continent and also the smallest country in the world"
+      note: "It is the smallest continent, but among the six largest countries."
+    truths:
+      - { text: "It has more kangaroos than people" }
+      - { text: "Much of the interior is desert" }
+      - { text: "The Great Barrier Reef is visible from space" }
+  - id: lx007
+    category: ciência
+    difficulty: 2
+    topic: "Rainbows"
+    lie:
+      text: "It has exactly seven separate colours"
+      note: "It is a continuous spectrum; the seven colours are Newton's convention."
+    truths:
+      - { text: "It is really a full circle" }
+      - { text: "No two people see the same rainbow" }
+      - { text: "Moonlight rainbows exist" }
+  - id: lx008
+    category: animais
+    difficulty: 2
+    topic: "Bees"
+    lie:
+      text: "All of them die after stinging"
+      note: "Only the honeybee loses its sting; wasps and bumblebees sting repeatedly."
+    truths:
+      - { text: "They dance to indicate where flowers are" }
+      - { text: "They see ultraviolet light" }
+      - { text: "A queen can live for years" }
+  - id: lx009
+    category: tecnologia
+    difficulty: 3
+    topic: "Passwords"
+    lie:
+      text: "Changing your password monthly is the best security practice"
+      note: "Security bodies now recommend long, unique passwords without forced rotation."
+    truths:
+      - { text: "Length beats symbols" }
+      - { text: "Password managers are recommended" }
+      - { text: "Reuse is the biggest risk" }
+  - id: lx010
+    category: corpo
+    difficulty: 2
+    topic: "Colds"
+    lie:
+      text: "You catch a cold from being cold"
+      note: "Colds are viral; cold weather just pushes people indoors together."
+    truths:
+      - { text: "They are caused by viruses" }
+      - { text: "Antibiotics do nothing for them" }
+      - { text: "Hundreds of different viruses cause them" }
+  - id: lx011
+    category: espaço
+    difficulty: 3
+    topic: "The Sun"
+    lie:
+      text: "It is the largest star we know of"
+      note: "It is an average star; some are hundreds of times larger."
+    truths:
+      - { text: "It holds almost all the mass of the solar system" }
+      - { text: "Its light takes about 8 minutes to reach us" }
+      - { text: "It is closer to white than yellow" }
+  - id: lx012
+    category: animais
+    difficulty: 1
+    topic: "Bats"
+    lie:
+      text: "They are all blind"
+      note: "They can all see; some additionally navigate by echo."
+    truths:
+      - { text: "They are the only flying mammals" }
+      - { text: "Many eat vast quantities of insects" }
+      - { text: "Some pollinate plants" }
+  - id: lx013
+    category: história
+    difficulty: 2
+    topic: "The Great Wall"
+    lie:
+      text: "One emperor built it all in a single campaign"
+      note: "It is walls from many dynasties across centuries, later joined up."
+    truths:
+      - { text: "It is not one continuous line" }
+      - { text: "Parts of it are rammed earth" }
+      - { text: "It also served for communication" }
+  - id: lx014
+    category: comida
+    difficulty: 2
+    topic: "Garlic"
+    lie:
+      text: "It loses all its flavour when cooked"
+      note: "Cooking changes the flavour, making it sweeter and milder, not absent."
+    truths:
+      - { text: "It is related to the onion" }
+      - { text: "The strong smell comes from sulphur compounds" }
+      - { text: "It has seasoned food for millennia" }
+  - id: lx015
+    category: ciência
+    difficulty: 3
+    topic: "Glass"
+    lie:
+      text: "It flows slowly, which is why old windows are thicker at the bottom"
+      note: "Glass is solid; old panes were uneven the day they were made."
+    truths:
+      - { text: "It is made mostly from sand" }
+      - { text: "It can be recycled indefinitely" }
+      - { text: "Toughened glass shatters into granules" }
+  - id: lx016
+    category: animais
+    difficulty: 2
+    topic: "Elephants"
+    lie:
+      text: "They are afraid of mice"
+      note: "There is no evidence for it; they see poorly and startle at sudden movement."
+    truths:
+      - { text: "They recognise themselves in mirrors" }
+      - { text: "They communicate at very low frequencies" }
+      - { text: "The trunk has thousands of muscles" }
+  - id: lx017
+    category: geografia
+    difficulty: 3
+    topic: "Iceland and Greenland"
+    lie:
+      text: "Greenland is greener than Iceland"
+      note: "Greenland is nearly all ice; Iceland is far greener."
+    truths:
+      - { text: "Iceland has many active volcanoes" }
+      - { text: "Greenland is the world's largest island" }
+      - { text: "Iceland runs largely on geothermal energy" }
+  - id: lx018
+    category: corpo
+    difficulty: 2
+    topic: "Fingerprints"
+    lie:
+      text: "Their main purpose is to improve grip"
+      note: "Studies suggest they may even reduce friction; the purpose is still debated."
+    truths:
+      - { text: "They are unique to each person" }
+      - { text: "They form before birth" }
+      - { text: "Koalas have remarkably similar prints" }
+  - id: lx019
+    category: tecnologia
+    difficulty: 2
+    topic: "Electricity"
+    lie:
+      text: "Electrons travel along the wire at the speed of light"
+      note: "The electrons drift slowly; it is the signal that propagates very fast."
+    truths:
+      - { text: "Alternating current reverses direction" }
+      - { text: "Birds are safe on a wire because they complete no circuit" }
+      - { text: "Pure water conducts poorly" }
+  - id: lx020
+    category: história
+    difficulty: 3
+    topic: "Gladiators"
+    lie:
+      text: "Almost every bout ended in death"
+      note: "They were expensive to train, so most fights ended without a death."
+    truths:
+      - { text: "Some became celebrities" }
+      - { text: "There were volunteer gladiators" }
+      - { text: "There were distinct styles and weapons" }

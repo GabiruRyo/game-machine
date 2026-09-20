@@ -1,0 +1,39 @@
+# Every content pack the app can load. Add a file, add a line here, done.
+# `auto: true` means it loads when config.yaml has `content.packs: [auto]`.
+packs:
+  - { id: quiz-core-pt,     game: quiz, lang: pt-BR, file: quiz/core.pt-BR.yaml,     title: "Conhecimentos gerais", auto: true }
+  - { id: quiz-core-en,     game: quiz, lang: en,    file: quiz/core.en.yaml,        title: "General knowledge",    auto: true }
+  - { id: quiz-brasil,      game: quiz, lang: pt-BR, file: quiz/brasil.pt-BR.yaml,   title: "Brasil",               auto: true }
+  - { id: quiz-anglo,       game: quiz, lang: en,    file: quiz/anglo.en.yaml,       title: "English-speaking pop", auto: true }
+  - { id: ordem-core-pt,    game: ordem,    lang: pt-BR, file: ordem/core.pt-BR.yaml,    title: "Sequências essenciais", auto: true }
+  - { id: ordem-core-en,    game: ordem,    lang: en,    file: ordem/core.en.yaml,       title: "Core sequences",        auto: true }
+  - { id: lorota-core-pt,   game: lorota,   lang: pt-BR, file: lorota/core.pt-BR.yaml,   title: "Verdades e invenções",  auto: true }
+  - { id: lorota-core-en,   game: lorota,   lang: en,    file: lorota/core.en.yaml,      title: "Facts and fabrications",auto: true }
+  - { id: proibida-core-pt, game: proibida, lang: pt-BR, file: proibida/core.pt-BR.yaml, title: "Cartas essenciais",     auto: true }
+  - { id: proibida-core-en, game: proibida, lang: en,    file: proibida/core.en.yaml,    title: "Core cards",            auto: true }
+  - { id: quemdiria-core-pt, game: quemdiria, lang: pt-BR, file: quemdiria/core.pt-BR.yaml, title: "Perguntas sobre a turma", auto: true }
+  - { id: quemdiria-core-en, game: quemdiria, lang: en,    file: quemdiria/core.en.yaml,    title: "Questions about the room", auto: true }
+  - { id: tribunal-core-pt,  game: tribunal,  lang: pt-BR, file: tribunal/core.pt-BR.yaml,  title: "Teses e reviravoltas",  auto: true }
+  - { id: tribunal-core-en,  game: tribunal,  lang: en,    file: tribunal/core.en.yaml,     title: "Motions and curveballs",auto: true }
+  - { id: historias-core-pt, game: historias, lang: pt-BR, file: historias/core.pt-BR.yaml, title: "Histórias para estragar", auto: true }
+  - { id: historias-core-en, game: historias, lang: en,    file: historias/core.en.yaml,    title: "Stories to ruin",       auto: true }
+  - { id: legendas-core-pt,  game: legendas,  lang: pt-BR, file: legendas/core.pt-BR.yaml,  title: "Situações absurdas",    auto: true }
+  - { id: legendas-core-en,  game: legendas,  lang: en,    file: legendas/core.en.yaml,     title: "Absurd setups",         auto: true }
+
+# ─── Expansion packs ─────────────────────────────────────────────────────────
+  - { id: quiz-extra-pt,      game: quiz,      lang: pt-BR, file: quiz/extra.pt-BR.yaml,      title: "Mais conhecimentos gerais", auto: true }
+  - { id: quiz-extra-en,      game: quiz,      lang: en,    file: quiz/extra.en.yaml,         title: "More general knowledge",    auto: true }
+  - { id: ordem-extra-pt,     game: ordem,     lang: pt-BR, file: ordem/extra.pt-BR.yaml,     title: "Mais sequências",           auto: true }
+  - { id: ordem-extra-en,     game: ordem,     lang: en,    file: ordem/extra.en.yaml,        title: "More sequences",            auto: true }
+  - { id: lorota-extra-pt,    game: lorota,    lang: pt-BR, file: lorota/extra.pt-BR.yaml,    title: "Mais verdades e invenções", auto: true }
+  - { id: lorota-extra-en,    game: lorota,    lang: en,    file: lorota/extra.en.yaml,       title: "More facts and fabrications", auto: true }
+  - { id: quemdiria-extra-pt, game: quemdiria, lang: pt-BR, file: quemdiria/extra.pt-BR.yaml, title: "Mais perguntas",            auto: true }
+  - { id: quemdiria-extra-en, game: quemdiria, lang: en,    file: quemdiria/extra.en.yaml,    title: "More questions",            auto: true }
+  - { id: proibida-extra-pt,  game: proibida,  lang: pt-BR, file: proibida/extra.pt-BR.yaml,  title: "Mais cartas",               auto: true }
+  - { id: proibida-extra-en,  game: proibida,  lang: en,    file: proibida/extra.en.yaml,     title: "More cards",                auto: true }
+  - { id: tribunal-extra-pt,  game: tribunal,  lang: pt-BR, file: tribunal/extra.pt-BR.yaml,  title: "Mais teses",                auto: true }
+  - { id: tribunal-extra-en,  game: tribunal,  lang: en,    file: tribunal/extra.en.yaml,     title: "More motions",              auto: true }
+  - { id: historias-extra-pt, game: historias, lang: pt-BR, file: historias/extra.pt-BR.yaml, title: "Mais histórias",            auto: true }
+  - { id: historias-extra-en, game: historias, lang: en,    file: historias/extra.en.yaml,    title: "More stories",              auto: true }
+  - { id: legendas-extra-pt,  game: legendas,  lang: pt-BR, file: legendas/extra.pt-BR.yaml,  title: "Mais situações",            auto: true }
+  - { id: legendas-extra-en,  game: legendas,  lang: en,    file: legendas/extra.en.yaml,     title: "More setups",               auto: true }

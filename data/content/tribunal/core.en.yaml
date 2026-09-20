@@ -1,0 +1,186 @@
+id: tribunal-core
+game: tribunal
+lang: en
+title: Motions and curveballs
+version: 1
+items:
+  - id: tb001
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Pineapple on pizza should be a federal crime"
+  - id: tb002
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Mondays should be optional"
+  - id: tb003
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Cats are objectively better than dogs"
+  - id: tb004
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Every meeting should last five minutes at most"
+  - id: tb005
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Films should be banned from having sequels"
+  - id: tb006
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Coffee is overrated"
+  - id: tb007
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Emojis are a legitimate language"
+  - id: tb008
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Waking up early is a morally questionable choice"
+  - id: tb009
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Subtitles always beat dubbing"
+  - id: tb010
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Birthday cake should be served before dinner"
+  - id: tb011
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Nobody genuinely enjoys the gym"
+  - id: tb012
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "The beach is worse than the mountains"
+  - id: tb013
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Spoilers improve the experience"
+  - id: tb014
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "There should be a legal limit on holiday photos"
+  - id: tb015
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Eating alone at a restaurant is the peak of civilisation"
+  - id: tb016
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Shared playlists destroy friendships"
+  - id: tb017
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "House plants are a scam"
+  - id: tb018
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "A barbecue beats any restaurant"
+  - id: tb019
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Reading the book after the film is the correct order"
+  - id: tb020
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Everyone should be entitled to a nap at work"
+  - id: tb021
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Secret Santa should be abolished"
+  - id: tb022
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Ice cream is acceptable for breakfast"
+  - id: tb023
+    kind: motion
+    category: tese
+    difficulty: 2
+    text: "Travelling without a plan is the only way to travel"
+  - id: tb024
+    kind: motion
+    category: tese
+    difficulty: 1
+    text: "Family group chats should have opening hours"
+  - id: cb001
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "You must now bring your grandmother into it"
+  - id: cb002
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Finish your argument by singing it"
+  - id: cb003
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "You may only speak in questions"
+  - id: cb004
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Work in a football metaphor"
+  - id: cb005
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Speak as though you're narrating a documentary"
+  - id: cb006
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "You have to fake-cry"
+  - id: cb007
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Cite a statistic you have obviously invented"
+  - id: cb008
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Whisper for the rest of your turn"
+  - id: cb009
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Compliment your opponent before demolishing them"
+  - id: cb010
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Use the word 'potato' at least twice"
+  - id: cb011
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "End on an empty threat"
+  - id: cb012
+    kind: curveball
+    category: reviravolta
+    difficulty: 1
+    text: "Argue like a courtroom-drama lawyer"

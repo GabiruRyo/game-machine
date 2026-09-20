@@ -1,0 +1,206 @@
+id: proibida-core
+game: proibida
+lang: pt-BR
+title: Cartas essenciais
+version: 1
+items:
+  - id: pr001
+    category: lugares
+    difficulty: 1
+    word: "Praia"
+    forbidden: ["mar", "areia", "sol", "verão"]
+  - id: pr002
+    category: comida
+    difficulty: 1
+    word: "Pizza"
+    forbidden: ["queijo", "massa", "italiana", "fatia"]
+  - id: pr003
+    category: esportes
+    difficulty: 1
+    word: "Futebol"
+    forbidden: ["bola", "gol", "time", "chutar"]
+  - id: pr004
+    category: profissões
+    difficulty: 2
+    word: "Dentista"
+    forbidden: ["dente", "boca", "consultório", "cárie"]
+  - id: pr005
+    category: objetos
+    difficulty: 2
+    word: "Elevador"
+    forbidden: ["prédio", "andar", "subir", "botão"]
+  - id: pr006
+    category: objetos
+    difficulty: 1
+    word: "Guarda-chuva"
+    forbidden: ["chuva", "molhar", "abrir", "cabo"]
+  - id: pr007
+    category: eventos
+    difficulty: 1
+    word: "Aniversário"
+    forbidden: ["bolo", "vela", "parabéns", "presente"]
+  - id: pr008
+    category: casa
+    difficulty: 1
+    word: "Geladeira"
+    forbidden: ["gelo", "comida", "frio", "cozinha"]
+  - id: pr009
+    category: transporte
+    difficulty: 1
+    word: "Bicicleta"
+    forbidden: ["pedal", "roda", "andar", "guidão"]
+  - id: pr010
+    category: lugares
+    difficulty: 2
+    word: "Supermercado"
+    forbidden: ["comprar", "comida", "carrinho", "caixa"]
+  - id: pr011
+    category: transporte
+    difficulty: 1
+    word: "Avião"
+    forbidden: ["voar", "céu", "asa", "aeroporto"]
+  - id: pr012
+    category: lugares
+    difficulty: 2
+    word: "Hospital"
+    forbidden: ["médico", "doente", "enfermeira", "remédio"]
+  - id: pr013
+    category: eventos
+    difficulty: 2
+    word: "Casamento"
+    forbidden: ["noiva", "igreja", "anel", "festa"]
+  - id: pr014
+    category: natureza
+    difficulty: 1
+    word: "Chuva"
+    forbidden: ["água", "molhar", "céu", "nuvem"]
+  - id: pr015
+    category: lugares
+    difficulty: 1
+    word: "Escola"
+    forbidden: ["aluno", "professor", "aula", "estudar"]
+  - id: pr016
+    category: objetos
+    difficulty: 1
+    word: "Telefone"
+    forbidden: ["ligar", "falar", "celular", "número"]
+  - id: pr017
+    category: tecnologia
+    difficulty: 2
+    word: "Computador"
+    forbidden: ["tela", "teclado", "internet", "digitar"]
+  - id: pr018
+    category: animais
+    difficulty: 1
+    word: "Cachorro"
+    forbidden: ["latir", "au", "pet", "osso"]
+  - id: pr019
+    category: comida
+    difficulty: 1
+    word: "Café"
+    forbidden: ["bebida", "quente", "xícara", "manhã"]
+  - id: pr020
+    category: objetos
+    difficulty: 1
+    word: "Livro"
+    forbidden: ["ler", "página", "história", "autor"]
+  - id: pr021
+    category: lugares
+    difficulty: 2
+    word: "Cinema"
+    forbidden: ["filme", "tela", "pipoca", "assistir"]
+  - id: pr022
+    category: casa
+    difficulty: 2
+    word: "Jardim"
+    forbidden: ["planta", "flor", "verde", "terra"]
+  - id: pr023
+    category: objetos
+    difficulty: 1
+    word: "Garfo"
+    forbidden: ["comer", "talher", "faca", "espetar"]
+  - id: pr024
+    category: casa
+    difficulty: 2
+    word: "Espelho"
+    forbidden: ["ver", "reflexo", "banheiro", "rosto"]
+  - id: pr025
+    category: objetos
+    difficulty: 1
+    word: "Relógio"
+    forbidden: ["hora", "tempo", "ponteiro", "pulso"]
+  - id: pr026
+    category: objetos
+    difficulty: 2
+    word: "Chave"
+    forbidden: ["porta", "abrir", "fechadura", "trancar"]
+  - id: pr027
+    category: casa
+    difficulty: 2
+    word: "Travesseiro"
+    forbidden: ["dormir", "cama", "cabeça", "macio"]
+  - id: pr028
+    category: roupa
+    difficulty: 1
+    word: "Sapato"
+    forbidden: ["pé", "calçar", "andar", "cadarço"]
+  - id: pr029
+    category: objetos
+    difficulty: 2
+    word: "Óculos"
+    forbidden: ["ver", "olho", "lente", "grau"]
+  - id: pr030
+    category: arte
+    difficulty: 2
+    word: "Música"
+    forbidden: ["som", "ouvir", "cantar", "instrumento"]
+  - id: pr031
+    category: natureza
+    difficulty: 1
+    word: "Montanha"
+    forbidden: ["alto", "subir", "pico", "neve"]
+  - id: pr032
+    category: natureza
+    difficulty: 2
+    word: "Ilha"
+    forbidden: ["água", "mar", "cercada", "terra"]
+  - id: pr033
+    category: natureza
+    difficulty: 1
+    word: "Fogo"
+    forbidden: ["quente", "queimar", "chama", "fumaça"]
+  - id: pr034
+    category: natureza
+    difficulty: 1
+    word: "Neve"
+    forbidden: ["frio", "branco", "gelo", "inverno"]
+  - id: pr035
+    category: objetos
+    difficulty: 2
+    word: "Mapa"
+    forbidden: ["lugar", "caminho", "norte", "perder"]
+  - id: pr036
+    category: profissões
+    difficulty: 2
+    word: "Bombeiro"
+    forbidden: ["fogo", "apagar", "incêndio", "mangueira"]
+  - id: pr037
+    category: comida
+    difficulty: 2
+    word: "Sorvete"
+    forbidden: ["gelado", "doce", "casquinha", "sabor"]
+  - id: pr038
+    category: lugares
+    difficulty: 3
+    word: "Biblioteca"
+    forbidden: ["livro", "silêncio", "emprestar", "estante"]
+  - id: pr039
+    category: animais
+    difficulty: 2
+    word: "Borboleta"
+    forbidden: ["asa", "voar", "colorida", "lagarta"]
+  - id: pr040
+    category: objetos
+    difficulty: 3
+    word: "Vassoura"
+    forbidden: ["limpar", "varrer", "chão", "cabo"]

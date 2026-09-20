@@ -1,0 +1,154 @@
+id: historias-core
+game: historias
+lang: pt-BR
+title: Histórias para estragar
+version: 1
+items:
+  - id: hi001
+    category: historia
+    difficulty: 1
+    title: "A entrevista de emprego"
+    template: "Bom dia, obrigado por vir. Vi no seu currículo que você trabalhou como {1} por {2} anos. Impressionante. E aqui diz que sua maior qualidade é ser {3}. Pode me dar um exemplo? ... Entendi, você {4} na frente do diretor. Olha, normalmente eu não faria isso, mas você está contratado. Seu primeiro trabalho é {5}."
+    slots:
+      - { prompt: "Uma profissão" }
+      - { prompt: "Um número" }
+      - { prompt: "Um adjetivo" }
+      - { prompt: "Um verbo no passado" }
+      - { prompt: "Uma tarefa absurda" }
+  - id: hi002
+    category: historia
+    difficulty: 1
+    title: "A receita de família"
+    template: "Esta receita passou de geração em geração. Primeiro, pegue {1} e coloque numa {2}. Misture com {3} até ficar bem {4}. Deixe descansar por {5} minutos. Sirva com {6} e nunca conte para ninguém o segredo."
+    slots:
+      - { prompt: "Um ingrediente" }
+      - { prompt: "Um objeto de cozinha" }
+      - { prompt: "Um líquido" }
+      - { prompt: "Um adjetivo" }
+      - { prompt: "Um número" }
+      - { prompt: "Uma comida" }
+  - id: hi003
+    category: historia
+    difficulty: 2
+    title: "O noticiário das oito"
+    template: "Boa noite. Nossa manchete: um {1} foi encontrado {2} no centro da cidade. Testemunhas dizem que ele estava {3} desde as {4} horas. A polícia pede que ninguém {5}. O prefeito declarou apenas: '{6}'."
+    slots:
+      - { prompt: "Um animal" }
+      - { prompt: "Um adjetivo" }
+      - { prompt: "Um verbo terminado em -ndo" }
+      - { prompt: "Um número" }
+      - { prompt: "Um verbo" }
+      - { prompt: "Uma frase curta" }
+  - id: hi004
+    category: historia
+    difficulty: 2
+    title: "A carta de amor"
+    template: "Meu querido {1}, desde o dia em que te vi {2} na {3}, não consigo parar de pensar em você. Seu jeito {4} me deixa completamente {5}. Se você sentir o mesmo, me encontre {6} às {7}. Com carinho, seu admirador secreto."
+    slots:
+      - { prompt: "Um apelido" }
+      - { prompt: "Um verbo terminado em -ndo" }
+      - { prompt: "Um lugar" }
+      - { prompt: "Um adjetivo" }
+      - { prompt: "Um adjetivo" }
+      - { prompt: "Um lugar" }
+      - { prompt: "Um horário" }
+  - id: hi005
+    category: historia
+    difficulty: 2
+    title: "O manual de instruções"
+    template: "Parabéns pela compra do seu novo {1}! Antes de usar, verifique se a embalagem contém {2} unidades de {3}. AVISO: nunca use este produto enquanto estiver {4}. Em caso de {5}, desligue tudo e chame {6} imediatamente. Garantia de {7} dias."
+    slots:
+      - { prompt: "Um objeto" }
+      - { prompt: "Um número" }
+      - { prompt: "Uma coisa" }
+      - { prompt: "Um verbo terminado em -ndo" }
+      - { prompt: "Um problema" }
+      - { prompt: "Uma pessoa" }
+      - { prompt: "Um número" }
+  - id: hi006
+    category: historia
+    difficulty: 3
+    title: "O diário do explorador"
+    template: "Dia {1} da expedição. Acabou nossa reserva de {2}. O guia insiste que vimos um {3} atrás daquela {4}, mas ninguém acredita nele desde que ele {5} na semana passada. Se eu não voltar, digam à minha família que {6}."
+    slots:
+      - { prompt: "Um número" }
+      - { prompt: "Uma comida" }
+      - { prompt: "Uma criatura" }
+      - { prompt: "Uma coisa grande" }
+      - { prompt: "Um verbo no passado" }
+      - { prompt: "Uma frase curta" }
+  - id: hi007
+    category: historia
+    difficulty: 2
+    title: "O anúncio imobiliário"
+    template: "OPORTUNIDADE ÚNICA! Casa com {1} quartos, cozinha {2} e uma vista deslumbrante para {3}. O antigo dono era {4} e deixou {5} no porão. Vizinhança tranquila, exceto às {6} horas. Aceita {7} como entrada."
+    slots:
+      - { prompt: "Um número" }
+      - { prompt: "Um adjetivo" }
+      - { prompt: "Um lugar" }
+      - { prompt: "Uma profissão" }
+      - { prompt: "Uma coisa" }
+      - { prompt: "Um número" }
+      - { prompt: "Uma coisa" }
+  - id: hi008
+    category: historia
+    difficulty: 3
+    title: "O discurso de premiação"
+    template: "Nossa, eu não esperava isso. Queria agradecer primeiro ao meu {1}, que sempre disse que eu era {2} demais para desistir. Esse prêmio é por todas as noites que passei {3} em vez de dormir. E para quem duvidou de mim: {4}. Vou usar o dinheiro para comprar {5}. Obrigado, {6}!"
+    slots:
+      - { prompt: "Um parente" }
+      - { prompt: "Um adjetivo" }
+      - { prompt: "Um verbo terminado em -ndo" }
+      - { prompt: "Uma frase curta" }
+      - { prompt: "Uma coisa cara" }
+      - { prompt: "Um lugar" }
+  - id: hi009
+    category: historia
+    difficulty: 2
+    title: "A mensagem de voz"
+    template: "Oi, é o {1}. Desculpa ligar às {2} da manhã, mas aconteceu uma coisa com o {3}. Não entra em pânico. Basicamente, ele está {4} e não consigo fazer ele parar de {5}. Traz {6} quando vier. E não conta para a {7}."
+    slots:
+      - { prompt: "Um nome" }
+      - { prompt: "Um número" }
+      - { prompt: "Um objeto ou animal" }
+      - { prompt: "Um adjetivo" }
+      - { prompt: "Um verbo" }
+      - { prompt: "Uma coisa" }
+      - { prompt: "Uma pessoa" }
+  - id: hi010
+    category: historia
+    difficulty: 1
+    title: "O conto de fadas"
+    template: "Era uma vez uma princesa que morava numa {1} gigante. Todos os dias ela precisava {2} antes do nascer do sol. Um dia, apareceu um {3} muito {4} oferecendo {5} em troca de sua coroa. Ela recusou e virou {6}. E foram felizes para sempre."
+    slots:
+      - { prompt: "Uma construção" }
+      - { prompt: "Um verbo" }
+      - { prompt: "Uma criatura" }
+      - { prompt: "Um adjetivo" }
+      - { prompt: "Uma coisa" }
+      - { prompt: "Uma profissão" }
+  - id: hi011
+    category: historia
+    difficulty: 3
+    title: "A reclamação formal"
+    template: "Prezados senhores, escrevo para relatar minha insatisfação com o serviço prestado no dia {1}. Ao chegar, fui recebido por um funcionário visivelmente {2}, que insistiu em {3} sem qualquer justificativa. Quando pedi para falar com o gerente, ele simplesmente {4}. Exijo reembolso de {5} ou, no mínimo, {6}."
+    slots:
+      - { prompt: "Um número" }
+      - { prompt: "Um adjetivo" }
+      - { prompt: "Um verbo terminado em -ndo" }
+      - { prompt: "Um verbo no passado" }
+      - { prompt: "Um valor" }
+      - { prompt: "Uma coisa" }
+  - id: hi012
+    category: historia
+    difficulty: 2
+    title: "O plano infalível"
+    template: "Ok, escuta com atenção. Às {1} em ponto, você entra pela {2} vestido de {3}. Eu distraio o segurança {4}. Quando ouvir o sinal, que vai ser um {5} bem alto, você pega {6} e corre. Se der errado, a gente se encontra em {7}. Simples."
+    slots:
+      - { prompt: "Um horário" }
+      - { prompt: "Um lugar" }
+      - { prompt: "Uma profissão" }
+      - { prompt: "Um verbo terminado em -ndo" }
+      - { prompt: "Um som" }
+      - { prompt: "Uma coisa valiosa" }
+      - { prompt: "Um lugar" }

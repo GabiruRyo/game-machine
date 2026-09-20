@@ -1,0 +1,154 @@
+id: historias-core
+game: historias
+lang: en
+title: Stories to ruin
+version: 1
+items:
+  - id: hi001
+    category: historia
+    difficulty: 1
+    title: "The job interview"
+    template: "Morning, thanks for coming in. I see on your CV that you worked as a {1} for {2} years. Impressive. And it says here your greatest strength is being {3}. Could you give me an example? ... I see, you {4} in front of the director. Look, normally I wouldn't do this, but you're hired. Your first task is {5}."
+    slots:
+      - { prompt: "A profession" }
+      - { prompt: "A number" }
+      - { prompt: "An adjective" }
+      - { prompt: "A past-tense verb" }
+      - { prompt: "An absurd task" }
+  - id: hi002
+    category: historia
+    difficulty: 1
+    title: "The family recipe"
+    template: "This recipe has been passed down for generations. First, take {1} and put it in a {2}. Mix it with {3} until it's properly {4}. Let it rest for {5} minutes. Serve with {6} and never tell anyone the secret."
+    slots:
+      - { prompt: "An ingredient" }
+      - { prompt: "A kitchen object" }
+      - { prompt: "A liquid" }
+      - { prompt: "An adjective" }
+      - { prompt: "A number" }
+      - { prompt: "A food" }
+  - id: hi003
+    category: historia
+    difficulty: 2
+    title: "The eight o'clock news"
+    template: "Good evening. Our top story: a {1} was found {2} in the city centre. Witnesses say it had been {3} since {4} o'clock. Police are asking that nobody {5}. The mayor would only say: '{6}'."
+    slots:
+      - { prompt: "An animal" }
+      - { prompt: "An adjective" }
+      - { prompt: "A verb ending in -ing" }
+      - { prompt: "A number" }
+      - { prompt: "A verb" }
+      - { prompt: "A short phrase" }
+  - id: hi004
+    category: historia
+    difficulty: 2
+    title: "The love letter"
+    template: "My dearest {1}, ever since the day I saw you {2} at the {3}, I haven't been able to stop thinking about you. Your {4} manner leaves me completely {5}. If you feel the same, meet me {6} at {7}. Fondly, your secret admirer."
+    slots:
+      - { prompt: "A nickname" }
+      - { prompt: "A verb ending in -ing" }
+      - { prompt: "A place" }
+      - { prompt: "An adjective" }
+      - { prompt: "An adjective" }
+      - { prompt: "A place" }
+      - { prompt: "A time" }
+  - id: hi005
+    category: historia
+    difficulty: 2
+    title: "The instruction manual"
+    template: "Congratulations on your new {1}! Before use, check that the box contains {2} units of {3}. WARNING: never operate this product while {4}. In the event of {5}, switch everything off and call {6} immediately. Warranty: {7} days."
+    slots:
+      - { prompt: "An object" }
+      - { prompt: "A number" }
+      - { prompt: "A thing" }
+      - { prompt: "A verb ending in -ing" }
+      - { prompt: "A problem" }
+      - { prompt: "A person" }
+      - { prompt: "A number" }
+  - id: hi006
+    category: historia
+    difficulty: 3
+    title: "The explorer's diary"
+    template: "Day {1} of the expedition. We've run out of {2}. The guide insists we saw a {3} behind that {4}, but nobody has believed him since he {5} last week. If I don't come back, tell my family that {6}."
+    slots:
+      - { prompt: "A number" }
+      - { prompt: "A food" }
+      - { prompt: "A creature" }
+      - { prompt: "A big thing" }
+      - { prompt: "A past-tense verb" }
+      - { prompt: "A short phrase" }
+  - id: hi007
+    category: historia
+    difficulty: 2
+    title: "The property listing"
+    template: "ONCE IN A LIFETIME! House with {1} bedrooms, a {2} kitchen and breathtaking views over {3}. The previous owner was a {4} and left {5} in the basement. Quiet neighbourhood, except at {6} o'clock. Will accept {7} as a deposit."
+    slots:
+      - { prompt: "A number" }
+      - { prompt: "An adjective" }
+      - { prompt: "A place" }
+      - { prompt: "A profession" }
+      - { prompt: "A thing" }
+      - { prompt: "A number" }
+      - { prompt: "A thing" }
+  - id: hi008
+    category: historia
+    difficulty: 3
+    title: "The awards speech"
+    template: "Wow, I really wasn't expecting this. First I'd like to thank my {1}, who always said I was far too {2} to give up. This award is for every night I spent {3} instead of sleeping. And to everyone who doubted me: {4}. I'm going to spend the prize money on {5}. Thank you, {6}!"
+    slots:
+      - { prompt: "A relative" }
+      - { prompt: "An adjective" }
+      - { prompt: "A verb ending in -ing" }
+      - { prompt: "A short phrase" }
+      - { prompt: "An expensive thing" }
+      - { prompt: "A place" }
+  - id: hi009
+    category: historia
+    difficulty: 2
+    title: "The voicemail"
+    template: "Hi, it's {1}. Sorry for calling at {2} in the morning, but something's happened with the {3}. Don't panic. Basically it's {4} and I can't get it to stop {5}. Bring {6} when you come. And don't tell {7}."
+    slots:
+      - { prompt: "A name" }
+      - { prompt: "A number" }
+      - { prompt: "An object or animal" }
+      - { prompt: "An adjective" }
+      - { prompt: "A verb ending in -ing" }
+      - { prompt: "A thing" }
+      - { prompt: "A person" }
+  - id: hi010
+    category: historia
+    difficulty: 1
+    title: "The fairy tale"
+    template: "Once upon a time there was a princess who lived in a giant {1}. Every day she had to {2} before sunrise. One day a very {4} {3} appeared, offering {5} in exchange for her crown. She refused and became a {6}. And they lived happily ever after."
+    slots:
+      - { prompt: "A building" }
+      - { prompt: "A verb" }
+      - { prompt: "A creature" }
+      - { prompt: "An adjective" }
+      - { prompt: "A thing" }
+      - { prompt: "A profession" }
+  - id: hi011
+    category: historia
+    difficulty: 3
+    title: "The formal complaint"
+    template: "Dear Sirs, I write to report my dissatisfaction with the service provided on the {1}. On arrival I was met by a visibly {2} member of staff, who insisted on {3} without any justification. When I asked to speak to the manager, he simply {4}. I demand a refund of {5} or, at the very least, {6}."
+    slots:
+      - { prompt: "A number" }
+      - { prompt: "An adjective" }
+      - { prompt: "A verb ending in -ing" }
+      - { prompt: "A past-tense verb" }
+      - { prompt: "An amount" }
+      - { prompt: "A thing" }
+  - id: hi012
+    category: historia
+    difficulty: 2
+    title: "The foolproof plan"
+    template: "Right, listen carefully. At {1} sharp, you go in through the {2} dressed as a {3}. I'll distract the guard by {4}. When you hear the signal, which will be a very loud {5}, you grab {6} and run. If it goes wrong, we meet at {7}. Simple."
+    slots:
+      - { prompt: "A time" }
+      - { prompt: "A place" }
+      - { prompt: "A profession" }
+      - { prompt: "A verb ending in -ing" }
+      - { prompt: "A sound" }
+      - { prompt: "A valuable thing" }
+      - { prompt: "A place" }

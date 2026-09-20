@@ -1,0 +1,248 @@
+id: quiz-core
+game: quiz
+lang: en
+title: General knowledge
+version: 1
+items:
+  - id: q001
+    category: geography
+    difficulty: 1
+    question: "Which is the largest country in South America?"
+    options: ["Brazil", "Argentina", "Peru", "Colombia"]
+    answer: 0
+  - id: q002
+    category: space
+    difficulty: 1
+    question: "Which planet is closest to the Sun?"
+    options: ["Venus", "Mercury", "Mars", "Earth"]
+    answer: 1
+  - id: q003
+    category: maths
+    difficulty: 1
+    question: "How many sides does a hexagon have?"
+    options: ["5", "6", "7", "8"]
+    answer: 1
+  - id: q004
+    category: geography
+    difficulty: 1
+    question: "Which is the largest ocean in the world?"
+    options: ["Atlantic", "Indian", "Pacific", "Arctic"]
+    answer: 2
+  - id: q005
+    category: science
+    difficulty: 2
+    question: "Which gas do plants absorb during photosynthesis?"
+    options: ["Oxygen", "Nitrogen", "Carbon dioxide", "Hydrogen"]
+    answer: 2
+  - id: q006
+    category: geography
+    difficulty: 1
+    question: "What is the capital of Japan?"
+    options: ["Kyoto", "Osaka", "Tokyo", "Nagoya"]
+    answer: 2
+  - id: q007
+    category: art
+    difficulty: 1
+    question: "Who painted the Mona Lisa?"
+    options: ["Michelangelo", "Leonardo da Vinci", "Raphael", "Donatello"]
+    answer: 1
+  - id: q008
+    category: animals
+    difficulty: 1
+    question: "Which is the largest mammal in the world?"
+    options: ["African elephant", "Blue whale", "Giraffe", "Polar bear"]
+    answer: 1
+  - id: q009
+    category: body
+    difficulty: 3
+    question: "How many bones are there in an adult human body?"
+    options: ["186", "206", "226", "246"]
+    answer: 1
+    note: "Babies are born with around 300 bones; many fuse together as they grow."
+  - id: q010
+    category: science
+    difficulty: 1
+    question: "The chemical symbol O stands for which element?"
+    options: ["Gold", "Osmium", "Oxygen", "Ozone"]
+    answer: 2
+  - id: q011
+    category: history
+    difficulty: 2
+    question: "In which year did humans first walk on the Moon?"
+    options: ["1961", "1965", "1969", "1972"]
+    answer: 2
+  - id: q012
+    category: geography
+    difficulty: 1
+    question: "Which country is shaped like a boot?"
+    options: ["Greece", "Portugal", "Italy", "Croatia"]
+    answer: 2
+  - id: q013
+    category: sport
+    difficulty: 1
+    question: "How many minutes is the regulation time of a football match?"
+    options: ["60", "80", "90", "100"]
+    answer: 2
+  - id: q014
+    category: science
+    difficulty: 2
+    question: "Which metal is liquid at room temperature?"
+    options: ["Lead", "Mercury", "Aluminium", "Tin"]
+    answer: 1
+  - id: q015
+    category: geography
+    difficulty: 2
+    question: "Which is the largest hot desert in the world?"
+    options: ["Sahara", "Gobi", "Kalahari", "Atacama"]
+    answer: 0
+  - id: q016
+    category: literature
+    difficulty: 2
+    question: "Who wrote Don Quixote?"
+    options: ["Miguel de Cervantes", "Lope de Vega", "Dante Alighieri", "Camões"]
+    answer: 0
+  - id: q017
+    category: music
+    difficulty: 1
+    question: "How many strings does a standard guitar have?"
+    options: ["4", "5", "6", "7"]
+    answer: 2
+  - id: q018
+    category: geography
+    difficulty: 1
+    question: "What is the official currency of the United Kingdom?"
+    options: ["Euro", "Pound sterling", "Dollar", "Franc"]
+    answer: 1
+  - id: q019
+    category: animals
+    difficulty: 1
+    question: "Which is the fastest land animal?"
+    options: ["Lion", "Cheetah", "Antelope", "Horse"]
+    answer: 1
+  - id: q020
+    category: geography
+    difficulty: 1
+    question: "How many continents are there in the most common model?"
+    options: ["5", "6", "7", "8"]
+    answer: 2
+  - id: q021
+    category: body
+    difficulty: 2
+    question: "Which is the longest bone in the human body?"
+    options: ["Humerus", "Tibia", "Femur", "Fibula"]
+    answer: 2
+  - id: q022
+    category: space
+    difficulty: 1
+    question: "Which planet is known as the red planet?"
+    options: ["Jupiter", "Mars", "Venus", "Saturn"]
+    answer: 1
+  - id: q023
+    category: science
+    difficulty: 1
+    question: "Who developed the theory of relativity?"
+    options: ["Isaac Newton", "Albert Einstein", "Niels Bohr", "Galileo Galilei"]
+    answer: 1
+  - id: q024
+    category: geography
+    difficulty: 3
+    question: "What is the capital of Australia?"
+    options: ["Sydney", "Melbourne", "Canberra", "Perth"]
+    answer: 2
+    note: "Canberra was purpose-built as the capital precisely to settle the argument between Sydney and Melbourne."
+  - id: q025
+    category: sport
+    difficulty: 2
+    question: "How many volleyball players from each team are on court?"
+    options: ["5", "6", "7", "11"]
+    answer: 1
+  - id: q026
+    category: food
+    difficulty: 1
+    question: "Which fruit is famous for being rich in potassium?"
+    options: ["Apple", "Banana", "Grape", "Pear"]
+    answer: 1
+  - id: q027
+    category: body
+    difficulty: 2
+    question: "Which is the largest organ of the human body?"
+    options: ["Liver", "Lung", "Skin", "Intestine"]
+    answer: 2
+  - id: q028
+    category: history
+    difficulty: 2
+    question: "Which country hosted the first modern Olympic Games?"
+    options: ["France", "Greece", "Italy", "England"]
+    answer: 1
+  - id: q029
+    category: science
+    difficulty: 2
+    question: "What is the chemical symbol for gold?"
+    options: ["Ag", "Au", "Go", "Or"]
+    answer: 1
+  - id: q030
+    category: maths
+    difficulty: 3
+    question: "How many sides does a dodecagon have?"
+    options: ["10", "11", "12", "20"]
+    answer: 2
+  - id: q031
+    category: geography
+    difficulty: 1
+    question: "Which river runs through Egypt?"
+    options: ["Nile", "Tigris", "Euphrates", "Congo"]
+    answer: 0
+  - id: q032
+    category: science
+    difficulty: 3
+    question: "What is the approximate speed of light in a vacuum?"
+    options: ["30,000 km/s", "300,000 km/s", "3,000,000 km/s", "300 km/s"]
+    answer: 1
+  - id: q033
+    category: history
+    difficulty: 2
+    question: "Who was the first human to travel into space?"
+    options: ["Neil Armstrong", "Yuri Gagarin", "Alan Shepard", "Buzz Aldrin"]
+    answer: 1
+  - id: q034
+    category: music
+    difficulty: 1
+    question: "Which instrument has black and white keys?"
+    options: ["Harp", "Piano", "Trumpet", "Violin"]
+    answer: 1
+  - id: q035
+    category: science
+    difficulty: 2
+    question: "What is the smallest unit that keeps the properties of a chemical element?"
+    options: ["Molecule", "Atom", "Cell", "Electron"]
+    answer: 1
+  - id: q036
+    category: science
+    difficulty: 1
+    question: "How many colours are traditionally listed in a rainbow?"
+    options: ["5", "6", "7", "8"]
+    answer: 2
+  - id: q037
+    category: history
+    difficulty: 2
+    question: "In which country was paper invented?"
+    options: ["Egypt", "China", "India", "Greece"]
+    answer: 1
+  - id: q038
+    category: animals
+    difficulty: 2
+    question: "Which is the largest big cat in the world?"
+    options: ["Lion", "Tiger", "Jaguar", "Leopard"]
+    answer: 1
+  - id: q039
+    category: maths
+    difficulty: 1
+    question: "How many degrees do the interior angles of a triangle add up to?"
+    options: ["90", "180", "270", "360"]
+    answer: 1
+  - id: q040
+    category: body
+    difficulty: 2
+    question: "Sun exposure helps the body produce which vitamin?"
+    options: ["Vitamin A", "Vitamin C", "Vitamin D", "Vitamin K"]
+    answer: 2

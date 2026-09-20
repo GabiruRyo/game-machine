@@ -1,0 +1,206 @@
+id: proibida-core
+game: proibida
+lang: en
+title: Core cards
+version: 1
+items:
+  - id: pr001
+    category: lugares
+    difficulty: 1
+    word: "Beach"
+    forbidden: ["sea", "sand", "sun", "summer"]
+  - id: pr002
+    category: comida
+    difficulty: 1
+    word: "Pizza"
+    forbidden: ["cheese", "dough", "Italian", "slice"]
+  - id: pr003
+    category: esportes
+    difficulty: 1
+    word: "Football"
+    forbidden: ["ball", "goal", "team", "kick"]
+  - id: pr004
+    category: profissões
+    difficulty: 2
+    word: "Dentist"
+    forbidden: ["tooth", "mouth", "clinic", "cavity"]
+  - id: pr005
+    category: objetos
+    difficulty: 2
+    word: "Lift"
+    forbidden: ["building", "floor", "up", "button"]
+  - id: pr006
+    category: objetos
+    difficulty: 1
+    word: "Umbrella"
+    forbidden: ["rain", "wet", "open", "handle"]
+  - id: pr007
+    category: eventos
+    difficulty: 1
+    word: "Birthday"
+    forbidden: ["cake", "candle", "party", "present"]
+  - id: pr008
+    category: casa
+    difficulty: 1
+    word: "Fridge"
+    forbidden: ["ice", "food", "cold", "kitchen"]
+  - id: pr009
+    category: transporte
+    difficulty: 1
+    word: "Bicycle"
+    forbidden: ["pedal", "wheel", "ride", "handlebar"]
+  - id: pr010
+    category: lugares
+    difficulty: 2
+    word: "Supermarket"
+    forbidden: ["buy", "food", "trolley", "checkout"]
+  - id: pr011
+    category: transporte
+    difficulty: 1
+    word: "Aeroplane"
+    forbidden: ["fly", "sky", "wing", "airport"]
+  - id: pr012
+    category: lugares
+    difficulty: 2
+    word: "Hospital"
+    forbidden: ["doctor", "sick", "nurse", "medicine"]
+  - id: pr013
+    category: eventos
+    difficulty: 2
+    word: "Wedding"
+    forbidden: ["bride", "church", "ring", "party"]
+  - id: pr014
+    category: natureza
+    difficulty: 1
+    word: "Rain"
+    forbidden: ["water", "wet", "sky", "cloud"]
+  - id: pr015
+    category: lugares
+    difficulty: 1
+    word: "School"
+    forbidden: ["student", "teacher", "class", "study"]
+  - id: pr016
+    category: objetos
+    difficulty: 1
+    word: "Telephone"
+    forbidden: ["call", "talk", "mobile", "number"]
+  - id: pr017
+    category: tecnologia
+    difficulty: 2
+    word: "Computer"
+    forbidden: ["screen", "keyboard", "internet", "type"]
+  - id: pr018
+    category: animais
+    difficulty: 1
+    word: "Dog"
+    forbidden: ["bark", "woof", "pet", "bone"]
+  - id: pr019
+    category: comida
+    difficulty: 1
+    word: "Coffee"
+    forbidden: ["drink", "hot", "cup", "morning"]
+  - id: pr020
+    category: objetos
+    difficulty: 1
+    word: "Book"
+    forbidden: ["read", "page", "story", "author"]
+  - id: pr021
+    category: lugares
+    difficulty: 2
+    word: "Cinema"
+    forbidden: ["film", "screen", "popcorn", "watch"]
+  - id: pr022
+    category: casa
+    difficulty: 2
+    word: "Garden"
+    forbidden: ["plant", "flower", "green", "soil"]
+  - id: pr023
+    category: objetos
+    difficulty: 1
+    word: "Fork"
+    forbidden: ["eat", "cutlery", "knife", "stab"]
+  - id: pr024
+    category: casa
+    difficulty: 2
+    word: "Mirror"
+    forbidden: ["see", "reflection", "bathroom", "face"]
+  - id: pr025
+    category: objetos
+    difficulty: 1
+    word: "Clock"
+    forbidden: ["hour", "time", "hand", "wrist"]
+  - id: pr026
+    category: objetos
+    difficulty: 2
+    word: "Key"
+    forbidden: ["door", "open", "lock", "shut"]
+  - id: pr027
+    category: casa
+    difficulty: 2
+    word: "Pillow"
+    forbidden: ["sleep", "bed", "head", "soft"]
+  - id: pr028
+    category: roupa
+    difficulty: 1
+    word: "Shoe"
+    forbidden: ["foot", "wear", "walk", "lace"]
+  - id: pr029
+    category: objetos
+    difficulty: 2
+    word: "Glasses"
+    forbidden: ["see", "eye", "lens", "vision"]
+  - id: pr030
+    category: arte
+    difficulty: 2
+    word: "Music"
+    forbidden: ["sound", "listen", "sing", "instrument"]
+  - id: pr031
+    category: natureza
+    difficulty: 1
+    word: "Mountain"
+    forbidden: ["high", "climb", "peak", "snow"]
+  - id: pr032
+    category: natureza
+    difficulty: 2
+    word: "Island"
+    forbidden: ["water", "sea", "surrounded", "land"]
+  - id: pr033
+    category: natureza
+    difficulty: 1
+    word: "Fire"
+    forbidden: ["hot", "burn", "flame", "smoke"]
+  - id: pr034
+    category: natureza
+    difficulty: 1
+    word: "Snow"
+    forbidden: ["cold", "white", "ice", "winter"]
+  - id: pr035
+    category: objetos
+    difficulty: 2
+    word: "Map"
+    forbidden: ["place", "route", "north", "lost"]
+  - id: pr036
+    category: profissões
+    difficulty: 2
+    word: "Firefighter"
+    forbidden: ["fire", "put out", "blaze", "hose"]
+  - id: pr037
+    category: comida
+    difficulty: 2
+    word: "Ice cream"
+    forbidden: ["frozen", "sweet", "cone", "flavour"]
+  - id: pr038
+    category: lugares
+    difficulty: 3
+    word: "Library"
+    forbidden: ["book", "quiet", "borrow", "shelf"]
+  - id: pr039
+    category: animais
+    difficulty: 2
+    word: "Butterfly"
+    forbidden: ["wing", "fly", "colourful", "caterpillar"]
+  - id: pr040
+    category: objetos
+    difficulty: 3
+    word: "Broom"
+    forbidden: ["clean", "sweep", "floor", "handle"]

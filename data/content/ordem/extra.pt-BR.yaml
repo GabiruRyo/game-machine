@@ -1,0 +1,204 @@
+id: ordem-extra
+game: ordem
+lang: pt-BR
+title: Mais sequências
+version: 1
+items:
+  - id: ox001
+    category: história
+    difficulty: 2
+    prompt: "Do mais antigo ao mais recente"
+    entries:
+      - { label: "Egito Antigo unificado", detail: "~3100 a.C." }
+      - { label: "Império Romano fundado", detail: "27 a.C." }
+      - { label: "Descobrimento da América", detail: "1492" }
+      - { label: "Queda do Muro de Berlim", detail: "1989" }
+  - id: ox002
+    category: ciência
+    difficulty: 2
+    prompt: "Do menor ao maior"
+    entries:
+      - { label: "Átomo", detail: "~0,1 nm" }
+      - { label: "Vírus", detail: "~100 nm" }
+      - { label: "Bactéria", detail: "~2 µm" }
+      - { label: "Célula humana", detail: "~30 µm" }
+  - id: ox003
+    category: animais
+    difficulty: 2
+    prompt: "Da menor à maior expectativa de vida"
+    entries:
+      - { label: "Rato", detail: "~2 anos" }
+      - { label: "Cachorro", detail: "~12 anos" }
+      - { label: "Cavalo", detail: "~28 anos" }
+      - { label: "Tartaruga-gigante", detail: "~150 anos" }
+  - id: ox004
+    category: geografia
+    difficulty: 3
+    prompt: "Do mais ao norte para o mais ao sul"
+    entries:
+      - { label: "Oslo", detail: "60°N" }
+      - { label: "Roma", detail: "42°N" }
+      - { label: "Cairo", detail: "30°N" }
+      - { label: "Nairóbi", detail: "1°S" }
+  - id: ox005
+    category: tecnologia
+    difficulty: 2
+    prompt: "Do mais antigo ao mais recente"
+    entries:
+      - { label: "Telégrafo", detail: "1837" }
+      - { label: "Telefone", detail: "1876" }
+      - { label: "Internet", detail: "1969" }
+      - { label: "Smartphone", detail: "2007" }
+  - id: ox006
+    category: comida
+    difficulty: 1
+    prompt: "Do menos ao mais picante"
+    entries:
+      - { label: "Pimentão", detail: "0 SHU" }
+      - { label: "Jalapeño", detail: "~5.000 SHU" }
+      - { label: "Malagueta", detail: "~100.000 SHU" }
+      - { label: "Naga", detail: "~1.000.000 SHU" }
+  - id: ox007
+    category: espaço
+    difficulty: 3
+    prompt: "Do mais próximo ao mais distante da Terra"
+    entries:
+      - { label: "Lua", detail: "384 mil km" }
+      - { label: "Sol", detail: "150 mi km" }
+      - { label: "Netuno", detail: "4,5 bi km" }
+      - { label: "Alfa Centauri", detail: "4,2 anos-luz" }
+  - id: ox008
+    category: história
+    difficulty: 3
+    prompt: "Do mais antigo ao mais recente"
+    entries:
+      - { label: "Primeira Guerra Mundial", detail: "1914" }
+      - { label: "Segunda Guerra Mundial", detail: "1939" }
+      - { label: "Primeiro satélite em órbita", detail: "1957" }
+      - { label: "Primeiro voo tripulado à Lua", detail: "1969" }
+  - id: ox009
+    category: geografia
+    difficulty: 2
+    prompt: "Do menor ao maior em população"
+    entries:
+      - { label: "Islândia", detail: "~0,4 mi" }
+      - { label: "Uruguai", detail: "~3,4 mi" }
+      - { label: "Portugal", detail: "~10 mi" }
+      - { label: "Japão", detail: "~124 mi" }
+  - id: ox010
+    category: ciência
+    difficulty: 2
+    prompt: "Do mais leve ao mais denso"
+    entries:
+      - { label: "Isopor", detail: "0,05 g/cm³" }
+      - { label: "Água", detail: "1 g/cm³" }
+      - { label: "Alumínio", detail: "2,7 g/cm³" }
+      - { label: "Ouro", detail: "19,3 g/cm³" }
+  - id: ox011
+    category: música
+    difficulty: 2
+    prompt: "Do mais grave ao mais agudo"
+    entries:
+      - { label: "Contrabaixo", detail: "grave" }
+      - { label: "Violoncelo", detail: "médio-grave" }
+      - { label: "Viola", detail: "médio" }
+      - { label: "Violino", detail: "agudo" }
+  - id: ox012
+    category: animais
+    difficulty: 2
+    prompt: "Do menor ao maior"
+    entries:
+      - { label: "Beija-flor", detail: "~5 cm" }
+      - { label: "Pombo", detail: "~33 cm" }
+      - { label: "Águia", detail: "~90 cm" }
+      - { label: "Avestruz", detail: "~250 cm" }
+  - id: ox013
+    category: história
+    difficulty: 3
+    prompt: "Em ordem cronológica de invenção"
+    entries:
+      - { label: "Papel", detail: "~100" }
+      - { label: "Pólvora", detail: "~900" }
+      - { label: "Imprensa", detail: "1440" }
+      - { label: "Máquina a vapor", detail: "1712" }
+  - id: ox014
+    category: corpo
+    difficulty: 2
+    prompt: "Do menor ao maior órgão"
+    entries:
+      - { label: "Glândula pineal", detail: "~0,1 g" }
+      - { label: "Coração", detail: "~300 g" }
+      - { label: "Fígado", detail: "~1,5 kg" }
+      - { label: "Pele", detail: "~4 kg" }
+  - id: ox015
+    category: geografia
+    difficulty: 3
+    prompt: "Do menor ao maior deserto"
+    entries:
+      - { label: "Atacama", detail: "105 mil km²" }
+      - { label: "Kalahari", detail: "900 mil km²" }
+      - { label: "Saara", detail: "9,2 mi km²" }
+      - { label: "Antártica", detail: "14 mi km²" }
+  - id: ox016
+    category: esportes
+    difficulty: 2
+    prompt: "Do menor ao maior número de jogadores em campo"
+    entries:
+      - { label: "Tênis de simples", detail: "2" }
+      - { label: "Basquete", detail: "10" }
+      - { label: "Futebol", detail: "22" }
+      - { label: "Rugby union", detail: "30" }
+  - id: ox017
+    category: ciência
+    difficulty: 3
+    prompt: "Da menor à maior temperatura"
+    entries:
+      - { label: "Zero absoluto", detail: "-273 °C" }
+      - { label: "Nitrogênio líquido", detail: "-196 °C" }
+      - { label: "Ponto de fusão do ferro", detail: "1.538 °C" }
+      - { label: "Superfície do Sol", detail: "5.500 °C" }
+  - id: ox018
+    category: comida
+    difficulty: 1
+    prompt: "Da preparação mais rápida à mais demorada"
+    entries:
+      - { label: "Torrada", detail: "~2 min" }
+      - { label: "Ovo cozido", detail: "~8 min" }
+      - { label: "Arroz", detail: "~20 min" }
+      - { label: "Feijoada", detail: "~4 h" }
+  - id: ox019
+    category: geografia
+    difficulty: 2
+    prompt: "Do mais curto ao mais longo rio"
+    entries:
+      - { label: "Tâmisa", detail: "346 km" }
+      - { label: "Reno", detail: "1.230 km" }
+      - { label: "Danúbio", detail: "2.850 km" }
+      - { label: "Amazonas", detail: "6.400 km" }
+  - id: ox020
+    category: arte
+    difficulty: 3
+    prompt: "Do movimento mais antigo ao mais recente"
+    entries:
+      - { label: "Renascimento", detail: "séc. XV" }
+      - { label: "Barroco", detail: "séc. XVII" }
+      - { label: "Impressionismo", detail: "séc. XIX" }
+      - { label: "Surrealismo", detail: "séc. XX" }
+  - id: ox021
+    category: ciência
+    difficulty: 2
+    prompt: "Do menor ao maior tempo"
+    entries:
+      - { label: "Batimento cardíaco", detail: "~1 s" }
+      - { label: "Rotação da Terra", detail: "24 h" }
+      - { label: "Órbita da Terra", detail: "365 dias" }
+      - { label: "Órbita de Júpiter", detail: "12 anos" }
+  - id: ox022
+    category: tecnologia
+    difficulty: 2
+    prompt: "Da menor à maior capacidade"
+    entries:
+      - { label: "Disquete", detail: "1,4 MB" }
+      - { label: "CD", detail: "700 MB" }
+      - { label: "DVD", detail: "4,7 GB" }
+      - { label: "Blu-ray", detail: "25 GB" }

@@ -1,0 +1,106 @@
+id: quemdiria-extra
+game: quemdiria
+lang: en
+title: More questions
+version: 1
+items:
+  - id: qx001
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Who would forget to turn off the hob?"
+  - id: qx002
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Who laughs first at a serious moment?"
+  - id: qx003
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Who would be best at a complicated board game?"
+  - id: qx004
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Who replies to a message three days later?"
+  - id: qx005
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Who would eat an exotic dish without asking what it is?"
+  - id: qx006
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Who has the most browser tabs open?"
+  - id: qx007
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Who would cope best living alone in a cabin?"
+  - id: qx008
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Who talks to themselves out loud?"
+  - id: qx009
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Who would crack first under questioning?"
+  - id: qx010
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Who has been hoarding loose change in a drawer for years?"
+  - id: qx011
+    category: social
+    difficulty: 2
+    audience: teen
+    prompt: "Who would invent a story to impress someone?"
+  - id: qx012
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Who reaches the buffet first?"
+  - id: qx013
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Who would make the best teacher?"
+  - id: qx014
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Who spends longest choosing an emoji?"
+  - id: qx015
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Who would start a political argument at a family lunch?"
+  - id: qx016
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Who has the worst memory for names?"
+  - id: qx017
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Who would pack the most for a weekend trip?"
+  - id: qx018
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Who wakes up in a good mood?"
+  - id: qx019
+    category: social
+    difficulty: 2
+    audience: teen
+    prompt: "Who would be the first voted off a reality show?"
+  - id: qx020
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Who sings the wrong lyrics with the most confidence?"

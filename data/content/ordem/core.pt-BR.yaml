@@ -1,0 +1,168 @@
+id: ordem-core
+game: ordem
+lang: pt-BR
+title: Sequências essenciais
+version: 1
+items:
+  - id: or001
+    category: história
+    difficulty: 2
+    prompt: "Coloque em ordem cronológica, do mais antigo ao mais recente"
+    entries:
+      - { label: "Imprensa de Gutenberg", detail: "1440" }
+      - { label: "Revolução Francesa", detail: "1789" }
+      - { label: "Primeira Guerra Mundial", detail: "1914" }
+      - { label: "Chegada do homem à Lua", detail: "1969" }
+  - id: or002
+    category: geografia
+    difficulty: 2
+    prompt: "Do menor ao maior em área"
+    entries:
+      - { label: "Portugal", detail: "92 mil km²" }
+      - { label: "Japão", detail: "378 mil km²" }
+      - { label: "México", detail: "1,96 mi km²" }
+      - { label: "Brasil", detail: "8,5 mi km²" }
+  - id: or003
+    category: animais
+    difficulty: 1
+    prompt: "Do mais leve ao mais pesado"
+    entries:
+      - { label: "Gato doméstico", detail: "~4 kg" }
+      - { label: "Labrador", detail: "~30 kg" }
+      - { label: "Leão", detail: "~190 kg" }
+      - { label: "Elefante africano", detail: "~5.000 kg" }
+  - id: or004
+    category: espaço
+    difficulty: 1
+    prompt: "Do mais próximo ao mais distante do Sol"
+    entries:
+      - { label: "Mercúrio", detail: "1º" }
+      - { label: "Terra", detail: "3º" }
+      - { label: "Júpiter", detail: "5º" }
+      - { label: "Netuno", detail: "8º" }
+  - id: or005
+    category: matemática
+    difficulty: 1
+    prompt: "Do menor ao maior"
+    entries:
+      - { label: "Dúzia", detail: "12" }
+      - { label: "Centena", detail: "100" }
+      - { label: "Milhar", detail: "1.000" }
+      - { label: "Milhão", detail: "1.000.000" }
+  - id: or006
+    category: geografia
+    difficulty: 3
+    prompt: "Do menos ao mais populoso"
+    entries:
+      - { label: "Portugal", detail: "~10 mi" }
+      - { label: "Argentina", detail: "~46 mi" }
+      - { label: "Brasil", detail: "~215 mi" }
+      - { label: "Índia", detail: "~1,4 bi" }
+  - id: or007
+    category: história
+    difficulty: 2
+    prompt: "Da invenção mais antiga à mais recente"
+    entries:
+      - { label: "Roda", detail: "~3500 a.C." }
+      - { label: "Imprensa", detail: "1440" }
+      - { label: "Telefone", detail: "1876" }
+      - { label: "Internet", detail: "1969" }
+  - id: or008
+    category: geografia
+    difficulty: 3
+    prompt: "Da montanha mais baixa à mais alta"
+    entries:
+      - { label: "Monte Fuji", detail: "3.776 m" }
+      - { label: "Mont Blanc", detail: "4.808 m" }
+      - { label: "Kilimanjaro", detail: "5.895 m" }
+      - { label: "Everest", detail: "8.849 m" }
+  - id: or009
+    category: história
+    difficulty: 2
+    prompt: "Em ordem cronológica"
+    entries:
+      - { label: "Pré-história", detail: "até 4000 a.C." }
+      - { label: "Idade Antiga", detail: "4000 a.C.–476" }
+      - { label: "Idade Média", detail: "476–1453" }
+      - { label: "Idade Moderna", detail: "1453–1789" }
+  - id: or010
+    category: ciência
+    difficulty: 1
+    prompt: "Do menor ao maior"
+    entries:
+      - { label: "Milímetro", detail: "1 mm" }
+      - { label: "Centímetro", detail: "10 mm" }
+      - { label: "Metro", detail: "1.000 mm" }
+      - { label: "Quilômetro", detail: "1 mi mm" }
+  - id: or011
+    category: ciência
+    difficulty: 2
+    prompt: "Do mais frio ao mais quente"
+    entries:
+      - { label: "Congelamento da água", detail: "0 °C" }
+      - { label: "Temperatura ambiente", detail: "~25 °C" }
+      - { label: "Corpo humano", detail: "~37 °C" }
+      - { label: "Fervura da água", detail: "100 °C" }
+  - id: or012
+    category: tecnologia
+    difficulty: 2
+    prompt: "Do mais antigo ao mais recente"
+    entries:
+      - { label: "Rádio", detail: "1895" }
+      - { label: "Televisão", detail: "1927" }
+      - { label: "Computador pessoal", detail: "1975" }
+      - { label: "Smartphone", detail: "2007" }
+  - id: or013
+    category: espaço
+    difficulty: 3
+    prompt: "Do menor ao maior planeta"
+    entries:
+      - { label: "Mercúrio", detail: "4.879 km" }
+      - { label: "Marte", detail: "6.779 km" }
+      - { label: "Terra", detail: "12.742 km" }
+      - { label: "Júpiter", detail: "139.820 km" }
+  - id: or014
+    category: ciência
+    difficulty: 2
+    prompt: "Da menor à maior velocidade"
+    entries:
+      - { label: "Caminhada humana", detail: "~5 km/h" }
+      - { label: "Guepardo", detail: "~110 km/h" }
+      - { label: "Avião comercial", detail: "~900 km/h" }
+      - { label: "Som no ar", detail: "~1.235 km/h" }
+  - id: or015
+    category: esportes
+    difficulty: 3
+    prompt: "Do mais antigo ao mais recente"
+    entries:
+      - { label: "Atenas", detail: "1896" }
+      - { label: "Berlim", detail: "1936" }
+      - { label: "Tóquio", detail: "1964" }
+      - { label: "Rio de Janeiro", detail: "2016" }
+  - id: or016
+    category: matemática
+    difficulty: 1
+    prompt: "Do menor ao maior número de lados"
+    entries:
+      - { label: "Triângulo", detail: "3" }
+      - { label: "Quadrado", detail: "4" }
+      - { label: "Pentágono", detail: "5" }
+      - { label: "Hexágono", detail: "6" }
+  - id: or017
+    category: geografia
+    difficulty: 2
+    prompt: "Do menor ao maior oceano"
+    entries:
+      - { label: "Ártico", detail: "14 mi km²" }
+      - { label: "Índico", detail: "70 mi km²" }
+      - { label: "Atlântico", detail: "106 mi km²" }
+      - { label: "Pacífico", detail: "165 mi km²" }
+  - id: or018
+    category: arte
+    difficulty: 3
+    prompt: "Da obra mais antiga à mais recente"
+    entries:
+      - { label: "Mona Lisa", detail: "1503" }
+      - { label: "A Noite Estrelada", detail: "1889" }
+      - { label: "A Persistência da Memória", detail: "1931" }
+      - { label: "Guernica", detail: "1937" }

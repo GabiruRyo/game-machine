@@ -1,0 +1,106 @@
+id: quemdiria-extra
+game: quemdiria
+lang: pt-BR
+title: Mais perguntas
+version: 1
+items:
+  - id: qx001
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Quem esqueceria de desligar o fogão?"
+  - id: qx002
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Quem ri primeiro num momento sério?"
+  - id: qx003
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Quem seria o melhor em um jogo de tabuleiro complicado?"
+  - id: qx004
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Quem responde mensagem três dias depois?"
+  - id: qx005
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Quem toparia comer um prato exótico sem perguntar o que é?"
+  - id: qx006
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Quem tem mais abas abertas no navegador?"
+  - id: qx007
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Quem se daria melhor morando sozinho numa cabana?"
+  - id: qx008
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Quem fala sozinho em voz alta?"
+  - id: qx009
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Quem seria o primeiro a quebrar sob interrogatório?"
+  - id: qx010
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Quem guarda o troco há anos numa gaveta?"
+  - id: qx011
+    category: social
+    difficulty: 2
+    audience: teen
+    prompt: "Quem inventaria uma história para impressionar alguém?"
+  - id: qx012
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Quem chega primeiro no bufê?"
+  - id: qx013
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Quem seria o melhor professor?"
+  - id: qx014
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Quem perde mais tempo escolhendo emoji?"
+  - id: qx015
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Quem discutiria sobre política num almoço de família?"
+  - id: qx016
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Quem tem a pior memória para nomes?"
+  - id: qx017
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Quem levaria mais mala numa viagem de fim de semana?"
+  - id: qx018
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Quem acorda de bom humor?"
+  - id: qx019
+    category: social
+    difficulty: 2
+    audience: teen
+    prompt: "Quem seria o primeiro a ser expulso de um reality show?"
+  - id: qx020
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Quem canta a letra errada com mais confiança?"

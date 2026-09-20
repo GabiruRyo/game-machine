@@ -1,0 +1,156 @@
+id: quemdiria-core
+game: quemdiria
+lang: en
+title: Questions about the room
+version: 1
+items:
+  - id: qd001
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Who is most likely to lose their phone at a party?"
+  - id: qd002
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Who would take the longest to get ready?"
+  - id: qd003
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Who would be the first to get lost in a new city?"
+  - id: qd004
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Who would survive longest on a desert island?"
+  - id: qd005
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Who is most likely to cry at a Pixar film?"
+  - id: qd006
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Who would forget their own birthday?"
+  - id: qd007
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Who would end up being someone else's boss in five years?"
+  - id: qd008
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Who talks loudest on the phone?"
+  - id: qd009
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Who is most likely to become an influencer?"
+  - id: qd010
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Who would argue with the waiter about the bill?"
+  - id: qd011
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Who has the strangest search history?"
+  - id: qd012
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Who would be late to their own wedding?"
+  - id: qd013
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Who would give the best advice at three in the morning?"
+  - id: qd014
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Who is most likely to sing in the shower for an hour?"
+  - id: qd015
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Who would fare worst in a horror film?"
+  - id: qd016
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Who would adopt five cats without thinking twice?"
+  - id: qd017
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Who is most likely to drop everything and move abroad?"
+  - id: qd018
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Who eats the last slice of pizza without asking?"
+  - id: qd019
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Who would be the worst driver on an unfamiliar road?"
+  - id: qd020
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Who sends the longest voice messages?"
+  - id: qd021
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Who would win a dance contest without practising?"
+  - id: qd022
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Who is most likely to fall asleep at the cinema?"
+  - id: qd023
+    category: social
+    difficulty: 2
+    audience: teen
+    prompt: "Who would invent the most creative excuse to skip out?"
+  - id: qd024
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Who spends longest choosing what to watch?"
+  - id: qd025
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Who would make the best detective?"
+  - id: qd026
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Who is most likely to burn themselves cooking?"
+  - id: qd027
+    category: social
+    difficulty: 2
+    audience: teen
+    prompt: "Who would spill a secret by accident?"
+  - id: qd028
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Who takes the worst photos of everyone else?"
+  - id: qd029
+    category: social
+    difficulty: 2
+    audience: family
+    prompt: "Who would be the first to volunteer for something dangerous?"
+  - id: qd030
+    category: social
+    difficulty: 1
+    audience: family
+    prompt: "Who talks to animals as if they were people?"

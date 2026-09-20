@@ -1,0 +1,111 @@
+# ─────────────────────────────────────────────────────────────────────────────
+#  GAME MACHINE — tune everything here, no code required.
+#  Edit, save, reload the page. Every number in every game's rules is a key.
+#  Ajuste tudo por aqui, sem mexer em codigo. Salve e recarregue a pagina.
+# ─────────────────────────────────────────────────────────────────────────────
+
+language: pt-BR          # pt-BR | en
+mode: solo               # solo | teams
+
+players:
+  - { name: Gabriel, color: "#ff6b35" }
+  - { name: Ana,     color: "#4ecdc4" }
+  - { name: Bruno,   color: "#ffd166" }
+  - { name: Carla,   color: "#a78bfa" }
+
+# Only used when mode: teams. Put each player on a team with `team: <name>`.
+teams:
+  - { name: Azul,     color: "#4ecdc4" }
+  - { name: Vermelho, color: "#ff6b35" }
+
+audio:
+  enabled: true
+  volume: 0.6
+
+display:
+  fullscreen_hint: true    # nudge to press F for fullscreen on the TV
+  big_text: false          # bump every font size for a far-away screen
+  show_key_hints: true     # the control bar along the bottom
+
+content:
+  packs: [auto]            # `auto`, or explicit pack ids from content/manifest.yaml
+  filters:
+    audience: [family, teen]      # add `adult` to unlock the spicier items
+    difficulty: [1, 2, 3, 4, 5]
+    include_tags: []              # if set, ONLY items carrying one of these tags
+    exclude_tags: [politica]
+  # avoid-until-exhausted: never repeat until the pack runs dry, then recycle
+  # never-repeat: stop drawing once exhausted   |   random: no memory at all
+  repeat: avoid-until-exhausted
+
+party_mode:
+  games: 5
+  order: random            # or an explicit list, e.g. [quiz, proibida, tribunal]
+  finale:
+    game: quiz
+    multiplier: 2
+
+# ─── Per-game tuning ─────────────────────────────────────────────────────────
+games:
+  quiz:
+    enabled: true
+    rounds: 8
+    answer_seconds: 20
+    base_points: 1000
+    speed_bonus_max: 500
+    steal:
+      enabled: true
+      points: 500
+
+  ordem:
+    enabled: true
+    rounds: 5
+    arrange_seconds: 60
+    points_per_correct_slot: 200
+    points_all_correct_bonus: 400
+
+  lorota:
+    enabled: true
+    rounds: 6
+    statements: 3          # how many statements per round; exactly one is false
+    decide_seconds: 45
+    points_correct: 800
+    points_heckler: 200    # to the room when the turn player is fooled
+
+  quemdiria:
+    enabled: true
+    rounds: 6
+    predict_seconds: 30
+    points_correct: 700
+
+  proibida:
+    enabled: true
+    rounds: 4              # one round per guesser
+    round_seconds: 60
+    skips_allowed: 2
+    points_per_hit: 100
+
+  tribunal:
+    enabled: true
+    rounds: 4
+    argument_seconds: 45
+    curveballs:
+      enabled: true
+      chance: 0.5          # 0 = never, 1 = every single argument
+    points_win: 600
+    points_participation: 150
+    vote: winner-entry     # winner-entry | count-entry
+
+  historias:
+    enabled: true
+    rounds: 3
+    word_seconds: 30
+    points_per_word: 100
+    points_favourite: 400
+
+  legendas:
+    enabled: true
+    rounds: 4
+    caption_seconds: 60
+    points_per_vote: 300
+    points_unanimous_bonus: 300

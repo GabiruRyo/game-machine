@@ -1,0 +1,246 @@
+id: quiz-extra
+game: quiz
+lang: en
+title: More general knowledge
+version: 1
+items:
+  - id: qz001
+    category: tempo
+    difficulty: 1
+    question: "How many days are in a leap year?"
+    options: ["364", "365", "366", "367"]
+    answer: 2
+  - id: qz002
+    category: geografia
+    difficulty: 2
+    question: "Which is the smallest country in the world by area?"
+    options: ["Monaco", "Vatican City", "San Marino", "Nauru"]
+    answer: 1
+  - id: qz003
+    category: corpo
+    difficulty: 1
+    question: "Which organ pumps blood around the body?"
+    options: ["Lung", "Liver", "Heart", "Kidney"]
+    answer: 2
+  - id: qz004
+    category: ciência
+    difficulty: 3
+    question: "Which is the most abundant metal in the Earth's crust?"
+    options: ["Iron", "Aluminium", "Copper", "Zinc"]
+    answer: 1
+  - id: qz005
+    category: espaço
+    difficulty: 1
+    question: "Which is the largest planet in the solar system?"
+    options: ["Saturn", "Jupiter", "Neptune", "Uranus"]
+    answer: 1
+  - id: qz006
+    category: tempo
+    difficulty: 1
+    question: "How many weeks are in a year?"
+    options: ["48", "50", "52", "54"]
+    answer: 2
+  - id: qz007
+    category: ciência
+    difficulty: 1
+    question: "Which instrument measures temperature?"
+    options: ["Barometer", "Thermometer", "Hygrometer", "Altimeter"]
+    answer: 1
+  - id: qz008
+    category: animais
+    difficulty: 1
+    question: "Which animal is famous for changing colour?"
+    options: ["Iguana", "Chameleon", "Gecko", "Salamander"]
+    answer: 1
+  - id: qz009
+    category: geografia
+    difficulty: 1
+    question: "What is the capital of France?"
+    options: ["Lyon", "Marseille", "Paris", "Nice"]
+    answer: 2
+  - id: qz010
+    category: matemática
+    difficulty: 1
+    question: "How many sides does an octagon have?"
+    options: ["6", "7", "8", "9"]
+    answer: 2
+  - id: qz011
+    category: ciência
+    difficulty: 2
+    question: "Which gas is most abundant in Earth's atmosphere?"
+    options: ["Oxygen", "Nitrogen", "Carbon dioxide", "Argon"]
+    answer: 1
+  - id: qz012
+    category: corpo
+    difficulty: 2
+    question: "Which is the largest internal organ in the human body?"
+    options: ["Heart", "Lung", "Liver", "Stomach"]
+    answer: 2
+  - id: qz013
+    category: geografia
+    difficulty: 1
+    question: "Which continent is Egypt in?"
+    options: ["Asia", "Africa", "Europe", "Oceania"]
+    answer: 1
+  - id: qz014
+    category: ciência
+    difficulty: 3
+    question: "What is the SI unit of force?"
+    options: ["Joule", "Watt", "Newton", "Pascal"]
+    answer: 2
+  - id: qz015
+    category: espaço
+    difficulty: 1
+    question: "Which planet has the most visible rings?"
+    options: ["Jupiter", "Saturn", "Uranus", "Neptune"]
+    answer: 1
+  - id: qz016
+    category: ciência
+    difficulty: 2
+    question: "Who formulated the three laws of motion?"
+    options: ["Galileo", "Isaac Newton", "Kepler", "Einstein"]
+    answer: 1
+  - id: qz017
+    category: esportes
+    difficulty: 2
+    question: "How many basketball players from each team are on court?"
+    options: ["4", "5", "6", "7"]
+    answer: 1
+  - id: qz018
+    category: geografia
+    difficulty: 3
+    question: "Which language has the most native speakers?"
+    options: ["English", "Spanish", "Mandarin", "Hindi"]
+    answer: 2
+  - id: qz019
+    category: ciência
+    difficulty: 1
+    question: "What is the process by which plants make energy called?"
+    options: ["Respiration", "Photosynthesis", "Digestion", "Fermentation"]
+    answer: 1
+  - id: qz020
+    category: geografia
+    difficulty: 1
+    question: "What is the capital of Spain?"
+    options: ["Barcelona", "Madrid", "Seville", "Valencia"]
+    answer: 1
+  - id: qz021
+    category: ciência
+    difficulty: 1
+    question: "Which of these metals is attracted to magnets?"
+    options: ["Aluminium", "Copper", "Iron", "Gold"]
+    answer: 2
+  - id: qz022
+    category: ciência
+    difficulty: 1
+    question: "What is the chemical formula for water?"
+    options: ["CO2", "H2O", "O2", "NaCl"]
+    answer: 1
+  - id: qz023
+    category: geografia
+    difficulty: 1
+    question: "Which is the largest continent by area?"
+    options: ["Africa", "Asia", "North America", "Europe"]
+    answer: 1
+  - id: qz024
+    category: tempo
+    difficulty: 2
+    question: "How many minutes are there in a day?"
+    options: ["1200", "1440", "1600", "2400"]
+    answer: 1
+  - id: qz025
+    category: animais
+    difficulty: 1
+    question: "Which animal is a symbol of Australia?"
+    options: ["Llama", "Kangaroo", "Bison", "Reindeer"]
+    answer: 1
+  - id: qz026
+    category: geografia
+    difficulty: 2
+    question: "What is the official currency of Japan?"
+    options: ["Won", "Yen", "Yuan", "Baht"]
+    answer: 1
+  - id: qz027
+    category: ciência
+    difficulty: 1
+    question: "Which instrument magnifies very small objects?"
+    options: ["Telescope", "Microscope", "Periscope", "Stethoscope"]
+    answer: 1
+  - id: qz028
+    category: ciência
+    difficulty: 2
+    question: "Who wrote 'On the Origin of Species'?"
+    options: ["Gregor Mendel", "Charles Darwin", "Louis Pasteur", "Alfred Wallace"]
+    answer: 1
+  - id: qz029
+    category: ciência
+    difficulty: 3
+    question: "What is the freezing point of water in Fahrenheit?"
+    options: ["0", "32", "64", "100"]
+    answer: 1
+  - id: qz030
+    category: animais
+    difficulty: 1
+    question: "Which is the largest land mammal?"
+    options: ["Rhinoceros", "African elephant", "Hippopotamus", "Giraffe"]
+    answer: 1
+  - id: qz031
+    category: geografia
+    difficulty: 1
+    question: "What is the capital of Argentina?"
+    options: ["Córdoba", "Buenos Aires", "Rosario", "Mendoza"]
+    answer: 1
+  - id: qz032
+    category: tempo
+    difficulty: 2
+    question: "How many hours are there in a week?"
+    options: ["148", "158", "168", "178"]
+    answer: 2
+  - id: qz033
+    category: corpo
+    difficulty: 1
+    question: "Which bony structure protects the brain?"
+    options: ["Ribs", "Skull", "Spine", "Pelvis"]
+    answer: 1
+  - id: qz034
+    category: geografia
+    difficulty: 1
+    question: "Which is the largest country in the world by area?"
+    options: ["China", "Canada", "Russia", "United States"]
+    answer: 2
+  - id: qz035
+    category: corpo
+    difficulty: 1
+    question: "Which vitamin is abundant in citrus fruit?"
+    options: ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin E"]
+    answer: 2
+  - id: qz036
+    category: ciência
+    difficulty: 3
+    question: "How many elements are in the current periodic table?"
+    options: ["108", "112", "118", "124"]
+    answer: 2
+  - id: qz037
+    category: geografia
+    difficulty: 2
+    question: "Which is the highest mountain in Africa?"
+    options: ["Mount Kenya", "Kilimanjaro", "Mount Stanley", "Ras Dashen"]
+    answer: 1
+  - id: qz038
+    category: ciência
+    difficulty: 2
+    question: "Which part of the cell holds the genetic material?"
+    options: ["Mitochondrion", "Nucleus", "Ribosome", "Membrane"]
+    answer: 1
+  - id: qz039
+    category: geografia
+    difficulty: 2
+    question: "Which ocean lies off the east coast of Brazil?"
+    options: ["Pacific", "Atlantic", "Indian", "Arctic"]
+    answer: 1
+  - id: qz040
+    category: matemática
+    difficulty: 2
+    question: "What is 15% of 200?"
+    options: ["15", "20", "30", "45"]
+    answer: 2

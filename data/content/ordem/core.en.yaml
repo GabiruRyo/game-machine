@@ -1,0 +1,168 @@
+id: ordem-core
+game: ordem
+lang: en
+title: Core sequences
+version: 1
+items:
+  - id: or001
+    category: história
+    difficulty: 2
+    prompt: "Put these in chronological order, oldest first"
+    entries:
+      - { label: "Gutenberg's printing press", detail: "1440" }
+      - { label: "French Revolution", detail: "1789" }
+      - { label: "First World War", detail: "1914" }
+      - { label: "Moon landing", detail: "1969" }
+  - id: or002
+    category: geografia
+    difficulty: 2
+    prompt: "Smallest to largest by area"
+    entries:
+      - { label: "Portugal", detail: "92 mil km²" }
+      - { label: "Japan", detail: "378 mil km²" }
+      - { label: "Mexico", detail: "1,96 mi km²" }
+      - { label: "Brazil", detail: "8,5 mi km²" }
+  - id: or003
+    category: animais
+    difficulty: 1
+    prompt: "Lightest to heaviest"
+    entries:
+      - { label: "House cat", detail: "~4 kg" }
+      - { label: "Labrador", detail: "~30 kg" }
+      - { label: "Lion", detail: "~190 kg" }
+      - { label: "African elephant", detail: "~5.000 kg" }
+  - id: or004
+    category: espaço
+    difficulty: 1
+    prompt: "Closest to furthest from the Sun"
+    entries:
+      - { label: "Mercury", detail: "1º" }
+      - { label: "Earth", detail: "3º" }
+      - { label: "Jupiter", detail: "5º" }
+      - { label: "Neptune", detail: "8º" }
+  - id: or005
+    category: matemática
+    difficulty: 1
+    prompt: "Smallest to largest"
+    entries:
+      - { label: "Dozen", detail: "12" }
+      - { label: "Hundred", detail: "100" }
+      - { label: "Thousand", detail: "1.000" }
+      - { label: "Million", detail: "1.000.000" }
+  - id: or006
+    category: geografia
+    difficulty: 3
+    prompt: "Least to most populous"
+    entries:
+      - { label: "Portugal", detail: "~10 mi" }
+      - { label: "Argentina", detail: "~46 mi" }
+      - { label: "Brazil", detail: "~215 mi" }
+      - { label: "India", detail: "~1,4 bi" }
+  - id: or007
+    category: história
+    difficulty: 2
+    prompt: "Oldest invention to most recent"
+    entries:
+      - { label: "The wheel", detail: "~3500 a.C." }
+      - { label: "Printing press", detail: "1440" }
+      - { label: "Telephone", detail: "1876" }
+      - { label: "The internet", detail: "1969" }
+  - id: or008
+    category: geografia
+    difficulty: 3
+    prompt: "Shortest mountain to tallest"
+    entries:
+      - { label: "Mount Fuji", detail: "3.776 m" }
+      - { label: "Mont Blanc", detail: "4.808 m" }
+      - { label: "Kilimanjaro", detail: "5.895 m" }
+      - { label: "Everest", detail: "8.849 m" }
+  - id: or009
+    category: história
+    difficulty: 2
+    prompt: "In chronological order"
+    entries:
+      - { label: "Prehistory", detail: "até 4000 a.C." }
+      - { label: "Ancient era", detail: "4000 a.C.–476" }
+      - { label: "Middle Ages", detail: "476–1453" }
+      - { label: "Modern era", detail: "1453–1789" }
+  - id: or010
+    category: ciência
+    difficulty: 1
+    prompt: "Smallest to largest"
+    entries:
+      - { label: "Millimetre", detail: "1 mm" }
+      - { label: "Centimetre", detail: "10 mm" }
+      - { label: "Metre", detail: "1.000 mm" }
+      - { label: "Kilometre", detail: "1 mi mm" }
+  - id: or011
+    category: ciência
+    difficulty: 2
+    prompt: "Coldest to hottest"
+    entries:
+      - { label: "Water freezes", detail: "0 °C" }
+      - { label: "Room temperature", detail: "~25 °C" }
+      - { label: "Human body", detail: "~37 °C" }
+      - { label: "Water boils", detail: "100 °C" }
+  - id: or012
+    category: tecnologia
+    difficulty: 2
+    prompt: "Oldest to most recent"
+    entries:
+      - { label: "Radio", detail: "1895" }
+      - { label: "Television", detail: "1927" }
+      - { label: "Personal computer", detail: "1975" }
+      - { label: "Smartphone", detail: "2007" }
+  - id: or013
+    category: espaço
+    difficulty: 3
+    prompt: "Smallest to largest planet"
+    entries:
+      - { label: "Mercury", detail: "4.879 km" }
+      - { label: "Mars", detail: "6.779 km" }
+      - { label: "Earth", detail: "12.742 km" }
+      - { label: "Jupiter", detail: "139.820 km" }
+  - id: or014
+    category: ciência
+    difficulty: 2
+    prompt: "Slowest to fastest"
+    entries:
+      - { label: "Human walking", detail: "~5 km/h" }
+      - { label: "Cheetah", detail: "~110 km/h" }
+      - { label: "Airliner", detail: "~900 km/h" }
+      - { label: "Sound in air", detail: "~1.235 km/h" }
+  - id: or015
+    category: esportes
+    difficulty: 3
+    prompt: "Oldest to most recent"
+    entries:
+      - { label: "Athens", detail: "1896" }
+      - { label: "Berlin", detail: "1936" }
+      - { label: "Tokyo", detail: "1964" }
+      - { label: "Rio de Janeiro", detail: "2016" }
+  - id: or016
+    category: matemática
+    difficulty: 1
+    prompt: "Fewest to most sides"
+    entries:
+      - { label: "Triangle", detail: "3" }
+      - { label: "Square", detail: "4" }
+      - { label: "Pentagon", detail: "5" }
+      - { label: "Hexagon", detail: "6" }
+  - id: or017
+    category: geografia
+    difficulty: 2
+    prompt: "Smallest to largest ocean"
+    entries:
+      - { label: "Arctic", detail: "14 mi km²" }
+      - { label: "Indian", detail: "70 mi km²" }
+      - { label: "Atlantic", detail: "106 mi km²" }
+      - { label: "Pacific", detail: "165 mi km²" }
+  - id: or018
+    category: arte
+    difficulty: 3
+    prompt: "Oldest artwork to most recent"
+    entries:
+      - { label: "Mona Lisa", detail: "1503" }
+      - { label: "The Starry Night", detail: "1889" }
+      - { label: "The Persistence of Memory", detail: "1931" }
+      - { label: "Guernica", detail: "1937" }

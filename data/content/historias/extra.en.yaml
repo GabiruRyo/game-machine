@@ -1,0 +1,106 @@
+id: historias-extra
+game: historias
+lang: en
+title: More stories to ruin
+version: 1
+items:
+  - id: hx001
+    category: historia
+    difficulty: 2
+    title: "The note on the fridge"
+    template: "Left early. There's {1} in the fridge, don't eat it all. The neighbour's {2} got out again so I put it in the {3} until you get back. If it starts to {4}, give it {5}. Home by {6}. Love you."
+    slots:
+      - { prompt: "A food" }
+      - { prompt: "An animal" }
+      - { prompt: "A room of the house" }
+      - { prompt: "A verb" }
+      - { prompt: "A thing" }
+      - { prompt: "A time" }
+  - id: hx002
+    category: historia
+    difficulty: 2
+    title: "The internship report"
+    template: "During my internship in {1}, I learned a great deal about {2}. My main duty was {3} every day at {4}. The most memorable moment was when the manager {5} in front of the whole team. I recommend the experience to anyone {6}."
+    slots:
+      - { prompt: "A field of work" }
+      - { prompt: "A thing" }
+      - { prompt: "A verb ending in -ing" }
+      - { prompt: "A time" }
+      - { prompt: "A past-tense verb" }
+      - { prompt: "An adjective" }
+  - id: hx003
+    category: historia
+    difficulty: 3
+    title: "The weather forecast"
+    template: "Good morning! We're expecting {1} this morning, with a chance of {2} in the afternoon. Highs of {3} degrees. We recommend taking {4} when you leave the house. Residents near {5} should avoid {6} until further notice."
+    slots:
+      - { prompt: "A weather phenomenon" }
+      - { prompt: "A thing" }
+      - { prompt: "A number" }
+      - { prompt: "A thing" }
+      - { prompt: "A place" }
+      - { prompt: "A verb ending in -ing" }
+  - id: hx004
+    category: historia
+    difficulty: 2
+    title: "The job advert"
+    template: "URGENT VACANCY: seeking a {1} to work {2} hours a day. Requirements: able to {3} and unafraid of {4}. We offer a salary of {5} and a {6} allowance. Send your CV to the {7}."
+    slots:
+      - { prompt: "A profession" }
+      - { prompt: "A number" }
+      - { prompt: "A verb" }
+      - { prompt: "A thing" }
+      - { prompt: "An amount" }
+      - { prompt: "A thing" }
+      - { prompt: "A place" }
+  - id: hx005
+    category: historia
+    difficulty: 3
+    title: "The witness statement"
+    template: "I was quietly {1} when I heard the sound of {2}. I looked out of the window and saw a man in a {3} carrying {4}. He looked extremely {5}. When he realised I was watching, he simply {6} and vanished in the direction of {7}."
+    slots:
+      - { prompt: "A verb ending in -ing" }
+      - { prompt: "A thing" }
+      - { prompt: "An item of clothing" }
+      - { prompt: "A thing" }
+      - { prompt: "An adjective" }
+      - { prompt: "A past-tense verb" }
+      - { prompt: "A place" }
+  - id: hx006
+    category: historia
+    difficulty: 2
+    title: "The hotel review"
+    template: "I stayed {1} nights at this hotel and would not recommend it. The room smelled of {2} and the bed was visibly {3}. Breakfast was nothing but {4}. I complained at reception and the clerk {5}. The one redeeming feature was {6}. Rating: {7} out of 10."
+    slots:
+      - { prompt: "A number" }
+      - { prompt: "A thing" }
+      - { prompt: "An adjective" }
+      - { prompt: "A food" }
+      - { prompt: "A past-tense verb" }
+      - { prompt: "A thing" }
+      - { prompt: "A number" }
+  - id: hx007
+    category: historia
+    difficulty: 3
+    title: "The coach's team talk"
+    template: "Listen up. We have trained {1} months for this moment. Out there are {2} people chanting our name. I don't want to see anyone {3} on that pitch today. I want grit, I want {4}. If we lose this, I swear {5}. Now get out there and {6}!"
+    slots:
+      - { prompt: "A number" }
+      - { prompt: "A number" }
+      - { prompt: "A verb ending in -ing" }
+      - { prompt: "A thing" }
+      - { prompt: "A short phrase" }
+      - { prompt: "A verb" }
+  - id: hx008
+    category: historia
+    difficulty: 2
+    title: "The tour guide"
+    template: "Welcome to the city of {1}! On your left you can see the famous {2}, built in {3} by a very {5} {4}. Legend says that anyone who {6} there gets seven years of good luck. Our next stop is {7}."
+    slots:
+      - { prompt: "A city name" }
+      - { prompt: "A building" }
+      - { prompt: "A number" }
+      - { prompt: "A profession" }
+      - { prompt: "An adjective" }
+      - { prompt: "A verb" }
+      - { prompt: "A place" }

@@ -1,0 +1,246 @@
+id: quiz-extra
+game: quiz
+lang: pt-BR
+title: Mais conhecimentos gerais
+version: 1
+items:
+  - id: qz001
+    category: tempo
+    difficulty: 1
+    question: "Quantos dias tem um ano bissexto?"
+    options: ["364", "365", "366", "367"]
+    answer: 2
+  - id: qz002
+    category: geografia
+    difficulty: 2
+    question: "Qual é o menor país do mundo em área?"
+    options: ["Mônaco", "Vaticano", "San Marino", "Nauru"]
+    answer: 1
+  - id: qz003
+    category: corpo
+    difficulty: 1
+    question: "Qual órgão bombeia o sangue pelo corpo?"
+    options: ["Pulmão", "Fígado", "Coração", "Rim"]
+    answer: 2
+  - id: qz004
+    category: ciência
+    difficulty: 3
+    question: "Qual é o metal mais abundante na crosta terrestre?"
+    options: ["Ferro", "Alumínio", "Cobre", "Zinco"]
+    answer: 1
+  - id: qz005
+    category: espaço
+    difficulty: 1
+    question: "Qual é o maior planeta do sistema solar?"
+    options: ["Saturno", "Júpiter", "Netuno", "Urano"]
+    answer: 1
+  - id: qz006
+    category: tempo
+    difficulty: 1
+    question: "Quantas semanas tem um ano?"
+    options: ["48", "50", "52", "54"]
+    answer: 2
+  - id: qz007
+    category: ciência
+    difficulty: 1
+    question: "Qual instrumento mede a temperatura?"
+    options: ["Barômetro", "Termômetro", "Higrômetro", "Altímetro"]
+    answer: 1
+  - id: qz008
+    category: animais
+    difficulty: 1
+    question: "Qual animal é famoso por mudar de cor?"
+    options: ["Iguana", "Camaleão", "Lagartixa", "Salamandra"]
+    answer: 1
+  - id: qz009
+    category: geografia
+    difficulty: 1
+    question: "Qual é a capital da França?"
+    options: ["Lyon", "Marselha", "Paris", "Nice"]
+    answer: 2
+  - id: qz010
+    category: matemática
+    difficulty: 1
+    question: "Quantos lados tem um octógono?"
+    options: ["6", "7", "8", "9"]
+    answer: 2
+  - id: qz011
+    category: ciência
+    difficulty: 2
+    question: "Qual é o gás mais abundante na atmosfera da Terra?"
+    options: ["Oxigênio", "Nitrogênio", "Gás carbônico", "Argônio"]
+    answer: 1
+  - id: qz012
+    category: corpo
+    difficulty: 2
+    question: "Qual é o maior órgão interno do corpo humano?"
+    options: ["Coração", "Pulmão", "Fígado", "Estômago"]
+    answer: 2
+  - id: qz013
+    category: geografia
+    difficulty: 1
+    question: "Em qual continente fica o Egito?"
+    options: ["Ásia", "África", "Europa", "Oceania"]
+    answer: 1
+  - id: qz014
+    category: ciência
+    difficulty: 3
+    question: "Qual é a unidade de força no Sistema Internacional?"
+    options: ["Joule", "Watt", "Newton", "Pascal"]
+    answer: 2
+  - id: qz015
+    category: espaço
+    difficulty: 1
+    question: "Qual planeta tem os anéis mais visíveis?"
+    options: ["Júpiter", "Saturno", "Urano", "Netuno"]
+    answer: 1
+  - id: qz016
+    category: ciência
+    difficulty: 2
+    question: "Quem formulou as três leis do movimento?"
+    options: ["Galileu", "Isaac Newton", "Kepler", "Einstein"]
+    answer: 1
+  - id: qz017
+    category: esportes
+    difficulty: 2
+    question: "Quantos jogadores de basquete ficam em quadra por time?"
+    options: ["4", "5", "6", "7"]
+    answer: 1
+  - id: qz018
+    category: geografia
+    difficulty: 3
+    question: "Qual idioma tem mais falantes nativos no mundo?"
+    options: ["Inglês", "Espanhol", "Mandarim", "Hindi"]
+    answer: 2
+  - id: qz019
+    category: ciência
+    difficulty: 1
+    question: "Como se chama o processo pelo qual as plantas produzem energia?"
+    options: ["Respiração", "Fotossíntese", "Digestão", "Fermentação"]
+    answer: 1
+  - id: qz020
+    category: geografia
+    difficulty: 1
+    question: "Qual é a capital da Espanha?"
+    options: ["Barcelona", "Madri", "Sevilha", "Valência"]
+    answer: 1
+  - id: qz021
+    category: ciência
+    difficulty: 1
+    question: "Qual destes metais é atraído por ímãs?"
+    options: ["Alumínio", "Cobre", "Ferro", "Ouro"]
+    answer: 2
+  - id: qz022
+    category: ciência
+    difficulty: 1
+    question: "Qual é a fórmula química da água?"
+    options: ["CO2", "H2O", "O2", "NaCl"]
+    answer: 1
+  - id: qz023
+    category: geografia
+    difficulty: 1
+    question: "Qual é o maior continente em área?"
+    options: ["África", "Ásia", "América do Norte", "Europa"]
+    answer: 1
+  - id: qz024
+    category: tempo
+    difficulty: 2
+    question: "Quantos minutos tem um dia?"
+    options: ["1200", "1440", "1600", "2400"]
+    answer: 1
+  - id: qz025
+    category: animais
+    difficulty: 1
+    question: "Qual animal é um símbolo da Austrália?"
+    options: ["Lhama", "Canguru", "Bisão", "Rena"]
+    answer: 1
+  - id: qz026
+    category: geografia
+    difficulty: 2
+    question: "Qual é a moeda oficial do Japão?"
+    options: ["Won", "Iene", "Yuan", "Baht"]
+    answer: 1
+  - id: qz027
+    category: ciência
+    difficulty: 1
+    question: "Qual instrumento amplia objetos muito pequenos?"
+    options: ["Telescópio", "Microscópio", "Periscópio", "Estetoscópio"]
+    answer: 1
+  - id: qz028
+    category: ciência
+    difficulty: 2
+    question: "Quem escreveu 'A Origem das Espécies'?"
+    options: ["Gregor Mendel", "Charles Darwin", "Louis Pasteur", "Alfred Wallace"]
+    answer: 1
+  - id: qz029
+    category: ciência
+    difficulty: 3
+    question: "Qual é o ponto de congelamento da água em Fahrenheit?"
+    options: ["0", "32", "64", "100"]
+    answer: 1
+  - id: qz030
+    category: animais
+    difficulty: 1
+    question: "Qual é o maior mamífero terrestre?"
+    options: ["Rinoceronte", "Elefante-africano", "Hipopótamo", "Girafa"]
+    answer: 1
+  - id: qz031
+    category: geografia
+    difficulty: 1
+    question: "Qual é a capital da Argentina?"
+    options: ["Córdoba", "Buenos Aires", "Rosário", "Mendoza"]
+    answer: 1
+  - id: qz032
+    category: tempo
+    difficulty: 2
+    question: "Quantas horas tem uma semana?"
+    options: ["148", "158", "168", "178"]
+    answer: 2
+  - id: qz033
+    category: corpo
+    difficulty: 1
+    question: "Qual estrutura óssea protege o cérebro?"
+    options: ["Costelas", "Crânio", "Coluna", "Pelve"]
+    answer: 1
+  - id: qz034
+    category: geografia
+    difficulty: 1
+    question: "Qual é o maior país do mundo em área?"
+    options: ["China", "Canadá", "Rússia", "Estados Unidos"]
+    answer: 2
+  - id: qz035
+    category: corpo
+    difficulty: 1
+    question: "Qual vitamina é abundante em frutas cítricas?"
+    options: ["Vitamina A", "Vitamina B12", "Vitamina C", "Vitamina E"]
+    answer: 2
+  - id: qz036
+    category: ciência
+    difficulty: 3
+    question: "Quantos elementos há na tabela periódica atual?"
+    options: ["108", "112", "118", "124"]
+    answer: 2
+  - id: qz037
+    category: geografia
+    difficulty: 2
+    question: "Qual é a montanha mais alta da África?"
+    options: ["Monte Quênia", "Kilimanjaro", "Monte Stanley", "Ras Dashen"]
+    answer: 1
+  - id: qz038
+    category: ciência
+    difficulty: 2
+    question: "Qual parte da célula contém o material genético?"
+    options: ["Mitocôndria", "Núcleo", "Ribossomo", "Membrana"]
+    answer: 1
+  - id: qz039
+    category: geografia
+    difficulty: 2
+    question: "Qual é o oceano que banha a costa leste do Brasil?"
+    options: ["Pacífico", "Atlântico", "Índico", "Ártico"]
+    answer: 1
+  - id: qz040
+    category: matemática
+    difficulty: 2
+    question: "Quanto é 15% de 200?"
+    options: ["15", "20", "30", "45"]
+    answer: 2

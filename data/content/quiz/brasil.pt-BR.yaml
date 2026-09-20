@@ -1,0 +1,153 @@
+id: quiz-brasil
+game: quiz
+lang: pt-BR
+title: Brasil
+version: 1
+# Pacote nativo: estas perguntas nao existem em ingles de proposito -- traduzir
+# cultura local costuma matar a graca. Veja content/README.md.
+items:
+  - id: br001
+    category: geografia
+    difficulty: 1
+    question: "Qual é a capital do Brasil?"
+    options: ["Rio de Janeiro", "São Paulo", "Brasília", "Salvador"]
+    answer: 2
+  - id: br002
+    category: geografia
+    difficulty: 2
+    question: "Qual é o maior estado brasileiro em área?"
+    options: ["Pará", "Amazonas", "Mato Grosso", "Bahia"]
+    answer: 1
+  - id: br003
+    category: música
+    difficulty: 2
+    question: "Quem compôs a música de 'Garota de Ipanema'?"
+    options: ["Tom Jobim", "Chico Buarque", "Caetano Veloso", "Gilberto Gil"]
+    answer: 0
+    note: "A letra é de Vinicius de Moraes."
+  - id: br004
+    category: símbolos
+    difficulty: 3
+    question: "Quantas estrelas tem a bandeira do Brasil?"
+    options: ["21", "26", "27", "32"]
+    answer: 2
+  - id: br005
+    category: esportes
+    difficulty: 2
+    question: "Em que ano o Brasil conquistou sua primeira Copa do Mundo?"
+    options: ["1950", "1958", "1962", "1970"]
+    answer: 1
+  - id: br006
+    category: comida
+    difficulty: 1
+    question: "Qual prato brasileiro leva feijão preto e diversas carnes?"
+    options: ["Moqueca", "Feijoada", "Vatapá", "Baião de dois"]
+    answer: 1
+  - id: br007
+    category: literatura
+    difficulty: 2
+    question: "Quem escreveu 'Dom Casmurro'?"
+    options: ["José de Alencar", "Machado de Assis", "Graciliano Ramos", "Jorge Amado"]
+    answer: 1
+  - id: br008
+    category: geografia
+    difficulty: 2
+    question: "Qual bioma ocupa a maior área do território brasileiro?"
+    options: ["Cerrado", "Amazônia", "Mata Atlântica", "Caatinga"]
+    answer: 1
+  - id: br009
+    category: geografia
+    difficulty: 3
+    question: "Qual rio encontra o Solimões para formar o Amazonas, perto de Manaus?"
+    options: ["Rio Negro", "Rio Madeira", "Rio Tapajós", "Rio Xingu"]
+    answer: 0
+  - id: br010
+    category: geografia
+    difficulty: 1
+    question: "Quantos estados tem o Brasil, sem contar o Distrito Federal?"
+    options: ["24", "25", "26", "27"]
+    answer: 2
+  - id: br011
+    category: geografia
+    difficulty: 1
+    question: "Qual é a capital de Minas Gerais?"
+    options: ["Ouro Preto", "Belo Horizonte", "Uberlândia", "Juiz de Fora"]
+    answer: 1
+  - id: br012
+    category: história
+    difficulty: 3
+    question: "Quem foi o primeiro presidente do Brasil?"
+    options: ["Deodoro da Fonseca", "Floriano Peixoto", "Prudente de Morais", "Campos Sales"]
+    answer: 0
+  - id: br013
+    category: comida
+    difficulty: 1
+    question: "O acarajé é um prato típico de qual estado?"
+    options: ["Pernambuco", "Bahia", "Ceará", "Maranhão"]
+    answer: 1
+  - id: br014
+    category: história
+    difficulty: 2
+    question: "Qual árvore deu origem ao nome do país?"
+    options: ["Jacarandá", "Pau-brasil", "Ipê", "Mogno"]
+    answer: 1
+  - id: br015
+    category: geografia
+    difficulty: 3
+    question: "Qual é o ponto mais alto do Brasil?"
+    options: ["Pico da Bandeira", "Pico da Neblina", "Monte Roraima", "Pico Paraná"]
+    answer: 1
+  - id: br016
+    category: história
+    difficulty: 2
+    question: "Em que ano foi proclamada a República no Brasil?"
+    options: ["1822", "1888", "1889", "1891"]
+    answer: 2
+  - id: br017
+    category: música
+    difficulty: 1
+    question: "Qual cantor brasileiro é conhecido como 'O Rei'?"
+    options: ["Erasmo Carlos", "Roberto Carlos", "Wando", "Agnaldo Timóteo"]
+    answer: 1
+  - id: br018
+    category: literatura
+    difficulty: 2
+    question: "Qual boneca de pano foi criada por Monteiro Lobato?"
+    options: ["Narizinho", "Emília", "Cuca", "Dona Benta"]
+    answer: 1
+  - id: br019
+    category: esportes
+    difficulty: 2
+    question: "Qual seleção o Brasil venceu na final da Copa de 2002?"
+    options: ["Itália", "Alemanha", "França", "Argentina"]
+    answer: 1
+  - id: br020
+    category: geografia
+    difficulty: 2
+    question: "Qual é o maior porto da América Latina?"
+    options: ["Porto de Santos", "Porto de Paranaguá", "Porto de Itajaí", "Porto de Suape"]
+    answer: 0
+  - id: br021
+    category: história
+    difficulty: 3
+    question: "Qual moeda o Real substituiu em 1994?"
+    options: ["Cruzado", "Cruzeiro", "Cruzeiro Real", "Cruzado Novo"]
+    answer: 2
+  - id: br022
+    category: geografia
+    difficulty: 1
+    question: "Qual cidade é apelidada de 'Cidade Maravilhosa'?"
+    options: ["Salvador", "Rio de Janeiro", "Recife", "Florianópolis"]
+    answer: 1
+  - id: br023
+    category: música
+    difficulty: 2
+    question: "Qual ritmo surgiu na Bahia nos anos 1980 e dominou o carnaval?"
+    options: ["Forró", "Axé", "Frevo", "Maracatu"]
+    answer: 1
+  - id: br024
+    category: geografia
+    difficulty: 2
+    question: "As Cataratas do Iguaçu ficam na divisa do Brasil com qual país?"
+    options: ["Paraguai", "Argentina", "Uruguai", "Bolívia"]
+    answer: 1

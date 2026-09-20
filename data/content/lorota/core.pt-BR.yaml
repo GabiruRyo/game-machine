@@ -1,0 +1,182 @@
+id: lorota-core
+game: lorota
+lang: pt-BR
+title: Verdades e invenções
+version: 1
+items:
+  - id: lo001
+    category: animais
+    difficulty: 2
+    topic: "Polvos"
+    lie:
+      text: "Têm ossos flexíveis dentro do manto"
+      note: "Polvos não têm osso nenhum — por isso atravessam buracos do tamanho do próprio bico."
+    truths:
+      - { text: "Têm três corações" }
+      - { text: "O sangue deles é azul" }
+      - { text: "Mudam de cor e de textura da pele" }
+  - id: lo002
+    category: comida
+    difficulty: 2
+    topic: "Bananas"
+    lie:
+      text: "Crescem apontando para o chão"
+      note: "Bananas crescem apontando para cima, contra a gravidade."
+    truths:
+      - { text: "Botanicamente são uma baga" }
+      - { text: "A bananeira é uma erva gigante, não uma árvore" }
+      - { text: "Quase toda banana comercial é geneticamente idêntica" }
+  - id: lo003
+    category: corpo
+    difficulty: 2
+    topic: "O corpo humano"
+    lie:
+      text: "O coração para de bater quando a gente espirra"
+      note: "O coração não para: no máximo o ritmo muda por um instante."
+    truths:
+      - { text: "O estômago produz ácido forte o bastante para corroer metal" }
+      - { text: "Produzimos cerca de 1,5 litro de saliva por dia" }
+      - { text: "Osso é mais resistente que concreto por unidade de peso" }
+  - id: lo004
+    category: espaço
+    difficulty: 2
+    topic: "O espaço"
+    lie:
+      text: "A Muralha da China é visível a olho nu do espaço"
+      note: "Astronautas confirmam que não dá: ela é longa, mas fina demais."
+    truths:
+      - { text: "Não existe som no vácuo" }
+      - { text: "Um dia em Vênus dura mais que um ano em Vênus" }
+      - { text: "A Lua se afasta da Terra alguns centímetros por ano" }
+  - id: lo005
+    category: animais
+    difficulty: 2
+    topic: "Pinguins"
+    lie:
+      text: "Vivem no Polo Norte junto com os ursos-polares"
+      note: "Não existe pinguim selvagem no hemisfério norte — urso-polar e pinguim nunca se encontram."
+    truths:
+      - { text: "Alguns presenteiam a parceira com uma pedra" }
+      - { text: "Conseguem beber água salgada" }
+      - { text: "O pinguim-imperador choca o ovo em cima dos pés" }
+  - id: lo006
+    category: história
+    difficulty: 2
+    topic: "Os vikings"
+    lie:
+      text: "Usavam capacetes com chifres na batalha"
+      note: "Os chifres vieram de uma ópera do século XIX, não da arqueologia."
+    truths:
+      - { text: "Chegaram à América antes de Colombo" }
+      - { text: "Eram também comerciantes de longa distância" }
+      - { text: "Usavam navios de calado raso para subir rios" }
+  - id: lo007
+    category: ciência
+    difficulty: 2
+    topic: "O cérebro"
+    lie:
+      text: "Usamos apenas 10% da capacidade do cérebro"
+      note: "Exames de imagem mostram praticamente todas as regiões ativas ao longo de um dia."
+    truths:
+      - { text: "Consome cerca de 20% da energia do corpo" }
+      - { text: "Não tem receptores de dor" }
+      - { text: "Continua bastante ativo durante o sono" }
+  - id: lo008
+    category: animais
+    difficulty: 2
+    topic: "Camelos"
+    lie:
+      text: "Não conseguem nadar"
+      note: "Camelos nadam bem, mesmo tendo poucas oportunidades de praticar."
+    truths:
+      - { text: "A corcova armazena gordura, não água" }
+      - { text: "Podem beber mais de 100 litros de uma vez" }
+      - { text: "Têm três pálpebras em cada olho" }
+  - id: lo009
+    category: comida
+    difficulty: 3
+    topic: "Chocolate"
+    lie:
+      text: "Chocolate branco leva cacau em pó"
+      note: "Chocolate branco leva manteiga de cacau, mas nada da parte sólida do cacau."
+    truths:
+      - { text: "Vem da semente do cacau" }
+      - { text: "É tóxico para cães" }
+      - { text: "Os maias tomavam como bebida amarga" }
+  - id: lo010
+    category: geografia
+    difficulty: 3
+    topic: "O Everest"
+    lie:
+      text: "É a maior montanha do mundo medida da base ao topo"
+      note: "Medido da base, o Mauna Kea é maior — só que a base dele fica no fundo do mar."
+    truths:
+      - { text: "Cresce alguns milímetros por ano" }
+      - { text: "Tem fósseis marinhos perto do cume" }
+      - { text: "A temperatura no cume passa de -40 °C" }
+  - id: lo011
+    category: animais
+    difficulty: 1
+    topic: "Gatos"
+    lie:
+      text: "Sempre caem de pé, de qualquer altura"
+      note: "Existe uma altura mínima para o giro funcionar — e quedas altas machucam do mesmo jeito."
+    truths:
+      - { text: "Não sentem sabor doce" }
+      - { text: "Ronronam entre 25 e 150 Hz" }
+      - { text: "A clavícula deles não se liga a outros ossos" }
+  - id: lo012
+    category: ciência
+    difficulty: 2
+    topic: "Relâmpagos"
+    lie:
+      text: "Só acontecem durante a chuva"
+      note: "Existe raio seco, que cai longe de qualquer chuva e começa incêndios."
+    truths:
+      - { text: "Podem atingir o mesmo lugar várias vezes" }
+      - { text: "São mais quentes que a superfície do Sol" }
+      - { text: "A luz chega bem antes do som" }
+  - id: lo013
+    category: comida
+    difficulty: 2
+    topic: "Café"
+    lie:
+      text: "Quanto mais escura a torra, mais cafeína no grão"
+      note: "A torra mais escura queima um pouco da cafeína: torra clara tem levemente mais."
+    truths:
+      - { text: "O nome vem da região de Kaffa, na Etiópia" }
+      - { text: "Descafeinado ainda tem um resto de cafeína" }
+      - { text: "O Brasil é o maior produtor do mundo" }
+  - id: lo014
+    category: ciência
+    difficulty: 1
+    topic: "Água"
+    lie:
+      text: "O mar é salgado porque os peixes soltam sal"
+      note: "O sal vem das rochas: a chuva dissolve minerais e os rios levam tudo para o mar."
+    truths:
+      - { text: "Expande ao congelar" }
+      - { text: "Cobre cerca de 71% da superfície da Terra" }
+      - { text: "Água pura conduz mal a eletricidade" }
+  - id: lo015
+    category: história
+    difficulty: 2
+    topic: "Dinossauros"
+    lie:
+      text: "Conviveram com os primeiros humanos"
+      note: "Uns 65 milhões de anos separam a extinção dos dinossauros dos primeiros humanos."
+    truths:
+      - { text: "As aves descendem de dinossauros" }
+      - { text: "Existiram por mais de 150 milhões de anos" }
+      - { text: "Vários tinham penas" }
+  - id: lo016
+    category: tecnologia
+    difficulty: 3
+    topic: "A internet"
+    lie:
+      text: "Foi inventada pela mesma pessoa que criou a World Wide Web"
+      note: "A internet é a rede; a web é um serviço que roda em cima dela, criado décadas depois."
+    truths:
+      - { text: "Começou como um projeto de pesquisa militar" }
+      - { text: "A maior parte do tráfego passa por cabos submarinos" }
+      - { text: "O primeiro e-mail foi enviado nos anos 1970" }
