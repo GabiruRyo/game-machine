@@ -21,6 +21,8 @@ export const ordemItemSchema = baseItemSchema.extend({
 
 export const ordemSettingsSchema = z.object({
   enabled: z.boolean().default(true),
+  /** Extra fraction of the points per difficulty level above 1. 0 disables it. */
+  difficulty_bonus: z.number().min(0).max(2).default(0.25),
   rounds: z.number().int().min(1).max(50).default(5),
   arrange_seconds: z.number().min(10).max(600).default(60),
   points_per_correct_slot: z.number().min(0).default(200),

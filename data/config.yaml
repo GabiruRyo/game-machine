@@ -37,6 +37,9 @@ content:
   # avoid-until-exhausted: never repeat until the pack runs dry, then recycle
   # never-repeat: stop drawing once exhausted   |   random: no memory at all
   repeat: avoid-until-exhausted
+  # flat: sorteia em qualquer ponto da faixa de dificuldade permitida.
+  # ramp: começa fácil e endurece até o fim do jogo.
+  curve: ramp
 
 party_mode:
   games: 5
@@ -53,6 +56,7 @@ games:
     answer_seconds: 20
     base_points: 1000
     speed_bonus_max: 500
+    difficulty_bonus: 0.25   # +25% por nível de dificuldade acima de 1
     steal:
       enabled: true
       points: 500
@@ -63,6 +67,7 @@ games:
     arrange_seconds: 60
     points_per_correct_slot: 200
     points_all_correct_bonus: 400
+    difficulty_bonus: 0.25
 
   lorota:
     enabled: true
@@ -71,6 +76,7 @@ games:
     decide_seconds: 45
     points_correct: 800
     points_heckler: 200    # to the room when the turn player is fooled
+    difficulty_bonus: 0.25
 
   quemdiria:
     enabled: true
@@ -84,6 +90,7 @@ games:
     round_seconds: 60
     skips_allowed: 2
     points_per_hit: 100
+    difficulty_bonus: 0.25
 
   tribunal:
     enabled: true
@@ -99,13 +106,11 @@ games:
   historias:
     enabled: true
     rounds: 3
-    word_seconds: 30
     points_per_word: 100
     points_favourite: 400
 
   legendas:
     enabled: true
     rounds: 4
-    caption_seconds: 60
     points_per_vote: 300
     points_unanimous_bonus: 300

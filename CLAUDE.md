@@ -94,6 +94,16 @@ guide: `data/content/README.md`.
   short-circuits blank/comment-only files so a cleared config yields defaults, not an error.
 - **Reset a text field by remounting it with a `key`, not from an effect**, and focus it in
   `useLayoutEffect`. See `src/ui/TextEntry.tsx`.
+- **Never insert into the i18n YAML by matching a bare key name.** `  wrong:` exists under
+  both `common:` and `host:`; a naive replace put the host banter inside `common:` and the
+  UI rendered the literal string `host.correctHard`. Anchor to the section first.
+  `src/i18n/i18n.test.ts` asserts placement and cross-language key parity.
+- **motion writes `transform` inline, which beats any CSS `transform`.** Hover and active
+  movement on `.option` and `.menu__item` therefore live in `whileHover`/`animate`, not in
+  the stylesheet. Colour, shadow and border stay in CSS.
+- **Difficulty is applied when content loads, not when it is drawn**, so changing the
+  preset reloads the bank (same path as the language switch). Games listed in
+  `DIFFICULTY_FREE_GAMES` skip the filter entirely.
 
 ## Verifying a change
 

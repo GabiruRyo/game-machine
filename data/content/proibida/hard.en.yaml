@@ -1,0 +1,156 @@
+id: proibida-hard
+game: proibida
+lang: en
+title: Hard — abstract concepts
+version: 1
+items:
+  - id: hp001
+    category: ciência
+    difficulty: 4
+    word: "Entropy"
+    forbidden: ["disorder", "energy", "physics", "chaos"]
+  - id: hp002
+    category: ciência
+    difficulty: 4
+    word: "Photosynthesis"
+    forbidden: ["plant", "light", "chlorophyll", "oxygen"]
+  - id: hp003
+    category: sociedade
+    difficulty: 4
+    word: "Democracy"
+    forbidden: ["vote", "people", "government", "election"]
+  - id: hp004
+    category: ciência
+    difficulty: 4
+    word: "Gravity"
+    forbidden: ["fall", "weight", "Newton", "apple"]
+  - id: hp005
+    category: economia
+    difficulty: 5
+    word: "Inflation"
+    forbidden: ["price", "money", "rise", "economy"]
+  - id: hp006
+    category: biologia
+    difficulty: 4
+    word: "Metamorphosis"
+    forbidden: ["change", "butterfly", "caterpillar", "transform"]
+  - id: hp007
+    category: tecnologia
+    difficulty: 5
+    word: "Algorithm"
+    forbidden: ["computer", "step", "program", "solve"]
+  - id: hp008
+    category: matemática
+    difficulty: 4
+    word: "Symmetry"
+    forbidden: ["equal", "mirror", "side", "shape"]
+  - id: hp009
+    category: biologia
+    difficulty: 4
+    word: "Evolution"
+    forbidden: ["Darwin", "species", "adapt", "natural"]
+  - id: hp010
+    category: biologia
+    difficulty: 5
+    word: "Osmosis"
+    forbidden: ["water", "membrane", "cell", "pass"]
+  - id: hp011
+    category: linguagem
+    difficulty: 5
+    word: "Irony"
+    forbidden: ["opposite", "say", "sarcasm", "humour"]
+  - id: hp012
+    category: sentimento
+    difficulty: 4
+    word: "Nostalgia"
+    forbidden: ["past", "longing", "remember", "feeling"]
+  - id: hp013
+    category: ciência
+    difficulty: 4
+    word: "Hypothesis"
+    forbidden: ["theory", "test", "science", "guess"]
+  - id: hp014
+    category: lógica
+    difficulty: 5
+    word: "Paradox"
+    forbidden: ["contradiction", "logic", "impossible", "truth"]
+  - id: hp015
+    category: biologia
+    difficulty: 4
+    word: "Ecosystem"
+    forbidden: ["nature", "animal", "environment", "balance"]
+  - id: hp016
+    category: medicina
+    difficulty: 4
+    word: "Vaccine"
+    forbidden: ["immunity", "disease", "injection", "virus"]
+  - id: hp017
+    category: ciência
+    difficulty: 4
+    word: "Anatomy"
+    forbidden: ["body", "organ", "study", "human"]
+  - id: hp018
+    category: matemática
+    difficulty: 4
+    word: "Infinity"
+    forbidden: ["end", "number", "forever", "large"]
+  - id: hp019
+    category: sociedade
+    difficulty: 5
+    word: "Diplomacy"
+    forbidden: ["country", "agreement", "negotiate", "ambassador"]
+  - id: hp020
+    category: sentimento
+    difficulty: 4
+    word: "Empathy"
+    forbidden: ["feel", "other", "shoes", "understand"]
+  - id: hp021
+    category: química
+    difficulty: 5
+    word: "Catalyst"
+    forbidden: ["reaction", "speed up", "chemistry", "substance"]
+  - id: hp022
+    category: arte
+    difficulty: 5
+    word: "Perspective"
+    forbidden: ["drawing", "viewpoint", "depth", "see"]
+  - id: hp023
+    category: sociedade
+    difficulty: 5
+    word: "Bureaucracy"
+    forbidden: ["paper", "government", "slow", "process"]
+  - id: hp024
+    category: biologia
+    difficulty: 5
+    word: "Enzyme"
+    forbidden: ["protein", "reaction", "body", "speed up"]
+  - id: hp025
+    category: astronomia
+    difficulty: 4
+    word: "Orbit"
+    forbidden: ["spin", "planet", "around", "satellite"]
+  - id: hp026
+    category: sociedade
+    difficulty: 4
+    word: "Tradition"
+    forbidden: ["custom", "old", "pass down", "family"]
+  - id: hp027
+    category: biologia
+    difficulty: 4
+    word: "Pollination"
+    forbidden: ["bee", "flower", "pollen", "plant"]
+  - id: hp028
+    category: física
+    difficulty: 4
+    word: "Density"
+    forbidden: ["mass", "volume", "heavy", "measure"]
+  - id: hp029
+    category: sociedade
+    difficulty: 4
+    word: "Hierarchy"
+    forbidden: ["order", "boss", "level", "above"]
+  - id: hp030
+    category: ciência
+    difficulty: 5
+    word: "Sustainability"
+    forbidden: ["environment", "future", "resource", "green"]

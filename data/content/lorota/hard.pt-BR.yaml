@@ -1,0 +1,204 @@
+id: lorota-hard
+game: lorota
+lang: pt-BR
+title: Difícil — equívocos científicos
+version: 1
+items:
+  - id: hl001
+    category: biologia
+    difficulty: 5
+    topic: "Evolução"
+    lie:
+      text: "A evolução tem um objetivo: tornar as espécies cada vez mais complexas"
+      note: "A seleção natural não tem direção nem objetivo; muitas linhagens simplificaram."
+    truths:
+      - { text: "A seleção age sobre variação já existente" }
+      - { text: "A deriva genética também altera frequências" }
+      - { text: "Parentesco se infere por caracteres compartilhados" }
+  - id: hl002
+    category: física
+    difficulty: 5
+    topic: "Relatividade"
+    lie:
+      text: "Como tudo é relativo, a velocidade da luz também depende do observador"
+      note: "É justamente o contrário: a invariância da velocidade da luz é o postulado de partida."
+    truths:
+      - { text: "O tempo dilata a velocidades altas" }
+      - { text: "Massa e energia se relacionam por E=mc²" }
+      - { text: "A simultaneidade depende do referencial" }
+  - id: hl003
+    category: química
+    difficulty: 4
+    topic: "O átomo"
+    lie:
+      text: "Os elétrons percorrem órbitas circulares bem definidas, como planetas"
+      note: "O modelo planetário foi superado: elétrons são descritos por orbitais de probabilidade."
+    truths:
+      - { text: "Quase toda a massa está no núcleo" }
+      - { text: "O átomo é majoritariamente espaço vazio" }
+      - { text: "O número atômico é o número de prótons" }
+  - id: hl004
+    category: biologia
+    difficulty: 4
+    topic: "Genética"
+    lie:
+      text: "Cada característica humana é controlada por um único gene"
+      note: "A maioria dos traços é poligênica e ainda sofre influência ambiental."
+    truths:
+      - { text: "Humanos têm cerca de 20 mil genes codificantes" }
+      - { text: "Genes e ambiente interagem" }
+      - { text: "Gêmeos idênticos partilham o mesmo genoma" }
+  - id: hl005
+    category: astronomia
+    difficulty: 4
+    topic: "As estações do ano"
+    lie:
+      text: "Acontecem porque a Terra fica mais perto ou mais longe do Sol"
+      note: "São causadas pela inclinação do eixo; a Terra está mais perto do Sol em janeiro."
+    truths:
+      - { text: "Os hemisférios têm estações opostas" }
+      - { text: "Nos equinócios dia e noite quase se igualam" }
+      - { text: "O eixo da Terra é inclinado cerca de 23,5°" }
+  - id: hl006
+    category: medicina
+    difficulty: 4
+    topic: "Antibióticos"
+    lie:
+      text: "Tomar antibiótico encurta a duração de uma gripe"
+      note: "Gripe é viral; antibióticos agem sobre bactérias e não fazem nada contra vírus."
+    truths:
+      - { text: "O uso excessivo seleciona resistência" }
+      - { text: "A penicilina foi descoberta por Fleming" }
+      - { text: "Alguns agem na parede celular bacteriana" }
+  - id: hl007
+    category: neurociência
+    difficulty: 4
+    topic: "O cérebro"
+    lie:
+      text: "Cada pessoa é dominada pelo lado esquerdo ou pelo direito do cérebro"
+      note: "Não há evidência de dominância de personalidade; as tarefas recrutam os dois lados."
+    truths:
+      - { text: "Os hemisférios se comunicam pelo corpo caloso" }
+      - { text: "A linguagem tende a se lateralizar" }
+      - { text: "O cérebro mantém plasticidade na vida adulta" }
+  - id: hl008
+    category: química
+    difficulty: 5
+    topic: "Condutores"
+    lie:
+      text: "O ouro é o metal que melhor conduz eletricidade"
+      note: "A prata conduz melhor; o ouro é usado por resistir à corrosão."
+    truths:
+      - { text: "O cobre equilibra custo e condutividade" }
+      - { text: "A resistividade aumenta com a temperatura nos metais" }
+      - { text: "Supercondutores têm resistência nula" }
+  - id: hl009
+    category: geologia
+    difficulty: 4
+    topic: "Tectônica de placas"
+    lie:
+      text: "As placas tectônicas pararam de se mover no fim da era glacial"
+      note: "Continuam se movendo poucos centímetros por ano, o que é medido por GPS."
+    truths:
+      - { text: "A Pangeia se fragmentou há cerca de 200 milhões de anos" }
+      - { text: "Terremotos concentram-se nas bordas das placas" }
+      - { text: "O Atlântico se alarga a cada ano" }
+  - id: hl010
+    category: física
+    difficulty: 4
+    topic: "A água"
+    lie:
+      text: "A água ferve a 100 °C em qualquer altitude"
+      note: "O ponto de ebulição cai com a pressão: no alto de uma montanha ferve bem antes."
+    truths:
+      - { text: "Expande ao congelar, por isso o gelo flutua" }
+      - { text: "É chamada de solvente universal" }
+      - { text: "Tem calor específico alto" }
+  - id: hl011
+    category: paleontologia
+    difficulty: 5
+    topic: "Extinções"
+    lie:
+      text: "O T. rex e o mamute foram extintos pelo mesmo evento"
+      note: "Separam-se por mais de 60 milhões de anos: Chicxulub há ~66 Ma, mamutes há ~4 mil anos."
+    truths:
+      - { text: "As aves são dinossauros" }
+      - { text: "O impacto de Chicxulub ocorreu há ~66 milhões de anos" }
+      - { text: "Houve cinco grandes extinções em massa" }
+  - id: hl012
+    category: física
+    difficulty: 4
+    topic: "O som"
+    lie:
+      text: "O som viaja mais rápido quanto mais rarefeito for o meio"
+      note: "É o contrário: viaja mais rápido em sólidos densos e rígidos que no ar."
+    truths:
+      - { text: "Não se propaga no vácuo" }
+      - { text: "A altura percebida depende da frequência" }
+      - { text: "A intensidade é medida em decibéis" }
+  - id: hl013
+    category: estatística
+    difficulty: 5
+    topic: "Estatística"
+    lie:
+      text: "Uma correlação forte o suficiente demonstra causalidade"
+      note: "Nenhuma força de correlação prova causa; variáveis de confusão podem explicá-la."
+    truths:
+      - { text: "A aleatorização ajuda a inferir causa" }
+      - { text: "Amostras pequenas produzem estimativas instáveis" }
+      - { text: "A média é sensível a valores extremos" }
+  - id: hl014
+    category: nutrição
+    difficulty: 4
+    topic: "Calorias"
+    lie:
+      text: "Caloria é uma medida do peso do alimento"
+      note: "Caloria mede energia, não massa: 1 kcal aquece 1 kg de água em 1 °C."
+    truths:
+      - { text: "O metabolismo basal consome a maior parte da energia" }
+      - { text: "Gorduras rendem mais energia por grama" }
+      - { text: "O corpo usa carboidratos, gorduras e proteínas" }
+  - id: hl015
+    category: biologia
+    difficulty: 5
+    topic: "Osmose e células"
+    lie:
+      text: "Na osmose o soluto atravessa a membrana em direção à água"
+      note: "É o solvente que se move, do meio menos concentrado para o mais concentrado."
+    truths:
+      - { text: "A membrana é semipermeável" }
+      - { text: "Células animais estouram em meio hipotônico" }
+      - { text: "A parede celular protege as vegetais" }
+  - id: hl016
+    category: astronomia
+    difficulty: 5
+    topic: "Buracos negros"
+    lie:
+      text: "Um buraco negro suga tudo à sua volta, independentemente da distância"
+      note: "Fora do horizonte de eventos a gravidade é a de qualquer massa equivalente."
+    truths:
+      - { text: "O horizonte de eventos marca o ponto sem retorno" }
+      - { text: "Formam-se do colapso de estrelas massivas" }
+      - { text: "Distorcem a trajetória da luz" }
+  - id: hl017
+    category: química
+    difficulty: 4
+    topic: "Combustão"
+    lie:
+      text: "O fogo é uma substância liberada pelos materiais ao queimar"
+      note: "Essa era a teoria do flogisto, refutada por Lavoisier: queimar é reagir com oxigênio."
+    truths:
+      - { text: "A combustão consome oxigênio" }
+      - { text: "Lavoisier formulou a conservação da massa" }
+      - { text: "Produz normalmente CO₂ e água" }
+  - id: hl018
+    category: biologia
+    difficulty: 4
+    topic: "Imunidade"
+    lie:
+      text: "As vacinas funcionam porque contêm antibióticos em dose baixa"
+      note: "Vacinas treinam o sistema imune com antígenos; não contêm antibióticos como princípio ativo."
+    truths:
+      - { text: "Linfócitos B produzem anticorpos" }
+      - { text: "A imunidade coletiva protege quem não pode vacinar" }
+      - { text: "A febre é uma resposta do organismo" }

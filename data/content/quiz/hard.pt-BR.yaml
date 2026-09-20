@@ -1,0 +1,319 @@
+id: quiz-hard
+game: quiz
+lang: pt-BR
+title: Difícil — ciências e humanidades
+version: 1
+# Nível escolar avançado / universitário inicial.
+items:
+  - id: hq001
+    category: física
+    difficulty: 4
+    question: "Qual grandeza é medida em farad?"
+    options: ["Resistência", "Capacitância", "Indutância", "Potência"]
+    answer: 1
+  - id: hq002
+    category: física
+    difficulty: 5
+    question: "Qual destas partículas NÃO é um lépton?"
+    options: ["Elétron", "Múon", "Neutrino", "Glúon"]
+    answer: 3
+  - id: hq003
+    category: física
+    difficulty: 4
+    question: "Qual conceito está no centro da segunda lei da termodinâmica?"
+    options: ["Entropia", "Inércia", "Ressonância", "Refração"]
+    answer: 0
+  - id: hq004
+    category: física
+    difficulty: 4
+    question: "Quem explicou o efeito fotoelétrico?"
+    options: ["Niels Bohr", "Albert Einstein", "Max Planck", "Louis de Broglie"]
+    answer: 1
+  - id: hq005
+    category: física
+    difficulty: 4
+    question: "Qual é a unidade de pressão no Sistema Internacional?"
+    options: ["Bar", "Pascal", "Atmosfera", "Torr"]
+    answer: 1
+  - id: hq006
+    category: física
+    difficulty: 5
+    question: "Qual grandeza é medida em henry?"
+    options: ["Capacitância", "Indutância", "Condutância", "Fluxo magnético"]
+    answer: 1
+  - id: hq007
+    category: física
+    difficulty: 4
+    question: "O princípio da incerteza leva o nome de qual físico?"
+    options: ["Schrödinger", "Heisenberg", "Dirac", "Pauli"]
+    answer: 1
+  - id: hq008
+    category: química
+    difficulty: 4
+    question: "Qual é o número atômico do carbono?"
+    options: ["4", "6", "8", "12"]
+    answer: 1
+  - id: hq009
+    category: química
+    difficulty: 4
+    question: "Qual é o gás nobre mais leve?"
+    options: ["Hélio", "Neônio", "Argônio", "Criptônio"]
+    answer: 0
+  - id: hq010
+    category: química
+    difficulty: 4
+    question: "Qual é o pH de uma solução neutra a 25 °C?"
+    options: ["0", "7", "10", "14"]
+    answer: 1
+  - id: hq011
+    category: química
+    difficulty: 4
+    question: "A ligação entre um metal e um ametal é tipicamente de que tipo?"
+    options: ["Covalente", "Iônica", "Metálica", "Ponte de hidrogênio"]
+    answer: 1
+  - id: hq012
+    category: química
+    difficulty: 5
+    question: "Qual elemento tem o símbolo W?"
+    options: ["Tungstênio", "Vanádio", "Tântalo", "Zircônio"]
+    answer: 0
+  - id: hq013
+    category: química
+    difficulty: 5
+    question: "Qual elemento tem o símbolo Sb?"
+    options: ["Estrôncio", "Antimônio", "Samário", "Selênio"]
+    answer: 1
+  - id: hq014
+    category: química
+    difficulty: 4
+    question: "Qual é a ordem de grandeza do número de Avogadro?"
+    options: ["10^13", "10^23", "10^33", "10^43"]
+    answer: 1
+  - id: hq015
+    category: química
+    difficulty: 4
+    question: "Qual alótropo do carbono tem estrutura hexagonal em camadas?"
+    options: ["Diamante", "Grafite", "Fulereno", "Carvão amorfo"]
+    answer: 1
+  - id: hq016
+    category: biologia
+    difficulty: 4
+    question: "Qual organela é responsável pela respiração celular?"
+    options: ["Ribossomo", "Mitocôndria", "Lisossomo", "Complexo de Golgi"]
+    answer: 1
+  - id: hq017
+    category: biologia
+    difficulty: 4
+    question: "Qual processo de divisão celular produz gametas?"
+    options: ["Mitose", "Meiose", "Binária", "Brotamento"]
+    answer: 1
+  - id: hq018
+    category: biologia
+    difficulty: 4
+    question: "Quantos pares de cromossomos tem uma célula humana somática?"
+    options: ["21", "22", "23", "24"]
+    answer: 2
+  - id: hq019
+    category: biologia
+    difficulty: 4
+    question: "Qual molécula leva a informação genética do núcleo ao ribossomo?"
+    options: ["DNA", "RNA mensageiro", "RNA transportador", "Proteína"]
+    answer: 1
+  - id: hq020
+    category: biologia
+    difficulty: 5
+    question: "Qual tecido vegetal conduz a seiva bruta das raízes às folhas?"
+    options: ["Floema", "Xilema", "Parênquima", "Epiderme"]
+    answer: 1
+  - id: hq021
+    category: biologia
+    difficulty: 5
+    question: "Quem propôs a seleção natural de forma independente, junto com Darwin?"
+    options: ["Gregor Mendel", "Alfred Russel Wallace", "Thomas Huxley", "Jean-Baptiste Lamarck"]
+    answer: 1
+  - id: hq022
+    category: biologia
+    difficulty: 4
+    question: "Qual é a função principal dos ribossomos?"
+    options: ["Digestão celular", "Síntese de proteínas", "Armazenar energia", "Transporte de lipídios"]
+    answer: 1
+  - id: hq023
+    category: matemática
+    difficulty: 4
+    question: "Qual é a derivada de x²?"
+    options: ["x", "2x", "x²/2", "2"]
+    answer: 1
+  - id: hq024
+    category: matemática
+    difficulty: 4
+    question: "Qual é a raiz quadrada de 169?"
+    options: ["11", "12", "13", "14"]
+    answer: 2
+  - id: hq025
+    category: matemática
+    difficulty: 4
+    question: "Quanto vale log na base 10 de 1000?"
+    options: ["2", "3", "10", "100"]
+    answer: 1
+  - id: hq026
+    category: matemática
+    difficulty: 5
+    question: "Qual é o maior número primo menor que 100?"
+    options: ["89", "91", "97", "99"]
+    answer: 2
+  - id: hq027
+    category: matemática
+    difficulty: 5
+    question: "Quanto somam os ângulos internos de um hexágono?"
+    options: ["540°", "620°", "720°", "900°"]
+    answer: 2
+  - id: hq028
+    category: história
+    difficulty: 4
+    question: "Em que ano ocorreu a Revolução Russa de Outubro?"
+    options: ["1905", "1914", "1917", "1922"]
+    answer: 2
+  - id: hq029
+    category: história
+    difficulty: 4
+    question: "Qual tratado encerrou formalmente a Primeira Guerra Mundial?"
+    options: ["Versalhes", "Vestfália", "Utrecht", "Tordesilhas"]
+    answer: 0
+  - id: hq030
+    category: história
+    difficulty: 4
+    question: "Quem foi o primeiro imperador romano?"
+    options: ["Júlio César", "Augusto", "Nero", "Trajano"]
+    answer: 1
+  - id: hq031
+    category: história
+    difficulty: 5
+    question: "Em que ano caiu Constantinopla?"
+    options: ["1204", "1453", "1492", "1521"]
+    answer: 1
+  - id: hq032
+    category: história
+    difficulty: 4
+    question: "Qual civilização construiu Machu Picchu?"
+    options: ["Maia", "Asteca", "Inca", "Olmeca"]
+    answer: 2
+  - id: hq033
+    category: história
+    difficulty: 4
+    question: "Quem escreveu 'O Príncipe'?"
+    options: ["Tomás de Aquino", "Maquiavel", "Hobbes", "Rousseau"]
+    answer: 1
+  - id: hq034
+    category: história
+    difficulty: 5
+    question: "Qual foi a primeira dinastia imperial da China?"
+    options: ["Han", "Qin", "Tang", "Ming"]
+    answer: 1
+  - id: hq035
+    category: geografia
+    difficulty: 5
+    question: "Qual é a capital da Mongólia?"
+    options: ["Astana", "Ulan Bator", "Bishkek", "Tashkent"]
+    answer: 1
+  - id: hq036
+    category: geografia
+    difficulty: 4
+    question: "Qual estreito separa a Europa da África?"
+    options: ["Bósforo", "Gibraltar", "Ormuz", "Malaca"]
+    answer: 1
+  - id: hq037
+    category: geografia
+    difficulty: 4
+    question: "Qual é o país mais populoso da África?"
+    options: ["Egito", "Etiópia", "Nigéria", "África do Sul"]
+    answer: 2
+  - id: hq038
+    category: geografia
+    difficulty: 5
+    question: "Qual é a maior placa tectônica da Terra?"
+    options: ["Placa Africana", "Placa do Pacífico", "Placa Euroasiática", "Placa Norte-Americana"]
+    answer: 1
+  - id: hq039
+    category: geografia
+    difficulty: 5
+    question: "Qual é o lago mais profundo do mundo?"
+    options: ["Lago Vitória", "Lago Baikal", "Mar Cáspio", "Lago Superior"]
+    answer: 1
+  - id: hq040
+    category: geografia
+    difficulty: 4
+    question: "Qual é a camada mais externa da Terra?"
+    options: ["Manto", "Crosta", "Núcleo externo", "Astenosfera"]
+    answer: 1
+  - id: hq041
+    category: geografia
+    difficulty: 4
+    question: "Qual escala mede a magnitude de terremotos?"
+    options: ["Beaufort", "Richter", "Mohs", "Kelvin"]
+    answer: 1
+  - id: hq042
+    category: geologia
+    difficulty: 4
+    question: "Em qual era geológica os dinossauros dominaram?"
+    options: ["Paleozoica", "Mesozoica", "Cenozoica", "Pré-cambriana"]
+    answer: 1
+  - id: hq043
+    category: astronomia
+    difficulty: 4
+    question: "Qual é a grande galáxia mais próxima da Via Láctea?"
+    options: ["Triângulo", "Andrômeda", "Sombrero", "Redemoinho"]
+    answer: 1
+  - id: hq044
+    category: astronomia
+    difficulty: 5
+    question: "O que é uma anã branca?"
+    options: ["Uma estrela recém-formada", "O resto de uma estrela de baixa massa", "Um planeta gasoso frio", "Uma galáxia pequena"]
+    answer: 1
+  - id: hq045
+    category: astronomia
+    difficulty: 4
+    question: "A unidade astronômica corresponde a qual distância?"
+    options: ["Terra-Lua", "Terra-Sol", "Sol-Júpiter", "Sol-Alfa Centauri"]
+    answer: 1
+  - id: hq046
+    category: astronomia
+    difficulty: 5
+    question: "Qual planeta gira no sentido retrógrado em relação à maioria?"
+    options: ["Marte", "Vênus", "Saturno", "Mercúrio"]
+    answer: 1
+  - id: hq047
+    category: literatura
+    difficulty: 4
+    question: "Quem escreveu 'Cem Anos de Solidão'?"
+    options: ["Jorge Luis Borges", "Gabriel García Márquez", "Julio Cortázar", "Mario Vargas Llosa"]
+    answer: 1
+  - id: hq048
+    category: literatura
+    difficulty: 4
+    question: "Quem escreveu 'A Metamorfose'?"
+    options: ["Thomas Mann", "Franz Kafka", "Hermann Hesse", "Robert Musil"]
+    answer: 1
+  - id: hq049
+    category: literatura
+    difficulty: 4
+    question: "Quem escreveu a 'Divina Comédia'?"
+    options: ["Petrarca", "Dante Alighieri", "Boccaccio", "Virgílio"]
+    answer: 1
+  - id: hq050
+    category: literatura
+    difficulty: 4
+    question: "Quem escreveu 'Guerra e Paz'?"
+    options: ["Dostoiévski", "Tolstói", "Tchékhov", "Gogol"]
+    answer: 1
+  - id: hq051
+    category: história
+    difficulty: 4
+    question: "Em qual século começou a Revolução Industrial?"
+    options: ["XVI", "XVII", "XVIII", "XIX"]
+    answer: 2
+  - id: hq052
+    category: física
+    difficulty: 5
+    question: "Segundo a relatividade restrita, o que é igual para todos os observadores inerciais?"
+    options: ["O tempo decorrido", "A velocidade da luz no vácuo", "O comprimento medido", "A massa medida"]
+    answer: 1

@@ -73,6 +73,34 @@ Full English and Brazilian Portuguese, switchable from the menu or by setting
   culture in en — which load only for their own language, because culturally
   specific trivia rarely survives translation.
 
+## Difficulty
+
+Every content item carries a difficulty from 1 to 5, and **Dificuldade / Difficulty**
+in the menu cycles the slice in play:
+
+| Preset | Tiers |
+|---|---|
+| Everything | 1-5 |
+| Easy | 1-2 |
+| Medium | 2-3 |
+| Hard | 3-4 |
+| Expert | 4-5 |
+
+The hard tiers are school-curriculum and early-university material — physics, chemistry,
+biology, maths, history, geography, literature and astronomy — not pop culture.
+
+Two things make difficulty more than a filter:
+
+- **`content.curve: ramp`** (the default) opens a game on the easiest allowed tier and
+  climbs to the hardest, so a round of Quiz Relâmpago warms up and then bites. Set it to
+  `flat` to draw anywhere in range.
+- **`difficulty_bonus`** pays more for harder items: at the default `0.25`, a level-5
+  question is worth double a level-1. A hard bank rewards you rather than punishing you.
+
+Difficulty is skipped for the four social games (Quem Diria, Tribunal, Histórias Malucas,
+Legendas) — there is no hard version of "who would lose their phone" — so choosing Expert
+narrows the knowledge games without emptying half the pack.
+
 ## Keeping it fresh
 
 The content banks are large and tagged, and the picker remembers what the room

@@ -1,0 +1,204 @@
+id: lorota-hard
+game: lorota
+lang: en
+title: Hard — scientific misconceptions
+version: 1
+items:
+  - id: hl001
+    category: biologia
+    difficulty: 5
+    topic: "Evolution"
+    lie:
+      text: "Evolution has a goal: to make species steadily more complex"
+      note: "Natural selection has no direction or goal; plenty of lineages became simpler."
+    truths:
+      - { text: "Selection acts on variation that already exists" }
+      - { text: "Genetic drift also shifts allele frequencies" }
+      - { text: "Relatedness is inferred from shared characters" }
+  - id: hl002
+    category: física
+    difficulty: 5
+    topic: "Relativity"
+    lie:
+      text: "Since everything is relative, the speed of light depends on the observer too"
+      note: "It is the opposite: the invariance of light speed is the founding postulate."
+    truths:
+      - { text: "Time dilates at high speeds" }
+      - { text: "Mass and energy relate through E=mc²" }
+      - { text: "Simultaneity depends on the reference frame" }
+  - id: hl003
+    category: química
+    difficulty: 4
+    topic: "The atom"
+    lie:
+      text: "Electrons follow well-defined circular orbits, like planets"
+      note: "The planetary model was superseded; electrons are described by probability orbitals."
+    truths:
+      - { text: "Almost all the mass sits in the nucleus" }
+      - { text: "An atom is mostly empty space" }
+      - { text: "The atomic number is the proton count" }
+  - id: hl004
+    category: biologia
+    difficulty: 4
+    topic: "Genetics"
+    lie:
+      text: "Every human trait is controlled by a single gene"
+      note: "Most traits are polygenic and are further shaped by environment."
+    truths:
+      - { text: "Humans have roughly 20,000 protein-coding genes" }
+      - { text: "Genes and environment interact" }
+      - { text: "Identical twins share the same genome" }
+  - id: hl005
+    category: astronomia
+    difficulty: 4
+    topic: "The seasons"
+    lie:
+      text: "They happen because Earth moves nearer to or further from the Sun"
+      note: "They are caused by axial tilt; Earth is actually closest to the Sun in January."
+    truths:
+      - { text: "The hemispheres have opposite seasons" }
+      - { text: "At the equinoxes day and night are nearly equal" }
+      - { text: "Earth's axis is tilted about 23.5°" }
+  - id: hl006
+    category: medicina
+    difficulty: 4
+    topic: "Antibiotics"
+    lie:
+      text: "Taking an antibiotic shortens a bout of flu"
+      note: "Flu is viral; antibiotics act on bacteria and do nothing to a virus."
+    truths:
+      - { text: "Overuse selects for resistance" }
+      - { text: "Penicillin was discovered by Fleming" }
+      - { text: "Some act on the bacterial cell wall" }
+  - id: hl007
+    category: neurociência
+    difficulty: 4
+    topic: "The brain"
+    lie:
+      text: "Each person is dominated by either the left or the right side of the brain"
+      note: "There is no evidence for personality dominance; tasks recruit both sides."
+    truths:
+      - { text: "The hemispheres communicate via the corpus callosum" }
+      - { text: "Language tends to lateralise" }
+      - { text: "The brain retains plasticity into adulthood" }
+  - id: hl008
+    category: química
+    difficulty: 5
+    topic: "Conductors"
+    lie:
+      text: "Gold is the best electrical conductor among metals"
+      note: "Silver conducts better; gold is used because it resists corrosion."
+    truths:
+      - { text: "Copper balances cost against conductivity" }
+      - { text: "Resistivity rises with temperature in metals" }
+      - { text: "Superconductors have zero resistance" }
+  - id: hl009
+    category: geologia
+    difficulty: 4
+    topic: "Plate tectonics"
+    lie:
+      text: "The plates stopped moving at the end of the last ice age"
+      note: "They still move a few centimetres a year, as GPS measurements show."
+    truths:
+      - { text: "Pangaea broke up around 200 million years ago" }
+      - { text: "Earthquakes cluster at plate boundaries" }
+      - { text: "The Atlantic widens every year" }
+  - id: hl010
+    category: física
+    difficulty: 4
+    topic: "Water"
+    lie:
+      text: "Water boils at 100 °C at any altitude"
+      note: "The boiling point falls with pressure; up a mountain it boils well below 100 °C."
+    truths:
+      - { text: "It expands on freezing, which is why ice floats" }
+      - { text: "It is called the universal solvent" }
+      - { text: "It has a high specific heat capacity" }
+  - id: hl011
+    category: paleontologia
+    difficulty: 5
+    topic: "Extinctions"
+    lie:
+      text: "T. rex and the mammoth were wiped out by the same event"
+      note: "Over 60 million years apart: Chicxulub ~66 Ma, mammoths ~4,000 years ago."
+    truths:
+      - { text: "Birds are dinosaurs" }
+      - { text: "The Chicxulub impact was ~66 million years ago" }
+      - { text: "There have been five major mass extinctions" }
+  - id: hl012
+    category: física
+    difficulty: 4
+    topic: "Sound"
+    lie:
+      text: "Sound travels faster the thinner the medium"
+      note: "It is the reverse: sound moves faster through dense, rigid solids than through air."
+    truths:
+      - { text: "It does not travel through a vacuum" }
+      - { text: "Perceived pitch depends on frequency" }
+      - { text: "Intensity is measured in decibels" }
+  - id: hl013
+    category: estatística
+    difficulty: 5
+    topic: "Statistics"
+    lie:
+      text: "A strong enough correlation demonstrates causation"
+      note: "No strength of correlation proves cause; a confounder can explain it entirely."
+    truths:
+      - { text: "Randomisation helps infer causation" }
+      - { text: "Small samples give unstable estimates" }
+      - { text: "The mean is sensitive to outliers" }
+  - id: hl014
+    category: nutrição
+    difficulty: 4
+    topic: "Calories"
+    lie:
+      text: "A calorie is a measure of the weight of food"
+      note: "A calorie measures energy, not mass: 1 kcal heats 1 kg of water by 1 °C."
+    truths:
+      - { text: "Basal metabolism uses most of the energy" }
+      - { text: "Fats yield more energy per gram" }
+      - { text: "The body uses carbohydrates, fats and proteins" }
+  - id: hl015
+    category: biologia
+    difficulty: 5
+    topic: "Osmosis and cells"
+    lie:
+      text: "In osmosis the solute crosses the membrane towards the water"
+      note: "It is the solvent that moves, from the less concentrated side to the more concentrated one."
+    truths:
+      - { text: "The membrane is semipermeable" }
+      - { text: "Animal cells burst in a hypotonic medium" }
+      - { text: "The cell wall protects plant cells" }
+  - id: hl016
+    category: astronomia
+    difficulty: 5
+    topic: "Black holes"
+    lie:
+      text: "A black hole sucks in everything around it, no matter the distance"
+      note: "Outside the event horizon its gravity is the same as any equivalent mass."
+    truths:
+      - { text: "The event horizon marks the point of no return" }
+      - { text: "They form from the collapse of massive stars" }
+      - { text: "They bend the path of light" }
+  - id: hl017
+    category: química
+    difficulty: 4
+    topic: "Combustion"
+    lie:
+      text: "Fire is a substance released by materials as they burn"
+      note: "That was phlogiston theory, refuted by Lavoisier: burning is reacting with oxygen."
+    truths:
+      - { text: "Combustion consumes oxygen" }
+      - { text: "Lavoisier formulated conservation of mass" }
+      - { text: "It typically produces CO₂ and water" }
+  - id: hl018
+    category: biologia
+    difficulty: 4
+    topic: "Immunity"
+    lie:
+      text: "Vaccines work because they contain a low dose of antibiotics"
+      note: "Vaccines train the immune system with antigens; antibiotics are not the active principle."
+    truths:
+      - { text: "B lymphocytes produce antibodies" }
+      - { text: "Herd immunity protects those who cannot be vaccinated" }
+      - { text: "Fever is a response of the body" }

@@ -9,7 +9,6 @@ export const legendasItemSchema = baseItemSchema.extend({
 export const legendasSettingsSchema = z.object({
   enabled: z.boolean().default(true),
   rounds: z.number().int().min(1).max(20).default(4),
-  caption_seconds: z.number().min(10).max(600).default(60),
   points_per_vote: z.number().min(0).default(300),
   points_unanimous_bonus: z.number().min(0).default(300),
 })

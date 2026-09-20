@@ -1,5 +1,6 @@
 import { useCallback, useMemo, useState, type CSSProperties } from 'react'
 import { play } from '../../engine/audio'
+import { difficultyForRound, difficultyMultiplier } from '../../engine/difficulty'
 import { useKeyboard, type Action } from '../../engine/input'
 import { rng } from '../../engine/rng'
 import { applyDeltas, emptyBoard, type Scoreboard } from '../../engine/scoring'
@@ -24,12 +25,20 @@ interface Shuffled {
   correctIndex: number
 }
 
-function OrdemGame({ settings, players, picker, multiplier, onFinish, onExit }: GameContext<OrdemItem, OrdemSettings>) {
+function OrdemGame({ settings, players, picker, multiplier, difficulty, onFinish, onExit }: GameContext<OrdemItem, OrdemSettings>) {
   const { t, tRandom } = useI18n()
+
+  const targetFor = useCallback(
+    (roundIndex: number) =>
+      difficultyForRound(roundIndex, settings.rounds, difficulty.allowed, difficulty.curve),
+    [settings.rounds, difficulty],
+  )
 
   const [round, setRound] = useState(0)
   const [board, setBoard] = useState<Scoreboard>(() => emptyBoard(players))
-  const [item, setItem] = useState<OrdemItem | null>(() => picker.draw())
+  const [item, setItem] = useState<OrdemItem | null>(() =>
+    picker.draw({ difficulty: targetFor(0) }),
+  )
   const [phase, setPhase] = useState<Phase>('arranging')
   /** Indices into `shuffled`, in the order the room placed them. */
   const [placed, setPlaced] = useState<number[]>([])
@@ -50,8 +59,9 @@ function OrdemGame({ settings, players, picker, multiplier, onFinish, onExit }: 
       ).length
       const perfect = correctSlots === item.entries.length
       const points =
-        correctSlots * settings.points_per_correct_slot +
-        (perfect ? settings.points_all_correct_bonus : 0)
+        (correctSlots * settings.points_per_correct_slot +
+          (perfect ? settings.points_all_correct_bonus : 0)) *
+        difficultyMultiplier(item.difficulty, settings.difficulty_bonus)
 
       play(perfect ? 'fanfare' : correctSlots > 0 ? 'correct' : 'wrong')
       setEarned(Math.round(points * multiplier))
@@ -76,7 +86,7 @@ function OrdemGame({ settings, players, picker, multiplier, onFinish, onExit }: 
       onFinish(board)
       return
     }
-    const next = picker.draw()
+    const next = picker.draw({ difficulty: targetFor(round + 1) })
     if (!next) {
       onFinish(board)
       return
@@ -88,7 +98,7 @@ function OrdemGame({ settings, players, picker, multiplier, onFinish, onExit }: 
     setPhase('arranging')
     timer.reset()
     play('reveal')
-  }, [round, settings.rounds, board, picker, onFinish, timer])
+  }, [round, settings.rounds, board, picker, onFinish, timer, targetFor])
 
   const handle = useCallback(
     (action: Action) => {
@@ -121,7 +131,12 @@ function OrdemGame({ settings, players, picker, multiplier, onFinish, onExit }: 
   useKeyboard(handle)
 
   const hostLine = useMemo(
-    () => (phase === 'reveal' ? tRandom(earned > 0 ? 'host.correct' : 'host.wrong') : ''),
+    () => {
+      if (phase !== 'reveal') return ''
+      const hard = (item?.difficulty ?? 1) >= 4
+      if (earned > 0) return tRandom(hard ? 'host.correctHard' : 'host.correct')
+      return tRandom(hard ? 'host.wrongHard' : 'host.wrong')
+    },
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [phase, round],
   )

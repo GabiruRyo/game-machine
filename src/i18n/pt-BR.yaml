@@ -10,11 +10,20 @@ menu:
   settings: Ajustes
   howto: Como se joga
   back: Voltar
+  difficulty: Dificuldade
   resetContent: Zerar histórico de conteúdo
   resetContentDone: Histórico zerado — todo o conteúdo voltou a ficar disponível.
   contentEmpty: sem conteúdo
   itemsAvailable: "{count} itens disponíveis"
   disabled: desativado no config.yaml
+
+difficulty:
+  all: "Tudo (1-5)"
+  easy: "Fácil (1-2)"
+  medium: "Médio (2-3)"
+  hard: "Difícil (3-4)"
+  expert: "Expert (4-5)"
+  custom: "Personalizado"
 
 common:
   next: Avançar
@@ -161,6 +170,15 @@ host:
     - Isso aí!
     - Certíssimo.
     - Alguém andou estudando.
+  correctHard:
+    - Essa era pra derrubar geral.
+    - Respeito. Essa era difícil.
+    - Olha o nível dessa resposta.
+    - Quem estudou, estudou.
+  wrongHard:
+    - Essa era cruel, admito.
+    - Ninguém acertaria essa.
+    - Dessa vez não dá pra culpar você.
   wrong:
     - Passou longe.
     - Não foi dessa vez.

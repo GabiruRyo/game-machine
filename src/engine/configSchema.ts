@@ -68,6 +68,11 @@ export const configSchema = z.object({
         })
         .prefault({}),
       repeat: z.enum(REPEAT_POLICIES).default('avoid-until-exhausted'),
+      /**
+       * flat: draw anywhere in the allowed difficulty range.
+       * ramp: open a game on the easiest allowed tier and climb to the hardest.
+       */
+      curve: z.enum(['flat', 'ramp']).default('ramp'),
     })
     .prefault({}),
 

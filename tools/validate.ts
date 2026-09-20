@@ -11,7 +11,7 @@ import { parseConfig } from '../src/engine/config'
 import { passesFilters } from '../src/engine/content'
 import { parsePack } from '../src/engine/content'
 import { manifestSchema, packHeaderSchema } from '../src/engine/contentSchema'
-import { ITEM_SCHEMAS } from '../src/games/schemas'
+import { DIFFICULTY_FREE_GAMES, ITEM_SCHEMAS } from '../src/games/schemas'
 
 const DATA = 'data'
 const CONTENT = join(DATA, 'content')
@@ -98,7 +98,9 @@ for (const entry of entries) {
   const { items, rejected, issues } = parsePack(raw, entry, ITEM_SCHEMAS)
   for (const issue of issues) fail(`${issue.path}: ${issue.message}`)
 
-  const usable = items.filter((item) => passesFilters(item, config)).length
+  const usable = items.filter((item) =>
+    passesFilters(item, config, !DIFFICULTY_FREE_GAMES.has(entry.game)),
+  ).length
   const header = packHeaderSchema.safeParse(parseYaml(raw))
   loaded.push({
     headerId: header.success ? header.data.id : entry.id,

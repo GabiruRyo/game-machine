@@ -73,3 +73,51 @@ describe('picker', () => {
     expect(picker.drawMany(3)).toEqual([])
   })
 })
+
+describe('picker difficulty targeting', () => {
+  const mixed = (): BaseItem[] =>
+    [1, 2, 3, 4, 5].flatMap((difficulty) =>
+      Array.from({ length: 4 }, (_, i) => ({
+        id: `d${difficulty}-${i}`,
+        category: 'geral',
+        difficulty,
+        audience: 'family' as const,
+        tags: [],
+      })),
+    )
+
+  it('draws from the requested tier when it has stock', () => {
+    const picker = createPicker('t', mixed(), { seed: 11, store: memoryStore() })
+    for (let i = 0; i < 4; i++) {
+      expect(picker.draw({ difficulty: 5 })?.difficulty).toBe(5)
+    }
+  })
+
+  it('falls back to the nearest tier instead of stalling when one runs dry', () => {
+    const onlyEasyAndHard = mixed().filter((i) => i.difficulty === 1 || i.difficulty === 5)
+    const picker = createPicker('t', onlyEasyAndHard, { seed: 12, store: memoryStore() })
+    // Nothing at 3 exists at all, so it must land on one of the neighbours.
+    const drawn = picker.draw({ difficulty: 3 })
+    expect(drawn).not.toBeNull()
+    expect([1, 5]).toContain(drawn?.difficulty)
+  })
+
+  it('widens once the requested tier is exhausted rather than returning null', () => {
+    const picker = createPicker('t', mixed(), { seed: 13, store: memoryStore() })
+    const drawn = Array.from({ length: 8 }, () => picker.draw({ difficulty: 4 }))
+    expect(drawn.every((d) => d !== null)).toBe(true)
+    expect(drawn.filter((d) => d?.difficulty === 4)).toHaveLength(4)
+  })
+
+  it('still respects the no-repeat guarantee while targeting a tier', () => {
+    const picker = createPicker('t', mixed(), { seed: 14, store: memoryStore() })
+    const ids = Array.from({ length: 20 }, () => picker.draw({ difficulty: 2 })?.id)
+    expect(new Set(ids).size).toBe(20)
+  })
+
+  it('ignores the preference when none is given', () => {
+    const picker = createPicker('t', mixed(), { seed: 15, store: memoryStore() })
+    const tiers = new Set(Array.from({ length: 20 }, () => picker.draw()?.difficulty))
+    expect(tiers.size).toBeGreaterThan(1)
+  })
+})

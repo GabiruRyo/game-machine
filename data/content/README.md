@@ -39,9 +39,29 @@ items:
 |---|---|---|
 | `id` | required | Unique inside the pack. Also how the anti-repeat memory tracks it, so never reuse an id for different content. |
 | `category` | `geral` | Free label, handy for your own organisation. |
-| `difficulty` | `3` | 1–5. Filterable from `config.yaml`. |
+| `difficulty` | `3` | 1–5, and it matters: see the scale below. |
 | `audience` | `family` | `family`, `teen` or `adult`. Filtered by `content.filters.audience`, which ships excluding `adult`. |
 | `tags` | `[]` | Free tags. `content.filters.exclude_tags` drops anything carrying one; `include_tags`, if set, keeps *only* items carrying one. |
+
+## Pitching difficulty
+
+The menu cycles presets over this scale, and `content.curve: ramp` walks a game from the
+bottom of the allowed range to the top, so be honest with the number:
+
+| | Should be answerable by |
+|---|---|
+| **1** | anyone in the room, instantly |
+| **2** | general knowledge, no thought needed |
+| **3** | most adults, after a moment |
+| **4** | someone who paid attention at school |
+| **5** | someone who studied the subject |
+
+`difficulty_bonus` in `config.yaml` pays more for harder items, so inflating a 2 to a 5
+does not just misjudge the room — it hands out points the question did not earn.
+
+Difficulty is ignored entirely for `quemdiria`, `tribunal`, `historias` and `legendas`
+(listed in `src/games/schemas.ts` as `DIFFICULTY_FREE_GAMES`). Set it to anything there;
+nothing reads it.
 
 ## Bilingual packs vs language-native packs
 

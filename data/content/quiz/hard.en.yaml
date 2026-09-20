@@ -1,0 +1,319 @@
+id: quiz-hard
+game: quiz
+lang: en
+title: Hard — sciences and humanities
+version: 1
+# Upper-school / early-university level.
+items:
+  - id: hq001
+    category: física
+    difficulty: 4
+    question: "Which quantity is measured in farads?"
+    options: ["Resistance", "Capacitance", "Inductance", "Power"]
+    answer: 1
+  - id: hq002
+    category: física
+    difficulty: 5
+    question: "Which of these particles is NOT a lepton?"
+    options: ["Electron", "Muon", "Neutrino", "Gluon"]
+    answer: 3
+  - id: hq003
+    category: física
+    difficulty: 4
+    question: "Which concept is at the heart of the second law of thermodynamics?"
+    options: ["Entropy", "Inertia", "Resonance", "Refraction"]
+    answer: 0
+  - id: hq004
+    category: física
+    difficulty: 4
+    question: "Who explained the photoelectric effect?"
+    options: ["Niels Bohr", "Albert Einstein", "Max Planck", "Louis de Broglie"]
+    answer: 1
+  - id: hq005
+    category: física
+    difficulty: 4
+    question: "What is the SI unit of pressure?"
+    options: ["Bar", "Pascal", "Atmosphere", "Torr"]
+    answer: 1
+  - id: hq006
+    category: física
+    difficulty: 5
+    question: "Which quantity is measured in henries?"
+    options: ["Capacitance", "Inductance", "Conductance", "Magnetic flux"]
+    answer: 1
+  - id: hq007
+    category: física
+    difficulty: 4
+    question: "The uncertainty principle is named after which physicist?"
+    options: ["Schrödinger", "Heisenberg", "Dirac", "Pauli"]
+    answer: 1
+  - id: hq008
+    category: química
+    difficulty: 4
+    question: "What is the atomic number of carbon?"
+    options: ["4", "6", "8", "12"]
+    answer: 1
+  - id: hq009
+    category: química
+    difficulty: 4
+    question: "Which is the lightest noble gas?"
+    options: ["Helium", "Neon", "Argon", "Krypton"]
+    answer: 0
+  - id: hq010
+    category: química
+    difficulty: 4
+    question: "What is the pH of a neutral solution at 25 °C?"
+    options: ["0", "7", "10", "14"]
+    answer: 1
+  - id: hq011
+    category: química
+    difficulty: 4
+    question: "A bond between a metal and a non-metal is typically which type?"
+    options: ["Covalent", "Ionic", "Metallic", "Hydrogen bond"]
+    answer: 1
+  - id: hq012
+    category: química
+    difficulty: 5
+    question: "Which element has the symbol W?"
+    options: ["Tungsten", "Vanadium", "Tantalum", "Zirconium"]
+    answer: 0
+  - id: hq013
+    category: química
+    difficulty: 5
+    question: "Which element has the symbol Sb?"
+    options: ["Strontium", "Antimony", "Samarium", "Selenium"]
+    answer: 1
+  - id: hq014
+    category: química
+    difficulty: 4
+    question: "What is the order of magnitude of Avogadro's number?"
+    options: ["10^13", "10^23", "10^33", "10^43"]
+    answer: 1
+  - id: hq015
+    category: química
+    difficulty: 4
+    question: "Which allotrope of carbon has a layered hexagonal structure?"
+    options: ["Diamond", "Graphite", "Fullerene", "Amorphous carbon"]
+    answer: 1
+  - id: hq016
+    category: biologia
+    difficulty: 4
+    question: "Which organelle carries out cellular respiration?"
+    options: ["Ribosome", "Mitochondrion", "Lysosome", "Golgi apparatus"]
+    answer: 1
+  - id: hq017
+    category: biologia
+    difficulty: 4
+    question: "Which type of cell division produces gametes?"
+    options: ["Mitosis", "Meiosis", "Binary fission", "Budding"]
+    answer: 1
+  - id: hq018
+    category: biologia
+    difficulty: 4
+    question: "How many chromosome pairs are in a human somatic cell?"
+    options: ["21", "22", "23", "24"]
+    answer: 2
+  - id: hq019
+    category: biologia
+    difficulty: 4
+    question: "Which molecule carries genetic information from the nucleus to the ribosome?"
+    options: ["DNA", "Messenger RNA", "Transfer RNA", "Protein"]
+    answer: 1
+  - id: hq020
+    category: biologia
+    difficulty: 5
+    question: "Which plant tissue carries water and minerals from roots to leaves?"
+    options: ["Phloem", "Xylem", "Parenchyma", "Epidermis"]
+    answer: 1
+  - id: hq021
+    category: biologia
+    difficulty: 5
+    question: "Who independently proposed natural selection alongside Darwin?"
+    options: ["Gregor Mendel", "Alfred Russel Wallace", "Thomas Huxley", "Jean-Baptiste Lamarck"]
+    answer: 1
+  - id: hq022
+    category: biologia
+    difficulty: 4
+    question: "What is the main function of ribosomes?"
+    options: ["Cellular digestion", "Protein synthesis", "Energy storage", "Lipid transport"]
+    answer: 1
+  - id: hq023
+    category: matemática
+    difficulty: 4
+    question: "What is the derivative of x²?"
+    options: ["x", "2x", "x²/2", "2"]
+    answer: 1
+  - id: hq024
+    category: matemática
+    difficulty: 4
+    question: "What is the square root of 169?"
+    options: ["11", "12", "13", "14"]
+    answer: 2
+  - id: hq025
+    category: matemática
+    difficulty: 4
+    question: "What is log base 10 of 1000?"
+    options: ["2", "3", "10", "100"]
+    answer: 1
+  - id: hq026
+    category: matemática
+    difficulty: 5
+    question: "What is the largest prime number below 100?"
+    options: ["89", "91", "97", "99"]
+    answer: 2
+  - id: hq027
+    category: matemática
+    difficulty: 5
+    question: "What do the interior angles of a hexagon add up to?"
+    options: ["540°", "620°", "720°", "900°"]
+    answer: 2
+  - id: hq028
+    category: história
+    difficulty: 4
+    question: "In which year did the Russian October Revolution take place?"
+    options: ["1905", "1914", "1917", "1922"]
+    answer: 2
+  - id: hq029
+    category: história
+    difficulty: 4
+    question: "Which treaty formally ended the First World War?"
+    options: ["Versailles", "Westphalia", "Utrecht", "Tordesillas"]
+    answer: 0
+  - id: hq030
+    category: história
+    difficulty: 4
+    question: "Who was the first Roman emperor?"
+    options: ["Julius Caesar", "Augustus", "Nero", "Trajan"]
+    answer: 1
+  - id: hq031
+    category: história
+    difficulty: 5
+    question: "In which year did Constantinople fall?"
+    options: ["1204", "1453", "1492", "1521"]
+    answer: 1
+  - id: hq032
+    category: história
+    difficulty: 4
+    question: "Which civilisation built Machu Picchu?"
+    options: ["Maya", "Aztec", "Inca", "Olmec"]
+    answer: 2
+  - id: hq033
+    category: história
+    difficulty: 4
+    question: "Who wrote 'The Prince'?"
+    options: ["Thomas Aquinas", "Machiavelli", "Hobbes", "Rousseau"]
+    answer: 1
+  - id: hq034
+    category: história
+    difficulty: 5
+    question: "Which was the first imperial dynasty of China?"
+    options: ["Han", "Qin", "Tang", "Ming"]
+    answer: 1
+  - id: hq035
+    category: geografia
+    difficulty: 5
+    question: "What is the capital of Mongolia?"
+    options: ["Astana", "Ulaanbaatar", "Bishkek", "Tashkent"]
+    answer: 1
+  - id: hq036
+    category: geografia
+    difficulty: 4
+    question: "Which strait separates Europe from Africa?"
+    options: ["Bosphorus", "Gibraltar", "Hormuz", "Malacca"]
+    answer: 1
+  - id: hq037
+    category: geografia
+    difficulty: 4
+    question: "Which is the most populous country in Africa?"
+    options: ["Egypt", "Ethiopia", "Nigeria", "South Africa"]
+    answer: 2
+  - id: hq038
+    category: geografia
+    difficulty: 5
+    question: "Which is the largest tectonic plate on Earth?"
+    options: ["African Plate", "Pacific Plate", "Eurasian Plate", "North American Plate"]
+    answer: 1
+  - id: hq039
+    category: geografia
+    difficulty: 5
+    question: "Which is the deepest lake in the world?"
+    options: ["Lake Victoria", "Lake Baikal", "Caspian Sea", "Lake Superior"]
+    answer: 1
+  - id: hq040
+    category: geografia
+    difficulty: 4
+    question: "Which is the outermost layer of the Earth?"
+    options: ["Mantle", "Crust", "Outer core", "Asthenosphere"]
+    answer: 1
+  - id: hq041
+    category: geografia
+    difficulty: 4
+    question: "Which scale measures earthquake magnitude?"
+    options: ["Beaufort", "Richter", "Mohs", "Kelvin"]
+    answer: 1
+  - id: hq042
+    category: geologia
+    difficulty: 4
+    question: "In which geological era did dinosaurs dominate?"
+    options: ["Palaeozoic", "Mesozoic", "Cenozoic", "Precambrian"]
+    answer: 1
+  - id: hq043
+    category: astronomia
+    difficulty: 4
+    question: "Which is the nearest large galaxy to the Milky Way?"
+    options: ["Triangulum", "Andromeda", "Sombrero", "Whirlpool"]
+    answer: 1
+  - id: hq044
+    category: astronomia
+    difficulty: 5
+    question: "What is a white dwarf?"
+    options: ["A newly formed star", "The remnant of a low-mass star", "A cold gas planet", "A small galaxy"]
+    answer: 1
+  - id: hq045
+    category: astronomia
+    difficulty: 4
+    question: "The astronomical unit corresponds to which distance?"
+    options: ["Earth-Moon", "Earth-Sun", "Sun-Jupiter", "Sun-Alpha Centauri"]
+    answer: 1
+  - id: hq046
+    category: astronomia
+    difficulty: 5
+    question: "Which planet rotates retrograde compared with most others?"
+    options: ["Mars", "Venus", "Saturn", "Mercury"]
+    answer: 1
+  - id: hq047
+    category: literatura
+    difficulty: 4
+    question: "Who wrote 'One Hundred Years of Solitude'?"
+    options: ["Jorge Luis Borges", "Gabriel García Márquez", "Julio Cortázar", "Mario Vargas Llosa"]
+    answer: 1
+  - id: hq048
+    category: literatura
+    difficulty: 4
+    question: "Who wrote 'The Metamorphosis'?"
+    options: ["Thomas Mann", "Franz Kafka", "Hermann Hesse", "Robert Musil"]
+    answer: 1
+  - id: hq049
+    category: literatura
+    difficulty: 4
+    question: "Who wrote the 'Divine Comedy'?"
+    options: ["Petrarch", "Dante Alighieri", "Boccaccio", "Virgil"]
+    answer: 1
+  - id: hq050
+    category: literatura
+    difficulty: 4
+    question: "Who wrote 'War and Peace'?"
+    options: ["Dostoevsky", "Tolstoy", "Chekhov", "Gogol"]
+    answer: 1
+  - id: hq051
+    category: história
+    difficulty: 4
+    question: "In which century did the Industrial Revolution begin?"
+    options: ["16th", "17th", "18th", "19th"]
+    answer: 2
+  - id: hq052
+    category: física
+    difficulty: 5
+    question: "Under special relativity, what is the same for all inertial observers?"
+    options: ["Elapsed time", "The speed of light in vacuum", "Measured length", "Measured mass"]
+    answer: 1

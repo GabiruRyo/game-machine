@@ -1,0 +1,185 @@
+id: ordem-hard
+game: ordem
+lang: pt-BR
+title: Difícil — ciências e história
+version: 1
+items:
+  - id: ho001
+    category: química
+    difficulty: 4
+    prompt: "Do menor ao maior número atômico"
+    entries:
+      - { label: "Hidrogênio", detail: "Z=1" }
+      - { label: "Carbono", detail: "Z=6" }
+      - { label: "Ferro", detail: "Z=26" }
+      - { label: "Ouro", detail: "Z=79" }
+  - id: ho002
+    category: geologia
+    difficulty: 4
+    prompt: "Da era geológica mais antiga à mais recente"
+    entries:
+      - { label: "Pré-cambriano", detail: "4,6 bi–541 Ma" }
+      - { label: "Paleozoica", detail: "541–252 Ma" }
+      - { label: "Mesozoica", detail: "252–66 Ma" }
+      - { label: "Cenozoica", detail: "66 Ma–hoje" }
+  - id: ho003
+    category: geologia
+    difficulty: 5
+    prompt: "Do período mais antigo ao mais recente do Mesozoico"
+    entries:
+      - { label: "Triássico", detail: "252–201 Ma" }
+      - { label: "Jurássico", detail: "201–145 Ma" }
+      - { label: "Cretáceo", detail: "145–66 Ma" }
+  - id: ho004
+    category: física
+    difficulty: 4
+    prompt: "Do menor ao maior comprimento de onda"
+    entries:
+      - { label: "Raio gama", detail: "<10 pm" }
+      - { label: "Raio X", detail: "~1 nm" }
+      - { label: "Luz visível", detail: "~500 nm" }
+      - { label: "Onda de rádio", detail: ">1 m" }
+  - id: ho005
+    category: geologia
+    difficulty: 4
+    prompt: "Do mais macio ao mais duro na escala Mohs"
+    entries:
+      - { label: "Talco", detail: "1" }
+      - { label: "Calcita", detail: "3" }
+      - { label: "Quartzo", detail: "7" }
+      - { label: "Diamante", detail: "10" }
+  - id: ho006
+    category: história
+    difficulty: 4
+    prompt: "Em ordem cronológica"
+    entries:
+      - { label: "Suméria", detail: "~3000 a.C." }
+      - { label: "Império Romano", detail: "27 a.C." }
+      - { label: "Renascimento", detail: "séc. XV" }
+      - { label: "Revolução Industrial", detail: "séc. XVIII" }
+  - id: ho007
+    category: astronomia
+    difficulty: 5
+    prompt: "Da estrela mais fria à mais quente por classe espectral"
+    entries:
+      - { label: "Classe M", detail: "~3.000 K" }
+      - { label: "Classe K", detail: "~4.500 K" }
+      - { label: "Classe G", detail: "~5.800 K" }
+      - { label: "Classe B", detail: "~20.000 K" }
+  - id: ho008
+    category: física
+    difficulty: 4
+    prompt: "Da menor à maior energia"
+    entries:
+      - { label: "Infravermelho", detail: "baixa" }
+      - { label: "Luz visível", detail: "média" }
+      - { label: "Ultravioleta", detail: "alta" }
+      - { label: "Raio X", detail: "muito alta" }
+  - id: ho009
+    category: filosofia
+    difficulty: 4
+    prompt: "Do filósofo mais antigo ao mais recente"
+    entries:
+      - { label: "Sócrates", detail: "~470 a.C." }
+      - { label: "Platão", detail: "~428 a.C." }
+      - { label: "Aristóteles", detail: "384 a.C." }
+      - { label: "Descartes", detail: "1596" }
+  - id: ho010
+    category: história
+    difficulty: 5
+    prompt: "Da guerra mais antiga à mais recente"
+    entries:
+      - { label: "Guerra dos Cem Anos", detail: "1337" }
+      - { label: "Guerra dos Trinta Anos", detail: "1618" }
+      - { label: "Guerra Civil Americana", detail: "1861" }
+      - { label: "Primeira Guerra Mundial", detail: "1914" }
+  - id: ho011
+    category: astronomia
+    difficulty: 5
+    prompt: "Da lua mais próxima à mais distante de Júpiter"
+    entries:
+      - { label: "Io", detail: "422 mil km" }
+      - { label: "Europa", detail: "671 mil km" }
+      - { label: "Ganimedes", detail: "1,07 mi km" }
+      - { label: "Calisto", detail: "1,88 mi km" }
+  - id: ho012
+    category: química
+    difficulty: 4
+    prompt: "Do mais ácido ao mais básico"
+    entries:
+      - { label: "Suco de limão", detail: "pH ~2" }
+      - { label: "Café", detail: "pH ~5" }
+      - { label: "Água pura", detail: "pH 7" }
+      - { label: "Sabão", detail: "pH ~10" }
+  - id: ho013
+    category: ciência
+    difficulty: 4
+    prompt: "Da descoberta mais antiga à mais recente"
+    entries:
+      - { label: "Gravitação de Newton", detail: "1687" }
+      - { label: "Evolução de Darwin", detail: "1859" }
+      - { label: "Relatividade restrita", detail: "1905" }
+      - { label: "Estrutura do DNA", detail: "1953" }
+  - id: ho014
+    category: física
+    difficulty: 4
+    prompt: "Da menor à maior velocidade"
+    entries:
+      - { label: "Som no ar", detail: "343 m/s" }
+      - { label: "Som na água", detail: "1.480 m/s" }
+      - { label: "Som no aço", detail: "5.100 m/s" }
+      - { label: "Luz no vácuo", detail: "3×10⁸ m/s" }
+  - id: ho015
+    category: história
+    difficulty: 5
+    prompt: "Da dinastia chinesa mais antiga à mais recente"
+    entries:
+      - { label: "Qin", detail: "221 a.C." }
+      - { label: "Han", detail: "206 a.C." }
+      - { label: "Tang", detail: "618" }
+      - { label: "Ming", detail: "1368" }
+  - id: ho016
+    category: física
+    difficulty: 5
+    prompt: "Da menor à maior massa"
+    entries:
+      - { label: "Elétron", detail: "9,1×10⁻³¹ kg" }
+      - { label: "Próton", detail: "1,7×10⁻²⁷ kg" }
+      - { label: "Átomo de ouro", detail: "3,3×10⁻²⁵ kg" }
+      - { label: "Hemoglobina", detail: "1,1×10⁻²² kg" }
+  - id: ho017
+    category: física
+    difficulty: 4
+    prompt: "Do menor ao maior"
+    entries:
+      - { label: "Quark", detail: "<10⁻¹⁸ m" }
+      - { label: "Próton", detail: "~10⁻¹⁵ m" }
+      - { label: "Átomo", detail: "~10⁻¹⁰ m" }
+      - { label: "Molécula de DNA", detail: "~2×10⁻⁹ m" }
+  - id: ho018
+    category: história
+    difficulty: 4
+    prompt: "Do império mais antigo ao mais recente"
+    entries:
+      - { label: "Egito Antigo", detail: "~3100 a.C." }
+      - { label: "Grécia Clássica", detail: "~500 a.C." }
+      - { label: "Império Romano", detail: "27 a.C." }
+      - { label: "Império Bizantino", detail: "395" }
+  - id: ho019
+    category: biologia
+    difficulty: 5
+    prompt: "Da zona oceânica mais rasa à mais profunda"
+    entries:
+      - { label: "Epipelágica", detail: "0–200 m" }
+      - { label: "Mesopelágica", detail: "200–1.000 m" }
+      - { label: "Batipelágica", detail: "1.000–4.000 m" }
+      - { label: "Abissal", detail: "4.000–6.000 m" }
+  - id: ho020
+    category: química
+    difficulty: 4
+    prompt: "Do menor ao maior número de prótons"
+    entries:
+      - { label: "Lítio", detail: "3" }
+      - { label: "Nitrogênio", detail: "7" }
+      - { label: "Cálcio", detail: "20" }
+      - { label: "Prata", detail: "47" }

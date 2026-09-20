@@ -40,11 +40,20 @@ export interface PickerOptions {
   seed?: number
 }
 
+export interface DrawPreference {
+  /**
+   * Aim for this difficulty tier. If nothing unseen is left at that exact tier
+   * the draw widens to the nearest available one rather than failing, so a
+   * ramping game never stalls just because one tier ran dry.
+   */
+  difficulty?: number
+}
+
 export interface Picker<T extends BaseItem> {
   /** Draw one item, or null when the policy forbids recycling and it is spent. */
-  draw(): T | null
+  draw(prefer?: DrawPreference): T | null
   /** Draw several distinct items in one go (e.g. the 3 statements of a round). */
-  drawMany(count: number): T[]
+  drawMany(count: number, prefer?: DrawPreference): T[]
   /** Items not yet used, under the current policy. */
   remaining(): number
   /** Forget history for this game. Exposed in the menu as "reset content". */
@@ -92,12 +101,30 @@ export function createPicker<T extends BaseItem>(
 
   const available = (): T[] => items.filter((item) => !seen.has(item.id) && !drawnThisSession.has(item.id))
 
-  const takeOne = (): T | null => {
+  /**
+   * Narrows a pool to the requested difficulty, falling back to the nearest
+   * tier that actually has something left. Returns the pool untouched when no
+   * preference was given.
+   */
+  const narrow = (pool: readonly T[], prefer?: DrawPreference): readonly T[] => {
+    const target = prefer?.difficulty
+    if (target === undefined || pool.length === 0) return pool
+
+    const exact = pool.filter((item) => item.difficulty === target)
+    if (exact.length > 0) return exact
+
+    let best = Infinity
+    for (const item of pool) best = Math.min(best, Math.abs(item.difficulty - target))
+    return pool.filter((item) => Math.abs(item.difficulty - target) === best)
+  }
+
+  const takeOne = (prefer?: DrawPreference): T | null => {
     if (items.length === 0) return null
 
     if (policy === 'random') {
-      const pool = items.filter((i) => !drawnThisSession.has(i.id))
-      return (pool.length > 0 ? random.pick(pool) : random.pick(items)) ?? null
+      const unused = items.filter((i) => !drawnThisSession.has(i.id))
+      const pool = unused.length > 0 ? unused : items
+      return random.pick(narrow(pool, prefer)) ?? null
     }
 
     let pool = available()
@@ -114,7 +141,7 @@ export function createPicker<T extends BaseItem>(
       }
     }
 
-    const chosen = random.pick(pool)
+    const chosen = random.pick(narrow(pool, prefer))
     if (!chosen) return null
     seen.add(chosen.id)
     drawnThisSession.add(chosen.id)
@@ -125,10 +152,10 @@ export function createPicker<T extends BaseItem>(
   return {
     total: items.length,
     draw: takeOne,
-    drawMany(count) {
+    drawMany(count, prefer) {
       const out: T[] = []
       for (let i = 0; i < count; i++) {
-        const item = takeOne()
+        const item = takeOne(prefer)
         if (!item) break
         out.push(item)
       }

@@ -20,6 +20,8 @@ export const lorotaItemSchema = baseItemSchema.extend({
 
 export const lorotaSettingsSchema = z.object({
   enabled: z.boolean().default(true),
+  /** Extra fraction of the points per difficulty level above 1. 0 disables it. */
+  difficulty_bonus: z.number().min(0).max(2).default(0.25),
   rounds: z.number().int().min(1).max(50).default(6),
   statements: z.number().int().min(2).max(6).default(3),
   decide_seconds: z.number().min(5).max(300).default(45),

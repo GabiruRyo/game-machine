@@ -23,7 +23,6 @@ export const historiasItemSchema = baseItemSchema
 export const historiasSettingsSchema = z.object({
   enabled: z.boolean().default(true),
   rounds: z.number().int().min(1).max(20).default(3),
-  word_seconds: z.number().min(5).max(300).default(30),
   points_per_word: z.number().min(0).default(100),
   points_favourite: z.number().min(0).default(400),
 })

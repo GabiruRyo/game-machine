@@ -3,6 +3,7 @@ import { configureAudio, play, unlockAudio } from '../engine/audio'
 import { loadConfig, type ConfigIssue } from '../engine/config'
 import type { AppConfig, Lang } from '../engine/configSchema'
 import { loadContent, type ContentIndex } from '../engine/content'
+import { DIFFICULTY_PRESETS, PRESET_ORDER, presetFor, type DifficultyPreset } from '../engine/difficulty'
 import type { BaseItem } from '../engine/contentSchema'
 import { toggleFullscreen, useKeyboard } from '../engine/input'
 import { buildPartyQueue, type PartyLeg } from '../engine/party'
@@ -10,6 +11,7 @@ import { browserStore, createPicker } from '../engine/picker'
 import { playersFromConfig, type Player } from '../engine/players'
 import { mergeBoards, ranked, type Scoreboard } from '../engine/scoring'
 import { GAMES, getGame, itemSchemas } from '../games/registry'
+import { DIFFICULTY_FREE_GAMES } from '../games/schemas'
 import { LANGUAGE_NAMES, setLanguage, useI18n } from '../i18n'
 import { KeyHints, MenuList, PlayerBadge, Scoreboard as ScoreTable, Screen, type MenuEntry } from '../ui/components'
 import { ErrorOverlay } from './ErrorOverlay'
@@ -45,10 +47,27 @@ export function App() {
       document.documentElement.classList.toggle('big-text', loaded.display.big_text)
       setConfig(loaded)
       setPlayers(playersFromConfig(loaded))
-      setContent(await loadContent(loaded, itemSchemas()))
+      setContent(await loadContent(loaded, itemSchemas(), '/content', DIFFICULTY_FREE_GAMES))
       setRoute({ name: 'menu' })
     })()
   }, [])
+
+  const cycleDifficulty = useCallback(() => {
+    if (!config) return
+    const current = presetFor(config.content.filters.difficulty) ?? 'all'
+    const next = PRESET_ORDER[(PRESET_ORDER.indexOf(current) + 1) % PRESET_ORDER.length] ?? 'all'
+    const updated: AppConfig = {
+      ...config,
+      content: {
+        ...config.content,
+        filters: { ...config.content.filters, difficulty: [...DIFFICULTY_PRESETS[next]] },
+      },
+    }
+    setConfig(updated)
+    // The difficulty filter is applied at load time, so the bank must be rebuilt.
+    void loadContent(updated, itemSchemas(), '/content', DIFFICULTY_FREE_GAMES).then(setContent)
+    play('move')
+  }, [config])
 
   const switchLanguage = useCallback(() => {
     if (!config) return
@@ -57,7 +76,7 @@ export function App() {
     const updated = { ...config, language: next }
     setLanguage(next)
     setConfig(updated)
-    void loadContent(updated, itemSchemas()).then(setContent)
+    void loadContent(updated, itemSchemas(), '/content', DIFFICULTY_FREE_GAMES).then(setContent)
     play('move')
   }, [config, lang])
 
@@ -123,6 +142,7 @@ export function App() {
         players={players}
         picker={picker}
         multiplier={multiplier}
+        difficulty={{ allowed: config.content.filters.difficulty, curve: config.content.curve }}
         onFinish={onFinish}
         onExit={() => setRoute({ name: 'menu' })}
       />
@@ -136,6 +156,8 @@ export function App() {
           config={config}
           players={players}
           partyReady={playableIds.length > 0}
+          difficulty={presetFor(config.content.filters.difficulty)}
+          onDifficulty={cycleDifficulty}
           contentIssues={content.issues}
           onPick={() => setRoute({ name: 'pick' })}
           onParty={() => {
@@ -227,19 +249,23 @@ function MainMenu({
   config,
   players,
   partyReady,
+  difficulty,
   contentIssues,
   onPick,
   onParty,
   onPlayers,
   onLanguage,
+  onDifficulty,
   onResetContent,
 }: {
   config: AppConfig
   players: Player[]
   partyReady: boolean
+  difficulty: DifficultyPreset | null
   contentIssues: ConfigIssue[]
   onPick: () => void
   onParty: () => void
+  onDifficulty: () => void
   onPlayers: () => void
   onLanguage: () => void
   onResetContent: () => void
@@ -253,6 +279,11 @@ function MainMenu({
     { id: 'play', label: t('menu.play') },
     { id: 'party', label: t('menu.party'), meta: `${config.party_mode.games}`, disabled: !partyReady },
     { id: 'players', label: t('menu.players'), meta: `${players.length}` },
+    {
+      id: 'difficulty',
+      label: t('menu.difficulty'),
+      meta: difficulty ? t(`difficulty.${difficulty}`) : t('difficulty.custom'),
+    },
     { id: 'language', label: t('menu.language'), meta: LANGUAGE_NAMES[lang] },
     { id: 'reset', label: t('menu.resetContent') },
   ]
@@ -263,6 +294,7 @@ function MainMenu({
       case 'play': onPick(); break
       case 'party': onParty(); break
       case 'players': onPlayers(); break
+      case 'difficulty': onDifficulty(); break
       case 'language': onLanguage(); break
       case 'reset': onResetContent(); setResetDone(true); break
       default: break

@@ -1,5 +1,6 @@
 import { useCallback, useMemo, useState } from 'react'
 import { play } from '../../engine/audio'
+import { difficultyForRound, difficultyMultiplier } from '../../engine/difficulty'
 import { useKeyboard, type Action } from '../../engine/input'
 import { others } from '../../engine/players'
 import { applyDeltas, emptyBoard, type ScoreDelta, type Scoreboard } from '../../engine/scoring'
@@ -24,13 +25,21 @@ interface Line {
   isLie: boolean
 }
 
-function LorotaGame({ settings, players, picker, multiplier, onFinish, onExit }: GameContext<LorotaItem, LorotaSettings>) {
+function LorotaGame({ settings, players, picker, multiplier, difficulty, onFinish, onExit }: GameContext<LorotaItem, LorotaSettings>) {
   const { t, tRandom } = useI18n()
+
+  const targetFor = useCallback(
+    (roundIndex: number) =>
+      difficultyForRound(roundIndex, settings.rounds, difficulty.allowed, difficulty.curve),
+    [settings.rounds, difficulty],
+  )
 
   const [round, setRound] = useState(0)
   const [board, setBoard] = useState<Scoreboard>(() => emptyBoard(players))
   const [deltas, setDeltas] = useState<Record<string, number>>({})
-  const [item, setItem] = useState<LorotaItem | null>(() => picker.draw())
+  const [item, setItem] = useState<LorotaItem | null>(() =>
+    picker.draw({ difficulty: targetFor(0) }),
+  )
   const [phase, setPhase] = useState<Phase>({ kind: 'deciding' })
 
   const activePlayer = players[round % players.length]
@@ -50,15 +59,17 @@ function LorotaGame({ settings, players, picker, multiplier, onFinish, onExit }:
       const foundIt = chosen !== null && lines[chosen]?.isLie === true
 
       let awarded: ScoreDelta[]
+      const worth = item ? difficultyMultiplier(item.difficulty, settings.difficulty_bonus) : 1
+
       if (foundIt) {
         play('correct')
-        awarded = [{ playerId: activePlayer.id, points: settings.points_correct }]
+        awarded = [{ playerId: activePlayer.id, points: settings.points_correct * worth }]
       } else {
         play('wrong')
         // The room talked them out of it (or the clock did): everyone else scores.
         awarded = others(players, activePlayer.id).map((player) => ({
           playerId: player.id,
-          points: settings.points_heckler,
+          points: settings.points_heckler * worth,
         }))
       }
 
@@ -66,7 +77,7 @@ function LorotaGame({ settings, players, picker, multiplier, onFinish, onExit }:
       setDeltas(Object.fromEntries(awarded.map((d) => [d.playerId, Math.round(d.points * multiplier)])))
       setPhase({ kind: 'reveal', chosen })
     },
-    [activePlayer, lines, players, settings, multiplier],
+    [activePlayer, lines, players, settings, multiplier, item],
   )
 
   const timer = useCountdown({
@@ -81,7 +92,7 @@ function LorotaGame({ settings, players, picker, multiplier, onFinish, onExit }:
       onFinish(board)
       return
     }
-    const next = picker.draw()
+    const next = picker.draw({ difficulty: targetFor(round + 1) })
     if (!next) return onFinish(board)
     setItem(next)
     setRound((r) => r + 1)
@@ -89,7 +100,7 @@ function LorotaGame({ settings, players, picker, multiplier, onFinish, onExit }:
     setPhase({ kind: 'deciding' })
     timer.reset()
     play('reveal')
-  }, [round, settings.rounds, board, picker, onFinish, timer])
+  }, [round, settings.rounds, board, picker, onFinish, timer, targetFor])
 
   const handle = useCallback(
     (action: Action) => {
@@ -108,7 +119,10 @@ function LorotaGame({ settings, players, picker, multiplier, onFinish, onExit }:
   const hostLine = useMemo(() => {
     if (phase.kind !== 'reveal') return ''
     if (phase.chosen === null) return tRandom('host.timeout')
-    return lines[phase.chosen]?.isLie ? tRandom('host.correct') : tRandom('host.wrong')
+    const hard = (item?.difficulty ?? 1) >= 4
+    return lines[phase.chosen]?.isLie
+      ? tRandom(hard ? 'host.correctHard' : 'host.correct')
+      : tRandom(hard ? 'host.wrongHard' : 'host.wrong')
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [phase.kind, round])
 

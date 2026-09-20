@@ -37,3 +37,13 @@ packs:
   - { id: historias-extra-en, game: historias, lang: en,    file: historias/extra.en.yaml,    title: "More stories",              auto: true }
   - { id: legendas-extra-pt,  game: legendas,  lang: pt-BR, file: legendas/extra.pt-BR.yaml,  title: "Mais situações",            auto: true }
   - { id: legendas-extra-en,  game: legendas,  lang: en,    file: legendas/extra.en.yaml,     title: "More setups",               auto: true }
+
+# ─── Hard packs (difficulty 4-5) ─────────────────────────────────────────────
+  - { id: quiz-hard-pt,     game: quiz,     lang: pt-BR, file: quiz/hard.pt-BR.yaml,     title: "Difícil — ciências e humanidades", auto: true }
+  - { id: quiz-hard-en,     game: quiz,     lang: en,    file: quiz/hard.en.yaml,        title: "Hard — sciences and humanities",   auto: true }
+  - { id: ordem-hard-pt,    game: ordem,    lang: pt-BR, file: ordem/hard.pt-BR.yaml,    title: "Difícil — ciências e história",    auto: true }
+  - { id: ordem-hard-en,    game: ordem,    lang: en,    file: ordem/hard.en.yaml,       title: "Hard — science and history",       auto: true }
+  - { id: lorota-hard-pt,   game: lorota,   lang: pt-BR, file: lorota/hard.pt-BR.yaml,   title: "Difícil — equívocos científicos",  auto: true }
+  - { id: lorota-hard-en,   game: lorota,   lang: en,    file: lorota/hard.en.yaml,      title: "Hard — scientific misconceptions", auto: true }
+  - { id: proibida-hard-pt, game: proibida, lang: pt-BR, file: proibida/hard.pt-BR.yaml, title: "Difícil — conceitos abstratos",    auto: true }
+  - { id: proibida-hard-en, game: proibida, lang: en,    file: proibida/hard.en.yaml,    title: "Hard — abstract concepts",         auto: true }

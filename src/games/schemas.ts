@@ -24,3 +24,16 @@ export const ITEM_SCHEMAS: ItemSchemas = {
 }
 
 export const GAME_IDS = Object.keys(ITEM_SCHEMAS)
+
+/**
+ * Games where an item has no meaningful difficulty: there is no "hard" version
+ * of "who is most likely to lose their phone". The difficulty filter is skipped
+ * for these, so choosing Expert narrows the knowledge games without emptying
+ * half the pack.
+ */
+export const DIFFICULTY_FREE_GAMES: ReadonlySet<string> = new Set([
+  'quemdiria',
+  'tribunal',
+  'historias',
+  'legendas',
+])

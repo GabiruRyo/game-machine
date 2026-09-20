@@ -1,5 +1,6 @@
 import { useCallback, useState } from 'react'
 import { play } from '../../engine/audio'
+import { difficultyForRound, difficultyMultiplier } from '../../engine/difficulty'
 import { useKeyboard, type Action } from '../../engine/input'
 import { applyDeltas, emptyBoard, type Scoreboard } from '../../engine/scoring'
 import { useCountdown } from '../../engine/timer'
@@ -16,7 +17,7 @@ import { proibidaItemSchema, proibidaSettingsSchema, type ProibidaItem, type Pro
  */
 type Phase = 'prepare' | 'playing' | 'summary'
 
-function ProibidaGame({ settings, players, picker, multiplier, onFinish, onExit }: GameContext<ProibidaItem, ProibidaSettings>) {
+function ProibidaGame({ settings, players, picker, multiplier, difficulty, onFinish, onExit }: GameContext<ProibidaItem, ProibidaSettings>) {
   const { t } = useI18n()
 
   const [round, setRound] = useState(0)
@@ -28,16 +29,25 @@ function ProibidaGame({ settings, players, picker, multiplier, onFinish, onExit 
 
   const guesser = players[round % players.length]
 
+  // Every card in a round shares the round's tier, so a round has a consistent
+  // feel rather than lurching between trivial and brutal words.
+  const roundDifficulty = difficultyForRound(round, settings.rounds, difficulty.allowed, difficulty.curve)
+
   const endRound = useCallback(
     (finalHits: number) => {
       if (!guesser) return
       play('buzz')
+      const worth = difficultyMultiplier(roundDifficulty ?? 1, settings.difficulty_bonus)
       setBoard((current) =>
-        applyDeltas(current, [{ playerId: guesser.id, points: finalHits * settings.points_per_hit }], multiplier),
+        applyDeltas(
+          current,
+          [{ playerId: guesser.id, points: finalHits * settings.points_per_hit * worth }],
+          multiplier,
+        ),
       )
       setPhase('summary')
     },
-    [guesser, settings.points_per_hit, multiplier],
+    [guesser, settings, multiplier, roundDifficulty],
   )
 
   const timer = useCountdown({
@@ -47,10 +57,10 @@ function ProibidaGame({ settings, players, picker, multiplier, onFinish, onExit 
   })
 
   const nextCard = useCallback(() => {
-    const drawn = picker.draw()
+    const drawn = picker.draw({ difficulty: roundDifficulty })
     setCard(drawn)
     return drawn
-  }, [picker])
+  }, [picker, roundDifficulty])
 
   const handle = useCallback(
     (action: Action) => {
@@ -130,7 +140,14 @@ function ProibidaGame({ settings, players, picker, multiplier, onFinish, onExit 
         <div className="title">{t('common.timeUp')}</div>
         <div className="title title--huge" style={{ color: guesser.color }}>{hits}</div>
         <p className="subtitle">
-          {guesser.name} +{Math.round(hits * settings.points_per_hit * multiplier)} {t('common.points')}
+          {guesser.name} +
+          {Math.round(
+            hits *
+              settings.points_per_hit *
+              difficultyMultiplier(roundDifficulty ?? 1, settings.difficulty_bonus) *
+              multiplier,
+          )}{' '}
+          {t('common.points')}
         </p>
       </div>,
       [t('keys.advance'), t('keys.pause')],

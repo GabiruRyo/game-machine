@@ -10,11 +10,20 @@ menu:
   settings: Settings
   howto: How to play
   back: Back
+  difficulty: Difficulty
   resetContent: Reset content history
   resetContentDone: History cleared — all content is available again.
   contentEmpty: no content
   itemsAvailable: "{count} items available"
   disabled: disabled in config.yaml
+
+difficulty:
+  all: "Everything (1-5)"
+  easy: "Easy (1-2)"
+  medium: "Medium (2-3)"
+  hard: "Hard (3-4)"
+  expert: "Expert (4-5)"
+  custom: "Custom"
 
 common:
   next: Next
@@ -161,6 +170,15 @@ host:
     - There it is!
     - Spot on.
     - Someone has been studying.
+  correctHard:
+    - That one was built to catch people out.
+    - Respect. That was a hard one.
+    - Look at the level of that answer.
+    - Someone clearly did the reading.
+  wrongHard:
+    - That one was cruel, I admit it.
+    - Nobody was getting that.
+    - You can't be blamed for that one.
   wrong:
     - Not even close.
     - Not this time.

@@ -1,5 +1,6 @@
 import { useCallback, useMemo, useState } from 'react'
 import { play } from '../../engine/audio'
+import { difficultyForRound, difficultyMultiplier } from '../../engine/difficulty'
 import { useKeyboard, type Action } from '../../engine/input'
 import { nextIndex } from '../../engine/players'
 import { applyDeltas, emptyBoard, speedBonus, type Scoreboard } from '../../engine/scoring'
@@ -15,14 +16,23 @@ type Phase =
   | { kind: 'stealing'; missed: number }
   | { kind: 'reveal'; chosen: number | null; stolenBy: string | null }
 
-function QuizGame({ settings, players, picker, multiplier, onFinish, onExit }: GameContext<QuizItem, QuizSettings>) {
+function QuizGame({ settings, players, picker, multiplier, difficulty, onFinish, onExit }: GameContext<QuizItem, QuizSettings>) {
   const { t, tRandom } = useI18n()
+
+  // The tier this round is aiming for; undefined on a flat curve.
+  const targetFor = useCallback(
+    (roundIndex: number) =>
+      difficultyForRound(roundIndex, settings.rounds, difficulty.allowed, difficulty.curve),
+    [settings.rounds, difficulty],
+  )
 
   const [round, setRound] = useState(0)
   const [board, setBoard] = useState<Scoreboard>(() => emptyBoard(players))
   const [deltas, setDeltas] = useState<Record<string, number>>({})
   const [phase, setPhase] = useState<Phase>({ kind: 'answering' })
-  const [item, setItem] = useState<QuizItem | null>(() => picker.draw())
+  const [item, setItem] = useState<QuizItem | null>(() =>
+    picker.draw({ difficulty: targetFor(0) }),
+  )
 
   const activeIdx = round % players.length
   const activePlayer = players[activeIdx]
@@ -45,7 +55,13 @@ function QuizGame({ settings, players, picker, multiplier, onFinish, onExit }: G
 
       if (correct) {
         play('correct')
-        award(activePlayer.id, settings.base_points + speedBonus(msRemaining, totalMs, settings.speed_bonus_max))
+        // A level-5 question pays more than a level-1, so a hard bank rewards
+        // rather than punishes.
+        const worth = difficultyMultiplier(item.difficulty, settings.difficulty_bonus)
+        award(
+          activePlayer.id,
+          (settings.base_points + speedBonus(msRemaining, totalMs, settings.speed_bonus_max)) * worth,
+        )
         setPhase({ kind: 'reveal', chosen, stolenBy: null })
         return
       }
@@ -82,7 +98,7 @@ function QuizGame({ settings, players, picker, multiplier, onFinish, onExit }: G
       onFinish(board)
       return
     }
-    const next = picker.draw()
+    const next = picker.draw({ difficulty: targetFor(round + 1) })
     if (!next) {
       onFinish(board)
       return
@@ -93,7 +109,7 @@ function QuizGame({ settings, players, picker, multiplier, onFinish, onExit }: G
     setPhase({ kind: 'answering' })
     timer.reset()
     play('reveal')
-  }, [round, settings.rounds, board, picker, onFinish, timer])
+  }, [round, settings.rounds, board, picker, onFinish, timer, targetFor])
 
   const handle = useCallback(
     (action: Action) => {
@@ -112,7 +128,7 @@ function QuizGame({ settings, players, picker, multiplier, onFinish, onExit }: G
         if (action.index === phase.missed) return
         if (action.index === item.answer && stealer) {
           play('correct')
-          award(stealer.id, settings.steal.points)
+          award(stealer.id, settings.steal.points * difficultyMultiplier(item.difficulty, settings.difficulty_bonus))
           setPhase({ kind: 'reveal', chosen: action.index, stolenBy: stealer.id })
         } else {
           play('wrong')
@@ -124,7 +140,7 @@ function QuizGame({ settings, players, picker, multiplier, onFinish, onExit }: G
 
       if (phase.kind === 'reveal' && action.type === 'advance') advance()
     },
-    [phase, item, timer.msRemaining, resolve, advance, onExit, stealer, settings.steal.points, award],
+    [phase, item, timer.msRemaining, resolve, advance, onExit, stealer, settings, award],
   )
 
   useKeyboard(handle)
@@ -133,8 +149,11 @@ function QuizGame({ settings, players, picker, multiplier, onFinish, onExit }: G
   // re-render, so the host would appear to change their mind mid-sentence.
   const hostLine = useMemo(() => {
     if (phase.kind !== 'reveal' || !item) return ''
-    if (phase.chosen === item.answer) return tRandom('host.correct')
-    return phase.chosen === null ? tRandom('host.timeout') : tRandom('host.wrong')
+    // "That was an easy one" lands badly on a level-5 question.
+    const hard = item.difficulty >= 4
+    if (phase.chosen === item.answer) return tRandom(hard ? 'host.correctHard' : 'host.correct')
+    if (phase.chosen === null) return tRandom('host.timeout')
+    return tRandom(hard ? 'host.wrongHard' : 'host.wrong')
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [round, phase.kind, phase.kind === 'reveal' ? phase.chosen : null, item])
 
